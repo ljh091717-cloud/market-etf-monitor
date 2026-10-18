@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "market": "US",
+  "last_valid_snapshot_generated_utc": null,
+  "last_reference_session": null,
+  "last_config_revision": null,
+  "last_price_by_symbol": {},
+  "last_active_conditions": [],
+  "current_judgment": "미실행",
+  "next_conditions": [],
+  "last_report_prepared_utc": null,
+  "last_report_kind": null,
+  "last_report_condition_ids": [],
+  "last_end_of_day_review_session": null,
+  "rearm_status": "not_implemented_no_continuous_detector",
+  "notification_delivery_status": "unverified",
+  "low_frequency_cache": {},
+  "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information"
+}
