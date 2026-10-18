@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "revision": "2026-10-19.1",
+  "updated_at": "2026-10-18T15:15:00Z",
+  "purpose": "Observation only; no automatic orders; no guaranteed recovery or returns",
+  "price_update_policy": "Only replace a price after it is explicitly finalized in conversation. Persist the new revision before claiming it is active. Proposals and illustrations do not replace active prices. Keep the last confirmed revision until replaced.",
+  "public_data_policy": "Never store account balances, positions, cost bases, credentials, or personal identifiers here.",
+  "us": {
+    "timezone": "America/New_York",
+    "symbols": ["QQQ", "QQQM", "VOO"],
+    "minimum_holding_years_for_unleveraged_index_etfs": 2,
+    "report_open_offset_minutes": 60,
+    "report_interval_minutes": 60,
+    "close_report_delay_minutes": 30,
+    "price_bands": {
+      "QQQM": [["first", 301.0, 304.0], ["second", 293.0, 296.0], ["third", 280.0, 285.0]],
+      "VOO": [["first", 695.0, 700.0], ["second", 670.0, 680.0], ["third", 645.0, 655.0]]
+    },
+    "bands_source": "Previously saved and accepted QQQM/VOO monitoring settings, retained until new explicit confirmation",
+    "daily_drop_thresholds_pct": [-2.0, -3.0, -5.0],
+    "high_close_lookback_sessions": 252,
+    "drawdown_thresholds_pct": [-10.0, -15.0, -20.0, -30.0],
+    "drop_event_symbols": ["QQQ", "VOO"],
+    "correlation_groups": {"QQQ": "NASDAQ100", "QQQM": "NASDAQ100", "VOO": "SP500"},
+    "manual_support_resistance": {},
+    "weekly_ema_lengths": [20, 50, 100, 200],
+    "weekly_rsi_length": 14,
+    "daily_sma_lengths": [50, 200],
+    "daily_atr_length": 14,
+    "ema200_watch_buffer_pct": 5.0,
+    "rsi_watch_levels": [50.0, 40.0, 30.0],
+    "data_collector_supported": true,
+    "off_schedule_event_detector_enabled": false,
+    "off_schedule_delivery_enabled": false
+  },
+  "kr": {
+    "timezone": "Asia/Seoul",
+    "mode": "event_only",
+    "hourly_ai_reports_enabled": false,
+    "market_price_reference": {"name": "KODEX 200", "code": "069500"},
+    "market_cross_check": "KOSPI200",
+    "purchase_watch_product": {"name": "KODEX 레버리지", "code": "122630", "holding_period": null, "loss_limit": null, "buy_price_bands": []},
+    "daily_drop_thresholds_pct": [-1.5, -2.5, -4.0],
+    "high_close_lookback_sessions": 60,
+    "drawdown_thresholds_pct": [-5.0, -10.0, -15.0],
+    "explicit_single_stock_watchlist": [],
+    "watchlist_status": "Not configured: a holding or past analysis is not an explicit monitoring instruction",
+    "price_detector_enabled": false,
+    "event_ai_delivery_enabled": false,
+    "blocker": "Timestamped intraday feed, independent price detector, and event-to-AI/notification route not connected"
+  },
+  "event_filter_requested": {
+    "price_buffer_pct": 0.3,
+    "atr_buffer_multiplier": 0.25,
+    "rearm_hold_minutes": 15,
+    "same_condition_cooldown_minutes": 60,
+    "severe_risk_exemption": true,
+    "implemented_continuous_rearm": false,
+    "note": "Initial anti-duplicate settings, not optimized trading rules. Hourly snapshots cannot prove continuous 15-minute recovery. Do not claim this filter is applied without a real detector and persistent event/delivery state."
+  },
+  "risk_data_policy": {
+    "yield_series": ["DGS10", "DFII10"],
+    "volatility_series": ["VIX", "VXN"],
+    "direct_market_breadth": "Use if verified; otherwise explicitly label equal-weight ETF comparison as a proxy",
+    "volume_comparison": "Same elapsed session time only; otherwise omit relative-volume judgement",
+    "macro_calendar_horizon_sessions": 2,
+    "earnings_calendar_horizon_sessions": 5,
+    "low_frequency_refresh": "Only refresh after publication or expiry; never label daily data as real-time"
+  }
+}
