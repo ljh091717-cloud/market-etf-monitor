@@ -1,0 +1,13 @@
+[기존 QQQ·ETF 시간별 점검 예약 작업의 지시문에 추가할 내용]
+
+미국 정규장 점검을 시작할 때 먼저 다음 공개 데이터 JSON URL을 읽고 데이터 유효성을 평가한다.
+URL: https://깃허브사용자명.github.io/market-etf-monitor/data/latest.json
+
+1) mode가 regular_session이고 verified_regular_session=true인지 확인한다.
+2) generated_utc, 각 종목의 last_5m_bar_start_utc 및 data_age_minutes를 보고 출처·지연시간을 밝힌다. 예상 실행 시각 대비 생성 후 45분 초과이면 '오래된 스냅샷'이라고 분류하고 최신 매수 판단 근거로 사용하지 않는다.
+3) weekly_indicators.last_completed_week는 '확정 주봉', current_week_provisional은 '진행 중 주봉'으로 분리 표시한다.
+4) QQQ의 EMA20/50/100/200, RSI14, EMA200 이격률과 QQQM/VOO의 buy_watch.price_band_status를 비교한다. 지지 확정·매수 성공을 보장하지 않으며 긍정적/보수적 근거를 나눠 설명한다.
+5) 접근 오류, manual_test_not_for_trading, 비정상/오래된 시세, 지표 누락이면 잘못된 숫자를 재사용하지 말고 '외부 데이터 연결 실패/지연'으로 표시한다. 대체 웹 시세는 별도의 출처·시각으로 보고한다.
+6) URL이 정상 확인되기 전에는 기존 예약 작업의 자동 알림·실행 시간을 변경하거나 'yfinance 연동 완료'라고 보고하지 않는다.
+
+Github 실행 예상 시각은 미국 동부시간 매 정규 거래일 09:40~15:40의 정시+40분이다. 자료 접근을 검증한 뒤에만 ChatGPT 점검 시간을 동부시간 매시+55분으로 옮길지 결정한다.
