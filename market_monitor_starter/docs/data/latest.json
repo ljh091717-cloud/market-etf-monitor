@@ -3,9 +3,9 @@
   "source": "Yahoo Finance via yfinance; unofficial",
   "mode": "regular_session",
   "config_revision": "2026-10-19.1",
-  "generated_utc": "2026-10-19T15:50:06.793662+00:00",
-  "generated_kst": "2026-10-20T00:50:06.793662+09:00",
-  "generated_new_york": "2026-10-19T11:50:06.793662-04:00",
+  "generated_utc": "2026-10-19T16:50:43.475651+00:00",
+  "generated_kst": "2026-10-20T01:50:43.475651+09:00",
+  "generated_new_york": "2026-10-19T12:50:43.475651-04:00",
   "reference_session_date": "2026-10-19",
   "reference_fixed_at_utc": "2026-10-19T14:52:36.611234+00:00",
   "reference_fixed_before_open": false,
@@ -21,10 +21,10 @@
     "QQQ": {
       "symbol": "QQQ",
       "currency": "USD",
-      "last_price": 723.89,
-      "last_5m_bar_start_utc": "2026-10-19T15:50:00+00:00",
-      "last_5m_bar_start_ny": "2026-10-19T11:50:00-04:00",
-      "data_age_minutes": 0.11,
+      "last_price": 720.69,
+      "last_5m_bar_start_utc": "2026-10-19T16:50:00+00:00",
+      "last_5m_bar_start_ny": "2026-10-19T12:50:00-04:00",
+      "data_age_minutes": 0.72,
       "regular_session_only": true,
       "weekly_indicators": {
         "last_completed_week": {
@@ -37,19 +37,19 @@
           "sample_weeks": 1441
         },
         "current_week_provisional": {
-          "ema_20": 714.3608,
-          "ema_50": 672.0274,
-          "ema_100": 613.1035,
-          "ema_200": 528.8253,
-          "rsi_14": 55.116,
+          "ema_20": 714.056,
+          "ema_50": 671.9019,
+          "ema_100": 613.0402,
+          "ema_200": 528.7935,
+          "rsi_14": 54.403,
           "sample_weeks": 1442,
           "week_in_progress": 43
         },
         "provisional_price_to_ema_gap_pct": {
-          "ema_20_gap_pct": 1.334,
-          "ema_50_gap_pct": 7.717,
-          "ema_100_gap_pct": 18.07,
-          "ema_200_gap_pct": 36.886
+          "ema_20_gap_pct": 0.929,
+          "ema_50_gap_pct": 7.261,
+          "ema_100_gap_pct": 17.56,
+          "ema_200_gap_pct": 36.289
         }
       },
       "price_source_url": "https://finance.yahoo.com/quote/QQQ/history/",
@@ -66,8 +66,8 @@
       },
       "price_status": "regular-session 5m bar Close, may be delayed or still forming",
       "event_evaluation": {
-        "previous_close_change_pct": 1.985067969758969,
-        "high252_drawdown_pct": -4.70868209581522,
+        "previous_close_change_pct": 1.534236741943662,
+        "high252_drawdown_pct": -5.129923192243391,
         "mechanical_action_guard": false,
         "corporate_actions": {
           "complete": true,
@@ -90,10 +90,10 @@
     "QQQM": {
       "symbol": "QQQM",
       "currency": "USD",
-      "last_price": 298.07,
-      "last_5m_bar_start_utc": "2026-10-19T15:50:00+00:00",
-      "last_5m_bar_start_ny": "2026-10-19T11:50:00-04:00",
-      "data_age_minutes": 0.11,
+      "last_price": 296.71,
+      "last_5m_bar_start_utc": "2026-10-19T16:50:00+00:00",
+      "last_5m_bar_start_ny": "2026-10-19T12:50:00-04:00",
+      "data_age_minutes": 0.72,
       "regular_session_only": true,
       "weekly_indicators": {
         "last_completed_week": {
@@ -106,19 +106,19 @@
           "sample_weeks": 314
         },
         "current_week_provisional": {
-          "ema_20": 294.1326,
-          "ema_50": 276.6898,
-          "ema_100": 252.5158,
-          "ema_200": 218.2775,
-          "rsi_14": 55.136,
+          "ema_20": 294.0031,
+          "ema_50": 276.6365,
+          "ema_100": 252.4889,
+          "ema_200": 218.264,
+          "rsi_14": 54.399,
           "sample_weeks": 315,
           "week_in_progress": 43
         },
         "provisional_price_to_ema_gap_pct": {
-          "ema_20_gap_pct": 1.339,
-          "ema_50_gap_pct": 7.727,
-          "ema_100_gap_pct": 18.04,
-          "ema_200_gap_pct": 36.556
+          "ema_20_gap_pct": 0.921,
+          "ema_50_gap_pct": 7.256,
+          "ema_100_gap_pct": 17.514,
+          "ema_200_gap_pct": 35.941
         }
       },
       "buy_watch": {
@@ -159,8 +159,8 @@
       },
       "price_status": "regular-session 5m bar Close, may be delayed or still forming",
       "event_evaluation": {
-        "previous_close_change_pct": 1.987952521809011,
-        "high252_drawdown_pct": -4.696895161447701,
+        "previous_close_change_pct": 1.5226134557182913,
+        "high252_drawdown_pct": -5.131733362475755,
         "mechanical_action_guard": false,
         "corporate_actions": {
           "complete": true,
@@ -182,10 +182,10 @@
     "VOO": {
       "symbol": "VOO",
       "currency": "USD",
-      "last_price": 707.67,
-      "last_5m_bar_start_utc": "2026-10-19T15:50:00+00:00",
-      "last_5m_bar_start_ny": "2026-10-19T11:50:00-04:00",
-      "data_age_minutes": 0.11,
+      "last_price": 705.775,
+      "last_5m_bar_start_utc": "2026-10-19T16:50:00+00:00",
+      "last_5m_bar_start_ny": "2026-10-19T12:50:00-04:00",
+      "data_age_minutes": 0.72,
       "regular_session_only": true,
       "weekly_indicators": {
         "last_completed_week": {
@@ -198,19 +198,19 @@
           "sample_weeks": 841
         },
         "current_week_provisional": {
-          "ema_20": 695.6143,
-          "ema_50": 663.5648,
-          "ema_100": 617.4377,
-          "ema_200": 548.232,
-          "rsi_14": 59.24,
+          "ema_20": 695.4338,
+          "ema_50": 663.4904,
+          "ema_100": 617.4002,
+          "ema_200": 548.2131,
+          "rsi_14": 58.554,
           "sample_weeks": 842,
           "week_in_progress": 43
         },
         "provisional_price_to_ema_gap_pct": {
-          "ema_20_gap_pct": 1.733,
-          "ema_50_gap_pct": 6.647,
-          "ema_100_gap_pct": 14.614,
-          "ema_200_gap_pct": 29.082
+          "ema_20_gap_pct": 1.487,
+          "ema_50_gap_pct": 6.373,
+          "ema_100_gap_pct": 14.314,
+          "ema_200_gap_pct": 28.741
         }
       },
       "buy_watch": {
@@ -251,8 +251,8 @@
       },
       "price_status": "regular-session 5m bar Close, may be delayed or still forming",
       "event_evaluation": {
-        "previous_close_change_pct": 0.8637298178418851,
-        "high252_drawdown_pct": -1.1910097824133437,
+        "previous_close_change_pct": 0.593636740553305,
+        "high252_drawdown_pct": -1.4556006743012606,
         "mechanical_action_guard": false,
         "corporate_actions": {
           "complete": true,
@@ -287,7 +287,7 @@
   ],
   "comparison": {
     "kind": "late_reference_initialization_not_a_new_price_event",
-    "previous_generated_utc": "2026-10-19T14:52:36.611234+00:00",
+    "previous_generated_utc": "2026-10-19T15:50:06.793662+00:00",
     "active_conditions": [
       "QQQM:below:first"
     ],
