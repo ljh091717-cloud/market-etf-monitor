@@ -1,0 +1,18 @@
+{
+  "last_check_utc": "2026-10-19T14:52:36.611234+00:00",
+  "reference_date": "2026-10-19",
+  "config_revision": "2026-10-19.1",
+  "last_prices": {
+    "QQQ": 720.84,
+    "QQQM": 296.815,
+    "VOO": 705.72
+  },
+  "active_conditions": [
+    "QQQM:below:first"
+  ],
+  "last_notification": null,
+  "delivery_status": "not observable by collector",
+  "current_judgment": "not assessed by collector",
+  "rearm_status": "not implemented; hourly snapshots do not prove a continuous hold",
+  "next_check": "next scheduled US observation; no off-schedule trigger"
+}
