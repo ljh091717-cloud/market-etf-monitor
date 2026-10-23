@@ -1,11 +1,11 @@
 {
-  "last_check_utc": "2026-10-23T18:55:05.179212+00:00",
+  "last_check_utc": "2026-10-23T19:44:59.396026+00:00",
   "reference_date": "2026-10-23",
   "config_revision": "2026-10-19.1",
   "last_prices": {
-    "QQQ": 705.2,
-    "QQQM": 290.36,
-    "VOO": 699.075
+    "QQQ": 704.56,
+    "QQQM": 290.08,
+    "VOO": 698.8499
   },
   "active_conditions": [
     "QQQM:below:first",
