@@ -43,11 +43,11 @@ def session_mode(now, session, test=False):
     if session is None:
         return None
     start, end = session
-    if start - timedelta(minutes=30) <= now < start:
+    if start - timedelta(minutes=90) <= now < start:
         return 'preopen_reference'
-    if start + timedelta(minutes=45) <= now < end:
+    if start + timedelta(minutes=5) <= now < end:
         return 'regular_session'
-    if end + timedelta(minutes=15) <= now <= end + timedelta(minutes=45):
+    if end + timedelta(minutes=5) <= now <= end + timedelta(minutes=120):
         return 'end_of_day'
     return None
 
@@ -180,7 +180,7 @@ def last_session_of_week(now):
 def read_symbol(symbol, now, mode, ref, config, week_final):
     import yfinance as yf
     test = mode == 'manual_test_not_for_trading'
-    result = core.read_ticker(symbol, now, test_mode=test)
+    result = core.read_ticker(symbol, now, test_mode=test or mode == 'end_of_day')
     frame = yf.Ticker(symbol).history(period='2y' if mode == 'end_of_day' else '5d',
                                      interval='1d', prepost=False, auto_adjust=False, actions=True, timeout=25)
     frame = frame.dropna(subset=['Open', 'High', 'Low', 'Close']).sort_index()
@@ -235,6 +235,13 @@ def main():
         outputs(publish=False, save=False)
         print('Outside collection window; no AI call or publication')
         return
+    if mode == 'end_of_day':
+        existing = read_json(DATA / 'latest.json', {})
+        if (existing.get('mode') == 'end_of_day' and
+                existing.get('market', {}).get('ny_date') == str(now.astimezone(core.NY).date())):
+            outputs(publish=False, save=False)
+            print('End-of-day snapshot already published for this session; skipping duplicate')
+            return
     symbols = config['us']['symbols']
     try:
         refs = references(now, symbols, session, args.test)
