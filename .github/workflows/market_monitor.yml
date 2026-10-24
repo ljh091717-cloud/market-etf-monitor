@@ -2,12 +2,17 @@ name: Hourly US ETF indicators
 
 on:
   schedule:
-    # Cheap daily reference refresh before the market; never calls AI.
-    - cron: '10 9 * * 1-5'
+    # GitHub Actions runs are often ~25-40 min later than the cron time.
+    # Start preopen references early enough to lock the prior-session baseline.
+    - cron: '35 8 * * 1-5'
       timezone: 'America/New_York'
-    # Prepare data before 10:30..15:30 reviews and the close+30m review.
-    # The Python calendar gates holidays, early closes and delayed runs.
-    - cron: '20 10-16 * * 1-5'
+    # Collect before the 10:30..15:30 ET hourly analysis checks.
+    # The 13:35 job also provides a possible post-close read on early-close days.
+    - cron: '35 9-14 * * 1-5'
+      timezone: 'America/New_York'
+    # Use provider daily Close after the close (not the last 5-minute bar).
+    # EOD check is scheduled for 17:30 ET to accommodate runner delays.
+    - cron: '35 16 * * 1-5'
       timezone: 'America/New_York'
   workflow_dispatch:
     inputs:
