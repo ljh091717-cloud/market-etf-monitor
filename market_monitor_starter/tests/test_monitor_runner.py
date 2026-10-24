@@ -15,20 +15,23 @@ class MonitorTests(unittest.TestCase):
         self.actions = {'complete':True,'dividends':0,'splits':0}
     def test_preopen(self):
         self.assertEqual(m.session_mode(self.open-timedelta(minutes=20), self.session),'preopen_reference')
-    def test_no_early_collection(self):
-        self.assertIsNone(m.session_mode(self.open+timedelta(minutes=10), self.session))
+        self.assertEqual(m.session_mode(self.open-timedelta(minutes=75), self.session),'preopen_reference')
+    def test_regular_collection_after_first_five_minutes(self):
+        self.assertEqual(m.session_mode(self.open+timedelta(minutes=10), self.session),'regular_session')
     def test_hourly_collection(self):
         self.assertEqual(m.session_mode(self.open+timedelta(minutes=50),self.session),'regular_session')
     def test_after_close(self):
         self.assertEqual(m.session_mode(self.session[1]+timedelta(minutes=20),self.session),'end_of_day')
-    def test_after_close_window(self):
-        self.assertIsNone(m.session_mode(self.session[1]+timedelta(minutes=50),self.session))
+    def test_delayed_after_close_window(self):
+        self.assertEqual(m.session_mode(self.session[1]+timedelta(minutes=50),self.session),'end_of_day')
+        self.assertIsNone(m.session_mode(self.session[1]+timedelta(minutes=121),self.session))
     def test_holiday(self):
         self.assertIsNone(m.session_mode(self.open,None))
     def test_half_day(self):
         early=(self.open,self.open+timedelta(hours=3,minutes=30))
         self.assertEqual(m.session_mode(early[1]+timedelta(minutes=20),early),'end_of_day')
-        self.assertIsNone(m.session_mode(early[1]+timedelta(minutes=80),early))
+        self.assertEqual(m.session_mode(early[1]+timedelta(minutes=80),early),'end_of_day')
+        self.assertIsNone(m.session_mode(early[1]+timedelta(minutes=125),early))
     def test_test_mode(self):
         self.assertEqual(m.session_mode(self.open,None,True),'manual_test_not_for_trading')
     def test_dividend_guard(self):
