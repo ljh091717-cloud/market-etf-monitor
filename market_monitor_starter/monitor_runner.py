@@ -264,7 +264,8 @@ def main():
                            'Weekly EMA/RSI use provider split-adjusted, non-dividend-adjusted closes; daily baselines use recorded adjusted prices']}
         previous = read_json(DATA / 'latest.json')
         payload['comparison'] = comparison(previous, payload)
-        if not refs['fixed_before_open']:
+        # Late initialization is a baseline, but later same-session samples can cross.
+        if not refs['fixed_before_open'] and payload['comparison']['kind'] != 'sampled_change':
             payload['comparison']['new_crossings'] = []
             payload['comparison']['kind'] = 'late_reference_initialization_not_a_new_price_event'
         if args.test:
