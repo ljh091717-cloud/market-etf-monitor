@@ -1,65 +1,67 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-10-26T19:18:27.317638+00:00",
+  "last_valid_snapshot_generated_utc": "2026-10-26T21:05:41.344206+00:00",
   "last_reference_session": "2026-10-23",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 713.4918,
-    "QQQM": 293.795,
-    "VOO": 703.555
+    "QQQ": 712.2000122070312,
+    "QQQM": 293.260009765625,
+    "VOO": 703.4099731445312
   },
   "last_active_conditions": [
     "QQQM:below:first",
     "QQQM:band:second"
   ],
-  "current_judgment": "관찰: 2026-10-26 15:30 EDT 정기점검. 최신 유효 regular_session 5분봉(15:15 ET 시작, 수집 15:18 ET 당시 미완성 가능). QQQ $713.4918, QQQM $293.795 (2차 $293~296 내부), VOO $703.555 (1차 $695~700 위). 신규 조건 변화 없음. 비교 기준 10/23, 고정 11:02 ET(개장 후); 당일 급락의 독립적 신규 기준으로 취급하지 않음.",
+  "current_judgment": "관찰: 2026-10-26 17:30 EDT 마감확인. 제공자 10/26 일봉 Close 반영(QQQ $712.20 +1.11%, QQQM $293.26 +1.10%, VOO $703.41 +0.69%). QQQM 2차 $293~296 내부·VOO 1차 $695~700 위, 신규 하향 조건 없음. 10/26 CNN 공포·탐욕지수 제3자 인용 27(공포, 16:43 ET), 기존 오전 인용 21보다 높은 값이나 제공처 상이·CNN 원본 미검증; 공포 완화 가능성, 하루 상승만으로 저점 안정 확증 불가. QQQ 잠정 주봉 RSI 52.41·EMA200 이격 +34.26%(장기선 접근 아님).",
   "next_conditions": [
-    "17:30 ET 마감확인: 2026-10-26 end_of_day 및 제공자 일봉 Close 10/26 반영 여부 검증",
-    "QQQM $285 이하 3차 단계 진입 또는 $296 초과 2차구간 이탈(다음 정기 장중 표본)",
-    "VOO $700 이하 1차 구간 재진입 또는 $680 이하 2차 단계 접근(다음 정기 장중 표본)",
-    "QQQ·VOO -2/-3/-5% 일간 또는 252일 최고종가 대비 -10/-15/-20/-30% 신규 조건(다음 유효 표본)"
+    "다음 미국 정규장: QQQM $293 하회 뒤 $285 이하 3차 진입 여부, $296 회복 여부(5분봉/일봉 단계 구분)",
+    "다음 미국 정규장: VOO $700 이하 1차 재진입 및 $680 이하 2차 접근 여부(5분봉/일봉 단계 구분)",
+    "QQQ·VOO 전일대비 -2/-3/-5%, 252일 최고종가 대비 -10/-15/-20/-30% 새 조건과 QQQ 주봉 EMA20·EMA200·RSI14 재점검",
+    "10/27~28 FOMC의 실제 발표·금리/변동성 변화를 확인하고 CNN 공포·탐욕지수 원본 혹은 검증된 새 관측값으로 재평가"
   ],
-  "last_report_prepared_utc": "2026-10-26T15:28:58Z",
-  "last_report_kind": "2026-10-26_11:30_ET_당일유효자료수집복구_관찰",
+  "last_report_prepared_utc": "2026-10-26T21:31:45Z",
+  "last_report_kind": "2026-10-26_17:30_ET_마감확인_공포심리완화_관찰",
   "last_report_condition_ids": [
-    "ops:2026-10-26:first_valid_regular_session_after_stale"
+    "review:end_of_day:2026-10-26",
+    "sentiment:secondary_quote:2026-10-26:27"
   ],
-  "last_end_of_day_review_session": null,
+  "last_end_of_day_review_session": "2026-10-26",
   "rearm_status": "not_implemented_no_continuous_detector",
   "notification_delivery_status": "unverified",
   "low_frequency_cache": {
     "CNN_FEAR_GREED": {
-      "value": 21,
-      "band": "극단적 공포",
-      "as_of_utc": "2026-10-26T06:00:00Z",
+      "value": 27,
+      "band": "공포",
+      "as_of_utc": "2026-10-26T20:43:00Z",
       "previous_us_session": "2026-10-23",
-      "previous_value": 21,
-      "direction": "변화 확인 안 됨(동일 점수)",
-      "source_url": "https://www.worldmonitor.app/tools/fear-and-greed-index/",
-      "secondary_source_url": "https://fcontext.com/en/fear-and-greed",
-      "source_type": "third-party quotation attributed to CNN; direct CNN verification unavailable",
-      "observed_at_utc": "2026-10-26T14:32:35Z",
-      "refresh_condition": "primary CNN data or corroborated new publication"
+      "previous_value": null,
+      "direction": "오전 이전 제3자 인용 21점(02:00 EDT) 대비 오후 27점으로 공포 완화 가능성; 인용 출처 달라 엄밀한 동일계열 비교는 미검증",
+      "source_url": "https://www.finhacker.cz/en/fear-and-greed-index-historical-%20data-and-chart/",
+      "secondary_source_url": "https://www.worldmonitor.app/tools/fear-and-greed-index/",
+      "source_type": "secondary quote attributed to CNN; original unavailable; secondary sources may differ",
+      "observed_at_utc": "2026-10-26T21:31:45Z",
+      "refresh_condition": "new publication with validated timestamp, preferably CNN primary or same-source historical values"
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-26T19:30:46Z",
+      "checked_at_utc": "2026-10-26T21:31:45Z",
       "latest_snapshot_date": "2026-10-26",
-      "latest_snapshot_generated_utc": "2026-10-26T19:18:27.317638+00:00",
+      "latest_snapshot_generated_utc": "2026-10-26T21:05:41.344206+00:00",
       "intended_session_date": "2026-10-26",
       "valid_today": true,
-      "collector_snapshot_mode": "regular_session",
-      "five_min_bar_started_et": "2026-10-26T15:15:00-04:00",
-      "price_bar_may_be_incomplete_at_collection": true,
-      "prior_reference_session": "2026-10-23",
+      "collector_snapshot_mode": "end_of_day",
+      "provider_daily_close_session_date": "2026-10-26",
+      "provider_close_not_exchange_certified": true,
+      "five_min_bar_started_et": "2026-10-26T15:55:00-04:00",
+      "five_min_bar_not_substitute_for_daily_close": true,
+      "reference_session": "2026-10-23",
       "reference_fixed_before_open": false,
-      "reason": "15:30 EDT 점검: 당일 snapshot 최신, 생성 12분 전. 15:15 시작 봉은 수집 15:18 시 미완성 가능. 관심구간·하락 조건 변화 없음; reference는 11:02 ET 고정(개장 후). collector run job success/deploy 여부 별도 미조회. 설정파일 마감 지연 30분은 실제 정기 실행 17:30 ET(90분 후)와 불일치하며 사용자 최신 지시의 17:30을 우선 적용.",
-      "refresh_condition": "17:30 ET end_of_day verification",
-      "generated_age_minutes": 12.31,
-      "max_price_bar_age_minutes": 15.77,
-      "reference_session": "2026-10-23"
+      "reason": "17:30 EDT 마감검토: 생성 17:05:41 EDT, 당일 제공자 일봉 Close 반영 성공. 정규장 폐장 뒤 is_open=false 및 verified_regular_session=false 정상. 15:55시작 5분봉(수집시각으로부터 >45분)은 EOD 판정에 사용하지 않음. 전일 기준은 10/23 일봉으로 적합하나 고정은 10/26 11:02 ET 개장 후여서 신규 장중 급락 추적 기준으로 삼지 않음. 10/26 제공자 종가 추후 수정 가능. collector/deploy job success 여부 별도 미조회. monitor_config close_report_delay_minutes=30은 최신 사용자 지시 17:30 ET와 다르며 예약은 후자를 준수.",
+      "refresh_condition": "next US regular trading session valid price snapshot; EOD later revisions",
+      "generated_age_minutes": 26.06,
+      "last_5m_bar_age_minutes_at_generation": 70.69
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-10-26T19:30:46Z"
+  "last_evaluation_utc": "2026-10-26T21:31:45Z"
 }
