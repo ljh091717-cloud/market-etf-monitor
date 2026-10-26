@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-10-26T16:24:01.177122+00:00",
+  "last_valid_snapshot_generated_utc": "2026-10-26T17:15:28.670086+00:00",
   "last_reference_session": "2026-10-23",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 713.05,
-    "QQQM": 293.62,
-    "VOO": 703.745
+    "QQQ": 714.38,
+    "QQQM": 294.13,
+    "VOO": 704.3056
   },
   "last_active_conditions": [
     "QQQM:below:first",
     "QQQM:band:second"
   ],
-  "current_judgment": "관찰: 2026-10-26 12:34 ET 점검. 유효 regular_session 5분봉(2026-10-26T12:20:00-04:00 시작, 완성 미검증). QQQM $293.62 2차 $293~296 내부, VOO $703.745 1차 $695~700 위. 직전 점검 대비 신규 급락·관심단계 변화 없음. 전일기준 10/23, 장 개장 전 고정되지 않아 새 급락 판정에 주의.",
+  "current_judgment": "관찰: 2026-10-26 13:26 EDT 점검. 유효 regular_session 5분봉(2026-10-26T13:15:00-04:00 시작, 수집 시 미완성 가능). QQQ $714.38, QQQM $294.13 (2차 $293~296 내부), VOO $704.3056 (1차 $695~700 상회). 직전 유효 점검 대비 신규 하락·관심단계 변화 없음. 전일 기준 10/23, 당일 11:02 ET 장 시작 후 고정되어 새급락 판정에 주의.",
   "next_conditions": [
-    "다음 지원 정기점검: regular_session 10/26 생성75분/각 봉45분 이내 확인",
-    "QQQM $285 이하 3차 하향 통과 또는 $296 상향 복귀 여부",
-    "VOO $700 이하 1차 재진입 또는 $680 이하 2차 하향 통과 여부",
-    "QQQ·VOO 전일 대비 -2/-3/-5% 및 252일 최고종가 대비 -10/-15/-20/-30% 신규 도달",
-    "17:30 ET 마감확인에는 제공자 10/26 일봉 Close 별도 확인"
+    "다음 지원 정기점검: 2026-10-26 regular_session 생성75분/가격봉45분 이내 확인",
+    "QQQM $285 이하 3차 하향 통과 또는 $296 초과 2차 구간 이탈 확인 (장중)",
+    "VOO $700 이하 1차 재진입 또는 $680 이하 2차 하향 통과 여부 (장중)",
+    "QQQ·VOO 전일 대비 -2/-3/-5% 및 252일 최고종가 대비 -10/-15/-20/-30% 신규 도달 (장중)",
+    "17:30 ET 마감확인에는 제공자 10/26 일봉 Close 별도 확인 (마감)"
   ],
   "last_report_prepared_utc": "2026-10-26T15:28:58Z",
   "last_report_kind": "2026-10-26_11:30_ET_당일유효자료수집복구_관찰",
@@ -44,23 +44,23 @@
       "refresh_condition": "primary CNN data or corroborated new publication"
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-26T16:34:03Z",
+      "checked_at_utc": "2026-10-26T17:26:47Z",
       "latest_snapshot_date": "2026-10-26",
-      "latest_snapshot_generated_utc": "2026-10-26T16:24:01.177122+00:00",
+      "latest_snapshot_generated_utc": "2026-10-26T17:15:28.670086+00:00",
       "intended_session_date": "2026-10-26",
       "valid_today": true,
       "collector_snapshot_mode": "regular_session",
-      "five_min_bar_started_et": "2026-10-26T12:20:00-04:00",
+      "five_min_bar_started_et": "2026-10-26T13:15:00-04:00",
       "price_bar_may_be_incomplete_at_collection": true,
       "prior_reference_session": "2026-10-23",
       "reference_fixed_before_open": false,
-      "reason": "First valid Oct 26 regular-session snapshot since stale 10:30 report. Today's base was initialized late at 11:02 ET; not a new drop. GitHub workflow success/skipped status not independently checked.",
+      "reason": "13:26 EDT 점검: 오늘 유효 정규장 자료. 새 하락 조건 없음. 13:15 5분봉은 13:15:28 수집 당시 미완성. 기준가격 장 시작 후 고정; 수집job 결과는 별도 확인하지 않음.",
       "refresh_condition": "next supported US regular-session report or end_of_day",
-      "generated_age_minutes": 10.03,
-      "max_price_bar_age_minutes": 14.05,
+      "generated_age_minutes": 11.31,
+      "max_price_bar_age_minutes": 11.78,
       "reference_session": "2026-10-23"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-10-26T16:34:03Z"
+  "last_evaluation_utc": "2026-10-26T17:26:47Z"
 }
