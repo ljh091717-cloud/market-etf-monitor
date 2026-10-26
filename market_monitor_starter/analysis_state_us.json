@@ -1,19 +1,60 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": null,
-  "last_reference_session": null,
-  "last_config_revision": null,
-  "last_price_by_symbol": {},
-  "last_active_conditions": [],
-  "current_judgment": "미실행",
-  "next_conditions": [],
-  "last_report_prepared_utc": null,
-  "last_report_kind": null,
-  "last_report_condition_ids": [],
+  "last_valid_snapshot_generated_utc": "2026-10-23T19:44:59.396026+00:00",
+  "last_reference_session": "2026-10-22",
+  "last_config_revision": "2026-10-19.1",
+  "last_price_by_symbol": {
+    "QQQ": 704.56,
+    "QQQM": 290.08,
+    "VOO": 698.8499
+  },
+  "last_active_conditions": [
+    "QQQM:below:first",
+    "QQQM:below:second",
+    "VOO:band:first"
+  ],
+  "current_judgment": "데이터 부족: 2026-10-26 10:32 ET 정규장 신규 관측값 미확인. 10/23 15:45 ET latest.json은 금일 유효성 미충족. 최근 5분봉 시간 일부 생성시각보다 미래이므로 미완성가능.",
+  "next_conditions": [
+    "2026-10-26 거래일 regular_session 자료 생성후 75분 이내 확인",
+    "세 ETF 각각 5분봉 시작시간이 검사시각보다 이전이며 45분 이내",
+    "2026-10-23 직전 정규장 기준가 고정 및 corporate-action 보호 확인",
+    "QQQM 285달러 이하 신규도달 또는 VOO 680달러 이하 신규도달 여부",
+    "당일 후속 17:30 ET 마감자료 end_of_day 검증"
+  ],
+  "last_report_prepared_utc": "2026-10-26T14:32:35Z",
+  "last_report_kind": "2026-10-26_10:30_ET_모니터링복구확인_데이터제한",
+  "last_report_condition_ids": [
+    "ops:2026-10-26:initial_recovery_check",
+    "ops:latest_stale_2026-10-23"
+  ],
   "last_end_of_day_review_session": null,
   "rearm_status": "not_implemented_no_continuous_detector",
   "notification_delivery_status": "unverified",
-  "low_frequency_cache": {},
+  "low_frequency_cache": {
+    "CNN_FEAR_GREED": {
+      "value": 21,
+      "band": "극단적 공포",
+      "as_of_utc": "2026-10-26T06:00:00Z",
+      "previous_us_session": "2026-10-23",
+      "previous_value": 21,
+      "direction": "변화 확인 안 됨(동일 점수)",
+      "source_url": "https://www.worldmonitor.app/tools/fear-and-greed-index/",
+      "secondary_source_url": "https://fcontext.com/en/fear-and-greed",
+      "source_type": "third-party quotation attributed to CNN; direct CNN verification unavailable",
+      "observed_at_utc": "2026-10-26T14:32:35Z",
+      "refresh_condition": "primary CNN data or corroborated new publication"
+    },
+    "DATA_QUALITY": {
+      "checked_at_utc": "2026-10-26T14:32:35Z",
+      "latest_snapshot_date": "2026-10-23",
+      "latest_snapshot_generated_utc": "2026-10-23T19:44:59.396026+00:00",
+      "intended_session_date": "2026-10-26",
+      "valid_today": false,
+      "github_collector_job_status": "not_checked",
+      "reason": "latest.json unchanged since Oct 23; not valid current price; Friday reference initialized after market open",
+      "refresh_condition": "first new Oct 26 regular-session dataset"
+    }
+  },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information"
 }
