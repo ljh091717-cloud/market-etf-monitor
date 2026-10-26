@@ -1,25 +1,24 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-10-26T18:08:11.994982+00:00",
+  "last_valid_snapshot_generated_utc": "2026-10-26T19:18:27.317638+00:00",
   "last_reference_session": "2026-10-23",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 714.085,
-    "QQQM": 294.03,
-    "VOO": 704.03
+    "QQQ": 713.4918,
+    "QQQM": 293.795,
+    "VOO": 703.555
   },
   "last_active_conditions": [
     "QQQM:below:first",
     "QQQM:band:second"
   ],
-  "current_judgment": "관찰: 2026-10-26 14:32 EDT 점검. 유효 regular_session 5분봉(14:05 ET 시작, 수집 당시 14:08 ET로 미완성 가능 봉). QQQ $714.085, QQQM $294.03 (2차 $293~296 내부), VOO $704.03 (1차 $695~700 위). 직전 유효 점검 대비 신규 조건 변화 없음. 전일 기준 10/23, 기준 고정시각 11:02 ET(장 시작 후)로 새로운 급락 판단 보수적 유지.",
+  "current_judgment": "관찰: 2026-10-26 15:30 EDT 정기점검. 최신 유효 regular_session 5분봉(15:15 ET 시작, 수집 15:18 ET 당시 미완성 가능). QQQ $713.4918, QQQM $293.795 (2차 $293~296 내부), VOO $703.555 (1차 $695~700 위). 신규 조건 변화 없음. 비교 기준 10/23, 고정 11:02 ET(개장 후); 당일 급락의 독립적 신규 기준으로 취급하지 않음.",
   "next_conditions": [
-    "다음 지원 정기점검: 2026-10-26 regular_session 생성75분/가격봉45분 이내 확인",
-    "QQQM $285 이하 3차 하향 통과 또는 $296 초과 2차 구간 이탈 확인 (장중)",
-    "VOO $700 이하 1차 재진입 또는 $680 이하 2차 하향 통과 여부 (장중)",
-    "QQQ·VOO 전일 대비 -2/-3/-5% 및 252일 최고종가 대비 -10/-15/-20/-30% 신규 도달 (장중)",
-    "17:30 ET 마감확인: 10/26 일봉 Close 및 제공자 마감 모드 별도 확인"
+    "17:30 ET 마감확인: 2026-10-26 end_of_day 및 제공자 일봉 Close 10/26 반영 여부 검증",
+    "QQQM $285 이하 3차 단계 진입 또는 $296 초과 2차구간 이탈(다음 정기 장중 표본)",
+    "VOO $700 이하 1차 구간 재진입 또는 $680 이하 2차 단계 접근(다음 정기 장중 표본)",
+    "QQQ·VOO -2/-3/-5% 일간 또는 252일 최고종가 대비 -10/-15/-20/-30% 신규 조건(다음 유효 표본)"
   ],
   "last_report_prepared_utc": "2026-10-26T15:28:58Z",
   "last_report_kind": "2026-10-26_11:30_ET_당일유효자료수집복구_관찰",
@@ -44,23 +43,23 @@
       "refresh_condition": "primary CNN data or corroborated new publication"
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-26T18:32:11Z",
+      "checked_at_utc": "2026-10-26T19:30:46Z",
       "latest_snapshot_date": "2026-10-26",
-      "latest_snapshot_generated_utc": "2026-10-26T18:08:11.994982+00:00",
+      "latest_snapshot_generated_utc": "2026-10-26T19:18:27.317638+00:00",
       "intended_session_date": "2026-10-26",
       "valid_today": true,
       "collector_snapshot_mode": "regular_session",
-      "five_min_bar_started_et": "2026-10-26T14:05:00-04:00",
+      "five_min_bar_started_et": "2026-10-26T15:15:00-04:00",
       "price_bar_may_be_incomplete_at_collection": true,
       "prior_reference_session": "2026-10-23",
       "reference_fixed_before_open": false,
-      "reason": "14:32 EDT 점검: 14:08 수집 스냅샷 최신, 14:05 시작 5분봉은 14:08 수집 당시 미완성 가능. 14:05 봉 가격은 직전 저장 상태 대비 신호 변화 없음. config close_report_delay_minutes 30은 현재 실행 17:30 ET(90분 뒤)와 불일치; 현재 실행 스케줄 우선. GitHub collect/deploy job 상태 미조회.",
-      "refresh_condition": "next supported US regular-session report or end_of_day",
-      "generated_age_minutes": 23.98,
-      "max_price_bar_age_minutes": 27.183333333333334,
+      "reason": "15:30 EDT 점검: 당일 snapshot 최신, 생성 12분 전. 15:15 시작 봉은 수집 15:18 시 미완성 가능. 관심구간·하락 조건 변화 없음; reference는 11:02 ET 고정(개장 후). collector run job success/deploy 여부 별도 미조회. 설정파일 마감 지연 30분은 실제 정기 실행 17:30 ET(90분 후)와 불일치하며 사용자 최신 지시의 17:30을 우선 적용.",
+      "refresh_condition": "17:30 ET end_of_day verification",
+      "generated_age_minutes": 12.31,
+      "max_price_bar_age_minutes": 15.77,
       "reference_session": "2026-10-23"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-10-26T18:32:11Z"
+  "last_evaluation_utc": "2026-10-26T19:30:46Z"
 }
