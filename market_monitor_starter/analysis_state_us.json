@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-10-27T18:10:36.308653+00:00",
+  "last_valid_snapshot_generated_utc": "2026-10-27T19:19:12.954369+00:00",
   "last_reference_session": "2026-10-26",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 720.295,
-    "QQQM": 296.6428,
-    "VOO": 707.145
+    "QQQ": 721.64,
+    "QQQM": 297.1464,
+    "VOO": 707.905
   },
   "last_active_conditions": [
     "QQQM:below:first"
   ],
-  "current_judgment": "관찰: 2026-10-27 14:30 EDT 정기점검(검증 14:31 EDT/03:31 KST). regular_session 2026-10-27T14:10:36.308653-04:00; QQQ $720.29 (1.14%), QQQM $296.64 (2차 $293~296 상회, 1차 $301~304 아래), VOO $707.14 (1차 $695~700 위). 새 하향 통과·252일 고점 하락 임계값·주봉 200EMA 접근 신호 없음. 14:10 EDT 시작 5분봉은 수집 시 미완성 가능성; 외부 yfinance 비공식 자료, 거래소 확정 종가 아님. CNN 10/26 27점은 2차 출처 과거 참고값이며 10/27 신규 공식 지수 미검증. 자동 주문 없음.",
+  "current_judgment": "관찰: 2026-10-27 15:30 EDT 정기점검. 정규장 2026-10-27T15:19:12.954369-04:00 수집, QQQ $721.64, QQQM $297.15 (2차 $293~296 위·1차 $301~304 아래), VOO $707.90 (1차 $695~700 위). 신규 하락·관심구간 진입 조건 없음. 15:15 ET 5분봉 수집 당시 미완성 가능성, 시세 제공자 비공식. CNN 새 발표 원본 미확인(10/26 제3자 27점 참조). 매수 신호 및 자동 주문 아님.",
   "next_conditions": [
-    "장중: QQQM $296 2차 구간 재진입 및 $285 3차 기준 도달, VOO $700 1차 재진입 및 $680 2차 기준 도달",
-    "장중: QQQ·VOO 전일대비 -2/-3/-5% 또는 252거래일 최고종가 대비 -10/-15/-20/-30% 신규 조건",
-    "일봉: QQQ·VOO 저점/SMA50·200/ATR14 유지; 주봉: 해당 주 마지막 거래일 확정 EMA20/50/100/200·RSI14",
-    "2026-10-28 14:00 EDT FOMC 정책 발표 뒤 가격 안정·시장 심리 확인"
+    "장중: QQQM $296 재진입, $285 3차 단계 접근; VOO $700 1차 재진입, $680 2차 접근",
+    "장중: QQQ·VOO 전일대비 -2/-3/-5% 및 252일 고점 대비 -10/-15/-20/-30% 조건 변화",
+    "일봉: 장중 저점·SMA50/200·ATR14; 주봉: 마지막 거래일 EMA20/50/100/200·RSI14 확정",
+    "2026-10-28 14:00 EDT FOMC 발표 이후 가격 안정·공포 심리 변화"
   ],
   "last_report_prepared_utc": "2026-10-26T21:31:45Z",
   "last_report_kind": "2026-10-26_17:30_ET_마감확인_공포심리완화_관찰",
@@ -44,25 +44,26 @@
       "previous_value_date": "미확인(2026-10-27 보도에서 직전 값으로만 제시)"
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-27T18:31:32.587Z",
+      "checked_at_utc": "2026-10-27T19:30:58.385Z",
       "latest_snapshot_date": "2026-10-27",
-      "latest_snapshot_generated_utc": "2026-10-27T18:10:36.308653+00:00",
+      "latest_snapshot_generated_utc": "2026-10-27T19:19:12.954369+00:00",
       "intended_session_date": "2026-10-27",
       "valid_today": true,
       "collector_snapshot_mode": "regular_session",
       "daily_reference_session_date": "2026-10-26",
       "reference_fixed_before_open": true,
-      "generated_age_minutes": 20.94,
-      "last_five_min_bar_start_et": "2026-10-27T14:10:00-04:00",
+      "generated_age_minutes": 11.76,
+      "last_five_min_bar_start_et": "2026-10-27T15:15:00-04:00",
       "bar_age_minutes_at_check": {
-        "QQQ": 21.54,
-        "QQQM": 21.54,
-        "VOO": 21.54
+        "QQQ": 15.97,
+        "QQQM": 15.97,
+        "VOO": 15.97
       },
       "possible_incomplete_5m_bar": true,
-      "source_type": "GitHub yfinance collector (not run inside ChatGPT)",
+      "source_type": "GitHub Yahoo Finance via yfinance collector; not run in ChatGPT",
       "change_vs_last_saved_state": {
         "newConditions": [],
+        "removedConditions": [],
         "previous": [
           "QQQM:below:first"
         ],
@@ -70,7 +71,7 @@
           "QQQM:below:first"
         ]
       },
-      "reason": "14:30 ET regular check; QQQ and VOO above daily fall thresholds; QQQM below first but above second; no new crossing.",
+      "reason": "15:30 ET regular check; no new price band/daily or high252 threshold crossings.",
       "refresh_condition": "Next scheduled US market snapshot"
     },
     "FOMC_2026_OCT": {
@@ -84,9 +85,9 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-10-27T18:31:32.587Z",
-  "last_check_prepared_utc": "2026-10-27T18:31:32.587Z",
-  "last_check_kind": "2026-10-27_14:30_ET_regular_no_material_change",
+  "last_evaluation_utc": "2026-10-27T19:30:58.385Z",
+  "last_check_prepared_utc": "2026-10-27T19:30:58.385Z",
+  "last_check_kind": "2026-10-27_15:30_ET_regular_no_material_change",
   "last_check_condition_ids": [
     "QQQM:below:first"
   ],
