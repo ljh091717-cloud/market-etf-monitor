@@ -1,65 +1,65 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-10-27T19:19:12.954369+00:00",
+  "last_valid_snapshot_generated_utc": "2026-10-27T21:08:37.519496+00:00",
   "last_reference_session": "2026-10-26",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 721.64,
-    "QQQM": 297.1464,
-    "VOO": 707.905
+    "QQQ": 721.25,
+    "QQQM": 296.9599914550781,
+    "VOO": 707.52001953125
   },
   "last_active_conditions": [
     "QQQM:below:first"
   ],
-  "current_judgment": "관찰: 2026-10-27 15:30 EDT 정기점검. 정규장 2026-10-27T15:19:12.954369-04:00 수집, QQQ $721.64, QQQM $297.15 (2차 $293~296 위·1차 $301~304 아래), VOO $707.90 (1차 $695~700 위). 신규 하락·관심구간 진입 조건 없음. 15:15 ET 5분봉 수집 당시 미완성 가능성, 시세 제공자 비공식. CNN 새 발표 원본 미확인(10/26 제3자 27점 참조). 매수 신호 및 자동 주문 아님.",
+  "current_judgment": "관찰: 2026-10-27 마감확인. Yahoo Finance via external GitHub yfinance end_of_day 17:08:37 ET; 제공자 10/27 일봉 Close(QQQ $721.25 +1.27%, QQQM $296.96 +1.26%, VOO $707.52 +0.58%), 거래소 인증 아님·추후 수정 가능. QQQM 2차 상단 위/1차 아래, VOO 1차 위; 새로운 하락 신호나 200주 EMA 접근 없음. CNN F&G 33 (10/27 16:43 ET, FINHACKER 재인용; 원본 미확인), 10/26 27 인용값 대비 공포 완화 참고(서로 다른 2차 출처). 신규 자동 매수신호 아님.",
   "next_conditions": [
-    "장중: QQQM $296 재진입, $285 3차 단계 접근; VOO $700 1차 재진입, $680 2차 접근",
-    "장중: QQQ·VOO 전일대비 -2/-3/-5% 및 252일 고점 대비 -10/-15/-20/-30% 조건 변화",
-    "일봉: 장중 저점·SMA50/200·ATR14; 주봉: 마지막 거래일 EMA20/50/100/200·RSI14 확정",
-    "2026-10-28 14:00 EDT FOMC 발표 이후 가격 안정·공포 심리 변화"
+    "장중: QQQM $296 하향 재진입·$293 하회 및 $285 3차 접근, VOO $700 하향 재진입·$680 2차 접근",
+    "장중: QQQ·VOO -2/-3/-5% 일일변화, 252일 최고 종가 대비 -10/-15/-20/-30% 신규 충족",
+    "일봉: 2026-10-28 저점·SMA50/200·ATR14 및 지지 회복 확인; 주봉: 2026-10-30 확정 200주 EMA·RSI14",
+    "일정: 2026-10-28 14:00 ET FOMC 발표 후 변동성·시장폭·CNN 지수 재검증"
   ],
-  "last_report_prepared_utc": "2026-10-26T21:31:45Z",
-  "last_report_kind": "2026-10-26_17:30_ET_마감확인_공포심리완화_관찰",
+  "last_report_prepared_utc": "2026-10-27T21:29:10.163Z",
+  "last_report_kind": "2026-10-27_17:30_ET_마감확인_CNN_33_공포완화_관찰",
   "last_report_condition_ids": [
-    "review:end_of_day:2026-10-26",
-    "sentiment:secondary_quote:2026-10-26:27"
+    "review:end_of_day:2026-10-27",
+    "sentiment:secondary_quote:2026-10-27:33"
   ],
-  "last_end_of_day_review_session": "2026-10-26",
+  "last_end_of_day_review_session": "2026-10-27",
   "rearm_status": "not_implemented_no_continuous_detector",
   "notification_delivery_status": "unverified",
   "low_frequency_cache": {
     "CNN_FEAR_GREED": {
-      "value": 27,
+      "value": 33,
       "band": "공포",
-      "as_of_utc": "2026-10-26T20:43:00Z",
-      "previous_us_session": "2026-10-23",
-      "previous_value": 23,
-      "direction": "동일 기사에 따르면 직전 23→10/26 27, 공포 완화; CNN 원본 직접 검증 아님",
-      "source_url": "https://www.benzinga.com/markets/market-summary/26/10/62609312/nasdaq-gains-over-200-points-as-chip-stocks-rise-investor-sentiment-improves-fear-greed-index-moves-to-fear-zone",
-      "secondary_source_url": "https://www.worldmonitor.app/tools/fear-and-greed-index/",
-      "source_type": "Benzinga 2026-10-27 02:19 ET CNN 인용(2차 출처); CNN 원본 미검증",
-      "observed_at_utc": "2026-10-27T15:36:07.813Z",
-      "refresh_condition": "CNN 원본 또는 동일출처 다음 공식 갱신 확인",
-      "previous_value_date": "미확인(2026-10-27 보도에서 직전 값으로만 제시)"
+      "as_of_utc": "2026-10-27T20:43:00Z",
+      "previous_us_session": "2026-10-26",
+      "previous_value": 27,
+      "direction": "10/26 27(Benzinga 2차)→10/27 33(FINHACKER 2차) 공포 완화 가능성; 동일 원천 원자료 대조 불가, 정확한 5거래일 연속시계열 미확인",
+      "source_url": "https://www.finhacker.cz/en/fear-and-greed-%20index-historical-data-and-chart/",
+      "secondary_source_url": "https://www.benzinga.com/markets/market-summary/26/10/62609312/nasdaq-gains-over-200-points-as-chip-stocks-rise-investor-sentiment-improves-fear-greed-index-moves-to-fear-zone",
+      "source_type": "FINHACKER 2026-10-27 16:43 ET CNN F&G 재인용, CNN 원본 직접확인 안됨",
+      "observed_at_utc": "2026-10-27T21:29:10.163Z",
+      "refresh_condition": "CNN 원본 또는 유효한 10/28 신규 발표값 확인",
+      "previous_value_date": "2026-10-26T20:43:00Z (Benzinga 2차인용)"
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-27T19:30:58.385Z",
+      "checked_at_utc": "2026-10-27T21:29:10.163Z",
       "latest_snapshot_date": "2026-10-27",
-      "latest_snapshot_generated_utc": "2026-10-27T19:19:12.954369+00:00",
+      "latest_snapshot_generated_utc": "2026-10-27T21:08:37.519496+00:00",
       "intended_session_date": "2026-10-27",
       "valid_today": true,
-      "collector_snapshot_mode": "regular_session",
+      "collector_snapshot_mode": "end_of_day",
       "daily_reference_session_date": "2026-10-26",
       "reference_fixed_before_open": true,
-      "generated_age_minutes": 11.76,
-      "last_five_min_bar_start_et": "2026-10-27T15:15:00-04:00",
+      "generated_age_minutes": 20.54,
+      "last_five_min_bar_start_et": "2026-10-27T15:55:00-04:00",
       "bar_age_minutes_at_check": {
         "QQQ": 15.97,
         "QQQM": 15.97,
         "VOO": 15.97
       },
-      "possible_incomplete_5m_bar": true,
+      "possible_incomplete_5m_bar": false,
       "source_type": "GitHub Yahoo Finance via yfinance collector; not run in ChatGPT",
       "change_vs_last_saved_state": {
         "newConditions": [],
@@ -71,7 +71,7 @@
           "QQQM:below:first"
         ]
       },
-      "reason": "15:30 ET regular check; no new price band/daily or high252 threshold crossings.",
+      "reason": "10/27 end_of_day provider daily Close confirmed present for all three; no new price trigger. CNN 33 new secondary quote, not independent buy signal.",
       "refresh_condition": "Next scheduled US market snapshot"
     },
     "FOMC_2026_OCT": {
@@ -85,11 +85,12 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-10-27T19:30:58.385Z",
-  "last_check_prepared_utc": "2026-10-27T19:30:58.385Z",
-  "last_check_kind": "2026-10-27_15:30_ET_regular_no_material_change",
+  "last_evaluation_utc": "2026-10-27T21:29:10.163Z",
+  "last_check_prepared_utc": "2026-10-27T21:29:10.163Z",
+  "last_check_kind": "2026-10-27_17:30_ET_end_of_day_review_sentiment_rise",
   "last_check_condition_ids": [
-    "QQQM:below:first"
+    "review:end_of_day:2026-10-27",
+    "sentiment:secondary_quote:2026-10-27:33"
   ],
-  "last_notification_decision": "skip_no_material_change"
+  "last_notification_decision": "report_prepared_delivery_unverified"
 }
