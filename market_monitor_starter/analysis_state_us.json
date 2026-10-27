@@ -1,25 +1,24 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-10-27T14:19:37.379712+00:00",
+  "last_valid_snapshot_generated_utc": "2026-10-27T15:17:37.689275+00:00",
   "last_reference_session": "2026-10-26",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 714.195,
-    "QQQM": 294.13,
-    "VOO": 703.715
+    "QQQ": 719.9,
+    "QQQM": 296.41,
+    "VOO": 707.4597
   },
   "last_active_conditions": [
-    "QQQM:below:first",
-    "QQQM:band:second"
+    "QQQM:below:first"
   ],
-  "current_judgment": "관찰: 2026-10-27 10:30 EDT 정기점검. 유효 정규장 5분봉 시작 2026-10-27T10:15:00-04:00 ET; QQQ $714.20(전일대비 +0.28%), QQQM $294.13(기존 2차 $293~296 내부), VOO $703.72(1차 $695~700 위). 직전 분석 상태 대비 새 이탈·구간·회복 조건 없음. QQQ 잠정 주봉 EMA200 이격 +34.63%, RSI14 52.905; 장기 EMA200 접근 및 RSI 과매도 아님. CNN 마지막 확인 27(10/26 16:43 ET 제3자 인용), CNN 원본·10/27 새로운 발표 미확인. FOMC 10/28 14:00 ET 결정 예정; 중요 변화 없는 정기 관찰로 별도 푸시 생략.",
+  "current_judgment": "관찰: 2026-10-27 11:30 EDT 정기점검. 정규장 5분봉 시작 11:15 EDT; QQQ $719.90 (1.08%), QQQM $296.41 (1.07%, 기존 2차 $293~296 위·1차 $301~304 아래), VOO $707.46 (0.58%, 1차 $695~700 위). 기존 QQQM:band:second 표본 조건 해제(상방 회복)만 확인; 15분 지속 회복은 증명하지 못함. QQQ EMA200 잠정 이격 +35.69%, RSI14 54.266; 주봉 EMA200 접근·RSI 과매도 아님. 더 깊은 분할매수 관심 가격 하향 진입이나 QQQ·VOO 급락 조건 없음. FOMC 전 단일 샘플 반등을 매수확정으로 해석하지 않음.",
   "next_conditions": [
-    "장중: QQQM $293 하회 및 $285 이하 다음 단계, 또는 $296 상향 회복 여부 확인(주문 신호 아님)",
-    "장중: VOO $700 이하 1차 재진입 또는 $680 이하 2차 접근 확인",
-    "QQQ·VOO 전일종가 대비 -2/-3/-5%, 252거래일 최고종가 대비 -10/-15/-20/-30% 최초 신규 충족 여부 확인",
-    "일봉: 당일 가격 지지·SMA50/200·ATR14, 주봉: 확정/잠정 EMA20/50/100/200·RSI14 별도 평가",
-    "10/28 14:00 ET FOMC 결정 및 CNN 원본 혹은 동일출처 검증 가능한 새 시장 심리 발표 확인"
+    "장중: QQQM $296 재진입/지지 또는 $301 이상 1차 가격대 재진입; $293 하향 이탈 및 $285 3차 기준 확인(정규장 표본과 완성봉 별도)",
+    "장중: VOO $700 아래 1차 관심구간 재진입 또는 $680 이하 2차 기준 확인",
+    "QQQ·VOO 전일 대비 -2/-3/-5% 및 252일 최고종가 대비 -10/-15/-20/-30% 첫 신규 이탈 확인",
+    "일봉: QQQ·VOO SMA50/200·ATR14 및 저점 안정, 주봉: 확정 EMA20/50/100/200·RSI14와 진행주봉 분리",
+    "2026-10-28 14:00 EDT FOMC 발표 후 반응·금리·변동성 및 CNN 공포탐욕지수 원본/동일출처 갱신 확인"
   ],
   "last_report_prepared_utc": "2026-10-26T21:31:45Z",
   "last_report_kind": "2026-10-26_17:30_ET_마감확인_공포심리완화_관찰",
@@ -36,38 +35,42 @@
       "band": "공포",
       "as_of_utc": "2026-10-26T20:43:00Z",
       "previous_us_session": "2026-10-23",
-      "previous_value": null,
-      "direction": "오전 이전 제3자 인용 21점(02:00 EDT) 대비 오후 27점으로 공포 완화 가능성; 인용 출처 달라 엄밀한 동일계열 비교는 미검증",
-      "source_url": "https://www.finhacker.cz/en/fear-and-greed-index-historical-%20data-and-chart/",
+      "previous_value": 23,
+      "direction": "동일 기사에 따르면 직전 23→10/26 27, 공포 완화; CNN 원본 직접 검증 아님",
+      "source_url": "https://www.benzinga.com/markets/market-summary/26/10/62609312/nasdaq-gains-over-200-points-as-chip-stocks-rise-investor-sentiment-improves-fear-greed-index-moves-to-fear-zone",
       "secondary_source_url": "https://www.worldmonitor.app/tools/fear-and-greed-index/",
-      "source_type": "secondary quote attributed to CNN; original unavailable; secondary sources may differ",
-      "observed_at_utc": "2026-10-26T21:31:45Z",
-      "refresh_condition": "new publication with validated timestamp, preferably CNN primary or same-source historical values"
+      "source_type": "Benzinga 2026-10-27 02:19 ET CNN 인용(2차 출처); CNN 원본 미검증",
+      "observed_at_utc": "2026-10-27T15:36:07.813Z",
+      "refresh_condition": "CNN 원본 또는 동일출처 다음 공식 갱신 확인",
+      "previous_value_date": "미확인(2026-10-27 보도에서 직전 값으로만 제시)"
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-27T14:31:23.487Z",
+      "checked_at_utc": "2026-10-27T15:36:07.813Z",
       "latest_snapshot_date": "2026-10-27",
-      "latest_snapshot_generated_utc": "2026-10-27T14:19:37.379712+00:00",
+      "latest_snapshot_generated_utc": "2026-10-27T15:17:37.689275+00:00",
       "intended_session_date": "2026-10-27",
       "valid_today": true,
       "collector_snapshot_mode": "regular_session",
       "daily_reference_session_date": "2026-10-26",
       "reference_fixed_before_open": true,
-      "generated_age_minutes": 11.77,
-      "last_five_min_bar_start_et": "2026-10-27T10:15:00-04:00",
+      "generated_age_minutes": 18.5,
+      "last_five_min_bar_start_et": "2026-10-27T11:15:00-04:00",
       "bar_age_minutes_at_check": {
-        "QQQ": 16.39,
-        "QQQM": 16.39,
-        "VOO": 16.39
+        "QQQ": 21.13,
+        "QQQM": 21.13,
+        "VOO": 21.13
       },
       "possible_incomplete_5m_bar": true,
-      "source_type": "external GitHub collector using Yahoo Finance via yfinance (not executed in ChatGPT)",
+      "source_type": "GitHub external collector via Yahoo Finance yfinance; not executed in ChatGPT",
       "change_vs_last_saved_state": {
         "newConditions": [],
-        "removedConditions": []
+        "removedConditions": [
+          "QQQM:band:second"
+        ],
+        "sampledRecoveryOnly": true
       },
-      "reason": "10/27 10:30 EDT 유효 정규장: 최신화/기준일/사전고정/75분 및 45분 검증 통과. 5분봉은 시작 시각이며 미완성 가능; 장중 당일 기준 새 매수 이벤트 없음. 고급 시장폭·금리·변동성·같은경과시간 거래량은 별도 현재값 미확인; CNN 최신 새 발표 미확인.",
-      "refresh_condition": "Next US scheduled market snapshot"
+      "reason": "11:30 EDT 자료 최신화 확인. QQQM 2차 구간 상단 $296를 표본상 회복했으나 지속성 미확인, 추가 하락·신규 관심단계 없음. 시장폭·10년 실질금리·VIX/VXN·동시간 거래량 최신 실제값 미확인. CNN 27은 10/26 자료로 10/27 장중 새 갱신 아님.",
+      "refresh_condition": "Next scheduled regular-session snapshot"
     },
     "FOMC_2026_OCT": {
       "meeting_dates_et": "2026-10-27/2026-10-28",
@@ -80,12 +83,11 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-10-27T14:31:23.487Z",
-  "last_check_prepared_utc": "2026-10-27T14:31:23.487Z",
-  "last_check_kind": "2026-10-27_10:30_ET_regular_no_material_update",
+  "last_evaluation_utc": "2026-10-27T15:36:07.813Z",
+  "last_check_prepared_utc": "2026-10-27T15:36:07.813Z",
+  "last_check_kind": "2026-10-27_11:30_ET_regular_sampled_recovery_no_material_buy_event",
   "last_check_condition_ids": [
-    "QQQM:below:first",
-    "QQQM:band:second"
+    "QQQM:below:first"
   ],
-  "last_notification_decision": "skip_no_material_change"
+  "last_notification_decision": "skip_sampled_recovery_unconfirmed_no_new_buy_level"
 }
