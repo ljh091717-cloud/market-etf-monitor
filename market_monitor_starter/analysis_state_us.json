@@ -1,24 +1,24 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-10-27T15:17:37.689275+00:00",
+  "last_valid_snapshot_generated_utc": "2026-10-27T16:16:25.845236+00:00",
   "last_reference_session": "2026-10-26",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 719.9,
-    "QQQM": 296.41,
-    "VOO": 707.4597
+    "QQQ": 721.72,
+    "QQQM": 297.185,
+    "VOO": 707.8935
   },
   "last_active_conditions": [
     "QQQM:below:first"
   ],
-  "current_judgment": "관찰: 2026-10-27 11:30 EDT 정기점검. 정규장 5분봉 시작 11:15 EDT; QQQ $719.90 (1.08%), QQQM $296.41 (1.07%, 기존 2차 $293~296 위·1차 $301~304 아래), VOO $707.46 (0.58%, 1차 $695~700 위). 기존 QQQM:band:second 표본 조건 해제(상방 회복)만 확인; 15분 지속 회복은 증명하지 못함. QQQ EMA200 잠정 이격 +35.69%, RSI14 54.266; 주봉 EMA200 접근·RSI 과매도 아님. 더 깊은 분할매수 관심 가격 하향 진입이나 QQQ·VOO 급락 조건 없음. FOMC 전 단일 샘플 반등을 매수확정으로 해석하지 않음.",
+  "current_judgment": "관찰: 2026-10-27 12:30 EDT 정기점검 (실제 확인 시각 약 12:25:49 EDT). regular_session 수집 2026-10-27T12:16:25.845236-04:00; 5분봉 시작 12:15 EDT. QQQ $721.72 (1.34%), QQQM $297.185 (2차 $293~296 위, 1차 $301~304 아래), VOO $707.89 (1차 $695~700 위). 새 신호 없음. QQQ 진행주봉 EMA200 대비 +36.03%, RSI14 54.683. 단일 5분봉 표본, 가격 안정 확정 아님. CNN 최신 공식 발표 미확인, 직전 검증된 인용값 10/26 27점 참고만. 자동 주문 없음.",
   "next_conditions": [
-    "장중: QQQM $296 재진입/지지 또는 $301 이상 1차 가격대 재진입; $293 하향 이탈 및 $285 3차 기준 확인(정규장 표본과 완성봉 별도)",
-    "장중: VOO $700 아래 1차 관심구간 재진입 또는 $680 이하 2차 기준 확인",
-    "QQQ·VOO 전일 대비 -2/-3/-5% 및 252일 최고종가 대비 -10/-15/-20/-30% 첫 신규 이탈 확인",
-    "일봉: QQQ·VOO SMA50/200·ATR14 및 저점 안정, 주봉: 확정 EMA20/50/100/200·RSI14와 진행주봉 분리",
-    "2026-10-28 14:00 EDT FOMC 발표 후 반응·금리·변동성 및 CNN 공포탐욕지수 원본/동일출처 갱신 확인"
+    "장중: QQQM $296 재하향 진입, $301~304 1차 구간 상향 재진입(신규 하락 알림 아님), $285 3차 하향 접근",
+    "장중: VOO $700 1차 하향 재진입 또는 $680 2차 하향 접근",
+    "장중: QQQ·VOO 전일종가 대비 -2/-3/-5%, 252일 최고종가 대비 -10/-15/-20/-30% 신규 이탈",
+    "일봉: QQQ·VOO 저점 및 SMA50/200·ATR14; 주봉: 금요일 확정 EMA20/50/100/200 및 RSI14",
+    "10/28 14:00 EDT FOMC 이후 시장 금리·변동성·ETF 지지 확인, CNN 새 출처 검증"
   ],
   "last_report_prepared_utc": "2026-10-26T21:31:45Z",
   "last_report_kind": "2026-10-26_17:30_ET_마감확인_공포심리완화_관찰",
@@ -45,31 +45,29 @@
       "previous_value_date": "미확인(2026-10-27 보도에서 직전 값으로만 제시)"
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-27T15:36:07.813Z",
+      "checked_at_utc": "2026-10-27T16:25:49Z",
       "latest_snapshot_date": "2026-10-27",
-      "latest_snapshot_generated_utc": "2026-10-27T15:17:37.689275+00:00",
+      "latest_snapshot_generated_utc": "2026-10-27T16:16:25.845236+00:00",
       "intended_session_date": "2026-10-27",
       "valid_today": true,
       "collector_snapshot_mode": "regular_session",
       "daily_reference_session_date": "2026-10-26",
       "reference_fixed_before_open": true,
-      "generated_age_minutes": 18.5,
-      "last_five_min_bar_start_et": "2026-10-27T11:15:00-04:00",
+      "generated_age_minutes": 9.39,
+      "last_five_min_bar_start_et": "2026-10-27T12:15:00-04:00",
       "bar_age_minutes_at_check": {
-        "QQQ": 21.13,
-        "QQQM": 21.13,
-        "VOO": 21.13
+        "QQQ": 10.82,
+        "QQQM": 10.82,
+        "VOO": 10.82
       },
       "possible_incomplete_5m_bar": true,
-      "source_type": "GitHub external collector via Yahoo Finance yfinance; not executed in ChatGPT",
+      "source_type": "GitHub yfinance collector; not executed in ChatGPT",
       "change_vs_last_saved_state": {
         "newConditions": [],
-        "removedConditions": [
-          "QQQM:band:second"
-        ],
+        "removedConditions": [],
         "sampledRecoveryOnly": true
       },
-      "reason": "11:30 EDT 자료 최신화 확인. QQQM 2차 구간 상단 $296를 표본상 회복했으나 지속성 미확인, 추가 하락·신규 관심단계 없음. 시장폭·10년 실질금리·VIX/VXN·동시간 거래량 최신 실제값 미확인. CNN 27은 10/26 자료로 10/27 장중 새 갱신 아님.",
+      "reason": "12:30 EDT 정기점검: 정규장 최신 자료 정상. 신규 가격 단계/급락 신호 없고, 시장심리 신규 검증값 없음. 5분봉 시작 12:15 EDT, 최근 봉 미완성 가능.",
       "refresh_condition": "Next scheduled regular-session snapshot"
     },
     "FOMC_2026_OCT": {
