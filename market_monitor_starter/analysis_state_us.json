@@ -1,66 +1,68 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-10-28T19:24:42.513005+00:00",
+  "last_valid_snapshot_generated_utc": "2026-10-28T21:14:10.738386+00:00",
   "last_reference_session": "2026-10-27",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 722.17,
-    "QQQM": 297.35,
-    "VOO": 708.02
+    "QQQ": 725.61,
+    "QQQM": 298.71,
+    "VOO": 709.9
   },
   "last_active_conditions": [
     "QQQM:below:first"
   ],
-  "current_judgment": "관찰. 2026-10-28 15:30 EDT 정기점검; 15:24:42 EDT 생성 정규장 수집자료(5분봉 15:20 시작, 미완성 가능), QQQ $722.17 (+0.13%), QQQM $297.35 (2차 293~296 위), VOO $708.02 (1차 695~700 위). 신규 조건 0개; 전 거래일 기준 2026-10-27이나 기준고정 개장후 10:23 ET. FOMC 14:00 공식동결 3.75~4.00% 찬성10 반대2는 이전 14:30 보고에서 이미 반영; 추가 마감 전 중요 ETF 가격신호 없음. CNN Fear & Greed 제3자 CNN 인용 36점(공포, 15:11 EDT); 25 미만 매수검토 관심기준 미도달. 안정화 확인형은 일봉/FOMC 후 지지 검증 필요.",
+  "current_judgment": "관찰(신규 매수 단계 없음). 2026-10-28 17:30 EDT 마감확인: EOD 제공자 일봉 QQQ $725.61(+0.60%), QQQM $298.71(+0.59%), VOO $709.90(+0.34%). QQQ 및 QQQM은 10/27 일봉 50일선 아래에서 10/28 종가로 근소하게 위로 회복(QQQ SMA50 725.10, QQQM 298.57). 50일선 상회 폭이 각각 약 0.07%, 0.05%로 매우 좁아 지속적 안정화/매수조건 충족으로 판정하지 않음. 기존 QQQM 2차 $293~296 위, VOO 1차 $695~700 위. 신규 가격 하락조건 없음. FOMC 3.75~4.00% 동결 10-2는 기존 보고 내용. 장마감 이후 Alphabet 매출 기대 하회 및 잉여현금흐름 악화로 장외 약 -8%, Microsoft 클라우드 성장/현금흐름 기대상회 장외 약 +4% (Reuters 10/28 20:06~20:07 UTC); 이 장외 개별종목 시세를 정규장 ETF 종가와 혼동하지 않음. CNN 공포·탐욕 36점 Fear 16:57 EDT 2차 CNN 인용, 15:11의 36점과 동일. 10/29 08:30 ET GDP/PCE 발표 및 장외 실적의 다음 거래일 가격 반영 확인 필요.",
   "next_conditions": [
-    "장중: QQQM $296 하향 재진입, $293 이탈 및 $285 접근 / VOO $700 재진입, 금리발표 후 저점 유지 여부",
-    "일봉: 2026-10-28 17:30 ET 마감점검에서 제공자 end_of_day 2026-10-28 종가와 50/200일선, ATR14, 하락/회복/가격안정 확인",
-    "주봉: 2026-10-30 실제 주간 마지막 거래일 마감 확인에서 확정 EMA20/50/100/200·RSI14 검토",
-    "일정: 2026-10-28 장마감후 주요 실적(Microsoft/Alphabet), 2026-10-29 08:30 ET BEA GDP 속보치·9월 Personal Income and Outlays(PCE), 발표 후 시장 반응 확인",
-    "시장심리: CNN 원본 직접 확인되지 않음. 단독 점수변동을 매수신호로 사용하지 않음"
+    "다음 정규장: 2026-10-29 QQQ/QQQM가 10/28 제공자 종가에서 겨우 회복한 50일선(QQQ 725.10, QQQM 298.57)의 종가 상회를 유지하는지, FOMC 이후 일일 저점/주요 지지가 훼손되는지 평가(장중과 일봉 구분)",
+    "관심가격: QQQM $296 재진입·$293 아래 이탈 및 $285 접근, VOO $700 재진입·$680 접근, 매수 단계 여부는 가격/위험 조건 병합",
+    "위험/일정: 2026-10-29 08:30 ET GDP 속보치 및 9월 PCE 발표; 10/28 장마감후 Alphabet·Microsoft 실적에 대한 다음 정규장 지수/수익률 반응 및 공식 실적 상세 검토",
+    "시장심리: CNN Fear & Greed 36 Fear의 새 갱신과 ETF 지지 동반 여부, 극단 공포(25 미만) 접근 시에만 별도 조건 평가; 중복 VIX 카운트 금지",
+    "주봉: 2026-10-30 실제 주간 마지막 거래일 확정 EMA20/50/100/200, RSI14 비교(10/28 주봉은 잠정)"
   ],
-  "last_report_prepared_utc": "2026-10-28T18:34:30.903Z",
-  "last_report_kind": "2026-10-28_14:30_ET_FOMC_hold_10_2_dissent_policy_event_no_price_entry",
+  "last_report_prepared_utc": "2026-10-28T21:31:39Z",
+  "last_report_kind": "2026-10-28_17:30_ET_eod_sma50_tentative_reclaim_bigtech_afterhours_divergence",
   "last_report_condition_ids": [
-    "macro:FOMC:2026-10-28:hold_3.75-4.00:10-2"
+    "QQQ:daily:SMA50:reclaim_tentative",
+    "QQQM:daily:SMA50:reclaim_tentative",
+    "earnings:GOOGL:2026-10-28:afterhours_risk",
+    "earnings:MSFT:2026-10-28:afterhours_positive_offset"
   ],
-  "last_end_of_day_review_session": "2026-10-27",
+  "last_end_of_day_review_session": "2026-10-28",
   "rearm_status": "not_implemented_no_continuous_detector",
   "notification_delivery_status": "unverified",
   "low_frequency_cache": {
     "CNN_FEAR_GREED": {
       "value": 36,
       "band": "공포",
-      "as_of_et": "2026-10-28T15:11:00-04:00",
+      "as_of_et": "2026-10-28T16:57:00-04:00",
       "source_url": "https://fgscore.com/en/markets/sp500",
-      "source_type": "Secondary source reproducing CNN's stock Fear & Greed; original CNN not independently verified",
-      "observed_at_utc": "2026-10-28T19:33:39.947Z",
-      "previous_value": 34,
-      "previous_value_as_of_et": "2026-10-28T05:51:00-04:00",
-      "direction": "34→36, intraday secondary-source observations; Fear band unchanged; no threshold/decision change",
-      "refresh_condition": "New verified CNN observation or material ETF price stabilization"
+      "source_type": "Secondary reproduction of CNN stock Fear & Greed provider index; CNN original access restricted",
+      "observed_at_utc": "2026-10-28T21:31:39Z",
+      "previous_value": 36,
+      "previous_value_as_of_et": "2026-10-28T15:11:00-04:00",
+      "direction": "unchanged intraday 36→36; source also lists prior daily reading 36 and 1 week ago 30",
+      "refresh_condition": "Fresh daily reading or material ETF stability change"
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-28T19:33:39.947Z",
+      "checked_at_utc": "2026-10-28T21:31:39Z",
       "latest_snapshot_date": "2026-10-28",
-      "latest_snapshot_generated_utc": "2026-10-28T19:24:42.513005+00:00",
+      "latest_snapshot_generated_utc": "2026-10-28T21:14:10.738386+00:00",
       "intended_session_date": "2026-10-28",
       "valid_today": true,
-      "collector_snapshot_mode": "regular_session",
+      "collector_snapshot_mode": "end_of_day",
       "daily_reference_session_date": "2026-10-27",
       "reference_fixed_before_open": false,
       "reference_fixed_at_utc": "2026-10-28T14:23:21.602800+00:00",
-      "generated_age_minutes": 9,
-      "last_five_min_bar_start_et": "2026-10-28T15:20:00-04:00",
-      "bar_age_minutes_at_check": {
-        "QQQ": 13.7,
-        "QQQM": 13.7,
-        "VOO": 13.7
-      },
-      "possible_incomplete_5m_bar": true,
-      "source_type": "Yahoo Finance via yfinance collected externally on GitHub (unofficial)",
-      "collector_job_status": "not independently checked; latest.json validated",
+      "generated_age_minutes_at_17_31_ET": 17.5,
+      "last_five_min_bar_start_et": "2026-10-28T15:55:00-04:00",
+      "bar_role": "15:55 5-minute bar is not used as final close; individual 5m bar freshness rule only for intraday snapshots",
+      "source_type": "Yahoo Finance via external GitHub yfinance; unofficial daily close and may revise",
+      "collector_job_status": "not independently checked; latest.json mode/date verified, collect/deploy status unknown",
+      "new_crossings": [],
+      "active_conditions": [
+        "QQQM:below:first"
+      ],
       "change_vs_last_saved_state": {
         "newConditions": [],
         "removedConditions": [],
@@ -71,8 +73,8 @@
           "QQQM:below:first"
         ]
       },
-      "reason": "No material new price conditions since prior report. Previously reported FOMC hold not repeated; CNN score 36 Fear from secondary source is not a buy threshold.",
-      "refresh_condition": "Next scheduled ET 17:30 EOD check"
+      "reason": "EOD price rises and QQQ/QQQM slight daily SMA50 recapture; after-market megacap results create next-session divergence risk; no new fixed purchase threshold",
+      "refresh_condition": "Next scheduled 2026-10-29 10:30 EDT regular-session check"
     },
     "FOMC_2026_OCT": {
       "meeting_dates_et": "2026-10-27/2026-10-28",
@@ -93,14 +95,27 @@
       "source_url": "https://www.bea.gov/news/schedule/full",
       "next_release": "2026-10-29 08:30 EDT: GDP advance estimate Q3 2026 and Personal Income and Outlays Sep 2026",
       "refresh_condition": "After scheduled Oct 29 BEA publications"
+    },
+    "BIG_TECH_EARNINGS_2026_OCT28": {
+      "observed_at_utc": "2026-10-28T21:31:39Z",
+      "source_urls": [
+        "https://www.reuters.com/business/alphabets-google-cloud-unit-beats-quarterly-revenue-estimates-steady-ai-demand-2026-10-28/",
+        "https://www.reuters.com/business/retail-consumer/microsoft-beats-quarterly-cloud-revenue-estimates-2026-10-28/"
+      ],
+      "source_type": "Reuters reports published 2026-10-28 approximately 20:06-20:07 UTC; afterhours quotes indicative, not ETF regular-session close",
+      "alphabet": "Q3 2026 revenue USD127.6bn below market estimate USD128.2bn; free cash flow -USD9.07bn; shares about -8% extended hours at report observation",
+      "microsoft": "Cloud beat expectations, free cash flow about USD18.6bn; shares about +4% extended hours at report observation",
+      "refresh_condition": "Next regular-session market impact; primary IR release or materially updated Reuters report"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-10-28T19:33:39.947Z",
-  "last_check_prepared_utc": "2026-10-28T19:33:39.947Z",
-  "last_check_kind": "2026-10-28_15:30_ET_valid_regular_session_no_new_material_price_signal",
+  "last_evaluation_utc": "2026-10-28T21:31:39Z",
+  "last_check_prepared_utc": "2026-10-28T21:31:39Z",
+  "last_check_kind": "2026-10-28_17:30_ET_valid_end_of_day_new_50day_sma_reclaim_and_earnings",
   "last_check_condition_ids": [
-    "QQQM:below:first"
+    "QQQM:below:first",
+    "QQQ:daily:SMA50:reclaim_tentative",
+    "QQQM:daily:SMA50:reclaim_tentative"
   ],
-  "last_notification_decision": "skip_no_material_change_after_FOMC_14_30_ET_report"
+  "last_notification_decision": "notify_end_of_day_weak_sma50_reclaim_and_bigtech_postclose_risk_delivery_unverified"
 }
