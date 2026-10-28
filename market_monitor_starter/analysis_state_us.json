@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-10-28T16:22:40.717766+00:00",
+  "last_valid_snapshot_generated_utc": "2026-10-28T17:20:25.904370+00:00",
   "last_reference_session": "2026-10-27",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 721.89,
-    "QQQM": 297.26,
-    "VOO": 708.7266
+    "QQQ": 721.9,
+    "QQQM": 297.3,
+    "VOO": 708.72
   },
   "last_active_conditions": [
     "QQQM:below:first"
   ],
-  "current_judgment": "관찰: 2026-10-28 12:34 EDT 정기점검. GitHub 12:22:40 EDT regular_session 유효(생성후 11.87분); 12:20 시작 5분봉(점검시 14.55분 경과, 수집 당시 미완성 가능). QQQ $721.89 (+0.09%), QQQM $297.26 (+0.10%) 2차 $293~296 위·1차 $301~304 아래, VOO $708.73 (+0.17%) 1차 $695~700 위. 이전 점검 대비 신규 조건 0개·해제 0개. 10/27 전일 기준 일치하지만 10:23 ET 늦게 설정되어 신규 급락 오인 금지. 14:00 ET FOMC 발표 전, CNN 최신 신규 검증값 미확인(기존 34 공포 05:51 ET 참고).",
+  "current_judgment": "관찰: 2026-10-28 13:35 EDT 미국 정기점검. GitHub 13:20:25 EDT regular_session 유효(생성후 14.57분); 13:20 시작 5분봉은 수집 당시 미완성 가능. QQQ $721.90 (+0.09%), QQQM $297.30 (+0.11%; 2차 $293~296 위·1차 $301~304 아래), VOO $708.72 (+0.17%; 1차 $695~700 위). 신규 조건 0개, 해제 0개. 10/27 전일 기준 일치하지만 장 개장후 10:23 ET 고정, 새 급락으로 오인 금지. FOMC 14:00 EDT 발표 전이며, CNN 34점(공포, 05:51 EDT, 2차 출처) 이후 신규 확인값 없음.",
   "next_conditions": [
     "장중: QQQM $296 하향 재진입·$293 이탈·$285 3차 접근; VOO $700 하향 재진입·$680 2차 접근",
-    "장중: QQQ·VOO 전일 대비 -2/-3/-5%, 252일 최고 종가 대비 -10/-15/-20/-30% 신규 확인(전일 기준 장후반 고정 변경 오인 방지)",
+    "장중: QQQ·VOO 전일 대비 -2/-3/-5%, 252일 최고 종가 대비 -10/-15/-20/-30% 신규 확인(기준가 개장후 고정 변경 오인 금지)",
     "일봉: 2026-10-28 마감 기준 지지·SMA50/200·ATR14 확인; 주봉: 2026-10-30 확정 EMA20/50/100/200·RSI14",
-    "일정: 2026-10-28 14:00 ET FOMC 발표·14:30 ET 기자회견 이후 가격·시장폭·금리 변동 여부 다음 정규 점검에서 재평가"
+    "일정: 2026-10-28 14:00 EDT FOMC 발표·14:30 EDT 기자회견 이후 가격·시장폭·금리 변동을 다음 정규 점검에서 확인"
   ],
   "last_report_prepared_utc": "2026-10-27T21:29:10.163Z",
   "last_report_kind": "2026-10-27_17:30_ET_마감확인_CNN_33_공포완화_관찰",
@@ -42,24 +42,25 @@
       "refresh_condition": "New verified CNN source observation or material price stabilization"
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-28T16:34:33.000Z",
+      "checked_at_utc": "2026-10-28T17:35:00Z",
       "latest_snapshot_date": "2026-10-28",
-      "latest_snapshot_generated_utc": "2026-10-28T16:22:40.717766+00:00",
+      "latest_snapshot_generated_utc": "2026-10-28T17:20:25.904370+00:00",
       "intended_session_date": "2026-10-28",
       "valid_today": true,
       "collector_snapshot_mode": "regular_session",
       "daily_reference_session_date": "2026-10-27",
       "reference_fixed_before_open": false,
       "reference_fixed_at_utc": "2026-10-28T14:23:21.602800+00:00",
-      "generated_age_minutes": 11.87,
-      "last_five_min_bar_start_et": "2026-10-28T12:20:00-04:00",
+      "generated_age_minutes": 14.57,
+      "last_five_min_bar_start_et": "2026-10-28T13:20:00-04:00",
       "bar_age_minutes_at_check": {
-        "QQQ": 14.55,
-        "QQQM": 14.55,
-        "VOO": 14.55
+        "QQQ": 15,
+        "QQQM": 15,
+        "VOO": 15
       },
       "possible_incomplete_5m_bar": true,
       "source_type": "GitHub Yahoo Finance via yfinance; collector not executed in ChatGPT",
+      "collector_job_status": "not independently checked; latest.json validated independently",
       "change_vs_last_saved_state": {
         "newConditions": [],
         "removedConditions": [],
@@ -70,7 +71,7 @@
           "QQQM:below:first"
         ]
       },
-      "reason": "12:22:40 ET valid 10/28 regular-session snapshot; no new price conditions. 10/27 daily baseline was late-fixed after open, so do not flag an initial drop. FOMC 14:00 ET pending.",
+      "reason": "13:20:25 ET valid 10/28 regular-session snapshot; no new price conditions. 10/27 daily baseline late-fixed at 10:23 ET; FOMC decision not yet issued at this scheduled check.",
       "refresh_condition": "Next scheduled US regular_session snapshot"
     },
     "FOMC_2026_OCT": {
@@ -84,9 +85,9 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-10-28T15:26:42.042Z",
-  "last_check_prepared_utc": "2026-10-28T15:26:42.042Z",
-  "last_check_kind": "2026-10-28_11:30_ET_regular_observation_no_new_signal_late_reference",
+  "last_evaluation_utc": "2026-10-28T17:35:00Z",
+  "last_check_prepared_utc": "2026-10-28T17:35:00Z",
+  "last_check_kind": "2026-10-28_13:30_ET_regular_observation_no_new_signal_before_FOMC",
   "last_check_condition_ids": [
     "QQQM:below:first"
   ],
