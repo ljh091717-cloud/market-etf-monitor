@@ -1,23 +1,24 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-10-28T18:12:52.428845+00:00",
+  "last_valid_snapshot_generated_utc": "2026-10-28T19:24:42.513005+00:00",
   "last_reference_session": "2026-10-27",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 721.9,
-    "QQQM": 297.18,
-    "VOO": 708.445
+    "QQQ": 722.17,
+    "QQQM": 297.35,
+    "VOO": 708.02
   },
   "last_active_conditions": [
     "QQQM:below:first"
   ],
-  "current_judgment": "관찰 / 정책 위험 점검: 2026-10-28 14:30 EDT 미국 정기점검. 14:00 EDT 연준 공식 FOMC 발표: 기준금리 3.75~4.00% 동결, 찬성 10·반대 2(2명 25bp 인상 선호); 새 공개 정책 발표이므로 위험 검토 필요하나 매수/급락 신호로 확정하지 않음. 2026-10-28T14:12:52.428845-04:00 Yahoo Finance via yfinance regular_session 유효(생성후 21.6분), 14:10 EDT 시작 5분봉은 수집 당시 미완성 가능. QQQ $721.90 (+0.09%), QQQM $297.18 (+0.07%, 2차 $293~296 위), VOO $708.45 (+0.13%, 1차 $695~700 위). 신규 가격 조건 0개. CNN 34점(공포, 2차 출처) 새 비교 가능 발표 없음. 14:30 기자회견 내용은 아직 반영/확정 평가 불가. 기준가는 10/27이나 장 개장 후 10:23 ET 고정, 기계적 급락 오인 금지.",
+  "current_judgment": "관찰. 2026-10-28 15:30 EDT 정기점검; 15:24:42 EDT 생성 정규장 수집자료(5분봉 15:20 시작, 미완성 가능), QQQ $722.17 (+0.13%), QQQM $297.35 (2차 293~296 위), VOO $708.02 (1차 695~700 위). 신규 조건 0개; 전 거래일 기준 2026-10-27이나 기준고정 개장후 10:23 ET. FOMC 14:00 공식동결 3.75~4.00% 찬성10 반대2는 이전 14:30 보고에서 이미 반영; 추가 마감 전 중요 ETF 가격신호 없음. CNN Fear & Greed 제3자 CNN 인용 36점(공포, 15:11 EDT); 25 미만 매수검토 관심기준 미도달. 안정화 확인형은 일봉/FOMC 후 지지 검증 필요.",
   "next_conditions": [
-    "장중: FOMC 14:30 EDT 기자회견 이후 QQQM $296·$293 및 VOO $700 재진입/지지, 금리·변동성 반응 및 가격 저점 갱신 여부를 다음 정기표본에서 확인",
-    "장중: QQQ·VOO 전일대비 -2/-3/-5%, 252일 최고종가대비 -10/-15/-20/-30% 신규 하락 확인; 늦은 전일기준 고정·기계적 조정은 제외",
-    "일봉: 10/28 제공자 마감종가와 일봉 SMA50/200·ATR14 및 정책 발표 이후 저점 유지 확인; 주봉: 10/30 확정 EMA20/50/100/200·RSI14 확인",
-    "시장심리: CNN 지수의 새 검증 가능 발표가 있으면 비교가능 출처·시각 확인; 공포지수 단독 매수 판정 금지"
+    "장중: QQQM $296 하향 재진입, $293 이탈 및 $285 접근 / VOO $700 재진입, 금리발표 후 저점 유지 여부",
+    "일봉: 2026-10-28 17:30 ET 마감점검에서 제공자 end_of_day 2026-10-28 종가와 50/200일선, ATR14, 하락/회복/가격안정 확인",
+    "주봉: 2026-10-30 실제 주간 마지막 거래일 마감 확인에서 확정 EMA20/50/100/200·RSI14 검토",
+    "일정: 2026-10-28 장마감후 주요 실적(Microsoft/Alphabet), 2026-10-29 08:30 ET BEA GDP 속보치·9월 Personal Income and Outlays(PCE), 발표 후 시장 반응 확인",
+    "시장심리: CNN 원본 직접 확인되지 않음. 단독 점수변동을 매수신호로 사용하지 않음"
   ],
   "last_report_prepared_utc": "2026-10-28T18:34:30.903Z",
   "last_report_kind": "2026-10-28_14:30_ET_FOMC_hold_10_2_dissent_policy_event_no_price_entry",
@@ -29,36 +30,36 @@
   "notification_delivery_status": "unverified",
   "low_frequency_cache": {
     "CNN_FEAR_GREED": {
-      "value": 34,
+      "value": 36,
       "band": "공포",
-      "as_of_utc": "2026-10-28T09:51:00Z",
+      "as_of_et": "2026-10-28T15:11:00-04:00",
       "source_url": "https://fgscore.com/en/markets/sp500",
-      "source_type": "Third-party CNN-reported score; original CNN source not directly verified",
-      "observed_at_utc": "2026-10-28T14:33:37Z",
-      "previous_value": 33,
-      "previous_value_date": "2026-10-27T20:43:00Z (FINHACKER 2차 인용)",
-      "direction": "Numerical 33→34 across different secondary sources; directly comparable movement not confirmed. No decision change.",
-      "refresh_condition": "New verified CNN source observation or material price stabilization"
+      "source_type": "Secondary source reproducing CNN's stock Fear & Greed; original CNN not independently verified",
+      "observed_at_utc": "2026-10-28T19:33:39.947Z",
+      "previous_value": 34,
+      "previous_value_as_of_et": "2026-10-28T05:51:00-04:00",
+      "direction": "34→36, intraday secondary-source observations; Fear band unchanged; no threshold/decision change",
+      "refresh_condition": "New verified CNN observation or material ETF price stabilization"
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-28T18:34:30.903Z",
+      "checked_at_utc": "2026-10-28T19:33:39.947Z",
       "latest_snapshot_date": "2026-10-28",
-      "latest_snapshot_generated_utc": "2026-10-28T18:12:52.428845+00:00",
+      "latest_snapshot_generated_utc": "2026-10-28T19:24:42.513005+00:00",
       "intended_session_date": "2026-10-28",
       "valid_today": true,
       "collector_snapshot_mode": "regular_session",
       "daily_reference_session_date": "2026-10-27",
       "reference_fixed_before_open": false,
       "reference_fixed_at_utc": "2026-10-28T14:23:21.602800+00:00",
-      "generated_age_minutes": 21.6,
-      "last_five_min_bar_start_et": "2026-10-28T14:10:00-04:00",
+      "generated_age_minutes": 9,
+      "last_five_min_bar_start_et": "2026-10-28T15:20:00-04:00",
       "bar_age_minutes_at_check": {
-        "QQQ": 24.5,
-        "QQQM": 24.5,
-        "VOO": 24.5
+        "QQQ": 13.7,
+        "QQQM": 13.7,
+        "VOO": 13.7
       },
       "possible_incomplete_5m_bar": true,
-      "source_type": "GitHub Yahoo Finance via yfinance; unofficial; not run within ChatGPT",
+      "source_type": "Yahoo Finance via yfinance collected externally on GitHub (unofficial)",
       "collector_job_status": "not independently checked; latest.json validated",
       "change_vs_last_saved_state": {
         "newConditions": [],
@@ -70,8 +71,8 @@
           "QQQM:below:first"
         ]
       },
-      "reason": "Official 14:00 ET FOMC hold 3.75%-4.00% (10-2; two preferred a hike) is new macro policy event; 14:12 ET ETF snapshot shows no new price threshold crossing; 14:30 ET presser not yet fully assessed",
-      "refresh_condition": "Next scheduled US regular-session or EOD data"
+      "reason": "No material new price conditions since prior report. Previously reported FOMC hold not repeated; CNN score 36 Fear from secondary source is not a buy threshold.",
+      "refresh_condition": "Next scheduled ET 17:30 EOD check"
     },
     "FOMC_2026_OCT": {
       "meeting_dates_et": "2026-10-27/2026-10-28",
@@ -86,14 +87,20 @@
       "decision": "Hold",
       "vote": "10-2",
       "dissents": "Lisa D. Cook and Beth M. Hammack preferred +25 bp hike"
+    },
+    "MACRO_CALENDAR": {
+      "observed_at_utc": "2026-10-28T19:33:39.947Z",
+      "source_url": "https://www.bea.gov/news/schedule/full",
+      "next_release": "2026-10-29 08:30 EDT: GDP advance estimate Q3 2026 and Personal Income and Outlays Sep 2026",
+      "refresh_condition": "After scheduled Oct 29 BEA publications"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-10-28T18:34:30.903Z",
-  "last_check_prepared_utc": "2026-10-28T18:34:30.903Z",
-  "last_check_kind": "2026-10-28_14:30_ET_valid_regular_session_FOMC_official_statement",
+  "last_evaluation_utc": "2026-10-28T19:33:39.947Z",
+  "last_check_prepared_utc": "2026-10-28T19:33:39.947Z",
+  "last_check_kind": "2026-10-28_15:30_ET_valid_regular_session_no_new_material_price_signal",
   "last_check_condition_ids": [
     "QQQM:below:first"
   ],
-  "last_notification_decision": "new_official_FOMC_policy_decision_report_prepared_no_automatic_order"
+  "last_notification_decision": "skip_no_material_change_after_FOMC_14_30_ET_report"
 }
