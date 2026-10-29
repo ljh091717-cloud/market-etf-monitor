@@ -76,19 +76,19 @@ def maybe_round(value: float | None, digits: int) -> float | None:
 def price_band(price: float, bands: list[tuple[str, float, float]]) -> dict:
     """Avoid labelling a price below a band as inside that band."""
     if price > bands[0][2]:
-        return {"status": "above_first", "description": "1�� ���� ��"}
+        return {"status": "above_first", "description": "1차 구간 위"}
     for i, (name, lo, hi) in enumerate(bands):
         if lo <= price <= hi:
-            return {"status": f"inside_{name}", "description": f"{name} ���� ����"}
+            return {"status": f"inside_{name}", "description": f"{name} 구간 내부"}
         if i + 1 < len(bands):
             next_name, _, next_high = bands[i + 1]
             if next_high < price < lo:
                 return {
                     "status": f"below_{name}_above_{next_name}",
-                    "description": f"{name} ���� �Ʒ���{next_name} ���� ��",
+                    "description": f"{name} 구간 아래·{next_name} 구간 위",
                 }
     if price < bands[-1][1]:
-        return {"status": "below_third", "description": "3�� ���� �Ʒ�"}
+        return {"status": "below_third", "description": "3차 구간 아래"}
     raise ValueError(f"Unclassified market price {price}")
 
 

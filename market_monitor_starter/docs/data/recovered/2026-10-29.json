@@ -140,7 +140,7 @@
       "buy_watch": {
         "price_band_status": {
           "status": "inside_second",
-          "description": "second ���� ����"
+          "description": "second 구간 내부"
         },
         "bands": [
           [
@@ -252,7 +252,7 @@
       "buy_watch": {
         "price_band_status": {
           "status": "above_first",
-          "description": "1�� ���� ��"
+          "description": "1차 구간 위"
         },
         "bands": [
           [
