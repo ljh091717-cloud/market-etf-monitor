@@ -5,49 +5,47 @@
   "last_reference_session": "2026-10-28",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 713.57,
-    "QQQM": 293.81,
-    "VOO": 706.04
+    "QQQ": 715.34,
+    "QQQM": 294.53,
+    "VOO": 707.32
   },
   "last_active_conditions": [
     "QQQM:below:first",
     "QQQM:band:second"
   ],
-  "current_judgment": "관심구간 도달 상태 유지, 새 구간교차/하락경보 없음: 2026-10-29 15:25 EDT 시작 5분봉 제공자 가격 QQQ $713.57(-1.66%, 직전 확정 주봉 EMA20 $712.50 위), QQQM $293.81(-1.64%, 확정 2차 관심구간 $293~296 내부), VOO $706.04(-0.54%, 50일선 $704.84 위). 직전 분석 14:10 EDT 대비 3개 종목 모두 반등했지만 이는 두 표본 비교이며 연속 안정화 확인 아님. 시장 심리 제3자 CNN 전재 34점 공포(14:24 EDT), 이전 캐시 36점(12:20 EDT), 일간 정확 비교는 공급자 표기 변동으로 미확정. 다음 거래일 종가·지지선 확인 필요. 시장폭(50/200일선), 금리 및 동시간대 상대거래량 재검증 불충분; 10/29 MarketWatch/FactSet 장중 상승종목 389/500 사례는 추세 선상회비율이 아님. 새 매수지시 아님, 예산 및 손실한도 미설정.",
+  "current_judgment": "2026-10-29 16:00 EDT 제3자 제공자 마감 일봉(거래소 확정 미검증·추후 수정 가능): QQQ $715.34(-1.42%, 252일 최고종가 -5.83%), QQQM $294.53(-1.40%, 확정 2차 관심가격 $293~296 안에서 종가 마감), VOO $707.32(-0.36%, 1차 $695~700 위). QQQ/QQQM 일봉 SMA50($725.10/$298.57) 아래; QQQ 직전 확정 주봉 EMA20($712.50) 위; VOO SMA50($704.84) 위, 장중 최저 $704.70로 일시 하회 후 종가 회복. QQQ 일중 최저 $711.62, -2% 경보가 약 $711.10은 미도달. 신규 하락경보/새 관심구간 교차 없음; QQQM 2차 관심구간 계속 유지. 2026-10-29 17:30 EDT GitHub latest.json은 15:26:53 EDT regular_session 그대로이며 end_of_day와 10/29 제공자 마감일봉 미반영(생성 약124분 전); 수집 성공이나 EOD 반영 완료로 취급하면 안 됨. 외부 StockAnalysis 마감자료로 임시 확인, 공식 거래소 확정 종가 미검증. CNN 제3자 제공점수 35 공포(16:16 EDT, 전일 비교값35라고 표시되나 과거 캐시 달라 직접 확정 비교 제한). 10/29 장후 Amazon 약 5~7% 약세(실적·가이던스), 10/30 기술주에 추가 하락 위험. 선제 분할매수형은 사전 가격대 도달에 따라 검토 가능하나 현재 사용 가능 예산/위험한도 미확정; 안정화확인형은 장중 저점 유지와 종가 회복·시장내부개선 미확인으로 추가매수 보류. 자동 주문 없음.",
   "next_conditions": [
-    "2026-10-29 17:30 EDT 마감확인: 10/29 제공자 일봉 Close 실제 갱신/모드=end_of_day 및 공식 확정 여부 구분. QQQ $712.50(직전 확정 주봉 EMA20), 일간 -2% 약 $711.10, QQQ/QQQM 일봉 SMA50 각각 $725.10/$298.57; QQQM 2차 $293 하향이탈/$296 상향회복; VOO 일봉 SMA50 $704.84 및 1차구간 상단 $700 접근 여부. 장중도달과 일봉종가를 구분.",
-    "2026-10-30 마지막 정규거래일 마감확인에서 확정 주봉 EMA20/50/100/200·RSI14 평가. 당일 정규장 15:25 5분봉은 미완성 가능성, 지속 회복 확인 아님.",
-    "시장 심리: CNN 원본 직접 확인 불가; fgscore.com 제3자 2026-10-29 14:24 EDT 34점 공포, 이전 표본 36(12:20 EDT), 공포 25미만 아님. 이후 동일 출처 새 시각 데이터 또는 가격/시장 내부 강도 동반시 검토. 10/29 장후 대형 기술기업 실적 확인."
+    "2026-10-30 10:30 EDT 첫 지원 정기점검: 10/29 제공자 마감 일봉 GitHub 수집기 반영 여부부터 확인. QQQM $293 하단 이탈/$296 상회, QQQ $712.50(직전 확정 주봉EMA20) 및 전일(10/29) 종가 대비 -2% 신규 기준, VOO 50일선 $704.84/$700 접근 여부. 10/29 후장 Amazon 실적 반영 확인.",
+    "2026-10-30 마지막 실제 거래일 17:30 EDT 마감확인에 확정 주봉 QQQ EMA20/50/100/200·RSI14 검토; 15:55 5분봉을 확정 종가로 대체하지 않을 것.",
+    "2026-10-30 08:30 EDT BLS Q3 Employment Cost Index 발표; 유효 시장폭·VIX/VXN·금리·동일시각 거래량 및 CNN 35점 이후 새 시각 자료 있을 때만 저빈도 지표 갱신."
   ],
-  "last_report_prepared_utc": "2026-10-29T14:31:05.000Z",
-  "last_report_kind": "2026-10-29_10:30_ET_QQQM_second_band_first_observed_since_prior_eod_and_sma50_loss",
+  "last_report_prepared_utc": "2026-10-29T21:31:54.217Z",
+  "last_report_kind": "2026-10-29_17:30_ET_external_provider_eod_confirmed_github_eod_missing_earnings_risk",
   "last_report_condition_ids": [
     "QQQM:band:second",
-    "QQQ:daily:SMA50:intraday_below",
-    "QQQM:daily:SMA50:intraday_below",
-    "BEA:PCE:2026-09:released",
-    "BEA:GDP:2026-Q3:released"
+    "DATA:EOD_NOT_UPDATED:2026-10-29",
+    "AMZN:2026-10-29:afterhours_guidance"
   ],
-  "last_end_of_day_review_session": "2026-10-28",
+  "last_end_of_day_review_session": "2026-10-29",
   "rearm_status": "not_implemented_no_continuous_detector",
   "notification_delivery_status": "unverified",
   "low_frequency_cache": {
     "CNN_FEAR_GREED": {
-      "value": 34,
+      "value": 35,
       "band": "공포",
-      "as_of_et": "2026-10-29T14:24:00-04:00",
+      "as_of_et": "2026-10-29T16:16:00-04:00",
       "source_url": "https://fgscore.com/en/markets/sp500",
-      "source_type": "Third-party reproduction of CNN US stocks Fear & Greed; CNN primary blocked/unverified",
-      "observed_at_utc": "2026-10-29T19:33:30.768Z",
-      "previous_value": 36,
-      "previous_value_as_of_et": "2026-10-29T12:20:00-04:00",
-      "direction": "Intraday score decreased 36 to 34 between separately observed third-party timestamps; still Fear band. Provider currently shows prior daily reading 34, but this disagrees with previous cached daily comparison and revisions are possible; avoid claiming confirmed day-over-day direction.",
-      "refresh_condition": "New timestamped source reading or changes alongside ETF price support/market internals",
+      "source_type": "Third-party reproduction of CNN US-stock Fear & Greed; CNN primary inaccessible",
+      "observed_at_utc": "2026-10-29T21:31:54.217Z",
+      "previous_value": 34,
+      "previous_value_as_of_et": "2026-10-29T14:24:00-04:00",
+      "direction": "Intraday third-party samples 34 to 35; latest page labels preceding daily 35 (unchanged), but cached prior-daily reading inconsistent; no verified 5-session series.",
+      "refresh_condition": "New timestamped CNN or reproduced source reading or materially price-confirming sentiment change",
       "latest_recheck_at_utc": "2026-10-29T19:33:30.768Z",
       "latest_recheck_result": "Third-party 34 Fear, component timestamp 2026-10-29 14:24 EDT; CNN primary inaccessible; no threshold crossing."
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-29T19:33:30.768Z",
+      "checked_at_utc": "2026-10-29T21:31:54.217Z",
       "latest_snapshot_date": "2026-10-29",
       "latest_snapshot_generated_utc": "2026-10-29T19:26:53.904045+00:00",
       "intended_session_date": "2026-10-29",
@@ -57,9 +55,9 @@
       "reference_fixed_before_open": false,
       "reference_fixed_at_utc": "2026-10-29T13:36:09.691450+00:00",
       "last_five_min_bar_start_et": "2026-10-29T15:25:00-04:00",
-      "bar_role": "15:25 EDT 5m bar START, sampled 15:26:53 EDT; may be incomplete, not 15:30 settled quote",
+      "bar_role": "last GitHub intraday 15:25 5m start; cannot substitute for EOD",
       "source_type": "Yahoo Finance yfinance via GitHub Actions; unofficial provider intraday",
-      "collector_job_status": "GitHub Actions 40940116040: completed success; collect and deploy jobs and primary steps success; separately validated fresh latest JSON",
+      "collector_job_status": "No up-to-date GitHub EOD latest.json observed; individual 16:35 ET collector run/job status NOT checked; cannot claim job failed or succeeded",
       "new_crossings": [],
       "active_conditions": [
         "QQQM:below:first",
@@ -78,8 +76,8 @@
         "newConditions": [],
         "removedConditions": []
       },
-      "refresh_condition": "2026-10-29 17:30 ET scheduled end-of-day check",
-      "generated_age_minutes_at_check": 6.61,
+      "refresh_condition": "Next 2026-10-30 regular market observation should verify latest EOD data/backfill",
+      "generated_age_minutes_at_check": 125,
       "individual_bar_age_minutes_at_check": {
         "QQQ": 8.51,
         "QQQM": 8.51,
@@ -91,7 +89,15 @@
       "config_revision": "2026-10-19.1",
       "reference_as_of_session": "2026-10-28",
       "collector_job_run_url": "https://github.com/ljh091717-cloud/market-etf-monitor/actions/runs/40940116040",
-      "recovered_conditions": []
+      "recovered_conditions": [],
+      "valid_for_eod": false,
+      "github_eod_present": false,
+      "external_provider_eod_confirmed": true,
+      "external_close_prices": {
+        "QQQ": 715.34,
+        "QQQM": 294.53,
+        "VOO": 707.32
+      }
     },
     "FOMC_2026_OCT": {
       "meeting_dates_et": "2026-10-27/2026-10-28",
@@ -148,15 +154,64 @@
       "value": "389 of 500 S&P 500 constituent stocks rising (reported intra-session), 77%; delayed/news snapshot, NOT moving-average breadth",
       "checked_at_utc": "2026-10-29T19:33:30.768Z",
       "refresh_condition": "When verified newer data materially alters broad-market-versus-tech divergence"
+    },
+    "AMAZON_EARNINGS_2026_10_29": {
+      "source_url": "https://www.reuters.com/business/retail-consumer/amazon-projects-fourth-quarter-sales-below-estimates-2026-10-29/",
+      "published_market_date": "2026-10-29",
+      "event_phase": "After 16:00 ET market close; after-hours indicative, not ETF regular close",
+      "details": "Amazon Q3 AWS revenue +39% to ~$46bn; Q4 revenue forecast $240-247bn, underwhelming; ~5% aftermarket decline at Reuters observation; capex/cash-burn risk",
+      "checked_at_utc": "2026-10-29T21:31:54.217Z",
+      "refresh_condition": "2026-10-30 regular-session price response or updated primary IR"
+    },
+    "BLS_ECI_CALENDAR": {
+      "source_url": "https://www.bls.gov/schedule/2026/",
+      "date_et": "2026-10-30T08:30:00-04:00",
+      "release": "Employment Cost Index Q3 2026",
+      "checked_at_utc": "2026-10-29T21:31:54.217Z",
+      "refresh_condition": "Release at 2026-10-30 08:30 ET"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-10-29T19:33:30.768Z",
-  "last_check_prepared_utc": "2026-10-29T19:33:30.768Z",
-  "last_check_kind": "2026-10-29_15:30_ET_second_band_persists_no_crossing_cnn34",
+  "last_evaluation_utc": "2026-10-29T21:31:54.217Z",
+  "last_check_prepared_utc": "2026-10-29T21:31:54.217Z",
+  "last_check_kind": "2026-10-29_17:30_ET_missing_github_eod_external_daily_close",
   "last_check_condition_ids": [
     "QQQM:below:first",
-    "QQQM:band:second"
+    "QQQM:band:second",
+    "DATA:EOD_NOT_UPDATED:2026-10-29"
   ],
-  "last_notification_decision": "skip_notification_no_material_threshold_change_delivery_unverified"
+  "last_notification_decision": "notify_eod_collector_not_updated_and_amazon_afterhours_risk",
+  "last_price_source": "StockAnalysis 2026-10-29 provider close 16:00 EDT; NOT GitHub EOD; exchange official final unverified",
+  "last_external_end_of_day": {
+    "session_date": "2026-10-29",
+    "session_close_et": "2026-10-29T16:00:00-04:00",
+    "checked_at_utc": "2026-10-29T21:31:54.217Z",
+    "prices": {
+      "QQQ": {
+        "close": 715.34,
+        "previous_close": 725.61,
+        "change_pct": -1.415,
+        "drawdown_high252_pct": -5.834
+      },
+      "QQQM": {
+        "close": 294.53,
+        "previous_close": 298.71,
+        "change_pct": -1.399,
+        "drawdown_high252_pct": -5.829
+      },
+      "VOO": {
+        "close": 707.32,
+        "previous_close": 709.9,
+        "change_pct": -0.363,
+        "drawdown_high252_pct": -1.24
+      }
+    },
+    "source_urls": {
+      "QQQ": "https://stockanalysis.com/etf/qqq/history/",
+      "QQQM": "https://stockanalysis.com/etf/qqqm/history/",
+      "VOO": "https://stockanalysis.com/etf/voo/history/"
+    },
+    "provider_close_not_exchange_official": true,
+    "provider_data_may_revise": true
+  }
 }
