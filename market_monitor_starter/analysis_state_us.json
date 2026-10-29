@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-10-29T18:14:12.974755+00:00",
+  "last_valid_snapshot_generated_utc": "2026-10-29T19:26:53.904045+00:00",
   "last_reference_session": "2026-10-28",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 713.19,
-    "QQQM": 293.6255,
-    "VOO": 705.47
+    "QQQ": 713.57,
+    "QQQM": 293.81,
+    "VOO": 706.04
   },
   "last_active_conditions": [
     "QQQM:below:first",
     "QQQM:band:second"
   ],
-  "current_judgment": "관심구간도달 상태 유지(신규 조건 없음, 중복 알림 생략): 2026-10-29 14:10 EDT 시작 5분봉 제공자 가격 QQQ $713.19(-1.71%), QQQM $293.63(-1.70%; 확정 2차 $293~296 내), VOO $705.47(-0.62%; 1차 $695~700 위). 이전 분석 표본 13:20 EDT 대비 QQQ -1.04, QQQM -0.49, VOO -0.82달러. 신규 교차/회복 없음. QQQ 직전 확정 주봉 EMA20 $712.50 위 $0.69 및 일간 -2% 경보가격 약 $711.10 위; QQQM 2차 하단 $293 위 $0.63; VOO SMA50 $704.84 위 $0.63. 저점안정 확인되지 않았고 신규 매수지시 아님. CNN 제3자 최근 검증값 36(공포; 12:20 EDT 캐시), 웹 재확인한 제3자 현재표시 36이나 웹 표기 시각은 더 오래되어 새 업데이트로 간주하지 않음. 선제형 기존 가격구간 관심, 안정화 확인형 미충족. 예산·위험한도 미확정.",
+  "current_judgment": "관심구간 도달 상태 유지, 새 구간교차/하락경보 없음: 2026-10-29 15:25 EDT 시작 5분봉 제공자 가격 QQQ $713.57(-1.66%, 직전 확정 주봉 EMA20 $712.50 위), QQQM $293.81(-1.64%, 확정 2차 관심구간 $293~296 내부), VOO $706.04(-0.54%, 50일선 $704.84 위). 직전 분석 14:10 EDT 대비 3개 종목 모두 반등했지만 이는 두 표본 비교이며 연속 안정화 확인 아님. 시장 심리 제3자 CNN 전재 34점 공포(14:24 EDT), 이전 캐시 36점(12:20 EDT), 일간 정확 비교는 공급자 표기 변동으로 미확정. 다음 거래일 종가·지지선 확인 필요. 시장폭(50/200일선), 금리 및 동시간대 상대거래량 재검증 불충분; 10/29 MarketWatch/FactSet 장중 상승종목 389/500 사례는 추세 선상회비율이 아님. 새 매수지시 아님, 예산 및 손실한도 미설정.",
   "next_conditions": [
-    "다음 정규점검 2026-10-29 15:30 EDT: QQQM $293 하회/$296 회복(장중가격 vs 완성봉 구분); QQQ 직전 확정주봉 EMA20 $712.50 이탈 및 전일 $725.61 대비 -2% $711.10; VOO 일봉 SMA50 $704.84 이탈 및 1차 관심구간 상단 $700 접근. 신규 심화시 우선 보고.",
-    "10/29 제공자 일봉 Close: QQQ SMA50 $725.10, QQQM SMA50 $298.57, VOO SMA50 $704.84와 비교하여 종가 확인. 10/30 해당 주 마지막 거래일 마감 확인에 확정 주봉 EMA20/50/100/200 및 RSI14 검토(그 전 주봉 잠정).",
-    "시장심리: CNN 제3자 36 Fear(직전 검증 12:20 EDT), 25 미만 아님. 원본/동일시계열 새 발표 또는 가격 안정 결합 시 재평가. 10/29 장후 Amazon·Intel 실적 추후 확인. 시장폭·10년 명목/실질금리·VIX/VXN·시각맞춘 거래량 수치는 신규 직접 검증 없음."
+    "2026-10-29 17:30 EDT 마감확인: 10/29 제공자 일봉 Close 실제 갱신/모드=end_of_day 및 공식 확정 여부 구분. QQQ $712.50(직전 확정 주봉 EMA20), 일간 -2% 약 $711.10, QQQ/QQQM 일봉 SMA50 각각 $725.10/$298.57; QQQM 2차 $293 하향이탈/$296 상향회복; VOO 일봉 SMA50 $704.84 및 1차구간 상단 $700 접근 여부. 장중도달과 일봉종가를 구분.",
+    "2026-10-30 마지막 정규거래일 마감확인에서 확정 주봉 EMA20/50/100/200·RSI14 평가. 당일 정규장 15:25 5분봉은 미완성 가능성, 지속 회복 확인 아님.",
+    "시장 심리: CNN 원본 직접 확인 불가; fgscore.com 제3자 2026-10-29 14:24 EDT 34점 공포, 이전 표본 36(12:20 EDT), 공포 25미만 아님. 이후 동일 출처 새 시각 데이터 또는 가격/시장 내부 강도 동반시 검토. 10/29 장후 대형 기술기업 실적 확인."
   ],
   "last_report_prepared_utc": "2026-10-29T14:31:05.000Z",
   "last_report_kind": "2026-10-29_10:30_ET_QQQM_second_band_first_observed_since_prior_eod_and_sma50_loss",
@@ -33,39 +33,39 @@
   "notification_delivery_status": "unverified",
   "low_frequency_cache": {
     "CNN_FEAR_GREED": {
-      "value": 36,
+      "value": 34,
       "band": "공포",
-      "as_of_et": "2026-10-29T12:20:00-04:00",
+      "as_of_et": "2026-10-29T14:24:00-04:00",
       "source_url": "https://fgscore.com/en/markets/sp500",
-      "source_type": "Third-party reproduction of CNN US stocks Fear & Greed; CNN primary not independently validated",
-      "observed_at_utc": "2026-10-29T17:35:52.855Z",
-      "previous_value": 35,
-      "previous_value_as_of_et": "2026-10-29T11:20:00-04:00",
-      "direction": "36 vs cached 35 at 11:20 EDT (same-day third-party snapshots); day-over-day site comparison also 36 vs 36, but prior source-cache discordance prevents definitive daily trend",
-      "refresh_condition": "New timestamped provider reading or materially changed price confirmation",
-      "latest_recheck_at_utc": "2026-10-29T18:30:49.000Z",
-      "latest_recheck_result": "Third-party fgscore.com web page shows 36 Fear but market-factor timestamp 06:00 EDT is older than cached 12:20 EDT sample. Do not treat as new reading; CNN primary not directly verified."
+      "source_type": "Third-party reproduction of CNN US stocks Fear & Greed; CNN primary blocked/unverified",
+      "observed_at_utc": "2026-10-29T19:33:30.768Z",
+      "previous_value": 36,
+      "previous_value_as_of_et": "2026-10-29T12:20:00-04:00",
+      "direction": "Intraday score decreased 36 to 34 between separately observed third-party timestamps; still Fear band. Provider currently shows prior daily reading 34, but this disagrees with previous cached daily comparison and revisions are possible; avoid claiming confirmed day-over-day direction.",
+      "refresh_condition": "New timestamped source reading or changes alongside ETF price support/market internals",
+      "latest_recheck_at_utc": "2026-10-29T19:33:30.768Z",
+      "latest_recheck_result": "Third-party 34 Fear, component timestamp 2026-10-29 14:24 EDT; CNN primary inaccessible; no threshold crossing."
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-29T18:30:49.000Z",
+      "checked_at_utc": "2026-10-29T19:33:30.768Z",
       "latest_snapshot_date": "2026-10-29",
-      "latest_snapshot_generated_utc": "2026-10-29T18:14:12.974755+00:00",
+      "latest_snapshot_generated_utc": "2026-10-29T19:26:53.904045+00:00",
       "intended_session_date": "2026-10-29",
       "valid_today": true,
       "collector_snapshot_mode": "regular_session",
       "daily_reference_session_date": "2026-10-28",
       "reference_fixed_before_open": false,
       "reference_fixed_at_utc": "2026-10-29T13:36:09.691450+00:00",
-      "last_five_min_bar_start_et": "2026-10-29T14:10:00-04:00",
-      "bar_role": "14:10 5-minute bar START, sampled 14:14:12 EDT (may be unfinished); not a confirmed 14:30 quote",
-      "source_type": "Yahoo Finance 5-minute series collected by external GitHub yfinance; unofficial and provisional intraday",
-      "collector_job_status": "GitHub Actions run 40928813461 completed success; collect and deploy jobs and their main steps success, plus today's JSON fresh as separately validated",
+      "last_five_min_bar_start_et": "2026-10-29T15:25:00-04:00",
+      "bar_role": "15:25 EDT 5m bar START, sampled 15:26:53 EDT; may be incomplete, not 15:30 settled quote",
+      "source_type": "Yahoo Finance yfinance via GitHub Actions; unofficial provider intraday",
+      "collector_job_status": "GitHub Actions 40940116040: completed success; collect and deploy jobs and primary steps success; separately validated fresh latest JSON",
       "new_crossings": [],
       "active_conditions": [
         "QQQM:below:first",
         "QQQM:band:second"
       ],
-      "comparison_scope": "previous analyzed 13:20 ET vs latest 14:10 ET sample, no conditions newly crossed",
+      "comparison_scope": "Previous analyzed 14:10 ET vs current 15:25 ET, no new condition crossings",
       "changed_vs_last_saved_state": {
         "previous": [
           "QQQM:below:first",
@@ -78,19 +78,20 @@
         "newConditions": [],
         "removedConditions": []
       },
-      "refresh_condition": "Next scheduled 2026-10-29 15:30 EDT observation",
-      "generated_age_minutes_at_check": 16.6,
+      "refresh_condition": "2026-10-29 17:30 ET scheduled end-of-day check",
+      "generated_age_minutes_at_check": 6.61,
       "individual_bar_age_minutes_at_check": {
-        "QQQ": 20.82,
-        "QQQM": 20.82,
-        "VOO": 20.82
+        "QQQ": 8.51,
+        "QQQM": 8.51,
+        "VOO": 8.51
       },
-      "latest_generated_utc": "2026-10-29T18:14:12.974755+00:00",
+      "latest_generated_utc": "2026-10-29T19:26:53.904045+00:00",
       "mode": "regular_session",
-      "price_bar_start_et": "2026-10-29 14:10 EDT",
+      "price_bar_start_et": "2026-10-29 15:25 EDT",
       "config_revision": "2026-10-19.1",
       "reference_as_of_session": "2026-10-28",
-      "collector_job_run_url": "https://github.com/ljh091717-cloud/market-etf-monitor/actions/runs/40928813461"
+      "collector_job_run_url": "https://github.com/ljh091717-cloud/market-etf-monitor/actions/runs/40940116040",
+      "recovered_conditions": []
     },
     "FOMC_2026_OCT": {
       "meeting_dates_et": "2026-10-27/2026-10-28",
@@ -138,15 +139,24 @@
       "pce_sep_headline_mom_pct": 0.5,
       "pce_sep_core_mom_pct": 0.3,
       "refresh_condition": "Official revisions / subsequent release"
+    },
+    "MARKET_BREADTH_SNAPSHOT": {
+      "source_url": "https://www.marketwatch.com/livecoverage/stock-market-today-s-p-500-nasdaq-dow-alphabet-earnings-results-amazon-intel/card/market-s-fear-gauge-drops-again-reflecting-positive-breadth-even-as-the-s-p-500-falls-RvBY7dVAyyRmoOQ9acbe",
+      "source_type": "MarketWatch live article citing FactSet; directional count not 50d/200d breadth",
+      "market_date_et": "2026-10-29",
+      "publication_time_et": "not verified",
+      "value": "389 of 500 S&P 500 constituent stocks rising (reported intra-session), 77%; delayed/news snapshot, NOT moving-average breadth",
+      "checked_at_utc": "2026-10-29T19:33:30.768Z",
+      "refresh_condition": "When verified newer data materially alters broad-market-versus-tech divergence"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-10-29T18:30:49.000Z",
-  "last_check_prepared_utc": "2026-10-29T18:30:49.000Z",
-  "last_check_kind": "2026-10-29_14:30_ET_second_band_persists_near_support_no_new_crossings",
+  "last_evaluation_utc": "2026-10-29T19:33:30.768Z",
+  "last_check_prepared_utc": "2026-10-29T19:33:30.768Z",
+  "last_check_kind": "2026-10-29_15:30_ET_second_band_persists_no_crossing_cnn34",
   "last_check_condition_ids": [
     "QQQM:below:first",
     "QQQM:band:second"
   ],
-  "last_notification_decision": "skip_duplicate_no_material_crossing_delivery_unverified"
+  "last_notification_decision": "skip_notification_no_material_threshold_change_delivery_unverified"
 }
