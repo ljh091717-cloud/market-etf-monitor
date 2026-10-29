@@ -1,24 +1,23 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-10-29T14:25:07.629660+00:00",
+  "last_valid_snapshot_generated_utc": "2026-10-29T15:22:22.443291+00:00",
   "last_reference_session": "2026-10-28",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 716.02,
-    "QQQM": 294.849,
-    "VOO": 707.14
+    "QQQ": 716.26,
+    "QQQM": 294.95,
+    "VOO": 707.515
   },
   "last_active_conditions": [
     "QQQM:below:first",
     "QQQM:band:second"
   ],
-  "current_judgment": "관심구간도달(즉시매수 아님). 2026-10-29 10:30 EDT 5분봉 QQQ 716.02(-1.32% vs 10/28 725.61; 252일 최고종가 대비 -5.74%), QQQM 294.849(-1.29% vs 298.71; $293~296 2차 관심구간 진입), VOO 707.14(-0.39% vs 709.90; 첫 관심구간 $695~700 위). QQQ/QQQM 10/28에 간신히 회복했던 50일선(725.10/298.57)을 장중 다시 하회. QQQM 두 번째 구간은 전일 마감 분석 상태에서는 미충족, 당일 09:36 초기 수집에서도 이미 충족; 수집기의 new_crossings=[]는 늦은 기준 초기화 이후의 09:36→10:25 샘플 비교이지 전일 대비 신규 관심구간 도달이 없었다는 의미가 아님. 09:35 표본 QQQM 293.57→10:25 294.849 반등, 15분 연속 유지·회복 확인 아님. 장전 고정 실패(reference_fixed_before_open=false, 09:36)로 전일대비 가격은 참고하되 신규급락 이벤트 분류에 주의. BEA 10/29 08:30 공식 Q3 GDP +3.4% SAAR(vs 2Q +2.2%), 9월 PCE headline +3.6% YoY, core +3.1% YoY, headline +0.5% MoM, core +0.3% MoM. CNN 2차 검증 인용 36(Fear), 09:05 ET, prior day 36; 원본 직접 검증 미완료. Alphabet 하락/빅테크 실적 차별화 위험과 경기/인플레이션 동반으로 가격 저점 미확정. 조건부 선제 분할매수 관심구간 도달, 위험한도/금액 미확정이므로 수량 결정 불가; 안정화 확인형은 50일선과 intraday 저점 회복 및 일봉 확인 전 보류.",
+  "current_judgment": "관심구간도달 상태 유지(신규 알림 없음): 2026-10-29 11:20 ET 5분봉 시작 기준 QQQ 716.26(-1.29% vs 10/28 종가), QQQM 294.95(-1.26%; 2차 관심구간 $293~296), VOO 707.515(-0.34%; 1차 $695~700 위). 10:25 표본 대비 QQQ +0.24, QQQM +0.101, VOO +0.375. 새로운 경보·관심구간 교차 없음. QQQ/QQQM 일봉 SMA50 아래, QQQ -2% 초기알림 미충족. 11:20 봉은 11:22 수집 시 형성 중 가능; 이산 표본 간 상승이 15분 연속 회복 증거는 아님. 전일 기준은 10/28이나 09:36 ET 늦게 고정됨. CNN 36 Fear(10/29 제3자 자료)는 직전과 같으며 미검증 원본. 기존 10:30 중요 알림과 중복되어 새 알림 생략. 선제 검토는 가격 구간에 한정; 안정화 확인형은 일봉 회복 미확인, 예산·위험한도 미확정.",
   "next_conditions": [
-    "장중 다음 정기 점검: QQQM $293~296 구간 내부 유지, $293 하향 이탈 또는 $296 회복 여부; 09:35 293.57 표본보다 저점 추가 이탈 여부. 다음 3차 구간 $280~285까지는 아직 거리 있음.",
-    "일봉 10/29 마감 확인: QQQ $725.10, QQQM $298.57(직전 SMA50) 회복/하회 및 QQQ -2% 초기경보(10/28 종가 725.61 기준 약 711.10), VOO $700 접근 여부. 5분봉 반등을 일봉 안정화로 취급하지 않음.",
-    "시장 지표: 10/29 GDP 3.4%/9월 PCE 3.6%·core3.1% 공개 후 10년 명목·실질금리,VIX/VXN,시장폭/반도체 후속검증. 오늘 장후 Amazon/Intel 실적과 10/30 주봉 확정 점검.",
-    "시장 심리: CNN 36 Fear (10/29 09:05 EDT 2차 인용, 전일 36), 25 미만 여부 및 ETF 가격안정 동반 확인. 가격 신저점이면 공포완화만으로 매수하지 않음."
+    "장중 12:30 EDT 다음 정기점검: QQQM $293 하향 이탈, $296 회복, 앞선 09:35 표본 저점 $293.57 재이탈; QQQ 약 $711.10(-2% 초기경보), VOO $700 접근을 우선 확인. QQQM $280~285은 다음 하위 관심구간.",
+    "일봉 10/29 마감확인: QQQ 일봉 SMA50 $725.10, QQQM SMA50 $298.57 회복/하회, VOO SMA50 $704.84와 $700 도달. 표본 반등을 종가 안정화로 표현하지 않음.",
+    "위험/심리: CNN Fear & Greed 36 제3자 인용 10/29, 직전일 36; 새 발표 시에만 변화로 처리. 시장폭, 10년 명목·실질금리, VIX/VXN, 같은 시간대 거래량은 유효한 신규 검증치 없으면 미확인. 10/29 Amazon/Intel 장후 실적과 10/30 확정 주봉 확인."
   ],
   "last_report_prepared_utc": "2026-10-29T14:31:05.000Z",
   "last_report_kind": "2026-10-29_10:30_ET_QQQM_second_band_first_observed_since_prior_eod_and_sma50_loss",
@@ -43,12 +42,14 @@
       "previous_value": 36,
       "previous_value_as_of_et": "2026-10-28",
       "direction": "unchanged from preceding daily reading 36",
-      "refresh_condition": "New provider reading or material ETF stability change"
+      "refresh_condition": "New provider reading or material ETF stability change",
+      "latest_recheck_at_utc": "2026-10-29T15:28:07.415Z",
+      "latest_recheck_result": "Third-party fgscore shows 36 Fear for 2026-10-29 and 36 prior day, but exact new provider update time unavailable; no independent new reading."
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-10-29T14:31:05.000Z",
+      "checked_at_utc": "2026-10-29T15:28:07.415Z",
       "latest_snapshot_date": "2026-10-29",
-      "latest_snapshot_generated_utc": "2026-10-29T14:25:07.629660+00:00",
+      "latest_snapshot_generated_utc": "2026-10-29T15:22:22.443291+00:00",
       "intended_session_date": "2026-10-29",
       "valid_today": true,
       "collector_snapshot_mode": "regular_session",
@@ -56,30 +57,35 @@
       "reference_fixed_before_open": false,
       "reference_fixed_at_utc": "2026-10-29T13:36:09.691450+00:00",
       "generated_age_minutes_at_10_31_ET": 5.96,
-      "last_five_min_bar_start_et": "2026-10-29T10:25:00-04:00",
-      "bar_role": "5m bar start at 10:25; may have been incomplete at 10:25:07 collection; not a confirmed 10:30 close",
-      "source_type": "Yahoo Finance via external GitHub yfinance, not broker/official exchange; may revise",
-      "collector_job_status": "latest.json date and regular_session verified; GitHub run job collect/deploy not independently verified",
+      "last_five_min_bar_start_et": "2026-10-29T11:20:00-04:00",
+      "bar_role": "11:20 5-min bar START; collector 11:22:22; bar may be incomplete; not 11:30 closing price",
+      "source_type": "Yahoo Finance via external GitHub yfinance; unofficial, prices can revise",
+      "collector_job_status": "today's regular_session JSON validated independently of GitHub workflow success; individual collect/deploy run result not checked",
       "new_crossings": [],
       "active_conditions": [
         "QQQM:below:first",
         "QQQM:band:second"
       ],
-      "comparison_scope": "collector 09:36→10:25 vs analyst previous review 10/28 end-of-day; QQQM second band is new since last analyst report",
+      "comparison_scope": "previous analyst report 10:30 ET vs 11:20 ET latest sample; same second band; no new crossing",
       "changed_vs_last_saved_state": {
         "previous": [
-          "QQQM:below:first"
+          "QQQM:below:first",
+          "QQQM:band:second"
         ],
         "current": [
           "QQQM:below:first",
           "QQQM:band:second"
         ],
-        "newConditions": [
-          "QQQM:band:second"
-        ],
+        "newConditions": [],
         "removedConditions": []
       },
-      "refresh_condition": "Next scheduled 2026-10-29 11:30 ET observation"
+      "refresh_condition": "Next scheduled 2026-10-29 12:30 EDT observation",
+      "generated_age_minutes_at_check": 5.75,
+      "individual_bar_age_minutes_at_check": {
+        "QQQ": 8.12,
+        "QQQM": 8.12,
+        "VOO": 8.12
+      }
     },
     "FOMC_2026_OCT": {
       "meeting_dates_et": "2026-10-27/2026-10-28",
@@ -130,12 +136,12 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-10-29T14:31:05.000Z",
-  "last_check_prepared_utc": "2026-10-29T14:31:05.000Z",
-  "last_check_kind": "2026-10-29_10:30_ET_QQQM_second_band_first_observed_since_prior_eod_and_sma50_loss",
+  "last_evaluation_utc": "2026-10-29T15:28:07.415Z",
+  "last_check_prepared_utc": "2026-10-29T15:28:07.415Z",
+  "last_check_kind": "2026-10-29_11:30_ET_second_band_still_active_no_new_signals",
   "last_check_condition_ids": [
     "QQQM:below:first",
     "QQQM:band:second"
   ],
-  "last_notification_decision": "notify_new_QQQM_second_price_band_and_first_regular_session_post_earnings_morning_drop_delivery_unverified"
+  "last_notification_decision": "skip_duplicate_no_material_change_delivery_unverified"
 }
