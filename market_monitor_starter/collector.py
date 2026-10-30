@@ -18,6 +18,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import pandas as pd
+from provider import history
 
 NY = ZoneInfo("America/New_York")
 KST = ZoneInfo("Asia/Seoul")
@@ -107,24 +108,28 @@ def quote_as_utc(timestamp) -> datetime:
     return t.tz_convert("UTC").to_pydatetime()
 
 
-def read_ticker(symbol: str, now: datetime, *, test_mode: bool) -> dict:
+def read_ticker(symbol: str, now: datetime, *, test_mode: bool, closing_price=None) -> dict:
     import yfinance as yf
 
     ticker = yf.Ticker(symbol)
-    bars = ticker.history(period="5d", interval="5m", prepost=False, auto_adjust=False)
-    if bars.empty:
-        raise RuntimeError(f"{symbol}: empty intraday data")
-    bars = bars.dropna(subset=["Close"])
-    last_timestamp = quote_as_utc(bars.index[-1])
-    price = float(bars["Close"].iloc[-1])
+    last_timestamp = None
+    age_minutes = None
+    if closing_price is None:
+        bars = history(ticker, symbol, period="5d", interval="5m", prepost=False, auto_adjust=False, timeout=25)
+        if bars.empty:
+            raise RuntimeError(f"{symbol}: empty intraday data")
+        bars = bars.dropna(subset=["Close"])
+        last_timestamp = quote_as_utc(bars.index[-1])
+        price = float(bars["Close"].iloc[-1])
+        age_minutes = (now - last_timestamp).total_seconds() / 60.0
+        is_today = last_timestamp.astimezone(NY).date() == now.astimezone(NY).date()
+        if not test_mode and (not is_today or not (-2.0 <= age_minutes <= 50.0)):
+            raise RuntimeError(f"{symbol}: stale or invalid quote: age={age_minutes:.1f}m, today={is_today}")
+    else:
+        price = float(closing_price)
     if not math.isfinite(price) or price <= 0:
         raise RuntimeError(f"{symbol}: invalid last price")
-    age_minutes = (now - last_timestamp).total_seconds() / 60.0
-    is_today = last_timestamp.astimezone(NY).date() == now.astimezone(NY).date()
-    if not test_mode and (not is_today or not (-2.0 <= age_minutes <= 50.0)):
-        raise RuntimeError(f"{symbol}: stale or invalid quote: age={age_minutes:.1f}m, today={is_today}")
-
-    week = ticker.history(period="max", interval="1wk", prepost=False, auto_adjust=False)
+    week = history(ticker, symbol, period="max", interval="1wk", prepost=False, auto_adjust=False, timeout=25)
     if week.empty:
         raise RuntimeError(f"{symbol}: empty weekly history")
     weekly = week["Close"].dropna().astype(float)
@@ -150,9 +155,9 @@ def read_ticker(symbol: str, now: datetime, *, test_mode: bool) -> dict:
         "symbol": symbol,
         "currency": "USD",
         "last_price": round(price, 4),
-        "last_5m_bar_start_utc": last_timestamp.isoformat(),
-        "last_5m_bar_start_ny": last_timestamp.astimezone(NY).isoformat(),
-        "data_age_minutes": round(age_minutes, 2),
+        "last_5m_bar_start_utc": last_timestamp.isoformat() if last_timestamp else None,
+        "last_5m_bar_start_ny": last_timestamp.astimezone(NY).isoformat() if last_timestamp else None,
+        "data_age_minutes": round(age_minutes, 2) if age_minutes is not None else None,
         "regular_session_only": True,
         "weekly_indicators": {
             "last_completed_week": {

@@ -116,7 +116,7 @@ def references(now, symbols, session, test=False):
     result = {'session_date': str(today), 'fixed_at_utc': now.isoformat(),
               'fixed_before_open': bool(session and now < session[0]), 'symbols': {}}
     for symbol in symbols:
-        frame = yf.Ticker(symbol).history(period='2y', interval='1d', auto_adjust=False,
+        frame = core.history(yf.Ticker(symbol), symbol, period='2y', interval='1d', auto_adjust=False,
                                           prepost=False, actions=True, timeout=25)
         frame = frame.dropna(subset=['Open', 'High', 'Low', 'Close']).sort_index()
         prior = frame.loc[day_index(frame) < today]
@@ -177,32 +177,33 @@ def last_session_of_week(now):
     return not table.empty and table.index[-1].date() == day
 
 
-def read_symbol(symbol, now, mode, ref, config, week_final):
+def read_symbol(symbol, now, mode, ref, config, week_final, daily_frame=None):
     import yfinance as yf
     test = mode == 'manual_test_not_for_trading'
-    result = core.read_ticker(symbol, now, test_mode=test or mode == 'end_of_day')
-    frame = yf.Ticker(symbol).history(period='2y' if mode == 'end_of_day' else '5d',
-                                     interval='1d', prepost=False, auto_adjust=False, actions=True, timeout=25)
+    frame = daily_frame if daily_frame is not None else core.history(
+        yf.Ticker(symbol), symbol, period='2y' if mode == 'end_of_day' else '5d',
+        interval='1d', prepost=False, auto_adjust=False, actions=True, timeout=25)
     frame = frame.dropna(subset=['Open', 'High', 'Low', 'Close']).sort_index()
     today = now.astimezone(core.NY).date()
     actions = today_actions(frame, today)
-    result['price_source_url'] = f'https://finance.yahoo.com/quote/{symbol}/history/'
-    result['daily_reference'] = ref
-    result['price_status'] = 'regular-session 5m bar Close, may be delayed or still forming'
+    closing_price = None
     if mode == 'end_of_day':
         complete = frame.loc[day_index(frame) <= today]
         if complete.empty or day_index(complete)[-1] != today:
             raise ValueError(f'{symbol}: today daily closing bar not yet available')
-        result['last_price'] = float(complete['Close'].iloc[-1])
+        closing_price = float(complete['Close'].iloc[-1])
+    result = core.read_ticker(symbol, now, test_mode=test, closing_price=closing_price)
+    result['price_source_url'] = f'https://finance.yahoo.com/quote/{symbol}/history/'
+    result['daily_reference'] = ref
+    result['price_status'] = 'regular-session 5m bar Close, may be delayed or still forming'
+    if mode == 'end_of_day':
+        result['last_price'] = closing_price
         result['close_session_date'] = str(today)
         result['price_status'] = 'post-close provider daily bar; not exchange-certified and may be revised'
         result['daily_close_indicators'] = daily_metrics(complete)
-        # Recompute from weekly history and the daily closing bar, not an after-hours tick.
-        week = yf.Ticker(symbol).history(period='max', interval='1wk', prepost=False, auto_adjust=False, timeout=25)
-        current = core.iso_week(now)
-        finished = [(stamp, float(c)) for stamp, c in week['Close'].dropna().items() if core.iso_week(stamp) < current]
-        closes = [c for _, c in finished] + [result['last_price']]
-        summary = core.indicator_summary(closes)
+        # read_ticker already used this daily close with one weekly request.
+        summary = dict(result['weekly_indicators']['current_week_provisional'])
+        summary.pop('week_in_progress', None)
         if week_final:
             result['weekly_indicators']['last_completed_week'] = {'week_date': str(today), **summary}
             result['weekly_indicators']['current_week_provisional'] = None
