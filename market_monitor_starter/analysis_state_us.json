@@ -13,21 +13,20 @@
     "QQQM:below:first",
     "QQQM:below:second"
   ],
-  "current_judgment": "장중 일부 관심구간 상방 회복 표본 관찰. 선제 계획형은 확정 예산 부재로 매수 지시 없음; 안정화 확인형은 단일 5분봉 자료로 확인 불충분, 추가매수 보류. 10/30 EOD 기준 변경은 새 하락 해소 신호로 중복 계산하지 않음.",
+  "current_judgment": "데이터 부족: 11:25 EST 실행에서 최신 GitHub 가격봉이 10:20 EST 시작(65분 경과)으로 45분 개별 봉 유효성 초과. 10:30 유효표본의 관찰·추가매수 보류 판단은 유지하되 현재 가격/새 교차/지속회복 여부는 판정하지 않음.",
   "next_conditions": [
-    "2026-11-02 11:30 EST(2026-11-03 01:30 KST) 다음 지원 정기점검. 현재 가격은 10:20 EST 5분봉 시작 표본; 안정적인 지속 회복은 미확인.",
+    "다음 미국 정기점검 2026-11-02 12:30 EST / 2026-11-03 02:30 KST: GitHub 11시대 새 regular_session 표본 수집 여부, 생성후 75분·봉시작후 45분 유효성 검사 우선.",
     "QQQM $285 아래 재진입 또는 $293~296(2차 관심구간) 회복; $280~285 3차 관심구간의 표본 상방 이탈을 연속회복으로 주장하지 않음.",
     "VOO $700 재하회/$695 재진입 또는 일봉 SMA50 $704.80 회복; 10/30 $694.81 종가 대비 전일 -2% 경보는 현재 미충족.",
     "QQQ $710.41 직전 확정 주봉 EMA20 회복, 일봉 SMA50 $724.70, SMA200 $678.38 지지, 최고종가 $759.66 대비 -10% 가격 $683.69; 임시 주봉과 확정 주봉 구분.",
     "11/2 10:00 EST ISM 제조업 PMI 55.5(9월 54.5), 투입가격 75.2; 11/3 10:00 EST 9월 JOLTS, 11/2 장마감 후 AAPL·PLTR 결과 반응 확인.",
     "CNN Fear & Greed 11/2 09:47 EST 제3자 재게시 30점 Fear; 원본 직접검증과 직전 거래일·5거래일 동질적 비교 미확인. 추후 새 공식 발표 또는 검증된 동일시점 자료에서만 갱신."
   ],
-  "last_report_prepared_utc": "2026-11-02T15:35:56.000Z",
-  "last_report_kind": "2026-11-02_10:30_EST_recovery_samples_QQQM_above285_VOO_above700_and_ISM",
+  "last_report_prepared_utc": "2026-11-02T16:25:23.000Z",
+  "last_report_kind": "2026-11-02_11:30_EST_data_limited_stale_bar",
   "last_report_condition_ids": [
-    "QQQM:third:sample_exit_above_285",
-    "VOO:first:sample_exit_above_700",
-    "US:MACRO:ISM_MANUFACTURING_2026-10"
+    "DATA:price_bar_age_over_45m",
+    "SCHEDULE:run_before_11:30_EST"
   ],
   "last_end_of_day_review_session": "2026-10-30",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -303,14 +302,11 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-02T15:35:56.000Z",
-  "last_check_prepared_utc": "2026-11-02T15:35:56.000Z",
-  "last_check_kind": "2026-11-02_10:30_EST_regular_sample_provisional_price_recovery",
-  "last_check_condition_ids": [
-    "QQQM:below:first",
-    "QQQM:below:second"
-  ],
-  "last_notification_decision": "report_price_band_sample_recovery_and_new_ISM_release",
+  "last_evaluation_utc": "2026-11-02T16:25:23.000Z",
+  "last_check_prepared_utc": "2026-11-02T16:25:23.000Z",
+  "last_check_kind": "2026-11-02_11:30_EST_early_run_bar_stale_data_limited",
+  "last_check_condition_ids": [],
+  "last_notification_decision": "report_data_limitation_not_a_new_market_signal",
   "last_price_source": "GitHub main docs/data/latest.json blob 26c50c2c3ad32b2b387bf6ca6573f65052f58d44; Yahoo Finance via yfinance; generated 2026-11-02T15:24:30.110683+00:00; regular_session; 5-min bar starts 2026-11-02T10:20:00-05:00; not completed bar guaranteed; reference previous trading date 2026-10-30 but initialized after market open at 2026-11-02T15:24:30.110683+00:00.",
   "last_external_end_of_day": {
     "session_date": "2026-10-30",
@@ -343,5 +339,26 @@
     },
     "provider_close_not_exchange_official": true,
     "provider_data_may_revise": true
+  },
+  "last_data_quality_observation": {
+    "check_at_utc": "2026-11-02T16:25:23.000Z",
+    "intended_slot_et": "2026-11-02T11:30:00-05:00",
+    "observed_execution_et": "2026-11-02T11:25:23-05:00",
+    "execution_early_minutes": 4.6167,
+    "latest_blob_sha": "26c50c2c3ad32b2b387bf6ca6573f65052f58d44",
+    "snapshot_generated_utc": "2026-11-02T15:24:30.110683+00:00",
+    "snapshot_age_minutes": 60.8815,
+    "bar_start_et": "2026-11-02T10:20:00-05:00",
+    "bar_age_minutes": 65.3833,
+    "snapshot_within_75_minutes": true,
+    "individual_bar_within_45_minutes": false,
+    "mode": "regular_session",
+    "session_date": "2026-11-02",
+    "previous_session_reference": "2026-10-30",
+    "reference_fixed_before_open": false,
+    "current_price_signal_eligible": false,
+    "collector_job_outcome": "unverified; stale GitHub JSON alone is not proof of failed collection",
+    "freshness_reason": "bar exceeds 45 minutes despite snapshot inside 75 minutes",
+    "delivery_status": "unverified"
   }
 }
