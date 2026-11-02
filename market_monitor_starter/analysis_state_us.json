@@ -19,7 +19,7 @@
   "next_conditions": [
     "다음 2026-11-02 17:30 EST / 2026-11-03 07:30 KST 마감확인: end_of_day, 2026-11-02 제공자 일봉 Close와 주봉 잠정/확정 분리; 장중 15:55 시작 5m 봉을 종가로 오인하지 말 것.",
     "QQQ 252일 최고종가 $759.66 대비 -10% 기준 $683.694 하회(현재 $684.76로 미충족), 일봉 SMA200 $678.38; QQQM $280 하회·$285 회복, VOO $695·$700 회복/재이탈 여부.",
-    "CNN 미국 주식 공포·탐욕지수는 CNN 원본 미검증; 제3자 전재 23 극단적 공포(2026-11-02 14:52 EST), 직전 제3자 26 (12:47 EST) 대비 하락. 공포 25미만은 검토 시작이지 매수 확정 아님; ETF 가격 저점 안정과 시장폭/금리/신용 개선 동반 확인.",
+    "CNN 미국주식 공포·탐욕지수는 CNN 원본 미검증; 제3자 전재 23 극단적 공포(15:30 EST 점검에 표시, 구성지표 최종시각 14:52 EST, 지수 자체 게시시각 미확인). 앞선 제3자 26에서 하락. 25미만은 검토 시작이지 매수 확정 아님; ETF 가격 저점 안정과 시장폭/금리/신용 개선 확인.",
     "시장폭 50/200d 상회비율, 동시각 상대 거래량, VIX/VXN, 미국 10년 명목/실질금리 신뢰 가능한 신규 자료 미확인; 11/2 장후 PLTR 실적과 11/3 JOLTS 공식 발표 이후 새 소식만 갱신."
   ],
   "last_report_prepared_utc": "2026-11-02T20:31:54.811Z",
@@ -34,13 +34,13 @@
     "CNN_FEAR_GREED": {
       "value": 23,
       "band": "극단적 공포",
-      "as_of_et": "2026-11-02T14:52:00-05:00",
+      "as_of_et": "index publication time unverified; source market components as of 2026-11-02 14:52 EST",
       "source_url": "https://fgscore.com/en/markets/sp500",
       "source_type": "Third-party page attributing CNN US stocks Fear & Greed; CNN original inaccessible for independent confirmation.",
       "observed_at_utc": "2026-11-02T20:31:54.811Z",
       "previous_cached_value": 26,
       "previous_cached_as_of_et": "2026-11-02T12:47:00-05:00",
-      "direction": "Third-party site 26(12:47 EST) -> 23(14:52 EST), -3; not independently verified against CNN and not a confirmed regular-session day-on-day change.",
+      "direction": "Source observed 26 in prior 12:47 EST check -> 23 in 15:30 EST check; source's component timestamp at latest check was 14:52 EST; exact CNN index update timing and primary CNN value not verified.",
       "recent_five_trading_days": "unverified; site's 1-day-ago Nov 1 Sunday is not prior US trading day",
       "refresh_condition": "Only new traceable publication or materially different ETF price context; do not treat site re-render as new observation",
       "last_reliable_cached_value": 31,
@@ -54,7 +54,9 @@
         "https://fgscore.com/en/markets/sp500",
         "https://fgscore.com/en"
       ],
-      "last_checked_at_utc": "2026-11-02T20:31:54.811Z"
+      "last_checked_at_utc": "2026-11-02T20:31:54.811Z",
+      "page_market_components_timestamp_et": "2026-11-02T14:52:00-05:00",
+      "index_publication_timestamp_verified": false
     },
     "DATA_QUALITY": {
       "checked_at_utc": "2026-11-02T20:31:54.811Z",
