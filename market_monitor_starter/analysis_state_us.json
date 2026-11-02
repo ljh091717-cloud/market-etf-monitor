@@ -145,14 +145,24 @@
       ],
       "new_conditions_since_previous_snapshot": [],
       "previous_valid_prices": {
-        "QQQ": -1.004,
-        "QQQM": -0.994,
-        "VOO": -0.614
+        "QQQ": 691.55,
+        "QQQM": 284.7399,
+        "VOO": 697.495
       },
       "last_data_limited_run_recovered": true,
       "report_status": "VOO repeated below 695 without verified continuous rearm; QQQ high252 -10 near but not yet met. No fresh independent severe trigger.",
       "delivery_status": "unverified",
-      "latest_blob_sha": "6fa335fd229f1cb772bbc744f553cf25c035da47"
+      "latest_blob_sha": "6fa335fd229f1cb772bbc744f553cf25c035da47",
+      "observed_prices": {
+        "QQQ": 684.61,
+        "QQQM": 281.91,
+        "VOO": 693.21
+      },
+      "previous_price_change_pct": {
+        "QQQ": -1.004,
+        "QQQM": -0.994,
+        "VOO": -0.614
+      }
     },
     "FOMC_2026_OCT": {
       "meeting_dates_et": "2026-10-27/2026-10-28",
