@@ -1,48 +1,50 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-02T20:15:37.328842+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-02T22:16:58.472919+00:00",
   "last_reference_session": "2026-10-30",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 684.76,
-    "QQQM": 281.9774,
-    "VOO": 693.8
+    "QQQ": 681.09,
+    "QQQM": 280.49,
+    "VOO": 691.32
   },
   "last_active_conditions": [
+    "QQQ:high252:-10",
     "QQQM:below:first",
     "QQQM:below:second",
     "QQQM:band:third",
     "VOO:below:first"
   ],
-  "current_judgment": "선제분할매수: QQQM 기존 3차 $280~285 관심 구간 및 제3자 CNN 극단적 공포 23점으로 조건부 검토 시작; 미검증 원본과 가격 저점 불안정 때문에 자동 확정 신호 아님. 안정화확인형: 추가매수 보류.",
+  "current_judgment": "선제분할매수: QQQ 252일 최고종가 대비 -10% 첫 일봉마감 도달; QQQM $280~285 3차 관심구간 안 $280.49로 하단 근접. 가격조건 검토 가능하나 자금·위험한도 미확정, 저점 안정 및 시장 내부 위험 미해소로 주문·수량 결정 금지. 안정화확인형: 추가매수 보류; QQQ SMA200 $678.68 이탈 여부 및 QQQM $280 하향·$285 회복 확인.",
   "next_conditions": [
-    "다음 2026-11-02 17:30 EST / 2026-11-03 07:30 KST 마감확인: end_of_day, 2026-11-02 제공자 일봉 Close와 주봉 잠정/확정 분리; 장중 15:55 시작 5m 봉을 종가로 오인하지 말 것.",
-    "QQQ 252일 최고종가 $759.66 대비 -10% 기준 $683.694 하회(현재 $684.76로 미충족), 일봉 SMA200 $678.38; QQQM $280 하회·$285 회복, VOO $695·$700 회복/재이탈 여부.",
-    "CNN 미국주식 공포·탐욕지수는 CNN 원본 미검증; 제3자 전재 23 극단적 공포(15:30 EST 점검에 표시, 구성지표 최종시각 14:52 EST, 지수 자체 게시시각 미확인). 앞선 제3자 26에서 하락. 25미만은 검토 시작이지 매수 확정 아님; ETF 가격 저점 안정과 시장폭/금리/신용 개선 확인.",
-    "시장폭 50/200d 상회비율, 동시각 상대 거래량, VIX/VXN, 미국 10년 명목/실질금리 신뢰 가능한 신규 자료 미확인; 11/2 장후 PLTR 실적과 11/3 JOLTS 공식 발표 이후 새 소식만 갱신."
+    "2026-11-03 미국 10:30 EST 정기점검(2026-11-04 00:30 KST): 새 정규장 자료와 11/02 제공자 일봉/11/03 기준 일치·45분 봉 및 75분 수집 최신성 각각 검증.",
+    "QQQ 252일 최고종가 $759.66 기준 -10% $683.69 재회복/유지 여부는 11/02 종가 $681.09에서 -10.34%; 11/02 일봉 SMA200 $678.68 이탈 여부, 주봉 직전확정 EMA20 $710.408·잠정주봉 EMA20 $707.616 및 RSI14 44.495 분리.",
+    "QQQM 3차 관심구간 $280~285: $280 이탈 시 하방 위험 우선, $285 회복 후 완성된 장중봉과 다음 일봉 확인. VOO $695/$700 회복과 $680 2차 관심구간 접근은 독립조건.",
+    "CNN 미국주식 공포·탐욕지수 제3자 전재 23 극단적 공포(16:38 EST 구성지표 최신 시각), CNN 원본 미확인, 직전 15:30 관측도 23; 점수 단독 매수 확정 신호 아님.",
+    "11/03 미국 중간선거 및 공식 경제지표/실적 발표 이후 영향 재평가; 10년 명목/실질, VIX/VXN, 시장폭(50/200 SMA 상회비율)은 검증 가능한 시점만 기록."
   ],
-  "last_report_prepared_utc": "2026-11-02T20:31:54.811Z",
-  "last_report_kind": "2026-11-02_15:30_EST_third_party_CNN_below25_new_sentiment_threshold_price_conditions_unchanged",
+  "last_report_prepared_utc": "2026-11-02T22:31:40.665Z",
+  "last_report_kind": "2026-11-02_17:30_EST_end_of_day_QQQ_high252_minus10_new_condition",
   "last_report_condition_ids": [
-    "CNN:thirdparty:below25"
+    "QQQ:high252:-10"
   ],
-  "last_end_of_day_review_session": "2026-10-30",
+  "last_end_of_day_review_session": "2026-11-02",
   "rearm_status": "not_implemented_no_continuous_detector",
   "notification_delivery_status": "unverified",
   "low_frequency_cache": {
     "CNN_FEAR_GREED": {
       "value": 23,
       "band": "극단적 공포",
-      "as_of_et": "index publication time unverified; source market components as of 2026-11-02 14:52 EST",
+      "as_of_et": "2026-11-02 16:38 EST market-components timestamp, not verified primary CNN index timestamp",
       "source_url": "https://fgscore.com/en/markets/sp500",
-      "source_type": "Third-party page attributing CNN US stocks Fear & Greed; CNN original inaccessible for independent confirmation.",
-      "observed_at_utc": "2026-11-02T20:31:54.811Z",
-      "previous_cached_value": 26,
-      "previous_cached_as_of_et": "2026-11-02T12:47:00-05:00",
-      "direction": "Source observed 26 in prior 12:47 EST check -> 23 in 15:30 EST check; source's component timestamp at latest check was 14:52 EST; exact CNN index update timing and primary CNN value not verified.",
-      "recent_five_trading_days": "unverified; site's 1-day-ago Nov 1 Sunday is not prior US trading day",
-      "refresh_condition": "Only new traceable publication or materially different ETF price context; do not treat site re-render as new observation",
+      "source_type": "Third-party CNN-attributed US equity Fear & Greed; CNN direct blocked",
+      "observed_at_utc": "2026-11-02T22:31:40.665Z",
+      "previous_cached_value": 23,
+      "previous_cached_as_of_et": "2026-11-02 14:52 EST market-components timestamp",
+      "direction": "No reliably verified change in headline from prior 23; no new CNN threshold; primary and 5-session exact matched history unverified",
+      "recent_five_trading_days": "not verified as like-for-like observations; site daily comparison labels Sunday as 1 day ago",
+      "refresh_condition": "New independently traceable CNN release or material change combined with confirmed ETF price condition",
       "last_reliable_cached_value": 31,
       "last_reliable_cached_as_of_et": "2026-10-30T09:37:00-04:00",
       "latest_verification_status": "2026-11-02 15:30 EST check; external source showed 23 Extreme Fear with component market timestamp 14:52 EST and 1-week-ago 30, but no comparable previous US trading day score and primary CNN access blocked",
@@ -55,7 +57,7 @@
         "https://fgscore.com/en"
       ],
       "last_checked_at_utc": "2026-11-02T20:31:54.811Z",
-      "page_market_components_timestamp_et": "2026-11-02T14:52:00-05:00",
+      "page_market_components_timestamp_et": "2026-11-02T16:38:00-05:00",
       "index_publication_timestamp_verified": false
     },
     "DATA_QUALITY": {
@@ -335,39 +337,74 @@
       "prior_prices_paid": 77.9,
       "checked_at_utc": "2026-11-02T15:35:56.000Z",
       "refresh_condition": "Next ISM release or official revision"
+    },
+    "MARKET_BREADTH_NOV02": {
+      "value": "Reuters 11/02 close: S&P500 advancing/declining 2.2:1 (A/D proxy); Nasdaq new 52wk lows 323 versus 112 highs; not % stocks above 50/200d SMA.",
+      "as_of_et": "2026-11-02 closing regular session",
+      "source_url": "https://www.reuters.com/business/media-telecom/wall-street-futures-rise-ai-stocks-catch-their-breath-midterms-focus-2026-11-02/",
+      "checked_at_utc": "2026-11-02T22:31:40.665Z",
+      "refresh_condition": "Next verified close or a new breadth release"
+    },
+    "US_VOLUME_NOV02": {
+      "value": "18.8bn shares across US exchanges, 20-session full-day average 17.3bn; both full-day values, not QQQ ETF relative volume.",
+      "as_of_et": "2026-11-02 close",
+      "source_url": "https://www.reuters.com/business/media-telecom/wall-street-futures-rise-ai-stocks-catch-their-breath-midterms-focus-2026-11-02/",
+      "checked_at_utc": "2026-11-02T22:31:40.665Z",
+      "refresh_condition": "Next full trading session close"
+    },
+    "TREASURY_10Y_NOV02": {
+      "value_pct": 4.909,
+      "as_of_et": "2026-11-02 daily quote (provider, not official Treasury)",
+      "source_url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
+      "checked_at_utc": "2026-11-02T22:31:40.665Z",
+      "verified_official": false,
+      "refresh_condition": "Next official Treasury/FRED daily yield publication"
+    },
+    "MARKET_RISK_NOV02": {
+      "value": "Nonofficial intraday VIX ~21.22 (+9.3%) MarketWatch; final close and VXN/10y real yield not independently verified",
+      "as_of_et": "2026-11-02 afternoon EST",
+      "source_url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-rebound-midterm-elections-earnings-economic-data-apple/card/market-s-fear-gauge-heads-for-highest-close-in-five-months-FRFrjMCvBqZNKjyChwGx",
+      "checked_at_utc": "2026-11-02T22:31:40.665Z",
+      "refresh_condition": "Cboe official VIX/VXN full-day releases and official 10-year TIPS yield"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-02T20:31:54.811Z",
-  "last_check_prepared_utc": "2026-11-02T20:31:54.811Z",
-  "last_check_kind": "2026-11-02_15:30_EST_third_party_CNN_below25_new_sentiment_threshold_price_conditions_unchanged",
+  "last_evaluation_utc": "2026-11-02T22:31:40.665Z",
+  "last_check_prepared_utc": "2026-11-02T22:31:40.665Z",
+  "last_check_kind": "2026-11-02_17:30_EST_end_of_day_QQQ_high252_minus10_new_condition",
   "last_check_condition_ids": [
-    "CNN:thirdparty:below25"
+    "QQQ:high252:-10"
   ],
-  "last_notification_decision": "notify_new_third_party_CNN_23_extreme_fear_with_timestamp_14_52_EST_vs_prior_cached_26_12_47_EST; provider original unverified; QQQ below -10 not met; no new confirmed price crossing; no automatic buy",
-  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob d307e8cc336a4a2d9cc07585f259c57247e50b09; Yahoo Finance via yfinance; 2026-11-02T20:15:37.328842+00:00; regular_session; 5m start 2026-11-02 15:15 EST, possibly incomplete at 15:15:37 collection; prior close 2026-10-30 reference fixed after open at 10:24:30 EST.",
+  "last_notification_decision": "notify_new_QQQ_252d_high_close_minus10_threshold_confirmed_in_2026_11_02_provider_EOD_close_681_09_not_exchange_certified; QQQM_third_band_280_49_near_lower_280; no auto buy; delivery unverified",
+  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob f53efe3587403e5ae0035bf853d61ce567e298b1; Yahoo Finance via yfinance; end_of_day generated 2026-11-02T22:16:58.472919+00:00; all close_session_date 2026-11-02; daily reference 2026-10-30; fixed after open; unofficial provider closes subject to revisions.",
   "last_external_end_of_day": {
-    "session_date": "2026-10-30",
-    "session_close_et": "2026-10-30T16:00:00-04:00",
-    "checked_at_utc": "2026-10-30T21:28:02.265Z",
+    "session_date": "2026-11-02",
+    "session_close_et": "2026-11-02T16:00:00-05:00",
+    "checked_at_utc": "2026-11-02T22:31:40.665Z",
     "prices": {
       "QQQ": {
-        "close": 690.49,
-        "previous_close": 715.34,
-        "change_pct": -3.474,
-        "drawdown_high252_pct": -9.105
+        "close": 681.09,
+        "previous_close": 690.49,
+        "change_pct": -1.3613,
+        "drawdown_high252_pct": -10.3428,
+        "sma_200": 678.682,
+        "atr_14": 13.175
       },
       "QQQM": {
-        "close": 284.34,
-        "previous_close": 294.53,
-        "change_pct": -3.46,
-        "drawdown_high252_pct": -9.087
+        "close": 280.49,
+        "previous_close": 284.34,
+        "change_pct": -1.354,
+        "drawdown_high252_pct": -10.3178,
+        "sma_200": 279.423,
+        "atr_14": 5.389
       },
       "VOO": {
-        "close": 694.81,
-        "previous_close": 707.32,
-        "change_pct": -1.769,
-        "drawdown_high252_pct": -2.987
+        "close": 691.32,
+        "previous_close": 694.81,
+        "change_pct": -0.5023,
+        "drawdown_high252_pct": -3.4739,
+        "sma_200": 667.491,
+        "atr_14": 7.389
       }
     },
     "source_urls": {
@@ -376,41 +413,50 @@
       "VOO": "https://finance.yahoo.com/quote/VOO/history/"
     },
     "provider_close_not_exchange_official": true,
-    "provider_data_may_revise": true
+    "provider_data_may_revise": true,
+    "source_json_sha": "f53efe3587403e5ae0035bf853d61ce567e298b1"
   },
   "last_data_quality_observation": {
-    "check_at_utc": "2026-11-02T20:31:54.811Z",
-    "intended_slot_et": "2026-11-02T15:30:00-05:00",
-    "observed_execution_et": "2026-11-02T15:30:00-05:00",
-    "execution_late_minutes": 4.88,
-    "latest_blob_sha": "d307e8cc336a4a2d9cc07585f259c57247e50b09",
-    "previous_blob_sha": "6fa335fd229f1cb772bbc744f553cf25c035da47",
-    "snapshot_generated_utc": "2026-11-02T20:15:37.328842+00:00",
-    "snapshot_age_minutes": 16.29,
-    "bar_start_et": "2026-11-02T15:15:00-05:00",
-    "bar_age_minutes": 16.91,
-    "snapshot_within_75_minutes": true,
-    "individual_bar_within_45_minutes": true,
-    "mode": "regular_session",
-    "session_date": "2026-11-02",
-    "previous_session_reference": "2026-10-30",
-    "reference_fixed_before_open": false,
-    "price_bar_may_have_been_incomplete_at_collection": true,
-    "current_price_signal_eligible": true,
-    "collector_job_outcome": "GitHub 41517496986 collect success and deploy success; JSON updated at 15:15:37 EST",
-    "delivery_status": "unverified",
-    "sampled_new_crossing": [],
-    "continuous_rearm_verified": false,
-    "price_drop_from_prior_sample_pct": {
-      "QQQ": -1.004,
-      "QQQM": -0.994,
-      "VOO": -0.614
+    "check_at_utc": "2026-11-02T22:31:40.665Z",
+    "intended_slot_et": "2026-11-02T17:30:00-05:00",
+    "snapshot_generated_utc": "2026-11-02T22:16:58.472919+00:00",
+    "latest_blob_sha": "f53efe3587403e5ae0035bf853d61ce567e298b1",
+    "previous_blob_sha": "d307e8cc336a4a2d9cc07585f259c57247e50b09",
+    "mode": "end_of_day",
+    "market_session_date": "2026-11-02",
+    "price_close_session_dates": {
+      "QQQ": "2026-11-02",
+      "QQQM": "2026-11-02",
+      "VOO": "2026-11-02"
     },
-    "next_price_alert_et": "QQQ high252 -10 at $683.694; no off-schedule detector",
-    "price_change_from_prior_valid_pct": {
-      "QQQ": 0.022,
-      "QQQM": 0.024,
-      "VOO": 0.085
-    }
+    "daily_close_dates_verified": true,
+    "provider_close_not_exchange_certified": true,
+    "market_open_at_collection": false,
+    "regular_session_verified_at_collection": false,
+    "reference_date": "2026-10-30",
+    "reference_fixed_before_open": false,
+    "reference_fixed_at_utc": "2026-11-02T15:24:30.110683+00:00",
+    "corporate_action_guard": {
+      "QQQ": false,
+      "QQQM": false,
+      "VOO": false
+    },
+    "new_crossings_in_collector": [
+      "QQQ:high252:-10"
+    ],
+    "new_crossings_compared_with_last_analysis": [
+      "QQQ:high252:-10"
+    ],
+    "active_conditions": [
+      "QQQ:high252:-10",
+      "QQQM:below:first",
+      "QQQM:below:second",
+      "QQQM:band:third",
+      "VOO:below:first"
+    ],
+    "rearm_continuous_hold_verified": false,
+    "data_freshness": "end_of_day; generated after close and all three provider daily closes reflect 2026-11-02; no regular-session 5min bar used as final close",
+    "workflow_job_outcome": "Not independently checked in this run; current latest.json blob and date prove file refresh, not Actions collect/deploy job status",
+    "delivery_status": "unverified"
   }
 }
