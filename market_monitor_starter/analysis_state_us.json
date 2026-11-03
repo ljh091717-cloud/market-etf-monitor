@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-03T16:25:09.667218+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-03T17:25:04.055424+00:00",
   "last_reference_session": "2026-11-02",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 686.27,
-    "QQQM": 282.57,
-    "VOO": 694.4299
+    "QQQ": 687.146,
+    "QQQM": 282.9499,
+    "VOO": 694.28
   },
   "last_active_conditions": [
     "QQQM:below:first",
@@ -15,12 +15,13 @@
     "QQQM:band:third",
     "VOO:below:first"
   ],
-  "current_judgment": "관찰/추가매수 보류: 11/03 11:25 EST 5분봉 시작 표본 QQQ $686.27 (+0.76%; 252일 고점 대비 -9.66%), QQQM $282.57 (+0.74%; $280~285 3차 관심구간 내부), VOO $694.43 (+0.45%; 1차 관심구간 $695~700 미만). 직전 저장 10:10 EST 표본 대비 신규 수집기 교차/회복 조건 없음. QQQ는 $683.69(-10%) 위이지만 버퍼 포함 약 $686.99 미만, 15분 연속 회복 확인 불가; 신규 회복 경보 미발행. 외부 신규 BLS 11/03 10:00 EST JOLTS 9월 7.523m(8월 수정 7.190m), Reuters 컨센서스 7.100m; 금리·증시 혼재. CNN 제3자 전재 20(극단적 공포) 11/03 10:34 EST 구성요소 기준, 11/02 저장 23에서 -3이나 동일 단계/15 이하 미충족. 선제계획형 가격조건 관찰 유지, 안정화확인형 추가매수 보류.",
+  "current_judgment": "관찰/추가매수 보류: 2026-11-03 12:25 EST 시작 5분봉 표본 QQQ $687.15 (전일 대비 +0.89%; 252일 최고종가 대비 -9.55%), QQQM $282.95 (3차 확정 관심구간 $280~285 유지), VOO $694.28 (1차 관심구간 $695~700 하단 미만). 11:25 EST 이전 표본 대비 신규 수집기 경보·교차·회복 조건 없음. QQQ는 고점 대비 -10% 경보가격 $683.69 위이며 0.25ATR 기반 참고 회복가격 약 $686.99를 이번 한 표본에서 소폭 상회하나, 15분 연속 유지 및 재활성화는 확인되지 않음. CNN 제3자 관측 20점 극단적 공포(11/03 10:34 EST 구성지표 시각)는 신규 발표·추가 단계 충족 검증 없음. 선제 분할매수 가격조건 관찰, 안정화확인형 추가매수 보류; 예산/위험한도 미확정, 자동주문 없음.",
   "next_conditions": [
-    "2026-11-03 12:30 EST / 2026-11-04 02:30 KST: regular_session/현재 거래일·생성후75분/5분봉45분 검증 후 QQQ $683.69 하락 경보 재이탈 여부와 $686.99 부근 버퍼 상회·연속 봉 및 추세 확인(15분 연속 재활성화 감지기는 미구현).",
-    "QQQ 일봉 SMA200 $678.68, 확정 주봉 EMA20 $710.408 및 잠정 주봉 구분; QQQM $280 이탈·$285 회복; VOO $695 회복·$700 상단 유지 또는 $680 접근. 장중 표본과 확정 일봉 분리.",
-    "11/03 신규 JOLTS 수치가 높고 美10년 명목금리 비공식 4.961% (+6bp) 관측. 실질금리·VXN·시간맞춤 거래량·구성종목 50/200일선 비율 미확인. 차후 공식/동기화 데이터로 갱신.",
-    "CNN 공포·탐욕 지수 제3자 최신 표시 20(11/03 10:34 EST 구성요소, 원본 지수 발표시각 미확인); 15 이하/10 미만 또는 점수와 ETF 가격 저점 안정 결합 시 우선 재평가. 최근 약5거래일 동일시점 비교 미확인."
+    "2026-11-03 13:30 EST / 2026-11-04 03:30 KST: regular_session, NY거래일·생성후75분·각 5분봉45분 검증; QQQ 252일 최고종가 -10% 경보 $683.69 재이탈, SMA200 $678.68 이탈 여부 확인.",
+    "QQQ 참고 회복가격 $686.99 유지/완성봉·일봉 확인(15분 연속 유지는 별도 감지기가 없어 미확인); 확정 주봉 EMA20 $710.41과 현재주 잠정 지표 분리.",
+    "QQQM $280 하단 이탈·$285 상단 회복; VOO $695 회복 또는 $680 2차 관심구간 접근, 장중 도달/확정 일봉 구분.",
+    "CNN 미국주식 공포탐욕지수 최신 검증값 20(11/03 10:34 EST 제3자 구성지표 시각). 15 이하 집중 검토/10 미만 추가하락 경고, 또는 가격 안정과 점수 상승 동반 시 재검토. 원본 정확한 발표시각·최근 5거래일 유사 시점 비교 미확인.",
+    "시장폭 50/200일선 상회비율·동일 시간대 거래량·10년 실질금리·VXN 미확인. 11/03 JOLTS와 10년물 비공식 수치는 이전 캐시 유지; 신규 공식 발표·만료 때만 갱신."
   ],
   "last_report_prepared_utc": "2026-11-02T22:31:40.665Z",
   "last_report_kind": "2026-11-02_17:30_EST_end_of_day_QQQ_high252_minus10_new_condition",
@@ -394,12 +395,12 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-03T16:31:38.000Z",
-  "last_check_prepared_utc": "2026-11-03T16:31:38.000Z",
-  "last_check_kind": "2026-11-03_11:30_EST_regular_no_new_price_condition_JOLTS_FG_lower_same_band",
+  "last_evaluation_utc": "2026-11-03T17:31:13.124Z",
+  "last_check_prepared_utc": "2026-11-03T17:31:13.124Z",
+  "last_check_kind": "2026-11-03_12:30_EST_regular_no_new_condition_QQQ_buffer_sample_unconfirmed",
   "last_check_condition_ids": [],
-  "last_notification_decision": "skip_notification_no_new_price_crossings_or_confirmed_recovery; new official JOLTS and 3rdparty CNN 20 cached; no new sentiment-band threshold; stabilization unproven; delivery unverified",
-  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob 35df6c5ebae9fe11d5daf9e50ff920782c623c81; Yahoo Finance/yfinance regular_session created 2026-11-03T16:25:09.667218+00:00; 5min bar starts 2026-11-03 11:25 EST potentially forming; 2026-11-02 baseline preopen fixed 2026-11-03T14:29:15.994626+00:00.",
+  "last_notification_decision": "skip_notification: unchanged collector conditions and no new validated price break or confirmed 15min recovery; 3rdparty CNN 20 same cached observation; QQQ slightly above indicative recovery buffer in one sampled unconfirmed 5m bar, not an implemented rearm",
+  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob b30de1303dbe1d650eb0e6e5cb0bb28554a2fb8e; Yahoo Finance/yfinance regular_session generated 2026-11-03T17:25:04.055424+00:00; last 5m bar starts 12:25 EST (possibly forming); daily_reference 2026-11-02, preopen fixed 2026-11-03T14:29:15.994626+00:00.",
   "last_external_end_of_day": {
     "session_date": "2026-11-02",
     "session_close_et": "2026-11-02T16:00:00-05:00",
@@ -440,22 +441,22 @@
     "source_json_sha": "f53efe3587403e5ae0035bf853d61ce567e298b1"
   },
   "last_data_quality_observation": {
-    "check_at_utc": "2026-11-03T16:31:38.000Z",
-    "intended_slot_et": "2026-11-03 11:30 EST scheduled review",
-    "snapshot_generated_utc": "2026-11-03T16:25:09.667218+00:00",
-    "latest_blob_sha": "35df6c5ebae9fe11d5daf9e50ff920782c623c81",
+    "check_at_utc": "2026-11-03T17:31:13.124Z",
+    "intended_slot_et": "2026-11-03 12:30 EST scheduled review",
+    "snapshot_generated_utc": "2026-11-03T17:25:04.055424+00:00",
+    "latest_blob_sha": "b30de1303dbe1d650eb0e6e5cb0bb28554a2fb8e",
     "mode": "regular_session",
     "market_session_date": "2026-11-03",
     "price_bar_start_et": {
-      "QQQ": "2026-11-03T11:25:00-05:00",
-      "QQQM": "2026-11-03T11:25:00-05:00",
-      "VOO": "2026-11-03T11:25:00-05:00"
+      "QQQ": "2026-11-03T12:25:00-05:00",
+      "QQQM": "2026-11-03T12:25:00-05:00",
+      "VOO": "2026-11-03T12:25:00-05:00"
     },
-    "age_minutes": 6.47,
+    "age_minutes": 6.15,
     "bar_age_minutes": {
-      "QQQ": 6.63,
-      "QQQM": 6.63,
-      "VOO": 6.63
+      "QQQ": 6.22,
+      "QQQM": 6.22,
+      "VOO": 6.22
     },
     "within_75_minute_limit": true,
     "within_45_minute_bar_limit": true,
@@ -472,7 +473,7 @@
     "collector_recovered_conditions": [],
     "week_closed": false,
     "delivery_status": "unverified",
-    "workflow_job_outcome": "not independently checked; refreshed valid latest data and SHA verified",
-    "note": "QQQ 10% drawdown threshold 683.69, buffer 3.29, indicative reset threshold 686.99; continuous 15min detector not implemented"
+    "workflow_job_outcome": "not independently checked; current-date valid latest JSON verified",
+    "note": "No new collector crossing; QQQ indicative -10% drawdown recovery buffer $686.99 only sampled above, no 15minute confirmation or live rearm. Sentiment unchanged 20 based on 10:34 EST component time."
   }
 }
