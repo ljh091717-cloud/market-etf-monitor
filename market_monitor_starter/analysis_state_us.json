@@ -1,27 +1,28 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-03T17:25:04.055424+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-03T18:16:47.036099+00:00",
   "last_reference_session": "2026-11-02",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 687.146,
-    "QQQM": 282.9499,
-    "VOO": 694.28
+    "QQQ": 687.64,
+    "QQQM": 283.1601,
+    "VOO": 695.35
   },
   "last_active_conditions": [
     "QQQM:below:first",
     "QQQM:below:second",
     "QQQM:band:third",
-    "VOO:below:first"
+    "VOO:band:first"
   ],
-  "current_judgment": "관찰/추가매수 보류: 2026-11-03 12:25 EST 시작 5분봉 표본 QQQ $687.15 (전일 대비 +0.89%; 252일 최고종가 대비 -9.55%), QQQM $282.95 (3차 확정 관심구간 $280~285 유지), VOO $694.28 (1차 관심구간 $695~700 하단 미만). 11:25 EST 이전 표본 대비 신규 수집기 경보·교차·회복 조건 없음. QQQ는 고점 대비 -10% 경보가격 $683.69 위이며 0.25ATR 기반 참고 회복가격 약 $686.99를 이번 한 표본에서 소폭 상회하나, 15분 연속 유지 및 재활성화는 확인되지 않음. CNN 제3자 관측 20점 극단적 공포(11/03 10:34 EST 구성지표 시각)는 신규 발표·추가 단계 충족 검증 없음. 선제 분할매수 가격조건 관찰, 안정화확인형 추가매수 보류; 예산/위험한도 미확정, 자동주문 없음.",
+  "current_judgment": "관찰/추가매수 보류: 2026-11-03 13:15 EST 시작 5분봉 제공자 표본 QQQ $687.64 (전일 대비 +0.96%; 252일 최고종가 대비 -9.48%), QQQM $283.16 (기존 3차 $280~285 내부), VOO $695.35 (1차 $695~700에 단일 표본 재진입). VOO는 이전 $694.28에서 $695.35로 상단이 아니라 구간 하단을 소폭 회복했으나 $695보다 $0.35 높을 뿐이고 0.25ATR/0.3% 참고 버퍼를 고려한 회복·15분 유지 미확인으로 신규 독립 가격 경보 불인정. QQQ -10% 경보선 $683.69 위, SMA200 $678.68 위; 참고 회복가격 $686.99 이상 표본 유지도 15분 연속 미확인. CNN 제3자 20점 극단적 공포, 구성지표 최신 11:37 EST, 점수 변화 없음(정확한 CNN 원본 발표시간 미확인). 선제 분할매수는 가격 관심구간 관찰, 안정화확인형 추가매수 보류; 사용자 예산/위험한도 미확정; 자동 주문 없음.",
   "next_conditions": [
-    "2026-11-03 13:30 EST / 2026-11-04 03:30 KST: regular_session, NY거래일·생성후75분·각 5분봉45분 검증; QQQ 252일 최고종가 -10% 경보 $683.69 재이탈, SMA200 $678.68 이탈 여부 확인.",
-    "QQQ 참고 회복가격 $686.99 유지/완성봉·일봉 확인(15분 연속 유지는 별도 감지기가 없어 미확인); 확정 주봉 EMA20 $710.41과 현재주 잠정 지표 분리.",
-    "QQQM $280 하단 이탈·$285 상단 회복; VOO $695 회복 또는 $680 2차 관심구간 접근, 장중 도달/확정 일봉 구분.",
-    "CNN 미국주식 공포탐욕지수 최신 검증값 20(11/03 10:34 EST 제3자 구성지표 시각). 15 이하 집중 검토/10 미만 추가하락 경고, 또는 가격 안정과 점수 상승 동반 시 재검토. 원본 정확한 발표시각·최근 5거래일 유사 시점 비교 미확인.",
-    "시장폭 50/200일선 상회비율·동일 시간대 거래량·10년 실질금리·VXN 미확인. 11/03 JOLTS와 10년물 비공식 수치는 이전 캐시 유지; 신규 공식 발표·만료 때만 갱신."
+    "2026-11-03 14:30 EST / 2026-11-04 04:30 KST 정기점검: 2026-11-03 regular_session의 생성후75분·각 5분봉45분·직전거래일 기준일 확인.",
+    "QQQ: 252일 최고종가 -10% 경보 $683.69 재이탈 및 SMA200 $678.68 하향 이탈; 참고 회복가격 $686.99 상회 완성봉/일봉 지속 확인(실시간 15분 검증 아님).",
+    "QQQM: 3차 확정 관심구간 $280~285 하단 이탈·상단 회복 여부; $279.42 일봉 SMA200 근접 여부. 15분 연속 재활성화는 독립 감지기 없어 미확인.",
+    "VOO: $695 아래 재이탈 또는 $700 돌파·일봉 마감 여부; 참고 구간 회복 버퍼 상단 $697.09 (미구현 필터), 다음 하단 관심구간 $670~680.",
+    "CNN 미국주식 공포·탐욕지수 20점 극단적 공포 (11/03 11:37 EST 제3자 구성지표 시각), 15 이하 집중 검토/10 미만 추가하락 위험, 공포 완화가 ETF 지지 회복과 동반되는지 점검; CNN 원본 및 동일 시각 최근 5거래일 비교 미확인.",
+    "시장폭 50/200일선 상회비율·동일경과 ETF 거래량·10년 실질금리·VXN은 독립 검증 미완료. 11/04 BEA 무역지표 등 공식 발표 또는 기존 저빈도 캐시 만료시만 갱신."
   ],
   "last_report_prepared_utc": "2026-11-02T22:31:40.665Z",
   "last_report_kind": "2026-11-02_17:30_EST_end_of_day_QQQ_high252_minus10_new_condition",
@@ -35,7 +36,7 @@
     "CNN_FEAR_GREED": {
       "value": 20,
       "band": "극단적 공포",
-      "as_of_et": "2026-11-03 10:34 EST market-components timestamp (not official CNN headline publish time)",
+      "as_of_et": "2026-11-03 11:37 EST market-components timestamp (not official CNN headline publish time)",
       "source_url": "https://fgscore.com/en/markets/sp500",
       "source_type": "Third-party display of CNN US-equity index; primary CNN original access blocked; same-clock 5-session history not confirmed",
       "observed_at_utc": "2026-11-03T16:31:38.000Z",
@@ -46,7 +47,7 @@
       "refresh_condition": "New verified CNN headline publication, 15/10 thresholds, or sentiment combined with verified ETF price stabilization",
       "last_reliable_cached_value": 31,
       "last_reliable_cached_as_of_et": "2026-10-30T09:37:00-04:00",
-      "latest_verification_status": "2026-11-02 15:30 EST check; external source showed 23 Extreme Fear with component market timestamp 14:52 EST and 1-week-ago 30, but no comparable previous US trading day score and primary CNN access blocked",
+      "latest_verification_status": "2026-11-03 13:30 EST verification of third-party page: CNN US equity index 20 Extreme Fear; prior cached 20 unchanged; third-party '1 day ago 20' may use UTC date, cannot label same-clock prior US session; no verified primary CNN headline publication time; recent 5 comparable sessions unverified",
       "conflicting_other_url": "https://fgscore.com/en",
       "conflicting_as_of_et": "2026-10-30T16:27:00-04:00",
       "conflicting_detail_value": 26,
@@ -55,14 +56,14 @@
         "https://fgscore.com/en/markets/sp500",
         "https://fgscore.com/en"
       ],
-      "last_checked_at_utc": "2026-11-03T16:31:38.000Z",
-      "page_market_components_timestamp_et": "2026-11-03T10:34:00-05:00",
+      "last_checked_at_utc": "2026-11-03T18:35:07.103Z",
+      "page_market_components_timestamp_et": "2026-11-03T11:37:00-05:00",
       "index_publication_timestamp_verified": false
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-11-03T15:30:32.863Z",
+      "checked_at_utc": "2026-11-03T18:35:07.103Z",
       "latest_snapshot_date": "2026-11-03",
-      "latest_snapshot_generated_utc": "2026-11-03T15:14:39.906215+00:00",
+      "latest_snapshot_generated_utc": "2026-11-03T18:16:47.036099+00:00",
       "intended_session_date": "2026-11-03",
       "valid_today": true,
       "collector_snapshot_mode": "regular_session",
@@ -71,17 +72,19 @@
       "daily_reference_as_of_session": "2026-11-02",
       "reference_fixed_before_open": true,
       "reference_fixed_at_utc": "2026-11-03T14:29:15.994626+00:00",
-      "last_five_min_bar_start_et": "2026-11-02T15:15:00-05:00",
-      "bar_role": "15:15 EST 5-minute bar START; collected at 15:15:37 EST and may have been incomplete",
+      "last_five_min_bar_start_et": "2026-11-03T13:15:00-05:00",
+      "bar_role": "13:15 EST 5-min bar START; collected 13:16:47 EST, possibly uncompleted",
       "source_type": "Yahoo Finance via yfinance; unofficial",
-      "collector_job_status": "2026-11-02T20:15Z GitHub Actions 41517496986 collect and deploy both success including Collect and validate latest market data; independently verified today latest.json new SHA and timestamp",
+      "collector_job_status": "Run 41692164892 completed success, collect/deploy jobs and steps success; latest file same-day updated",
       "comparison_kind": "2026-11-02 latest vs previous 14:25 EST 5-minute bar; no newly crossed price thresholds, sentiment below 25 on third-party source",
-      "new_crossings_reported_by_collector": [],
+      "new_crossings_reported_by_collector": [
+        "VOO:band:first"
+      ],
       "active_conditions": [
         "QQQM:below:first",
         "QQQM:below:second",
         "QQQM:band:third",
-        "VOO:below:first"
+        "VOO:band:first"
       ],
       "new_compared_with_last_saved_analysis": [],
       "removed_compared_with_last_saved_analysis": [
@@ -115,14 +118,16 @@
         ]
       },
       "last_valid_price_by_symbol": {
-        "QQQ": 693.09,
-        "QQQM": 285.3899,
-        "VOO": 698.12
+        "QQQ": 687.64,
+        "QQQM": 283.1601,
+        "VOO": 695.35
       },
-      "refresh_condition": "Next US scheduled observation",
+      "refresh_condition": "Next US scheduled observation.",
       "snapshot_is_pre_10_30": false,
-      "recovered_conditions": [],
-      "recovery_confirmation": "not a 15-minute continuous confirmation",
+      "recovered_conditions": [
+        "VOO:below:first"
+      ],
+      "recovery_confirmation": "sample only; no 15min continuous hold; rearm filter not implemented",
       "latest_vs_prev_generated": "2026-11-02T19:26:58.606645+00:00",
       "freshness_minutes_at_analysis": 9.27,
       "price_bar_age_minutes_at_analysis": {
@@ -135,7 +140,7 @@
       "last_new_threshold_at_this_check": false,
       "price_close_session_date": "2026-10-30",
       "week_closed_in_this_snapshot": true,
-      "source_sha": "d307e8cc336a4a2d9cc07585f259c57247e50b09",
+      "source_sha": "7a635635d615ddc6ad8e03f0b77b02d2c23c3521",
       "source_format": "post-close provider daily bar; not exchange-certified and may be revised",
       "same_session_previous_data_exists": false,
       "snapshot_within_75_minutes": true,
@@ -395,12 +400,12 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-03T17:31:13.124Z",
-  "last_check_prepared_utc": "2026-11-03T17:31:13.124Z",
-  "last_check_kind": "2026-11-03_12:30_EST_regular_no_new_condition_QQQ_buffer_sample_unconfirmed",
+  "last_evaluation_utc": "2026-11-03T18:35:07.103Z",
+  "last_check_prepared_utc": "2026-11-03T18:35:07.103Z",
+  "last_check_kind": "2026-11-03_13:30_EST_regular_no_significant_new_condition_VOO_band_reentry_unconfirmed",
   "last_check_condition_ids": [],
-  "last_notification_decision": "skip_notification: unchanged collector conditions and no new validated price break or confirmed 15min recovery; 3rdparty CNN 20 same cached observation; QQQ slightly above indicative recovery buffer in one sampled unconfirmed 5m bar, not an implemented rearm",
-  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob b30de1303dbe1d650eb0e6e5cb0bb28554a2fb8e; Yahoo Finance/yfinance regular_session generated 2026-11-03T17:25:04.055424+00:00; last 5m bar starts 12:25 EST (possibly forming); daily_reference 2026-11-02, preopen fixed 2026-11-03T14:29:15.994626+00:00.",
+  "last_notification_decision": "skip_notification: VOO:band:first sampled reentry $695.35 vs $695 threshold, only $0.35 over lower edge, no continuous 15minute recovery/rearm and price below indicative buffer $697.09; QQQ/QQQM no new important drawdown, CNN 20 unchanged, no new significant data risk.",
+  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob 7a635635d615ddc6ad8e03f0b77b02d2c23c3521; Yahoo Finance/yfinance regular_session generated 2026-11-03T18:16:47.036099+00:00; last 5m bar START 13:15 EST, collected at 13:16:47 EST, potentially incomplete; reference 2026-11-02 fixed before NY open at 2026-11-03T14:29:15.994626+00:00.",
   "last_external_end_of_day": {
     "session_date": "2026-11-02",
     "session_close_et": "2026-11-02T16:00:00-05:00",
@@ -441,22 +446,22 @@
     "source_json_sha": "f53efe3587403e5ae0035bf853d61ce567e298b1"
   },
   "last_data_quality_observation": {
-    "check_at_utc": "2026-11-03T17:31:13.124Z",
-    "intended_slot_et": "2026-11-03 12:30 EST scheduled review",
-    "snapshot_generated_utc": "2026-11-03T17:25:04.055424+00:00",
-    "latest_blob_sha": "b30de1303dbe1d650eb0e6e5cb0bb28554a2fb8e",
+    "check_at_utc": "2026-11-03T18:35:07.103Z",
+    "intended_slot_et": "2026-11-03 13:30 EST scheduled regular review",
+    "snapshot_generated_utc": "2026-11-03T18:16:47.036099+00:00",
+    "latest_blob_sha": "7a635635d615ddc6ad8e03f0b77b02d2c23c3521",
     "mode": "regular_session",
     "market_session_date": "2026-11-03",
     "price_bar_start_et": {
-      "QQQ": "2026-11-03T12:25:00-05:00",
-      "QQQM": "2026-11-03T12:25:00-05:00",
-      "VOO": "2026-11-03T12:25:00-05:00"
+      "QQQ": "2026-11-03T13:15:00-05:00",
+      "QQQM": "2026-11-03T13:15:00-05:00",
+      "VOO": "2026-11-03T13:15:00-05:00"
     },
-    "age_minutes": 6.15,
+    "age_minutes": 18.33,
     "bar_age_minutes": {
-      "QQQ": 6.22,
-      "QQQM": 6.22,
-      "VOO": 6.22
+      "QQQ": 20.12,
+      "QQQM": 20.12,
+      "VOO": 20.12
     },
     "within_75_minute_limit": true,
     "within_45_minute_bar_limit": true,
@@ -469,11 +474,23 @@
       "VOO": false
     },
     "comparison_kind": "sampled_change",
-    "collector_new_crossings": [],
-    "collector_recovered_conditions": [],
+    "collector_new_crossings": [
+      "VOO:band:first"
+    ],
+    "collector_recovered_conditions": [
+      "VOO:below:first"
+    ],
+    "new_against_last_saved_state": [
+      "VOO:band:first"
+    ],
+    "removed_against_last_saved_state": [
+      "VOO:below:first"
+    ],
+    "rearm_continuous_verification": "not implemented; sampled crossing only",
     "week_closed": false,
     "delivery_status": "unverified",
-    "workflow_job_outcome": "not independently checked; current-date valid latest JSON verified",
-    "note": "No new collector crossing; QQQ indicative -10% drawdown recovery buffer $686.99 only sampled above, no 15minute confirmation or live rearm. Sentiment unchanged 20 based on 10:34 EST component time."
+    "workflow_job_outcome": "2026-11-03 13:16 ET run #41692164892 success; collect and deploy jobs and required steps success; independently verified latest.json changed SHA and same-session timestamps",
+    "source_run_url": "https://github.com/ljh091717-cloud/market-etf-monitor/actions/runs/41692164892",
+    "note": "No 15min continuous confirmation. Last 5m start 13:15 EST; collected during that candle, so price may have been preliminary. VOO single-sample reentry is marginal and unconfirmed."
   }
 }
