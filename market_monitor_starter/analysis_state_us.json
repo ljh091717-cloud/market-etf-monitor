@@ -1,33 +1,33 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-03T22:17:15.674869+00:00",
-  "last_reference_session": "2026-11-02",
+  "last_valid_snapshot_generated_utc": "2026-11-04T15:20:50.648937+00:00",
+  "last_reference_session": "2026-11-03",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 685.28,
-    "QQQM": 282.23,
-    "VOO": 693.54
+    "QQQ": 699.36,
+    "QQQM": 287.97,
+    "VOO": 705.495
   },
   "last_active_conditions": [
     "QQQM:below:first",
-    "QQQM:below:second",
-    "QQQM:band:third",
-    "VOO:below:first"
+    "QQQM:below:second"
   ],
-  "current_judgment": "2026-11-03 provider end_of_day (provisional/yfinance; close can revise): QQQ $685.28 (+0.615% D/D, 252-day high close DD -9.791%), returned above $683.69 (-10% line) from Nov02 closing $681.09 but below buffer-based $686.99, so NOT stable recovery confirmed; QQQ daily SMA200 $679.01, EMA20 last completed week $710.41. QQQM $282.23 (+0.62%, $280-285 third existing buy watch inside); VOO $693.54 (+0.321%, below $695 first band). Reuters 11/03 close: Nasdaq +0.83%, S&P500 +0.36%, S&P500 A/D decliners 1.6:1, Nasdaq new lows 251 vs highs 57, full-market whole-day volume 16.6bn vs 20-day 17.4bn. CNN US-stock Fear and Greed tertiary mirror 19 extreme fear as of 15:45 EST factor timestamps, CNN actual headline publication time unverified. A preplanned partial-buy review remains price-band eligible WITHOUT user budget/risk allocation; B stabilization-confirmation buy remains on hold. No automatic orders.",
+  "current_judgment": "2026-11-04 10:30 EST scheduled check of 10:20 EST start 5m provider bar: QQQ $699.36 (+2.05% vs 11/03 close $685.28, 252-high drawdown -7.94%, above previous $683.69 -10% alert line, but below last confirmed weekly EMA20 $710.41 and daily SMA50 $723.67). QQQM $287.97 (+2.03% vs $282.23), now ABOVE previously active third interest band $280-285 (not a new buy-in-band crossing; next second band $293-296). VOO $705.495 (+1.72% vs $693.54), now ABOVE first watch band $695-700 and just above daily SMA50 $704.46. Both interest-band exit comparisons relative to 11/03 EOD are snapshots only, NOT proven 15min stabilization; QQQ and QQQM same underlying index, count once. Reuters 11/04 reported US midterm Democrat sweep and relief rally, broad positive 09:46 EST issue A/D NYSE 3.6:1 Nasdaq 3.49:1 (proxy, not constituents over moving averages). ADP Oct private payrolls +86k, ISM Oct Services 54.5 and price index 73: macro mixed. CNN Fear and Greed main source blocked; conflicting same third-party pages and asynchronous updates (19/22/29 observed) prohibit assigning verified current score or daily direction; last cached 19 Nov03 secondary value remains historical only. Current judgment: A preplanned partial entry does not get fresh price-band trigger; B price-stabilization confirmation remains pending. Observe rally durability to 11/04 provider daily Close before changing buy stance. No auto-orders; amounts/weights remain unassigned.",
   "next_conditions": [
-    "Next scheduled US 2026-11-04 10:30 EST / 2026-11-05 00:30 KST regular-session check; require generated snapshot <75m, each 5-minute bar <45m, before-open anchored daily reference 2026-11-03. Do not treat no new snapshot as a fresh buy event.",
-    "QQQ: $683.69 252-high -10% alert line; $686.99 ATR-buffered recovery reference (no continuous-hold proof), latest SMA200 $679.01; recovered above raw line at 11/03 provider close but no stable-price confirmation; next below-line close increases risk.",
-    "QQQM: confirmed third interest band $280–285; break $280 or close/reclaim $285, SMA200 as of Nov03 $279.56. Do not count QQQ correlation twice.",
-    "VOO: $695 reclaim, $700 upper first band; $680 next lower second band; latest SMA200 $667.81.",
-    "CNN US stock Fear & Greed 19 via secondary source Nov03 with 15:45 EST market factor timestamp only; >=25 plus ETF support and breadth for stabilization, <=15 intensified buy review, <10 warn continuing downside, primary CNN/5 comparable sessions unverified.",
-    "Reuters Nov03 declining issues exceed advancers (S&P500 1.6:1), Nasdaq 251 new lows vs 57 highs. Confirm breadth improvement, same-time matched ETF volume and bond/credit improvement before marking market stabilized. Upcoming 11/04 08:30 EST BEA trade (cached schedule, independently re-check before release), midterm election results and AMD afterhours report risks."
+    "Next 2026-11-04 11:30 EST / 2026-11-05 01:30 KST regular-session check: verify generated <75m, 5-min bar start <45m, compare against 11/03 EOD close independently; Nov04 reference was initialized 10:20 EST AFTER open, so new_crossings[] from collector is NOT independent proof of morning crossings.",
+    "QQQ: pre-existing 252-high -10% line $683.69 now above; current $699.36 vs confirmed weekly EMA20 $710.41, daily SMA50 $723.67; $686.99 prior ATR buffer recovered as a sampled price but no 15-minute continuous hold; watch 11/04 EOD support.",
+    "QQQM: confirmed third $280-285, current $287.97 ABOVE it; monitor $285 hold/re-entry, next second $293-296, SMA200 $279.56. QQQ same index so no double-count.",
+    "VOO: first $695-700, current $705.495 ABOVE, daily SMA50 $704.46 marginally reclaimed in sample. Check actual next candle and 11/04 daily close above $700/$704.46; below $695 would undo relief.",
+    "CNN US equity Fear & Greed: original inaccessible, third-party sources conflicted within same observation (19/22/29). Latest reliable score/time unverified, do not assert threshold crossing or direction; historically saved 19 for 11/03 only.",
+    "Verify post-election rebound breadth using synced 11/04 source (Reuters 09:46 EST A/D NYSE +3.6:1, Nasdaq +3.49:1), official 10y real/nominal yields, VIX/VXN and matched ETF volume if available; otherwise mark missing. ADP private +86k and ISM Services 54.5 prices-paid 73; Nov06 08:30 EST BLS October employment release key risk; no matching-volume proof."
   ],
-  "last_report_prepared_utc": "2026-11-03T22:28:51.366Z",
-  "last_report_kind": "2026-11-03_17:30_EST_end_of_day_QQQ_minus10_recovered_raw_line_only_unconfirmed",
+  "last_report_prepared_utc": "2026-11-04T15:32:24Z",
+  "last_report_kind": "2026-11-04_10:30_EST_post_midterm_relief_rally_watch_band_exit_unconfirmed_stabilization",
   "last_report_condition_ids": [
-    "QQQ:high252:-10:raw_alert_line_released_not_stabilization"
+    "QQQM:band:third:sampled_exit",
+    "VOO:below:first:sampled_exit",
+    "QQQ:prior_-10_alert_recovery_price_raised_no_hold_proof"
   ],
   "last_end_of_day_review_session": "2026-11-03",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -44,140 +44,74 @@
       "previous_cached_as_of_et": "2026-11-03 12:39 EST market factor timestamp; third-party source",
       "direction": "Secondary display 20 to 19 vs earlier sampled reading, no new 25/15/10 threshold; one-day-ago UTC label is not a comparable ET prior trading-day score",
       "recent_five_trading_days": "not verified consistently against US trading-day close",
-      "refresh_condition": "Fresh verified CNN main score/time, threshold <=15/<10, or improved price/breadth/credit corroboration",
+      "refresh_condition": "Next direct CNN headline/consistent timestamped score; confirm against previous comparable NYSE trading-day before signaling.",
       "last_reliable_cached_value": 31,
       "last_reliable_cached_as_of_et": "2026-10-30T09:37:00-04:00",
-      "latest_verification_status": "Secondary 19 as of Nov3 15:45 EST factor timestamp; CNN original blocked; published daily comparison on page UTC not necessarily ET; cannot claim real-time update",
+      "latest_verification_status": "US-stock CNN ORIGINAL not accessible. Secondary fgscore.com/en/markets/sp500 and /en pages displayed inconsistent and changing values during 11/04 check (19, 22, 29), no synchronized primary publication timestamp; do not report a verified Nov04 score, direction or threshold crossing.",
       "conflicting_other_url": "https://fgscore.com/en",
       "conflicting_as_of_et": "2026-10-30T16:27:00-04:00",
       "conflicting_detail_value": 26,
       "conflicting_summary_value": 24,
       "conflicting_sources": [
         "https://fgscore.com/en/markets/sp500",
-        "https://fgscore.com/en"
+        "https://fgscore.com/en",
+        "https://www.cnn.com/markets/fear-and-greed"
       ],
-      "last_checked_at_utc": "2026-11-03T22:28:51.366Z",
+      "last_checked_at_utc": "2026-11-04T15:32:24Z",
       "page_market_components_timestamp_et": "2026-11-03 15:45 EST",
-      "index_publication_timestamp_verified": false
+      "index_publication_timestamp_verified": false,
+      "conflicting_detail_values_seen": [
+        19,
+        22
+      ],
+      "conflicting_summary_values_seen": [
+        24,
+        29
+      ]
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-11-03T18:35:07.103Z",
-      "latest_snapshot_date": "2026-11-03",
-      "latest_snapshot_generated_utc": "2026-11-03T18:16:47.036099+00:00",
-      "intended_session_date": "2026-11-03",
-      "valid_today": true,
-      "collector_snapshot_mode": "regular_session",
+      "checked_at_utc": "2026-11-04T15:32:24Z",
+      "intended_session_date": "2026-11-04",
+      "latest_snapshot_generated_utc": "2026-11-04T15:20:50.648937+00:00",
+      "latest_snapshot_sha": "22abb5b2b45b49b2a08ed8f812595891f4203685",
       "regular_session": true,
-      "reference_session_date": "2026-11-03",
-      "daily_reference_as_of_session": "2026-11-02",
-      "reference_fixed_before_open": true,
-      "reference_fixed_at_utc": "2026-11-03T14:29:15.994626+00:00",
-      "last_five_min_bar_start_et": "2026-11-03T13:15:00-05:00",
-      "bar_role": "13:15 EST 5-min bar START; collected 13:16:47 EST, possibly uncompleted",
-      "source_type": "Yahoo Finance via yfinance; unofficial",
-      "collector_job_status": "Run 41692164892 completed success, collect/deploy jobs and steps success; latest file same-day updated",
-      "comparison_kind": "2026-11-02 latest vs previous 14:25 EST 5-minute bar; no newly crossed price thresholds, sentiment below 25 on third-party source",
-      "new_crossings_reported_by_collector": [
-        "VOO:band:first"
-      ],
+      "mode": "regular_session",
+      "verified_regular_session": true,
+      "reference_fixed_before_open": false,
+      "reference_fixed_at_utc": "2026-11-04T15:20:50.648937+00:00",
+      "daily_reference_as_of_session": "2026-11-03",
+      "previous_completed_session_verified": true,
+      "snapshot_age_minutes_at_analysis": 11.56,
+      "five_minute_bar_start_et": "2026-11-04T10:20:00-05:00",
+      "bar_start_age_minutes_at_analysis": 12.4,
+      "last_bar_could_have_been_incomplete_when_collected": true,
+      "snapshot_under_75m": true,
+      "individual_prices_under_45m": true,
+      "comparison_kind": "late_reference_initialization_not_a_new_price_event",
+      "new_thresholds_from_collector": [],
       "active_conditions": [
         "QQQM:below:first",
-        "QQQM:below:second",
-        "QQQM:band:third",
-        "VOO:band:first"
+        "QQQM:below:second"
       ],
-      "new_compared_with_last_saved_analysis": [],
-      "removed_compared_with_last_saved_analysis": [
-        "QQQ:daily:-2",
-        "QQQ:daily:-3",
+      "removed_vs_last_saved_analysis": [
         "QQQM:band:third",
         "VOO:below:first"
       ],
-      "reference_time_warning": "Official previous US session 2026-10-30 but reference locked after open at 10:24:30 EST; cannot infer initial crossing time",
-      "previous_missed_eod_note": "2026-10-29 GitHub EOD missed at prior review; current 2026-10-29 daily reference now available for all 3 symbols",
-      "changed_vs_last_saved_state": {
-        "previous": [
-          "QQQM:below:first",
-          "QQQM:band:second"
-        ],
-        "current": [
-          "QQQ:daily:-2",
-          "QQQ:daily:-3",
-          "QQQM:below:first",
-          "QQQM:below:second",
-          "VOO:band:first"
-        ],
-        "newConditions": [
-          "QQQ:daily:-2",
-          "QQQ:daily:-3",
-          "QQQM:below:second",
-          "VOO:band:first"
-        ],
-        "removedConditions": [
-          "QQQM:band:second"
-        ]
+      "new_vs_last_saved_analysis": [],
+      "previous_saved_valid_prices": {
+        "QQQ": 685.28,
+        "QQQM": 282.23,
+        "VOO": 693.54
       },
       "last_valid_price_by_symbol": {
-        "QQQ": 687.64,
-        "QQQM": 283.1601,
-        "VOO": 695.35
+        "QQQ": 699.36,
+        "QQQM": 287.97,
+        "VOO": 705.495
       },
-      "refresh_condition": "Next US scheduled observation.",
-      "snapshot_is_pre_10_30": false,
-      "recovered_conditions": [
-        "VOO:below:first"
-      ],
-      "recovery_confirmation": "sample only; no 15min continuous hold; rearm filter not implemented",
-      "latest_vs_prev_generated": "2026-11-02T19:26:58.606645+00:00",
-      "freshness_minutes_at_analysis": 9.27,
-      "price_bar_age_minutes_at_analysis": {
-        "QQQ": 9.6,
-        "QQQM": 9.6,
-        "VOO": 9.6
-      },
-      "observed_market_session": "2026-11-02 regular NYSE/Nasdaq, EST after 11/1 DST end",
-      "analysis_run_note": "15:30 EDT scheduled check actually started about 15:25 EDT; no claim to have inspected 15:30 completed candle.",
-      "last_new_threshold_at_this_check": false,
-      "price_close_session_date": "2026-10-30",
-      "week_closed_in_this_snapshot": true,
-      "source_sha": "7a635635d615ddc6ad8e03f0b77b02d2c23c3521",
-      "source_format": "post-close provider daily bar; not exchange-certified and may be revised",
-      "same_session_previous_data_exists": false,
-      "snapshot_within_75_minutes": true,
-      "individual_bar_within_45_minutes": true,
-      "previous_snapshot_generated_utc": "2026-11-02T19:26:58.606645+00:00",
-      "current_conditions": [
-        "QQQM:below:first",
-        "QQQM:below:second",
-        "QQQM:band:third",
-        "VOO:below:first"
-      ],
-      "new_conditions_since_previous_snapshot": [],
-      "previous_valid_prices": {
-        "QQQ": 684.61,
-        "QQQM": 281.91,
-        "VOO": 693.21
-      },
-      "last_data_limited_run_recovered": true,
-      "report_status": "Sentiment source changed 26 to 23; price triggers repeated or near QQQ -10 threshold but not met; no proven 15min continuous recovery",
+      "collector_job": "41856689006 completed success; jobs collect and deploy with steps both success",
+      "source_type": "Yahoo Finance via yfinance; unofficial",
       "delivery_status": "unverified",
-      "latest_blob_sha": "9b3a5df7bb5d16407b904e81a24ec6ee83ad427a",
-      "observed_prices": {
-        "QQQ": 684.76,
-        "QQQM": 281.9774,
-        "VOO": 693.8
-      },
-      "previous_price_change_pct": {
-        "QQQ": -1.004,
-        "QQQM": -0.994,
-        "VOO": -0.614
-      },
-      "price_change_from_prior_valid_pct": {
-        "QQQ": 0.022,
-        "QQQM": 0.024,
-        "VOO": 0.085
-      },
-      "last_new_sentiment_threshold_at_this_check": "Third-party CNN 23 below 25; primary CNN unverified"
+      "refresh_condition": "Next scheduled US regular session check or provider EOD; cross-check same-day snapshot."
     },
     "FOMC_2026_OCT": {
       "meeting_dates_et": "2026-10-27/2026-10-28",
@@ -411,6 +345,30 @@
       "source_url": "https://www.reuters.com/business/retail-consumer/us-stock-futures-mixed-apple-slides-midterms-loom-2026-11-03/",
       "checked_at_utc": "2026-11-03T22:28:51.366Z",
       "refresh_condition": "Next actual full-session closing data"
+    },
+    "US_ELECTION_RALLY_NOV04": {
+      "market_date_et": "2026-11-04",
+      "source_url": "https://www.reuters.com/business/us-stock-index-futures-steady-democrats-seize-congress-2026-11-04/",
+      "source_type": "Reuters intraday report (NOT synchronized with 10:20 EST ETF bar)",
+      "observation_time_et": "2026-11-04 09:46 EST (quoted index snapshot)",
+      "summary": "Democrats gained both House and Senate; divided-government relief rally, Nasdaq Composite +2.13% and S&P500 +1.72% at 09:46 EST; NYSE A/D 3.6:1, Nasdaq 3.49:1 in Reuters report, not % above SMA; AI data-center operators under pressure, large tech mixed.",
+      "checked_at_utc": "2026-11-04T15:32:24Z",
+      "refresh_condition": "Updated verified 11/04 closing market breadth and ETF daily close, not hourly repetition."
+    },
+    "US_MACRO_NOV04": {
+      "source_urls": [
+        "https://www.reuters.com/business/us-private-payrolls-rise-october-adp-says-2026-11-04/",
+        "https://www.reuters.com/world/us/us-services-sector-activity-cools-slightly-october-inflation-remains-elevated-2026-11-04/",
+        "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "source_type": "Reuters 11/04 08:30 and after 10:00 EST news; BLS official schedule",
+      "release_dates_et": [
+        "2026-11-04 08:30 ADP Oct employment +86,000 vs Reuters +69,000 poll",
+        "2026-11-04 10:00 ISM Oct services index 54.5 vs prior 54.9; prices paid 73.0",
+        "2026-11-06 08:30 EST BLS Oct employment pending"
+      ],
+      "checked_at_utc": "2026-11-04T15:32:24Z",
+      "refresh_condition": "Next published revised macro result or Nov06 official BLS print; other releases not yet independently confirmed."
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
