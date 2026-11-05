@@ -19,23 +19,18 @@
     "VOO:daily:-2",
     "VOO:below:first"
   ],
-  "current_judgment": "2026-11-05 10:30 EST high-priority RISK EXPANSION, regular-session GitHub yfinance 10:25 EST STARTING 5m bar (potentially incomplete at capture 10:26:33). QQQ $658.005 -4.91% vs Nov04 provider Close $691.95, -13.38% vs 252-day max close $759.66: daily -2 and -3% criteria, drawdown -10% criterion met; -5% daily not yet (line $657.35), QQQ below Nov04 daily SMA200 679.44 and prior confirmed weekly EMA50 672.02. QQQM $270.98 -4.89% vs $284.92 previous provider close, BELOW confirmed third $280-285 interest band (under $280 by $9.02), invalidates in-band support assumption; correlated QQQ move NOT additional independent index alarm. VOO $685.895 -2.68% vs $704.78, below confirmed first $695-700 by $9.11; below daily SMA50 $704.51 but above daily SMA200 $668.24. Across-session new deterioration relative Nov04 EOD, but reference initialized after open, no verified first crossing time, and collector's late_reference_initialization_not_a_new_price_event is not evidence of absence of decline. Reuters Nov05 at 09:57 ET Nasdaq -3.09%, S&P500 -1.66%, SOX -7.1% (different timestamps), with AI/chip/data center weakness. Prior official Nov04 US Treasury 10yr nominal 4.90%/real 2.64% is DAILY, not live. CNN original inaccessible; conflicting secondary values 27/35 for Nov05, current verified index and last-5 trading-days comparison unavailable. Plan A preset bands broken, not grounds for automatic buy; Plan B stabilization absent, ADDITIONAL PURCHASE DEFERRED. No amount or quantity without budget/risk allocations. Not auto-order, no off-schedule detector or proven 15m rearm; delivery unverified.",
+  "current_judgment": "2026-11-05 11:30 EST: RISK EXPANSION in independently dated AP 11:00 EST market-wide snapshot, while repository ETF quotes are TOO OLD for a NEW 11:30 ETF signal. AP reports Nasdaq Composite -5.0%, S&P500 -3.2%, Dow -2.1% at 11:00 EST; versus older Reuters 09:57 EST Nasdaq -3.09%, S&P500 -1.66%. This is worsening MARKET-WIDE pressure, NOT proof QQQ crossed -5% or VOO crossed -3%. Newest GitHub latest.json still 10:26:33 EST with 10:25 starting 5m bars: QQQ $658.005/-4.91%, QQQM $270.98/below third 280-285, VOO $685.895/-2.68%/below first 695-700. As of current review its last-bar age exceeds permitted 45min; DO NOT interpret the stale prices as current, label 11:30 ETF price/thresholds UNVERIFIED. Latest workflow run 42054945800 at 10:26 EST successful collect and deploy, but 10:35 ET intended collection has not arrived by 11:30 check: delay/not-yet-updated data, not proof failure. AP reports only ~40% S&P500 stocks advancing; a direct A/D proxy, not % above SMA. AP 10-year nominal Treasury intraday indicated 4.84% vs prior daily 4.90%, not official Treasury daily real yield. CNN latest original and comparable 5 sessions unverified (Benzinga Nov05 01:45 EST reports 27 for Nov04, prior 24). Plan A preset band at QQQM breached in previous valid sample; no new band or quantities inferred. Plan B no stabilization; additional purchases deferred. No independent detector or auto-orders.",
   "next_conditions": [
-    "Next US regular scheduled observation 2026-11-05 11:30 EST / 2026-11-06 01:30 KST (if official session open); no out-of-schedule immediate detection.",
-    "Intraday: QQQ $657.35 daily -5% threshold (2026-11-04 provider $691.95 close), $672.02 last CONFIRMED weekly EMA50 recovery, $679.44 Nov04 daily SMA200 recovery; 252-close -15% alert ~ $645.71; do not mislabel intraday crossing as daily close.",
-    "Intraday: QQQM $280 recovery into confirmed third band $280-285 versus lower $270.98 snapshot, continued below $280 = increased risk; no invented fourth buy band. QQQ and QQQM same-index shock is single macro signal.",
-    "Intraday: VOO $695-700 confirmed first band recovery vs current $685.895, next second confirmed interest band $670-680 (gap to upper edge $5.90); next daily -3% line $683.64 based on $704.78 previous close. Daily close confirmation only at official close after end_of_day data validated.",
-    "Fri 2026-11-06 08:30 EST US BLS October employment report; verify published results and any newer CNN original/consistent secondary comparisons. Friday confirmed weekly EMA only after final trading close; no continuous 15-minute stabilization claim."
+    "Next scheduled US regular check Thu 2026-11-05 12:30 EST / Fri 2026-11-06 02:30 KST; validate NEW GitHub regular-session generation <=75min and individual 5-min bars <=45min, official last-session reference; if still missing explicitly report data limitation, not a no-change finding.",
+    "Intraday thresholds requiring NEW verified ETF price: QQQ $657.35 for daily -5%, ~$645.71 for high252 -15%; $672.02 prior confirmed weekly EMA50 and $679.44 prior daily SMA200 recovery. Do not derive QQQ thresholds from Nasdaq Composite.",
+    "QQQM $280 entry back into third established $280-285 band; VOO $683.64 daily -3%, next band $670-680 upper $680, recovery $695 into first confirmed $695-700. Do not infer ETF threshold from S&P500 index.",
+    "Daily 2026-11-05 Close only after end_of_day provider daily bar verified; Fri 2026-11-06 08:30 EST BLS October employment release and Friday final weekly EMA review at closing check."
   ],
-  "last_report_prepared_utc": "2026-11-05T15:33:40.836Z",
-  "last_report_kind": "2026-11-05_10:30_EST_risk_expansion_QQQ_minus3_high_minus10_QQQM_below280_VOO_minus2",
+  "last_report_prepared_utc": "2026-11-05T16:32:10.724Z",
+  "last_report_kind": "2026-11-05_11:30_EST_market_risk_expansion_ETF_data_limit",
   "last_report_condition_ids": [
-    "QQQ:daily:-2",
-    "QQQ:daily:-3",
-    "QQQ:high252:-10",
-    "QQQM:below:third",
-    "VOO:daily:-2",
-    "VOO:below:first"
+    "US_MARKET:AP_2026-11-05_11am_NASDAQ_-5pct_S&P500_-3.2pct",
+    "DATA_LIMIT:ETF_BAR_OLDER_THAN_45MIN"
   ],
   "last_end_of_day_review_session": "2026-11-04",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -87,7 +82,9 @@
         27,
         35
       ],
-      "no_new_verified_original_score": true
+      "no_new_verified_original_score": true,
+      "latest_current_verified": false,
+      "latest_current_unverified_reason": "CNN original blocked by robots; recent different secondary values conflict. Benzinga 2026-11-05 01:45 EST quotes 27 for 2026-11-04 vs 24 prior day; not verified current 11:30 Nov05 index."
     },
     "DATA_QUALITY": {
       "checked_at_utc": "2026-11-04T18:36:22.017Z",
@@ -502,23 +499,32 @@
       "driver": "Selling in semiconductors, AI and data centers amid proposed-regulatory/investment concerns; Qualcomm downside after Q4 smartphone chip guidance; after Nov04 relief rally.",
       "checked_at_utc": "2026-11-05T15:33:40.836Z",
       "refresh_condition": "Newer important market correction or verified same-time market breadth/close"
+    },
+    "US_MARKET_RISK_NOV05_1100": {
+      "market_date_et": "2026-11-05",
+      "observation_et": "2026-11-05 11:00 EST",
+      "source_url": "https://apnews.com/article/stocks-markets-ai-midterm-oil-trump-7ee9c212805aa5e70cf34d25aab7a36e",
+      "publisher": "Associated Press",
+      "nasdaq_composite_change_pct": -5,
+      "sp500_change_pct": -3.2,
+      "dow_change_pct": -2.1,
+      "sp500_advancing_stocks_approx_share_pct": 40,
+      "nominal_10yr_yield_intraday_approx_pct": 4.84,
+      "nominal_yield_prev_day_pct": 4.9,
+      "source_type": "Journalist reported 11:00 ET intraday snapshot, not identical to ETF prices or official daily rates",
+      "checked_at_utc": "2026-11-05T16:32:10.724Z",
+      "refresh_condition": "New verified official end-of-day index and ETF prices or later timestamped relevant market confirmation"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-05T15:33:40.836Z",
-  "last_check_prepared_utc": "2026-11-05T15:33:40.836Z",
-  "last_check_kind": "2026-11-05_10:30_EST_risk_expansion",
+  "last_evaluation_utc": "2026-11-05T16:32:10.724Z",
+  "last_check_prepared_utc": "2026-11-05T16:32:10.724Z",
+  "last_check_kind": "2026-11-05_11:30_EST_market_risk_expansion_data_limit",
   "last_check_condition_ids": [
-    "QQQ:daily:-2",
-    "QQQ:daily:-3",
-    "QQQ:high252:-10",
-    "QQQM:below:first",
-    "QQQM:below:second",
-    "QQQM:below:third",
-    "VOO:daily:-2",
-    "VOO:below:first"
+    "US_MARKET:AP_2026-11-05_11am_NASDAQ_-5pct_S&P500_-3.2pct",
+    "DATA_LIMIT:ETF_BAR_OLDER_THAN_45MIN"
   ],
-  "last_notification_decision": "notify: 2026-11-05 10:30 EST new severe across-session selloff vs 2026-11-04 provider close; QQQ -4.91% (-2/-3 and high252 -10), QQQM $270.98 below third band $280, VOO -2.68% below first band $695. Conditions grouped; late reference prevents asserted exact crossing time. This is a substantial new event, not repetitive 11/04 band signal.",
+  "last_notification_decision": "notify: AP 11:00 EST worsening market-wide losses Nasdaq -5% and S&P500 -3.2%, plus latest GitHub ETF quote 10:25 5m bar now >45m old and scheduled collector latest timestamp behind; ETF -5/-3 crossings NOT confirmed. Delivery receipt not observable.",
   "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob 987b2ef7f4f029a1b662a4429ffaedc631e77258; generated 2026-11-05T15:26:33.018113+00:00; regular_session Yahoo Finance via yfinance unofficial 10:25 EST starting 5-min bar may be forming; prior official-session provider Close 2026-11-04.",
   "last_external_end_of_day": {
     "session_date": "2026-11-04",
@@ -565,48 +571,28 @@
     "qqq_stabilization_confirmed": false
   },
   "last_data_quality_observation": {
-    "checked_at_utc": "2026-11-05T15:33:40.836Z",
+    "checked_at_utc": "2026-11-05T16:32:10.724Z",
     "target_session": "2026-11-05",
-    "valid_snapshot": true,
+    "valid_snapshot_for_1130_et": false,
+    "previous_snapshot_valid_at_original_capture": true,
     "source_json_sha": "987b2ef7f4f029a1b662a4429ffaedc631e77258",
-    "previous_json_sha": "d2c56777516c64489fa7c053ffe067fdf85f6792",
-    "generated_utc": "2026-11-05T15:26:33.018113+00:00",
     "mode": "regular_session",
-    "verified_regular_session": true,
-    "is_open_at_collection": true,
-    "snapshot_age_minutes": 7.13,
-    "last_bar_start_et": "2026-11-05 10:25 EST",
-    "last_bar_start_age_minutes": 8.68,
-    "last_bar_may_be_incomplete_when_collected": true,
-    "reference_fixed_before_open": false,
-    "reference_fixed_at_utc": "2026-11-05T15:26:33.018113+00:00",
+    "generated_utc": "2026-11-05T15:26:33.018113+00:00",
+    "snapshot_age_minutes": 65.63,
+    "last_bar_start_utc": "2026-11-05T15:25:00+00:00",
+    "last_bar_start_age_minutes": 67.18,
+    "age_limit_snapshot_minutes": 75,
+    "age_limit_price_bar_minutes": 45,
     "reference_as_of_session": "2026-11-04",
     "prior_session_verified": true,
-    "source_type": "Yahoo Finance via yfinance; unofficial",
-    "collector_comparison_kind": "late_reference_initialization_not_a_new_price_event",
-    "collector_new_crossings": [],
-    "interpretation": "Data collection reference initialized at 10:26 ET (after open). Compare 11/04 EOD saved analysis to 11/05 10:25 regular-session price for broad new decline; don't claim exact intraday threshold crossing timestamp. No mechanical-action flags on all three tickers.",
-    "previous_saved_valid_prices": {
-      "QQQ": 691.95,
-      "QQQM": 284.92,
-      "VOO": 704.78
-    },
-    "current_prices": {
-      "QQQ": 658.005,
-      "QQQM": 270.98,
-      "VOO": 685.895
-    },
-    "new_condition_ids_vs_previous_eod": [
-      "QQQ:daily:-2",
-      "QQQ:daily:-3",
-      "QQQ:high252:-10",
-      "QQQM:below:third",
-      "VOO:daily:-2",
-      "VOO:below:first"
-    ],
-    "external_confirm": "Reuters Nov05 09:57 ET index/semiconductor decline, not synchronized with 10:25 ETF bar",
-    "collector_job_status": "not independently verified for most recent run; valid actual refreshed latest.json is separate evidence",
-    "delivery_status": "unverified",
-    "refresh_condition": "Next scheduled 11:30 ET or provider close, checking unique fresh data"
+    "reference_fixed_before_open": false,
+    "collector_run_id": 42054945800,
+    "collector_job_status": "success",
+    "deploy_job_status": "success",
+    "updated_latest_since_prior_run": false,
+    "scheduled_1035_et_collection_status": "not observed in latest GitHub actions list by 11:30; delay, do not infer permanent failure",
+    "external_market_snapshot": "AP 11:00 EST Nasdaq -5%, S&P500 -3.2%, Dow -2.1%; DOES NOT supply ETF thresholds",
+    "new_etf_signals": "unconfirmed_due_to_bar_age",
+    "delivery_status": "unverified"
   }
 }
