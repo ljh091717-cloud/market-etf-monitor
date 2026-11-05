@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-05T20:16:51.436686+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-05T22:21:06.359036+00:00",
   "last_reference_session": "2026-11-04",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 651.64,
-    "QQQM": 268.31,
-    "VOO": 676.345
+    "QQQ": 647.05,
+    "QQQM": 266.85,
+    "VOO": 673.97
   },
   "last_active_conditions": [
     "QQQ:daily:-2",
@@ -22,21 +22,21 @@
     "VOO:below:first",
     "VOO:band:second"
   ],
-  "current_judgment": "2026-11-05 scheduled 15:30 EST check prepared 2026-11-05T20:29:08.588Z using latest valid 15:15 EST starting 5m bar, snapshot generated 15:16:51 EST. QQQ $651.64 (-5.826% day); QQQM $268.31 (-5.83%, remains below $280-285 third watch band); VOO $676.35 (-4.035%, remains inside $670-680 second band). Prices slightly recovered from 14:25 starting-bar sample; no new collector crossings, no meaningful stabilized recovery proof. Previously-reported sharp decline and VIX elevated-risk warning remain relevant but not new independent alerts. CNN original/current Nov05 score unverified; conflicting third-party indications 23 vs35, without matching publication timestamp; no fear-index threshold trade. Preplanned buy price triggers already met with no finalized buying allocation/risk cap; stabilization buy remains deferred. Overall additional buying deferred; no automatic orders.",
+  "current_judgment": "2026-11-05 17:30 EST close check: Valid GitHub Yahoo/yfinance end_of_day snapshot created 17:21:06 EST, provider daily Nov05 closes QQQ $647.05 (-6.489% day, -14.824% from Oct06 252-high close), QQQM $266.85 (-6.342% day, below $280-285 third band), VOO $673.97 (-4.372% day, within $670-680 second band). Major earlier intraday selloff now confirmed by provider DAILY closes; no NEW -15% QQQ drawdown or VOO -5% daily threshold hit. Nasdaq Composite confirmed a >10% correction from October 6 at Reuters Nov05 close; semiconductor index fell >12%, 26.9bn full-market shares vs 17.7bn prior full-session 20-day average. US 10yr official nominal 4.84% vs 4.90%, real 2.60% vs 2.64% (daily not live). Reuters VIX closed 28.18 vs 16.61 on Nov04 (earlier intraday risk alert updated). CNN US stocks original Nov05 close and comparable ~5-day values unverified; do NOT treat early-morning 35 third-party estimate as Nov05 close. QQQ previous completed weekly EMA50 672.02; current-week QQQ RSI37.77 is PROVISIONAL. Plan-style price opportunity acknowledged without budget/risk cap; stabilization absent; buying remains deferred, not automatic trading advice.",
   "next_conditions": [
-    "Thu 2026-11-05 17:30 EST / Fri 2026-11-06 07:30 KST: verify latest end_of_day mode and today's Nov05 provider daily Close for QQQ/QQQM/VOO, not 15:55 5m bar; after-close collection may legitimately be is_open=false and verified_regular_session=false; Friday 11/06 weekly EMA/RSI only at last regular-session close.",
-    "QQQ: 252d high-close -15% threshold approx $645.71, pre-existing -5% daily alert threshold approx $657.35. Monitor whether Nov05 daily closes below SMA200 ~$679.44 / confirmed prior weekly EMA50 ~$672.02; Thursday weekly EMA is provisional.",
-    "QQQM: $268.31 below confirmed third band $280-285, watch if day closes below band or intraday reclaims $280; correlated with QQQ and not a second independent Nasdaq100 crash.",
-    "VOO: inside confirmed second band $670-680 at $676.35; watch close within or below $670 and daily -5% threshold approx $669.54, daily SMA200 ~$668.24. Next third band $645-655 is lower.",
-    "Volatility: prior Reuters Nov05 13:32 EST VIX high 28.09 / quote 27.65, not a new 15:15 synchronized reading; verify provider official closing VIX and VXN if available. CNN latest current score cannot be confirmed. Nov06 08:30 EST October BLS Employment Situation (scheduled, not yet released)."
+    "Fri 2026-11-06 10:30 EST / Sat 2026-11-07 00:30 KST: after 08:30 EST official BLS October Employment Situation, verify first valid regular_session GitHub ETF snapshot vs Nov05 provider daily Close; be aware late reference initialization and adjusted provider prices.",
+    "QQQ: $645.71 approx 252-session previous high-close -15% alert; Nov05 close $647.05 only ~$1.34 higher. Verify intraday crossing separately from confirmed daily close; watch reversal above prior completed weekly EMA50 ~$672.02 and own daily SMA200 ~$679.61. Week EMA provisional until Friday close.",
+    "QQQM: Nov05 daily close $266.85 below confirmed $280-285 third watch band. Watch $280 re-entry (intraday vs daily close), do not count QQQ and QQQM as independent Nasdaq-100 losses.",
+    "VOO: Nov05 daily close $673.97 within $670-680 second band; watch $670 lower boundary, ~$669.54 -5% daily alert anchored Nov04 close, daily SMA200 ~$668.49, and upper $680 reclaim; next third band $645-655 only if later reached.",
+    "Volatility and breadth: Reuters Nov05 VIX close 28.18 (prior Nov04 16.61); monitor actual new close/decline and ETF stability. Official direct market breadth, VXN, CNN post-close verified score / matching five trading days and individual ETF time-matched relative volumes unconfirmed. Friday 2026-11-06 end-of-day includes confirmed weekly EMA/RSI review."
   ],
-  "last_report_prepared_utc": "2026-11-05T19:28:59.827Z",
-  "last_report_kind": "2026-11-05_14:30_EST_new_verified_VIX_risk_spike_not_new_ETF_price_band",
+  "last_report_prepared_utc": "2026-11-05T22:37:05.052Z",
+  "last_report_kind": "2026-11-05_17:30_EST_significant_provider_close_confirmation",
   "last_report_condition_ids": [
-    "MARKET:VIX:intraday_high_28.09",
-    "DATA:VIX_NOV04_PROVIDER_CLOSE_CORRECTION"
+    "US:2026-11-05:PROVIDER_DAILY_CLOSE_CONFIRMED_SEVERE_DECLINE",
+    "MARKET:NASDAQ_COMPOSITE:CORRECTION_CONFIRMED_EOD"
   ],
-  "last_end_of_day_review_session": "2026-11-04",
+  "last_end_of_day_review_session": "2026-11-05",
   "rearm_status": "not_implemented_no_continuous_detector",
   "notification_delivery_status": "unverified",
   "low_frequency_cache": {
@@ -565,49 +565,106 @@
       "source_url": "https://www.reuters.com/markets/us/nasdaq-set-correction-investors-reassess-ai-spending-boom-2026-11-05/",
       "checked_at_utc": "2026-11-05T19:28:59.827Z",
       "refresh_condition": "Nov05 verified index close, not guaranteed until close"
+    },
+    "US_TREASURY_10Y_NOV05": {
+      "nominal_yield_pct": 4.84,
+      "real_yield_pct": 2.6,
+      "previous_nominal_pct": 4.9,
+      "previous_real_pct": 2.64,
+      "as_of_date": "2026-11-05",
+      "source_type": "US Treasury official daily 10-year nominal and TIPS real par yields, not intraday",
+      "nominal_source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202611&type=daily_treasury_yield_curve",
+      "real_source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202611&type=daily_treasury_real_yield_curve",
+      "checked_at_utc": "2026-11-05T22:37:05.052Z",
+      "refresh_condition": "Next official 2026-11-06 published daily par yield"
+    },
+    "VIX_NOV05_CLOSE_REUTERS": {
+      "value_close": 28.18,
+      "prior_close": 16.61,
+      "intraday_high": 28.36,
+      "as_of_session": "2026-11-05",
+      "source_url": "https://www.reuters.com/business/wall-street-fear-gauge-jumps-most-since-liberation-day-ai-trade-stumbles-2026-11-05/",
+      "source_type": "Reuters November 5 post-close VIX values; official Cboe historical close not separately cross checked",
+      "checked_at_utc": "2026-11-05T22:37:05.052Z",
+      "refresh_condition": "Next Cboe confirmation or November 6 close"
+    },
+    "US_MARKET_NOV05_CLOSE": {
+      "session_date": "2026-11-05",
+      "sp500_change_pct": -4.36,
+      "nasdaq_composite_change_pct": -5.52,
+      "dow_change_pct": -3.44,
+      "semiconductor_index_change": "more than -12% (Reuters)",
+      "market_shares_traded_billion": 26.9,
+      "prior_20_day_full_market_average_shares_billion": 17.7,
+      "nasdaq_composite_correction_confirmed": true,
+      "source_url": "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/",
+      "source_type": "Reuters 2026-11-05 US market close; whole-market full-session volumes compared with full-session historical average, not individual ETF same-time relative volumes",
+      "checked_at_utc": "2026-11-05T22:37:05.052Z",
+      "refresh_condition": "New official corrected close or Nov06 market session"
+    },
+    "CNN_FEAR_GREED_NOV05_UNVERIFIED": {
+      "value": null,
+      "stage": "unverified",
+      "as_of_exact_time": null,
+      "source_type": "CNN original Nov05 post-close index and 5-day comparable values not independently verified; a third party showed 35 with 03:43 ET premarket update, inconsistent with prior Nov04 reported 27; do not treat as Nov05 close or separate buy signal",
+      "source_urls": [
+        "https://www.finhacker.cz/en/fear-and-greed-index-historical-%20data-and-chart/",
+        "https://www.benzinga.com/markets/market-summary/26/11/62903627/dow-jumps-over-1500-points-after-midterms-investor-sentiment-improves-greed-index-moves-to-fear-zone"
+      ],
+      "checked_at_utc": "2026-11-05T22:37:05.052Z",
+      "refresh_condition": "Verified CNN primary Nov05 after-close value with actual timestamp or credible comparable daily series"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-05T20:29:08.588Z",
-  "last_check_prepared_utc": "2026-11-05T20:29:08.588Z",
-  "last_check_kind": "2026-11-05_15:30_EST_regular_no_new_crossing",
-  "last_check_condition_ids": [],
-  "last_notification_decision": "skip_notification: no new ETF threshold or band crossing since 14:30; VIX risk event previously reported; modest sampling rebound is not continuous stability confirmation. No data failure. Delivery unverified; no new alert prepared.",
-  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob 6395b2d011b634e4a7dff1d869e9b594a7c1ed36; generated 2026-11-05T20:16:51.436686+00:00; unofficial Yahoo/yfinance regular_session; 5m bar begins 2026-11-05 15:15 EST and may have been incomplete when collected; Nov04 official prior-trading-session reference fixed after open; not direct real-time trade quote.",
+  "last_evaluation_utc": "2026-11-05T22:37:05.052Z",
+  "last_check_prepared_utc": "2026-11-05T22:37:05.052Z",
+  "last_check_kind": "2026-11-05_17:30_EST_end_of_day",
+  "last_check_condition_ids": [
+    "US:2026-11-05:PROVIDER_DAILY_CLOSE_CONFIRMED_SEVERE_DECLINE",
+    "MARKET:NASDAQ_COMPOSITE:CORRECTION_CONFIRMED_EOD"
+  ],
+  "last_notification_decision": "prepare_notification: Nov05 EOD provider daily closes confirm severe previously intraday declines, Nasdaq Composite Reuters-confirmed correction, VOO second band close and QQQ near -15% from 252 high. No new raw ETF threshold crossings vs 15:30. Actual push/email delivery receipt unverified.",
+  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob d304e560ba84a39f52a267e8053aa3a780d3f033; generated 2026-11-05T22:21:06.359036+00:00 (2026-11-05T17:21:06.359036-05:00); Yahoo/yfinance end_of_day provider Nov05 daily bars not exchange-certified and may be revised. No 15:55 5m bar used; daily_reference as_of_session 2026-11-04 fixed after opening at 2026-11-05T15:26:33.018113+00:00.",
   "last_external_end_of_day": {
-    "session_date": "2026-11-04",
-    "session_close_et": "2026-11-04T16:00:00-05:00",
-    "checked_at_utc": "2026-11-04T22:30:53.072Z",
-    "source_json_sha": "d2c56777516c64489fa7c053ffe067fdf85f6792",
+    "session_date": "2026-11-05",
+    "session_close_et": "2026-11-05T16:00:00-05:00",
+    "checked_at_utc": "2026-11-05T22:37:05.052Z",
+    "source_json_sha": "d304e560ba84a39f52a267e8053aa3a780d3f033",
     "provider_close_not_exchange_official": true,
     "provider_data_may_revise": true,
     "prices": {
       "QQQ": {
-        "close": 691.95,
-        "previous_close": 685.28,
-        "change_pct": 0.973,
-        "drawdown_high252_pct": -8.913,
-        "sma_50": 723.3,
-        "sma_200": 679.44,
-        "atr_14": 13.02
+        "close": 647.05,
+        "previous_close": 691.95,
+        "change_pct": -6.489,
+        "drawdown_pct": -14.824,
+        "sma50": 722.03,
+        "sma200": 679.61,
+        "atr14": 15.3,
+        "confirmed_provider_daily_close": true,
+        "not_exchange_certified": true
       },
       "QQQM": {
-        "close": 284.92,
-        "previous_close": 282.23,
-        "change_pct": 0.953,
-        "drawdown_high252_pct": -8.901,
-        "sma_50": 297.83,
-        "sma_200": 279.74,
-        "atr_14": 5.32
+        "close": 266.85,
+        "previous_close": 284.92,
+        "change_pct": -6.342,
+        "drawdown_pct": -14.679,
+        "sma50": 297.31,
+        "sma200": 279.81,
+        "atr14": 6.25,
+        "confirmed_provider_daily_close": true,
+        "not_exchange_certified": true
       },
       "VOO": {
-        "close": 704.78,
-        "previous_close": 693.54,
-        "change_pct": 1.621,
-        "drawdown_high252_pct": -1.595,
-        "sma_50": 704.51,
-        "sma_200": 668.24,
-        "atr_14": 7.64
+        "close": 673.97,
+        "previous_close": 704.78,
+        "change_pct": -4.372,
+        "drawdown_pct": -5.896,
+        "sma50": 703.94,
+        "sma200": 668.49,
+        "atr14": 9.33,
+        "confirmed_provider_daily_close": true,
+        "not_exchange_certified": true
       }
     },
     "source_urls": {
@@ -615,26 +672,50 @@
       "QQQM": "https://finance.yahoo.com/quote/QQQM/history/",
       "VOO": "https://finance.yahoo.com/quote/VOO/history/"
     },
-    "qqqm_third_band_eod_entered": true,
-    "qqq_stabilization_confirmed": false
+    "previous_completed_week_qqq": {
+      "week_date": "2026-10-26",
+      "ema_20": 710.408,
+      "ema_50": 672.0171,
+      "ema_100": 614.2576,
+      "ema_200": 530.2419,
+      "rsi_14": 46.794,
+      "sample_weeks": 1443
+    },
+    "current_week_provisional_qqq": {
+      "ema_20": 704.3739,
+      "ema_50": 671.038,
+      "ema_100": 614.907,
+      "ema_200": 531.4042,
+      "rsi_14": 37.774,
+      "sample_weeks": 1444
+    },
+    "nov05_qqqm_third_band_below_eod": true,
+    "nov05_voo_second_band_eod_inside": true,
+    "nov05_qqq_high252_minus15_not_yet_reached": true,
+    "confirmed_stabilization": false
   },
   "last_data_quality_observation": {
-    "checked_at_utc": "2026-11-05T20:29:08.588Z",
-    "nominal_schedule_et": "2026-11-05 15:30 EST",
+    "checked_at_utc": "2026-11-05T22:37:05.052Z",
+    "nominal_schedule_et": "2026-11-05 17:30 EST",
     "target_session": "2026-11-05",
     "valid_snapshot": true,
-    "source_json_sha": "6395b2d011b634e4a7dff1d869e9b594a7c1ed36",
+    "source_json_sha": "d304e560ba84a39f52a267e8053aa3a780d3f033",
     "config_revision": "2026-10-19.1",
-    "mode": "regular_session",
-    "generated_utc": "2026-11-05T20:16:51.436686+00:00",
-    "generated_age_min": 12.29,
-    "bar_start_et": "2026-11-05 15:15 EST",
-    "bar_age_min": 14.14,
-    "bar_may_be_incomplete_when_collected": true,
+    "mode": "end_of_day",
+    "generated_utc": "2026-11-05T22:21:06.359036+00:00",
+    "generated_age_min": 15.98,
+    "close_session_date": "2026-11-05",
+    "all_three_provider_daily_closes_present": true,
+    "source_exchange_certified": false,
+    "source_may_revise": true,
+    "provider_regular_session_flags_normal_after_close": true,
+    "bar_start_et": null,
+    "bar_age_min": null,
+    "bar_may_be_incomplete_when_collected": false,
     "reference_as_of_session": "2026-11-04",
     "reference_fixed_before_open": false,
     "reference_fixed_at_utc": "2026-11-05T15:26:33.018113+00:00",
-    "reference_comparison": "Nov04 is previous US trading session confirmed against calendar. Baseline created after open; no threshold crossing start times inferred.",
+    "reference_comparison": "Nov04 is previous regular US trading session; reference initialized after Nov05 open; baseline must not infer first intraday threshold crossing time.",
     "corporate_action_guard": false,
     "active_conditions": [
       "QQQ:daily:-2",
@@ -649,43 +730,32 @@
       "VOO:below:first",
       "VOO:band:second"
     ],
-    "new_crossings": [],
+    "new_crossings_since_prior_snapshot": [],
     "recovered_conditions": [],
     "previous_valid_prices": {
-      "QQQ": 651.55,
-      "QQQM": 268.3,
-      "VOO": 675.9387
-    },
-    "new_prices": {
       "QQQ": 651.64,
       "QQQM": 268.31,
       "VOO": 676.345
     },
-    "computed_changes": {
-      "QQQ": {
-        "price": 651.64,
-        "change_pct": -5.826,
-        "drawdown_pct": -14.22,
-        "pct_since_prior": 0.014
-      },
-      "QQQM": {
-        "price": 268.31,
-        "change_pct": -5.83,
-        "drawdown_pct": -14.212,
-        "pct_since_prior": 0.004
-      },
-      "VOO": {
-        "price": 676.345,
-        "change_pct": -4.035,
-        "drawdown_pct": -5.565,
-        "pct_since_prior": 0.06
-      }
+    "new_prices": {
+      "QQQ": 647.05,
+      "QQQM": 266.85,
+      "VOO": 673.97
     },
-    "collection_success_verification": "latest.json content updated at 15:16:51 EST; 14:26 previous.json differs; Github Actions job-level collect/deploy statuses not individually verified",
+    "provider_daily_change_pct": {
+      "QQQ": -6.489,
+      "QQQM": -6.342,
+      "VOO": -4.372
+    },
+    "provider_daily_drawdown_pct": {
+      "QQQ": -14.824,
+      "QQQM": -14.679,
+      "VOO": -5.896
+    },
+    "collection_success_verification": "GitHub Actions run 42120693328 completed success; collect and deploy jobs and specific collect/upload/deploy steps completed success; latest.json content 17:21 EST end_of_day with Nov05 daily close confirmed updated vs preceding regular snapshot. Collection and data freshness separately verified.",
     "delivery_status": "unverified",
     "continuous_recovery_verified": false,
-    "market_risk": "Previous Reuters Nov05 13:32 EST VIX high 28.09 already alerted; not newly observed now.",
-    "cnn": "CNN primary inaccessible; third-party pages report Nov05 23 (no explicit intraday time) vs 35 (factor timestamp 08:06 EST); comparable up-to-date official index score unverified. No new threshold established.",
-    "next_refresh": "2026-11-05 17:30 EST scheduled close check only; no off-schedule detector."
+    "market_risk": "Reuters Nov05 VIX settled at 28.18 from 16.61 prior session, intraday high 28.36; verified close not same as previous intraday 28.09. Direct VXN and CNN latest post-close score not verified.",
+    "next_refresh": "2026-11-06 10:30 EST scheduled normal check; US BLS Oct employment due 08:30 EST; 17:30 EST Friday completed week review."
   }
 }
