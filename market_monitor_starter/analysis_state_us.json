@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-06T17:21:38.278785+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-06T18:15:34.299099+00:00",
   "last_reference_session": "2026-11-05",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 658.885,
-    "QQQM": 271.316,
-    "VOO": 678.9725
+    "QQQ": 656.23,
+    "QQQM": 270.19,
+    "VOO": 677.53
   },
   "last_active_conditions": [
     "QQQ:high252:-10",
@@ -17,13 +17,13 @@
     "VOO:below:first",
     "VOO:band:second"
   ],
-  "current_judgment": "Nov06 12:30 EST: QQQ $658.885 (+1.829% vs Nov05, high252 -13.266%), QQQM $271.316 (+1.674%, below confirmed $280-285 third band), VOO $678.972 (+0.742%, still inside confirmed second band $670-680). No newly crossed alerts vs 11:30 analysis state and no sustained price stabilization proof. Rebound after severe Nov05 close continues, but 12:30 snapshot does not show independent meaningful new trigger. Latest GitHub yfinance 5-min bar starts 12:20 EST, may have been unfinished at 12:21:38 collection. No automatic orders.",
+  "current_judgment": "Nov06 13:30 EST: QQQ $656.23 (+1.419%, high252 -13.615%), QQQM $270.19 (+1.252%, below confirmed third $280-285 band), VOO $677.53 (+0.528%, within confirmed second $670-680 band). All drift lower than 12:30 ET sampled prices without new alert threshold or completed stabilization evidence. Nov05 severe selloff still not reversed. Extra buying deferred pending price stabilization or explicit precommitted staged plan. No automatic orders.",
   "next_conditions": [
-    "Next nominal regular check Friday 2026-11-06 13:30 EST; Friday 17:30 EST provider EOD plus CONFIRMED weekly QQQ EMA20/50/100/200 and RSI14 review.",
-    "QQQ: 252d peak-close -15% trigger $645.71; 11/05 close $647.05, sampled $658.885; watch completed weekly EMA50 $672.02 and daily SMA200 $679.61. Intraday samples not confirmed daily/weekly close.",
-    "QQQM: confirmed third band $280-285 remains ABOVE $271.316; watch $280 re-entry and completed weekly EMA50 $276.69, daily SMA200 $279.81; do not double count NASDAQ100 risks with QQQ.",
-    "VOO: sampled $678.9725 inside confirmed second band $670-680; check $680 recovery vs $670 lower boundary and daily SMA200 $668.49. This is not 15-min confirmed stability.",
-    "CNN Fear & Greed: prior Nov06 09:57 EST secondary-source 24 ('extreme fear'), not CNN-original verified; comparable prior-day and 5-day trend unverified, no new fear sentiment alert; market breadth, VIX/VXN, yields, time-matched volume unverified at this 12:30 check. Existing low-frequency sourced data are not live."
+    "Next nominal 2026-11-06 14:30 EST regular check; Friday 17:30 EST EOD plus confirmed weekly QQQ EMA20/50/100/200, RSI14 (avoid duplicate weekly task).",
+    "QQQ: 252-session high-close -15% alert $645.71; sampled $656.23, confirmed prior completed weekly EMA50 $672.02 and daily SMA200 $679.61; distinguish intraday from completed daily/weekly close.",
+    "QQQM: confirmed third band $280-285 remains above sampled $270.19, watch $280 recovery and weekly EMA50 $276.69, daily SMA200 $279.81. Not a separate independent Nasdaq100 shock from QQQ.",
+    "VOO: sampled $677.53 within confirmed second $670-680; next $670 support-loss watch and $680 re-advance (daily SMA200 $668.49), no 15-min continuous support proof.",
+    "CNN stocks Fear & Greed 11/06 09:57 EST secondary-source 24 (<25 extreme fear), unverified at CNN original with contradictory other source and no reliable prior-session/5-session comparison; no new score-based alert. Same-time volume and verified direct market breadth/VXN/Nov06 real 10yr yield unavailable; prior sources are low-frequency only."
   ],
   "last_report_prepared_utc": "2026-11-06T15:30:24.829Z",
   "last_report_kind": "2026-11-06_nominal_10:30_EST_regular_check",
@@ -639,12 +639,12 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-06T17:30:48.069Z",
-  "last_check_prepared_utc": "2026-11-06T17:30:48.069Z",
-  "last_check_kind": "2026-11-06_nominal_12:30_EST_regular_check",
+  "last_evaluation_utc": "2026-11-06T18:31:38.395Z",
+  "last_check_prepared_utc": "2026-11-06T18:31:38.395Z",
+  "last_check_kind": "2026-11-06_nominal_13:30_EST_regular_check",
   "last_check_condition_ids": [],
-  "last_notification_decision": "skip_notification: 12:30 EST valid 12:20 bar QQQ 658.885, QQQM 271.316, VOO 678.9725; no new alert threshold or finalized band crossing versus prior recorded 11:30 state, no demonstrated price stabilization, CNN original still unverified. Continue existing observation/additional-buy deferral. No push delivery receipt.",
-  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob a0208074464b5e2c67b6cb8c299a76476edbe909; Yahoo Finance via GitHub/yfinance regular_session generated 2026-11-06T17:21:38.278785+00:00, 5-min bars begin 2026-11-06 12:20 EST (may have been incomplete at collection), prior-day reference Nov05 initialized after opening; not new event.",
+  "last_notification_decision": "skip_notification: 13:30 EST verified 13:15 5-min samples QQQ 656.23, QQQM 270.19, VOO 677.53; existing active conditions unchanged vs 12:30 state. All drift lower but no new independent drawdown threshold, band entry/exit, or sustained price stabilization evidence. Continue additional-buy deferral. CNN newer original not verified. No push delivery receipt.",
+  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob f6f14b2bbddc296fe3edf5316c3add8a9c02ebb0; Yahoo/yfinance collector regular_session generated 2026-11-06T18:15:34.299099+00:00; last 5-min bars start 2026-11-06 13:15 EST (possibly incomplete when generated). Nov05 daily_reference initialized after open, not a new crossing.",
   "last_external_end_of_day": {
     "session_date": "2026-11-05",
     "session_close_et": "2026-11-05T16:00:00-05:00",
@@ -715,19 +715,19 @@
     "confirmed_stabilization": false
   },
   "last_data_quality_observation": {
-    "checked_at_utc": "2026-11-06T17:30:48.069Z",
-    "scheduled_nominal_et": "2026-11-06T12:30:00-05:00",
+    "checked_at_utc": "2026-11-06T18:31:38.395Z",
+    "scheduled_nominal_et": "2026-11-06T13:30:00-05:00",
     "valid_snapshot": true,
-    "blob_sha": "a0208074464b5e2c67b6cb8c299a76476edbe909",
+    "blob_sha": "f6f14b2bbddc296fe3edf5316c3add8a9c02ebb0",
     "config_revision": "2026-10-19.1",
     "mode": "regular_session",
-    "generated_utc": "2026-11-06T17:21:38.278785+00:00",
-    "generated_age_minutes": 9.16,
-    "bar_start_et": "2026-11-06T12:20:00-05:00",
+    "generated_utc": "2026-11-06T18:15:34.299099+00:00",
+    "generated_age_minutes": 16.07,
+    "bar_start_et": "2026-11-06T13:15:00-05:00",
     "bar_start_age_minutes": {
-      "QQQ": 10.8,
-      "QQQM": 10.8,
-      "VOO": 10.8
+      "QQQ": 16.64,
+      "QQQM": 16.64,
+      "VOO": 16.64
     },
     "bar_may_be_incomplete_when_collected": true,
     "reference_as_of_session": "2026-11-05",
@@ -735,19 +735,19 @@
     "reference_initialized_after_open_not_new_event": true,
     "corporate_action_guard": false,
     "prices": {
-      "QQQ": 658.885,
-      "QQQM": 271.316,
-      "VOO": 678.9725
+      "QQQ": 656.23,
+      "QQQM": 270.19,
+      "VOO": 677.53
     },
     "change_pct": {
-      "QQQ": 1.829,
-      "QQQM": 1.674,
-      "VOO": 0.742
+      "QQQ": 1.419,
+      "QQQM": 1.252,
+      "VOO": 0.528
     },
     "drawdown_pct": {
-      "QQQ": -13.266,
-      "QQQM": -13.251,
-      "VOO": -5.198
+      "QQQ": -13.615,
+      "QQQM": -13.611,
+      "VOO": -5.399
     },
     "sample_new_crossings": [],
     "new_conditions_vs_prior_analysis_state": [],
@@ -755,7 +755,7 @@
     "sample_only_not_15m_continuous_confirmation": true,
     "delivery_status": "unverified",
     "data_source": "Yahoo Finance via GitHub/yfinance (not assistant-run)",
-    "collection_success_verification": "latest.json generated 12:21 and differs from previous.json 11:19; GitHub collect/deploy job statuses not checked here",
-    "next_refresh": "2026-11-06 13:30 EST nominal"
+    "collection_success_verification": "latest generated 2026-11-06T13:15:34.299099-05:00, differs from previous.json 2026-11-06T12:21:38.278785-05:00; GitHub job statuses not independently checked this run",
+    "next_refresh": "2026-11-06 14:30 EST nominal"
   }
 }
