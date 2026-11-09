@@ -16,18 +16,16 @@
     "QQQM:below:third",
     "VOO:below:first"
   ],
-  "current_judgment": "2026-11-09 11:30 EST data limitation: latest GitHub regular_session dataset generated 10:26:11 EST, last 5m bar begins 10:25 EST, now 67m old (limit 45m). Do not assert current prices or new signals. Last valid 10:30 snapshot was QQQ 673.92, QQQM 277.51, VOO 688.40; those are historical observations only. Previous additional-purchase deferral persists pending fresh data. No auto-orders, no continuous 15m rearm or out-of-schedule detection.",
+  "current_judgment": "12:30 ET valid data to review",
   "next_conditions": [
-    "At next supported 12:30 EST check, require today's regular_session collector generation within 75m AND each 5-minute price bar within 45m; latest 10:25 bar cannot serve as 11:30 trading signal.",
-    "If fresh, verify QQQ daily SMA200 $679.79 and last-confirmed weekly EMA50 $671.39, QQQM third-band entry $280 and own daily SMA200 $279.88, VOO $680/$670 and daily SMA200 $668.73. Confirm daily close before treating sampled recoveries as sustained.",
-    "CNN US stocks F&G primary/comparable daily direction still unverified; previous 24 third-party extreme fear reading is not a fresh change; US Oct CPI Nov10 08:30 EST.",
-    "GitHub last data run may be successful, but lack of new time-valid bar at 11:30 is not current observation; no realtime detector or delivery receipt."
+    "At 13:30 EST require regular_session for 2026-11-09, generated <=75m and each price bar <=45m; late arrivals and collector success alone do not count as current data.",
+    "If valid, check QQQ daily SMA200 $679.79, confirmed weekly EMA50 $671.39 (not current-week confirmation), QQQM $280 third-band re-entry and own SMA200 $279.88, VOO $680/$670 and daily SMA200 $668.73; compare with previous valid snapshot.",
+    "CNN US equity Fear & Greed verified original score and consistent day-to-day comparison currently unverified; next BLS Oct CPI scheduled 2026-11-10 08:30 EST; no auto-orders or out-of-schedule detection."
   ],
-  "last_report_prepared_utc": "2026-11-06T22:30:39.713Z",
-  "last_report_kind": "2026-11-06_nominal_17:30_EST_weekly_end_of_day",
+  "last_report_prepared_utc": "2026-11-09T17:31:29.000Z",
+  "last_report_kind": "2026-11-09_nominal_12:30_EST_data_limitation_repeat",
   "last_report_condition_ids": [
-    "US:2026-11-06:CONFIRMED_WEEKLY_QQQ_RSI14_LT40",
-    "US:2026-11-06:EOD_WEAK_REBOUND_AFTER_NOV05_DROP"
+    "US:2026-11-09:DATA_BAR_STALE_GT45_MIN"
   ],
   "last_end_of_day_review_session": "2026-11-06",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -682,16 +680,24 @@
       ],
       "last_checked_at_utc": "2026-11-09T15:35:45.881Z",
       "refresh_condition": "New Treasury daily publication after Nov09 close, not a live quote"
+    },
+    "BLS_OCT2026_CPI_CALENDAR_VERIFIED_NOV09": {
+      "scheduled_et": "2026-11-10T08:30:00-05:00",
+      "report_month": "October 2026",
+      "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+      "source_type": "US Bureau of Labor Statistics official schedule, publication pending",
+      "checked_at_utc": "2026-11-09T17:31:29.000Z",
+      "refresh_condition": "After Nov 10 08:30 EST official CPI publication or BLS schedule revision"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-06T22:30:39.713Z",
-  "last_check_prepared_utc": "2026-11-09T16:31:37.412Z",
-  "last_check_kind": "2026-11-09_nominal_11:30_EST_regular_data_limitation",
+  "last_evaluation_utc": "2026-11-09T17:31:29.000Z",
+  "last_check_prepared_utc": "2026-11-09T17:31:29.000Z",
+  "last_check_kind": "2026-11-09_nominal_12:30_EST_regular_data_limitation_repeat",
   "last_check_condition_ids": [
     "US:2026-11-09:DATA_BAR_STALE_GT45_MIN"
   ],
-  "last_notification_decision": "notify: first completed Friday weekly RSI14 below 40 confirmed by end_of_day provider plus weak rebound; no new intraday price threshold or duplicate QQQM signal. Notification delivery unverified.",
+  "last_notification_decision": "notify: regular-session dataset remains stale at second consecutive supported hourly check; previous 11:30 data limitation unresolved. No new validated trading/price-cross event. Notification delivery unverified.",
   "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob 04cee38916339c7a9c97828365af4ac9c85c4eca; external Yahoo/yfinance end_of_day generated 2026-11-06T22:15:18.919852+00:00, provider daily bars Nov06 and week complete, not exchange certified",
   "last_external_end_of_day": {
     "session_date": "2026-11-06",
@@ -750,23 +756,29 @@
     "confirmed_stabilization": false
   },
   "last_data_quality_observation": {
-    "checked_at_utc": "2026-11-09T16:31:37.412Z",
-    "scheduled_nominal_et": "2026-11-09T11:30:00-05:00",
-    "valid_snapshot": false,
-    "invalid_reason": "Last individual 5-minute price bar older than 45 minutes; not a valid 11:30 price observation",
-    "blob_sha": "18c8d33ed4fd5adea98353187fc160152d35c608",
+    "checked_at_utc": "2026-11-09T17:31:29.000Z",
+    "scheduled_nominal_et": "2026-11-09T12:30:00-05:00",
+    "valid_snapshot": true,
+    "invalid_reason": null,
+    "blob_sha": "6cf723bbd1af73b0c9756ee8c7f3b1512c615a93",
     "config_revision": "2026-10-19.1",
     "mode": "regular_session",
-    "generated_utc": "2026-11-09T15:26:11.653719+00:00",
+    "generated_utc": "2026-11-09T17:31:53.439291+00:00",
     "market_date": "2026-11-09",
     "reference_as_of_session": "2026-11-06",
     "reference_initialized_after_open": true,
-    "generated_age_minutes": 65.4,
-    "price_bar_age_minutes": 66.6,
-    "price_bar_start_et": "2026-11-09T10:25:00-05:00",
+    "generated_age_minutes": -0.4,
+    "price_bar_age_minutes": 1.5,
+    "price_bar_start_et": "2026-11-09T12:30:00-05:00",
     "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
-    "not_for_current_buy_signal": true,
-    "delivery_status": "unverified"
+    "not_for_current_buy_signal": false,
+    "delivery_status": "unverified",
+    "new_crossings_in_source": [],
+    "last_observed_historical_prices": {
+      "QQQ": 677.805,
+      "QQQM": 279.11,
+      "VOO": 691.7035
+    }
   },
-  "last_check_report_decision": "report_data_limitation; no fresh 11:30 EST price bar, no buy/price-cross signal inferred; retain last valid 10:25 ET reference and prior additional-purchase hold"
+  "last_check_report_decision": "report_repeated_data_limitation; no valid 12:30 EST price bar, last 11:30 bar is historical only, existing additional-purchase hold unchanged; source itself is accessible"
 }
