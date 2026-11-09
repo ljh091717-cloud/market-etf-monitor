@@ -16,17 +16,16 @@
     "QQQM:below:third",
     "VOO:below:first"
   ],
-  "current_judgment": "2026-11-09 12:30 EST valid regular-session observation became available at 12:31:53 EST (shortly after nominal check). Prices were stronger than prior 10:25 sample but no new threshold crossings. Maintain additional-purchase defer/watch; QQQ $677.805 below 200-day SMA $679.79; QQQM $279.11 below $280 third band and own 200-day SMA $279.88; VOO $691.7035 above second band and below first band $695. Price stabilization/finished daily or weekly close not confirmed.",
+  "current_judgment": "2026-11-09 13:30 EST scheduled check: DATA INSUFFICIENT, no 13:30 current-session price assessment. Latest GitHub regular_session generated 12:31:53 EST is ~60 min old and last 5m bar START 12:30 EST is ~61.85 min old (>45min limit). Last known valid prices from 12:30 are historical only, not real-time. Prior additional-purchase defer/watch remains; no new crossings may be asserted.",
   "next_conditions": [
-    "At 13:30 EST next scheduled check, verify newly collected regular_session snapshot age <=75m, each 5m bar <=45m, and any new condition crossings vs this 12:30 price bar.",
-    "QQQ 200d SMA $679.79 and confirmed weekly EMA50 $671.39; QQQM 200d SMA $279.88 and $280~285 third band; VOO first band $695~700, second band $670~680, 50d SMA $703.32. Intraday crossing is not confirmed daily/weekly close.",
-    "CNN US Fear & Greed latest primary same-timestamp comparable score unverified; no new verified directional change; 2026-11-10 08:30 EST US October CPI scheduled. No automatic orders or independent real-time detector."
+    "At 14:30 EST next scheduled US check obtain regular_session snapshot generated <=75m ago and each symbol last 5m bar start <=45m old; if absent, report data limitation, not a price alert.",
+    "With valid intraday data, evaluate QQQ $679.79 200d SMA and $671.39 confirmed prior-week EMA50; QQQM $279.88 200d SMA and $280~285 third band; VOO $695~700 first band and $680 second-band edge. Require completed daily/weekly close for trend confirmation.",
+    "Compare real new crossings to last valid 12:30 snapshot; no continuous 15min recovery detector; CNN Fear & Greed original/timestamp and 5day comparable history unverified; Nov10 08:30 EST CPI calendar cached."
   ],
-  "last_report_prepared_utc": "2026-11-06T22:30:39.713Z",
-  "last_report_kind": "2026-11-06_nominal_17:30_EST_weekly_end_of_day",
+  "last_report_prepared_utc": "2026-11-09T18:31:51Z",
+  "last_report_kind": "2026-11-09_nominal_13:30_EST_data_limitation",
   "last_report_condition_ids": [
-    "US:2026-11-06:CONFIRMED_WEEKLY_QQQ_RSI14_LT40",
-    "US:2026-11-06:EOD_WEAK_REBOUND_AFTER_NOV05_DROP"
+    "US:2026-11-09:13:30:STALE_5M_BAR_GT45MIN"
   ],
   "last_end_of_day_review_session": "2026-11-06",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -126,7 +125,7 @@
       }
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-11-09T15:35:45.881Z",
+      "checked_at_utc": "2026-11-09T18:31:51Z",
       "nominal_check_et": "2026-11-09 10:30 EST",
       "latest_blob_sha": "18c8d33ed4fd5adea98353187fc160152d35c608",
       "mode": "regular_session",
@@ -165,8 +164,27 @@
       "no_independent_detector": true,
       "delivery_status": "unverified",
       "data_source": "External yfinance collection in linked GitHub, no direct realtime feed in chat",
-      "note": "Original monitor_config.json still has close_report_delay_minutes=30 but user overrides to 17:30 ET (90 min); do not claim JSON schedule updated. Collector generated valid Nov09 data; GitHub job collect/deploy steps not separately verified at this run.",
-      "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json"
+      "note": "Snapshot generation 60m <75m limit but bar age 61.85m >45m. No new price signal or price stability may be inferred. The 13:35 ET scheduled collector occurs after 13:30 ET assessment, a potential schedule mismatch; actual 13:35 collection status not yet observable.",
+      "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
+      "scheduled_nominal_et": "2026-11-09T13:30:00-05:00",
+      "valid_snapshot": false,
+      "invalid_reason": "latest bar is >45min old; 13:30 US price signal evaluation blocked",
+      "blob_sha": "6cf723bbd1af73b0c9756ee8c7f3b1512c615a93",
+      "generated_utc": "2026-11-09T17:31:53.439291+00:00",
+      "reference_as_of_session": "2026-11-06",
+      "reference_initialized_after_open": true,
+      "generated_age_minutes": 59.96,
+      "price_bar_age_minutes": 61.85,
+      "price_bar_start_et": "2026-11-09T12:30:00-05:00",
+      "external_collector_job_status_at_check": "unverified; GitHub contents alone do not verify collect/deploy steps",
+      "new_price_condition_assessment": "not performed because latest bar exceeded 45m freshness requirement",
+      "last_known_valid_snapshot_et": "2026-11-09T12:31:53-05:00",
+      "last_known_valid_prices_not_current": {
+        "QQQ": 677.805,
+        "QQQM": 279.11,
+        "VOO": 691.7035
+      },
+      "notification_delivery_status": "unverified"
     },
     "FOMC_2026_OCT": {
       "meeting_dates_et": "2026-10-27/2026-10-28",
@@ -692,12 +710,14 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-09T17:32:53.000Z",
-  "last_check_prepared_utc": "2026-11-09T17:32:53.000Z",
-  "last_check_kind": "2026-11-09_nominal_12:30_EST_regular_valid_after_delayed_collection",
-  "last_check_condition_ids": [],
-  "last_notification_decision": "skip_notification: valid 12:30 snapshot collected ~2m late after 11:30 stale-data check; no QQQ/VOO new down-alert thresholds or QQQM/VOO band crossing, no verified price stabilization; no independent updated CNN original score. Actual delivery status unverified.",
-  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob 04cee38916339c7a9c97828365af4ac9c85c4eca; external Yahoo/yfinance end_of_day generated 2026-11-06T22:15:18.919852+00:00, provider daily bars Nov06 and week complete, not exchange certified",
+  "last_evaluation_utc": "2026-11-09T18:31:51Z",
+  "last_check_prepared_utc": "2026-11-09T18:31:51Z",
+  "last_check_kind": "2026-11-09_nominal_13:30_EST_regular_data_limitation",
+  "last_check_condition_ids": [
+    "US:2026-11-09:13:30:STALE_5M_BAR_GT45MIN"
+  ],
+  "last_notification_decision": "notify_data_limitation; price condition unchanged from last valid 12:30 observation; actual delivery receipt unverified",
+  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob 6cf723bbd1af73b0c9756ee8c7f3b1512c615a93: external yfinance regular_session generated 2026-11-09T17:31:53Z with 12:30 ET 5m bar; stale for nominal 13:30 ET check; last valid snapshot retained, not current price.",
   "last_external_end_of_day": {
     "session_date": "2026-11-06",
     "session_close_et": "2026-11-06T16:00:00-05:00",
@@ -755,24 +775,31 @@
     "confirmed_stabilization": false
   },
   "last_data_quality_observation": {
-    "checked_at_utc": "2026-11-09T17:32:53.000Z",
-    "scheduled_nominal_et": "2026-11-09T12:30:00-05:00",
-    "valid_snapshot": true,
-    "invalid_reason": null,
+    "checked_at_utc": "2026-11-09T18:31:51Z",
+    "scheduled_nominal_et": "2026-11-09T13:30:00-05:00",
+    "valid_snapshot": false,
+    "invalid_reason": "latest bar is >45min old; 13:30 US price signal evaluation blocked",
     "blob_sha": "6cf723bbd1af73b0c9756ee8c7f3b1512c615a93",
     "config_revision": "2026-10-19.1",
     "mode": "regular_session",
-    "generated_utc": "2026-11-09T17:31:53.439291+00:00",
     "market_date": "2026-11-09",
+    "generated_utc": "2026-11-09T17:31:53.439291+00:00",
     "reference_as_of_session": "2026-11-06",
     "reference_initialized_after_open": true,
-    "generated_age_minutes": 0.99,
-    "price_bar_age_minutes": 2.88,
+    "generated_age_minutes": 59.96,
+    "price_bar_age_minutes": 61.85,
     "price_bar_start_et": "2026-11-09T12:30:00-05:00",
     "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
-    "not_for_current_buy_signal": false,
-    "delivery_status": "unverified",
-    "new_crossings_in_source": []
+    "external_collector_job_status_at_check": "unverified; GitHub contents alone do not verify collect/deploy steps",
+    "new_price_condition_assessment": "not performed because latest bar exceeded 45m freshness requirement",
+    "last_known_valid_snapshot_et": "2026-11-09T12:31:53-05:00",
+    "last_known_valid_prices_not_current": {
+      "QQQ": 677.805,
+      "QQQM": 279.11,
+      "VOO": 691.7035
+    },
+    "notification_delivery_status": "unverified",
+    "note": "Snapshot generation 60m <75m limit but bar age 61.85m >45m. No new price signal or price stability may be inferred. The 13:35 ET scheduled collector occurs after 13:30 ET assessment, a potential schedule mismatch; actual 13:35 collection status not yet observable."
   },
-  "last_check_report_decision": "valid_12:30_snapshot_no_new_material_crossing; 11:30 data limitation has cleared with new collector snapshot; maintain added-purchase defer and next 13:30 verification"
+  "last_check_report_decision": "notify_data_limitation: 13:30 regular-session bar stale; no 13:30 real-time price or new signal; collector job steps not separately verified"
 }
