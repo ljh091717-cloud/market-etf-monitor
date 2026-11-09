@@ -1,33 +1,34 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-09T20:23:43.502141+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-09T22:17:53.811125+00:00",
   "last_reference_session": "2026-11-06",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 680.85,
-    "QQQM": 280.355,
-    "VOO": 693.945
+    "QQQ": 679.35,
+    "QQQM": 279.52,
+    "VOO": 691.87
   },
   "last_active_conditions": [
     "QQQ:high252:-10",
     "QQQM:below:first",
     "QQQM:below:second",
-    "QQQM:band:third",
+    "QQQM:below:third",
     "VOO:below:first"
   ],
-  "current_judgment": "15:30 EST valid regular_session sample: QQQM re-entered confirmed watch band third $280–285 on one 15:20 five-minute sample from below third; QQQ sampled above 200d SMA $679.794 but close not confirmed. This is sampled rebound, not new drawdown/bottom or sustained recovery; keep additional purchase deferred pending daily close and Nov10 CPI.",
+  "current_judgment": "Nov09 EOD: strong broad-market rebound vs Nov06 but QQQM ($279.52) CLOSED back below $280 third band after a 15:20 intraday sample $280.355; QQQ ($679.35) closed below its Nov09 SMA200 $680.09 (and prior $679.79). Both sampled intraday recoveries did not persist to daily close. VOO $691.87 above second band and below first $695. QQQ remains ~10.57% below 252d highest close. Do not call the day a new crash or confirm a durable breakdown/15m rearm. Long-term tranche allocation and risk limit unspecified: watch and defer additional buy until stabilization/CPI reassessment; no orders.",
   "next_conditions": [
-    "Nov09 17:30 EST EOD: confirm provider Nov09 daily Close (not 15:55 5m) for QQQ relative to Nov06 SMA200 $679.79, QQQM $280–285 and its 200d SMA $279.885, VOO $695 first band and SMA50 $703.32; provider daily/weekly distinct.",
-    "QQQM third band entry on a single 5m sample and recovery of below-third cannot prove 15m hold or ATR-buffer break (b=max(0.3% of $280=$0.84, 0.25*ATR14=$1.57)); risk of re-drop under $280 and $279.88, QQQ under $679.79.",
-    "Nov10 08:30 EST official October CPI ahead of next 10:30 regular check; verify latest CNN primary, broad market, yields and VIX/VXN if accessible; no off-schedule detector."
+    "2026-11-10 08:30 EST BLS Oct CPI/real earnings release; verify official figures and yields/VIX reactions before 10:30 ET regular check (not off-schedule event alert).",
+    "Nov10 10:30 EST regular session: QQQ $680.09 prior daily SMA200 regained/held or rejected; QQQM $280–285 band reentry and $280.01 Nov09 SMA200; VOO $695–700 first band entry or $680 support retest. All intraday samples provisional until daily close.",
+    "Next Nov10 provider EOD: determine if QQQM closes above $280 and QQQ above 200d SMA; downside re-approach below QQQM $280 and QQQ -15% high drawdown prioritized if confirmed. Friday weekly EMA/RSI confirmation only after last weekly session."
   ],
-  "last_report_prepared_utc": "2026-11-09T20:37:24.616Z",
-  "last_report_kind": "2026-11-09_nominal_15:30_EST_QQQM_reenters_third_band_intraday_sample",
+  "last_report_prepared_utc": "2026-11-09T22:34:52.189Z",
+  "last_report_kind": "2026-11-09_nominal_17:30_EST_EOD_QQQM_band_reexit",
   "last_report_condition_ids": [
-    "US:2026-11-09:15:30:QQQM:band:third"
+    "US:2026-11-09:17:30:QQQM:below:third:EOD",
+    "US:2026-11-09:17:30:QQQ:below:SMA200:EOD"
   ],
-  "last_end_of_day_review_session": "2026-11-06",
+  "last_end_of_day_review_session": "2026-11-09",
   "rearm_status": "not_implemented_no_continuous_detector",
   "notification_delivery_status": "unverified",
   "low_frequency_cache": {
@@ -731,102 +732,140 @@
       "reported_context": "Broad-market rally, industrials and discretionary strength, semiconductors up excluding Nvidia; index and breadth quotes not synced with ETF collector. NYSE adv/decl 4.46:1 Nasdaq 3.56:1 in article; not % stocks over SMA",
       "checked_at_utc": "2026-11-09T20:37:24.616Z",
       "refresh_condition": "Nov09 official/provider closes or material new macro market change"
+    },
+    "CNN_NOV09_EOD_SECONDARY": {
+      "score": 32,
+      "band": "공포",
+      "as_of_et": "2026-11-09 16:00 EST indicators shown on secondary provider; CNN original headline inaccessible",
+      "source_urls": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment"
+      ],
+      "source_type": "Third-party reproductions of CNN US stocks index, not cryptocurrency or verified CNN original",
+      "comparison": "fgscore prior reading 32 unchanged; GuruTrack previous close 22; disagreement prevents reliable day-over-day direction; ~5 consecutive comparable sessions not verified",
+      "checked_at_utc": "2026-11-09T22:34:52.189Z",
+      "refresh_condition": "Next distinct verified primary CNN update or trustworthy consistent-source comparable historic record",
+      "not_independent_from_vix": true
+    },
+    "US_TREASURY_2026_NOV09": {
+      "observed_on": "2026-11-09",
+      "nominal10y_pct": 4.88,
+      "nominal10y_prior_pct": 4.86,
+      "real10y_pct": 2.66,
+      "real10y_prior_pct": 2.63,
+      "source_urls": [
+        "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
+        "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value_month=202611"
+      ],
+      "verified_official": true,
+      "not_realtime": true,
+      "checked_at_utc": "2026-11-09T22:34:52.189Z",
+      "refresh_condition": "Next official US Treasury daily par and TIPS real yield publication"
+    },
+    "US_MARKET_CLOSE_2026_NOV09_REUTERS": {
+      "session_date": "2026-11-09",
+      "sp500_pct": 2.35,
+      "nasdaq_composite_pct": 2.74,
+      "sox_pct": 6.9,
+      "breadth": "NYSE advances/declines 4.06:1, Nasdaq 3.34:1, breadth A/D not constituents above SMA50/200",
+      "volume": "US exchanges full day 18.98bn shares vs 20-session full-day average 18.72bn; not QQQ ETF same-elapsed-time volume",
+      "oil_inflation_concern": "Reuters notes falling oil easing inflation worries, all 11 S&P sectors positive",
+      "source_url": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/",
+      "checked_at_utc": "2026-11-09T22:34:52.189Z",
+      "refresh_condition": "Next final market close or major relevant revised report"
+    },
+    "BLS_CPI_OCT2026_NOV10": {
+      "scheduled_et": "2026-11-10T08:30:00-05:00",
+      "release": "October 2026 CPI and Real Earnings",
+      "source_url": "https://blsmon1.bls.gov/schedule/2026/11_sched_list.htm",
+      "confirmed_official": true,
+      "checked_at_utc": "2026-11-09T22:34:52.189Z",
+      "refresh_condition": "Nov10 08:30 EST actual BLS publication"
+    },
+    "CSCO_EARNINGS_NOV12": {
+      "scheduled_et": "2026-11-12T16:30:00-05:00",
+      "release": "Cisco fiscal Q1 2027 after market close",
+      "source_url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-schedules-conference-call-for-q1-fiscal-year-2027-financial-results.html?source=rss",
+      "checked_at_utc": "2026-11-09T22:34:52.189Z",
+      "refresh_condition": "Cisco actual investor relations earnings publication Nov12 after close"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-09T20:37:24.616Z",
-  "last_check_prepared_utc": "2026-11-09T20:37:24.616Z",
-  "last_check_kind": "2026-11-09_nominal_15:30_EST_regular_valid",
+  "last_evaluation_utc": "2026-11-09T22:34:52.189Z",
+  "last_check_prepared_utc": "2026-11-09T22:34:52.189Z",
+  "last_check_kind": "2026-11-09_nominal_17:30_EST_end_of_day_valid",
   "last_check_condition_ids": [
-    "US:2026-11-09:15:30:QQQM:band:third"
+    "US:2026-11-09:17:30:QQQM:below:third:EOD",
+    "US:2026-11-09:17:30:QQQ:below:SMA200:EOD"
   ],
-  "last_notification_decision": "notify: QQQM third watch band newly touched (crossed upward) vs prior valid sample; QQQ 200d SMA intraday price above; no full recovery/buy signal",
-  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob ae23f3a3219c7737d04a305d7720bb0beec76bc6, Yahoo/yfinance external regular_session generated 2026-11-09T20:23:43.502141+00:00, 5m start 2026-11-09T15:20:00-05:00 may have been incomplete; prior day Nov06 daily reference initialized after open, so no reference reset false alarm",
+  "last_notification_decision": "notify: QQQM ended below $280 after 15:30 sample inside third band, with QQQ failing 200d-SMA daily-close confirmation; broad rebound and lower VIX mitigate, CPI next day warrants caution",
+  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json blob 9f1cf08d314f7b4e8d0d1d79cb3b0e77c9033156, Yahoo/yfinance provider EOD generated 2026-11-09T22:17:53.811125+00:00, daily Close Nov09 in all three, previous ref Nov06 initialized after open, no false crash; exchange-certified close not confirmed",
   "last_external_end_of_day": {
-    "session_date": "2026-11-06",
-    "session_close_et": "2026-11-06T16:00:00-05:00",
-    "checked_at_utc": "2026-11-06T22:30:39.713Z",
-    "source_json_sha": "04cee38916339c7a9c97828365af4ac9c85c4eca",
+    "session_date": "2026-11-09",
+    "session_close_et": "2026-11-09T16:00:00-05:00",
+    "checked_at_utc": "2026-11-09T22:34:52.189Z",
+    "source_json_sha": "9f1cf08d314f7b4e8d0d1d79cb3b0e77c9033156",
     "provider_close_not_exchange_official": true,
     "provider_data_may_revise": true,
     "prices": {
       "QQQ": {
-        "close": 656.1,
-        "previous_close": 647.05,
-        "change_pct": 1.399,
-        "drawdown_pct": -13.632,
-        "sma50": 722.03,
-        "sma200": 679.61,
-        "atr14": 15.3,
-        "provider_daily_bar_today": true,
-        "not_exchange_certified": true
+        "prior_close": 656.1,
+        "day_pct": 3.54,
+        "drawdown_252_pct": -10.57,
+        "sma200": 680.09,
+        "sma50": 720.02,
+        "atr14": 16.18
       },
       "QQQM": {
-        "close": 270.22,
-        "previous_close": 266.85,
-        "change_pct": 1.263,
-        "drawdown_pct": -13.601,
-        "sma50": 297.31,
-        "sma200": 279.81,
-        "atr14": 6.25,
-        "provider_daily_bar_today": true,
-        "not_exchange_certified": true
+        "prior_close": 270.22,
+        "day_pct": 3.44,
+        "drawdown_252_pct": -10.63,
+        "sma200": 280.01,
+        "sma50": 296.48,
+        "atr14": 6.59
       },
       "VOO": {
-        "close": 675.99,
-        "previous_close": 673.97,
-        "change_pct": 0.3,
-        "drawdown_pct": -5.614,
-        "sma50": 703.94,
-        "sma200": 668.49,
-        "atr14": 9.33,
-        "provider_daily_bar_today": true,
-        "not_exchange_certified": true
+        "prior_close": 675.99,
+        "day_pct": 2.35,
+        "drawdown_252_pct": -3.4,
+        "sma200": 669.04,
+        "sma50": 703.05,
+        "atr14": 9.91
       }
     },
-    "confirmed_qqq_weekly": {
-      "week_date": "2026-11-06",
-      "ema_20": 705.2358,
-      "ema_50": 671.3929,
-      "ema_100": 615.0862,
-      "ema_200": 531.4942,
-      "rsi_14": 39.354,
-      "sample_weeks": 1444
+    "observed_close": {
+      "QQQ": 679.35,
+      "QQQM": 279.52,
+      "VOO": 691.87
     },
-    "qqqm_below_third_eod": true,
-    "voo_inside_second_eod": true,
-    "qqq_minus15_high252_not_yet_reached": true,
-    "confirmed_stabilization": false
+    "current_week_is_provisional": true,
+    "qqq_week_last_completed_date": "2026-11-02",
+    "qqq_week_last_completed_rsi14": 39.354,
+    "qqq_week_provisional_rsi14": 45.646,
+    "qqm_closed_below_third": true,
+    "qqq_closed_below_sma200": true,
+    "voo_inside_first_band": false,
+    "recovered_market_intraday_price_but_daily_confirmation_failed": true,
+    "next_bls_cpi_et": "2026-11-10T08:30:00-05:00"
   },
   "last_data_quality_observation": {
-    "checked_at_utc": "2026-11-09T20:37:24.616Z",
-    "scheduled_nominal_et": "2026-11-09T15:30:00-05:00",
+    "checked_at_utc": "2026-11-09T22:34:52.189Z",
+    "scheduled_nominal_et": "2026-11-09T17:30:00-05:00",
     "valid_snapshot": true,
-    "blob_sha": "ae23f3a3219c7737d04a305d7720bb0beec76bc6",
+    "blob_sha": "9f1cf08d314f7b4e8d0d1d79cb3b0e77c9033156",
     "config_revision": "2026-10-19.1",
-    "mode": "regular_session",
+    "mode": "end_of_day",
     "market_date": "2026-11-09",
-    "generated_utc": "2026-11-09T20:23:43.502141+00:00",
-    "generated_age_minutes": 13.69,
-    "price_bar_age_minutes": {
-      "QQQ": 17.41,
-      "QQQM": 17.41,
-      "VOO": 17.41
-    },
-    "price_bar_start_et": "2026-11-09T15:20:00-05:00",
+    "generated_utc": "2026-11-09T22:17:53.811125+00:00",
+    "generated_age_minutes": 16.97,
+    "price_bar_age_minutes": "not applicable for provider EOD daily Close; no 5m substituted",
+    "daily_close_date": "2026-11-09",
     "reference_as_of_session": "2026-11-06",
     "reference_initialized_after_open": true,
-    "new_price_condition_assessment": "crossed up into QQQM third band sampled, not 15m hold",
-    "external_collector_job_status_at_check": "GitHub file refreshed; workflow collect/deploy status not separately verified",
+    "new_price_condition_assessment": "QQQM:below:third reactivated in EOD snapshot after 15:20 sample band entry; close below $280; QQQ also below EOD 200d SMA. No continuous 15m hold and no independent detector.",
+    "external_collector_job_status_at_check": "GitHub latest.json updated EOD; workflow collect/deploy steps not independently verified",
     "notification_delivery_status": "unverified",
-    "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
-    "sampled_new_active": [
-      "QQQM:band:third"
-    ],
-    "sampled_recovered": [
-      "QQQM:below:third"
-    ],
-    "continuous_recovery_proven": false
+    "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json"
   },
-  "last_check_report_decision": "notify_intraday_band_reentry_not_confirmed_stabilization"
+  "last_check_report_decision": "notify_eod_intraday_recovery_failed_daily_confirmation"
 }
