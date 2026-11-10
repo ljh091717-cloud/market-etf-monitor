@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-10T19:28:30.184701+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-10T20:18:14.460277+00:00",
   "last_reference_session": "2026-11-09",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 672.05,
-    "QQQM": 276.72,
-    "VOO": 688.06
+    "QQQ": 673.09,
+    "QQQM": 277.17,
+    "VOO": 688.45
   },
   "last_active_conditions": [
     "QQQ:high252:-10",
@@ -16,14 +16,14 @@
     "QQQM:below:third",
     "VOO:below:first"
   ],
-  "current_judgment": "2026-11-10 14:30 EST regular check; valid latest data 14:28:30 EST, 5m bars start 14:25 EST (may be incomplete at collection), ~1.50m generated age/~5m bar age vs nominal checkpoint. QQQ $672.05 (-1.075% vs Nov09 $679.35; -11.533% vs 252-high $759.66), QQQM $276.72 (-1.002% vs $279.52; below third watch 280-285), VOO $688.06 (-0.551% vs $691.87). Prior valid 13:30 readings 669.27/275.56/685.82: moderate rebound. Active condition IDs unchanged: existing QQQ high252 -10%, QQQM below three confirmed bands, VOO below first; no new QQQ/VOO -2/-3/-5%, QQQ high252 -15% or watch-band crosses. QQQ $672.05 exceeds completed-week EMA50 $671.39 by only 0.10%, not daily/weekly close confirmation or continuous hold (b= max(0.3% price, 0.25 ATR ~$4.06); no rearm implementation). Yesterday's hotter CPI and 10y nominal >5% indicative midday quote were already reported at 13:30; no verified additional rate-risk escalation or fresh original CNN change. No new materially actionable information for minimum 2-year split-buyer; retain additional purchase hold, evaluate next snapshot. This is no-update check, not a delivered alert. No automatic orders.",
+  "current_judgment": "2026-11-10 15:30 EST regular check: latest collector 15:18:14 EST, each 5m bar starts 15:15 EST (may be incomplete). QQQ $673.09 (-0.92% vs Nov09 close; -11.40% vs 252-day high), QQQM $277.17 (-0.84%, below third band $280-285), VOO $688.45 (-0.49%, below first band $695-700 and above second $670-680). Previous valid 14:30 ET prices QQQ $672.05/QQQM $276.72/VOO $688.06; minor rise. Existing active conditions unchanged and no new crossings, no QQQ/VOO daily -2/-3/-5 alerts. QQQ just above completed weekly EMA50 $671.39, remains below daily SMA200 $680.09; current weekly RSI14 44.08 provisional vs last completed 39.35. Previously reported Nov10 CPI upside and indicative 10-year nominal >5% are not new alerts. CNN original/latest directly comparable series not independently verified; previous 13:30 secondary 34 is not a new primary signal. Retain extra-purchase hold with both preplanned and stabilization-confirmed strategies monitored; no verified stabilized daily close and no new buying confirmation. No automatic orders or off-schedule detection.",
   "next_conditions": [
-    "2026-11-10 15:30 EST regular snapshot: verify regular_session NY Nov10, generator <=75m, each 5m starting <=45m, prior-day reference Nov09, corporate-action guard off; no off-schedule realtime detection.",
-    "QQQ $665.76 Nov09 close $679.35 -2% alert, $671.39 completed week EMA50 (intraday sample vs completed-week close separate), $680.09 daily SMA200 (daily close confirmation required); -15% drawdown level ~ $645.71 vs 252-high $759.66.",
-    "QQQM third price band $280-285 and daily SMA200 ~$280.01: intraday re-entry only not 15m continuous stabilization; do not count this independently from QQQ Nasdaq100 trend.",
-    "VOO $680 top of second confirmed band 670-680, $678.03 Nov09 close -2% alert, first band $695-700; next 15:30 check.",
-    "At US Nov10 EOD 17:30 EST: require end_of_day and Nov10 daily Close, do not substitute 15:55 5m bar; compare QQQ daily SMA200 and QQQM $280; latest weekly values provisional until Friday close.",
-    "Macro: Nov10 CPI/nominal 10yr >5% indicative risk already reported; watch materially verified yield change, VIX/VXN, market breadth and CNN primary scores if newer reliable timestamp appears. No same-factor repeat alert."
+    "2026-11-10 17:30 EST EOD check: require end_of_day, provider 2026-11-10 daily Close for QQQ/QQQM/VOO; do not use 15:55 start 5m bar as close.",
+    "QQQ: Nov09 $679.35 close daily -2% at $665.76; 252-day -15% about $645.71; $671.39 prior completed weekly EMA50 and $680.09 daily SMA200 as separate confirmation stages.",
+    "QQQM: third confirmed band $280-285 reentry, daily SMA200 $280.01, daily close and subsequent stability; next lower watch not independently assigned; avoid Nasdaq100 double counting.",
+    "VOO: second band $670-680 (upper $680), daily -2% at $678.03, first band $695-700; distinguish intraday contact and daily close.",
+    "Risk: monitor new independent evidence for 10yr nominal/real, VIX/VXN, breadth, and CNN primary and comparable prior 5 sessions; do not repeat previously reported yields or CPI without new verified change.",
+    "Minimum two-year buyer; no amount/size without confirmed usable funds and risk limit; no continuous 15m rearm or delivery receipt."
   ],
   "last_report_prepared_utc": "2026-11-10T18:30:58.000Z",
   "last_report_kind": "2026-11-10_nominal_13:30_EST_intraday_10Y_yield_5pct_risk_expansion",
@@ -857,9 +857,9 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-10T18:30:58.000Z",
-  "last_check_prepared_utc": "2026-11-10T18:30:58.000Z",
-  "last_check_kind": "2026-11-10_nominal_13:30_EST_regular_session",
+  "last_evaluation_utc": "2026-11-10T20:34:16.201Z",
+  "last_check_prepared_utc": "2026-11-10T20:34:16.201Z",
+  "last_check_kind": "2026-11-10_nominal_15:30_EST_regular_session",
   "last_check_condition_ids": [
     "QQQ:high252:-10",
     "QQQM:below:first",
@@ -918,24 +918,24 @@
     "next_bls_cpi_et": "2026-11-10T08:30:00-05:00"
   },
   "last_data_quality_observation": {
-    "generated_utc": "2026-11-10T18:13:37.840034+00:00",
+    "generated_utc": "2026-11-10T20:18:14.460277+00:00",
     "mode": "regular_session",
     "ny_market_session": "2026-11-10",
-    "bar_start_ny": "2026-11-10T13:10:00-05:00",
-    "generation_age_minutes": 17.34,
-    "bar_start_age_minutes": 20.97,
+    "bar_start_ny": "2026-11-10T15:15:00-05:00",
+    "generation_age_minutes": 11.76,
+    "bar_start_age_minutes": 15,
     "verified_regular_session": true,
     "reference_previous_session": "2026-11-09",
     "reference_fixed_before_open": true,
     "bar_may_be_unfinished_at_collection": true,
     "mechanical_action_guard": false,
     "delivery_status": "unverified",
-    "collector_job_status": "not checked via workflow run endpoint; content latest verified via Github connector",
-    "last_json_sha": "040c0d48f7c022595e8be844014473c3503d342c"
+    "collector_job_status": "workflow run status not checked; latest GitHub file was verified",
+    "last_json_sha": "1d01772bdeaa4e35c340afb18e18242baf2f2e42"
   },
-  "last_check_report_decision": "notify_risk_expansion",
-  "last_assessment_nominal_et": "2026-11-10T14:30:00-05:00",
-  "last_assessment_prepared_utc": "2026-11-10T19:30:00Z",
+  "last_check_report_decision": "skip_notification_no_new_signals",
+  "last_assessment_nominal_et": "2026-11-10T15:30:00-05:00",
+  "last_assessment_prepared_utc": "2026-11-10T20:34:16.201Z",
   "last_assessment_kind": "no_update",
   "last_assessment_condition_ids": [
     "QQQ:high252:-10",
