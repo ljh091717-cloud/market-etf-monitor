@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-10T18:13:37.840034+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-10T19:28:30.184701+00:00",
   "last_reference_session": "2026-11-09",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 669.27,
-    "QQQM": 275.56,
-    "VOO": 685.82
+    "QQQ": 672.05,
+    "QQQM": 276.72,
+    "VOO": 688.06
   },
   "last_active_conditions": [
     "QQQ:high252:-10",
@@ -16,14 +16,14 @@
     "QQQM:below:third",
     "VOO:below:first"
   ],
-  "current_judgment": "2026-11-10 13:30 EST regular check, assessed 2026-11-10T18:30:58Z: GitHub valid regular-session source 13:13:37 EST, last 5m bar starts 13:10 (may be unfinished at collection); QQQ $669.27 (-1.484% vs confirmed Nov09 close $679.35; -11.899% 252-session high close $759.66), QQQM $275.56 (-1.417% vs $279.52; below confirmed third $280-285), VOO $685.82 (-0.874% vs $691.87). Compared to 12:30 snapshot QQQ 670.64 QQQM 276.15 VOO 686.82, same active condition IDs; NO new -2/-3/-5 daily, -15% high252, or new watch-zone cross. QQQ remains modestly below prior completed-week EMA50 $671.3929 with intraday sampling only; no daily/weekly close confirmation. NEW non-ETF risk intensification: MarketWatch midday 12:15 ET FactSet report indicates US 10y nominal yield ~5.02%, up 14bp vs Nov09 official 4.88%, extending from earlier ~4.95% indicative post-CPI quote; NOT Treasury official 11/10 or synchronized quote, don't count as additional CPI event. MarketWatch tech sector down 1.8% at 12:15 ET, not ETF timestamp. Secondary fgscore US stock CNN-style index 34 Fear, market factor timestamp 12:26 ET, compared with 31 third-party earlier same day (market factor 09:11 ET); original CNN and comparable historical daily scores unverified; do not infer firm day-over-day trend or count VIX separately. Risk-expanded monitor due 10-year >5% indicative yield while QQQ/QQQM drift lower; retain add-buy hold/observe. Plan-type precommitted splits only, stability-confirmation lacking. No orders or portfolio data.",
+  "current_judgment": "2026-11-10 14:30 EST regular check; valid latest data 14:28:30 EST, 5m bars start 14:25 EST (may be incomplete at collection), ~1.50m generated age/~5m bar age vs nominal checkpoint. QQQ $672.05 (-1.075% vs Nov09 $679.35; -11.533% vs 252-high $759.66), QQQM $276.72 (-1.002% vs $279.52; below third watch 280-285), VOO $688.06 (-0.551% vs $691.87). Prior valid 13:30 readings 669.27/275.56/685.82: moderate rebound. Active condition IDs unchanged: existing QQQ high252 -10%, QQQM below three confirmed bands, VOO below first; no new QQQ/VOO -2/-3/-5%, QQQ high252 -15% or watch-band crosses. QQQ $672.05 exceeds completed-week EMA50 $671.39 by only 0.10%, not daily/weekly close confirmation or continuous hold (b= max(0.3% price, 0.25 ATR ~$4.06); no rearm implementation). Yesterday's hotter CPI and 10y nominal >5% indicative midday quote were already reported at 13:30; no verified additional rate-risk escalation or fresh original CNN change. No new materially actionable information for minimum 2-year split-buyer; retain additional purchase hold, evaluate next snapshot. This is no-update check, not a delivered alert. No automatic orders.",
   "next_conditions": [
-    "2026-11-10 14:30 EST next regular observation: latest regular_session generated <=75min and individual last bar start <=45min, NY market date Nov10, Nov09 previous daily reference, no mechanical action guard; no off-schedule detector.",
-    "QQQ intraday $665.76 daily -2% threshold from Nov09 $679.35, $671.39 prior confirmed weekly EMA50; $680.09 daily SMA200 recovery (daily-close confirmation separate), 252 high close $759.66 with -15% near $645.71.",
-    "QQQM $280-285 confirmed third watch band re-entry versus below-band $275.56; daily SMA200 $280.01; watch stabilization rather than treating same Nasdaq100 risk independently from QQQ.",
-    "VOO $680 next watch-zone upper edge (670-680), $678.03 daily -2% threshold from Nov09 $691.87, and $695-700 first band upside; no new trigger this check.",
-    "Rate-risk follow-up: distinguish indicative 11/10 10y nominal yield ~5.02% 12:15 EST from 11/09 official daily 4.88%; official 11/10 real yield not yet verified. Watch reversal/continuation at next available verified quote, don't restate same CPI catalyst as new each hour.",
-    "EOD: compare QQQ $680.09 SMA200 and QQQM $280 using provider actual Nov10 daily Close; latest weekly EMA/RSI remains provisional until last weekly close. CNN original and comparable daily time series, VIX/VXN current and % above SMA breadth still not verified."
+    "2026-11-10 15:30 EST regular snapshot: verify regular_session NY Nov10, generator <=75m, each 5m starting <=45m, prior-day reference Nov09, corporate-action guard off; no off-schedule realtime detection.",
+    "QQQ $665.76 Nov09 close $679.35 -2% alert, $671.39 completed week EMA50 (intraday sample vs completed-week close separate), $680.09 daily SMA200 (daily close confirmation required); -15% drawdown level ~ $645.71 vs 252-high $759.66.",
+    "QQQM third price band $280-285 and daily SMA200 ~$280.01: intraday re-entry only not 15m continuous stabilization; do not count this independently from QQQ Nasdaq100 trend.",
+    "VOO $680 top of second confirmed band 670-680, $678.03 Nov09 close -2% alert, first band $695-700; next 15:30 check.",
+    "At US Nov10 EOD 17:30 EST: require end_of_day and Nov10 daily Close, do not substitute 15:55 5m bar; compare QQQ daily SMA200 and QQQM $280; latest weekly values provisional until Friday close.",
+    "Macro: Nov10 CPI/nominal 10yr >5% indicative risk already reported; watch materially verified yield change, VIX/VXN, market breadth and CNN primary scores if newer reliable timestamp appears. No same-factor repeat alert."
   ],
   "last_report_prepared_utc": "2026-11-10T18:30:58.000Z",
   "last_report_kind": "2026-11-10_nominal_13:30_EST_intraday_10Y_yield_5pct_risk_expansion",
@@ -145,18 +145,18 @@
       }
     },
     "DATA_QUALITY": {
-      "checked_at_utc": "2026-11-09T18:31:51Z",
-      "nominal_check_et": "2026-11-09 10:30 EST",
-      "latest_blob_sha": "18c8d33ed4fd5adea98353187fc160152d35c608",
+      "checked_at_utc": "2026-11-10T19:30:00Z",
+      "nominal_check_et": "2026-11-10 14:30 EST",
+      "latest_blob_sha": "07cb355b5d5b1314c2e806782ddd09b0c5100994",
       "mode": "regular_session",
       "data_generated_utc": "2026-11-09T15:26:11.653719+00:00",
-      "market_date": "2026-11-09",
+      "market_date": "2026-11-10",
       "data_age_minutes": 9.57,
       "last_5m_bar_start_et": "2026-11-09T10:25:00-05:00",
       "last_5m_bar_age_minutes": 10.76,
       "bar_may_have_been_unfinished_at_collection": true,
-      "reference_date": "2026-11-06",
-      "reference_fixed_before_open": false,
+      "reference_date": "2026-11-09",
+      "reference_fixed_before_open": true,
       "reference_initialization_late": true,
       "reference_change_not_new_price_event": true,
       "config_revision": "2026-10-19.1",
@@ -165,8 +165,7 @@
         "QQQM:below:first",
         "QQQM:below:second",
         "QQQM:below:third",
-        "VOO:below:first",
-        "VOO:band:second"
+        "VOO:below:first"
       ],
       "new_snapshot_conditions": [
         "QQQ:high252:-10",
@@ -175,28 +174,26 @@
         "QQQM:below:third",
         "VOO:below:first"
       ],
-      "sampled_recovered_conditions": [
-        "VOO:band:second"
-      ],
+      "sampled_recovered_conditions": [],
       "sampled_new_conditions": [],
       "collector_new_crossings": [],
       "no_continuous_15_min_proof": true,
       "no_independent_detector": true,
       "delivery_status": "unverified",
       "data_source": "External yfinance collection in linked GitHub, no direct realtime feed in chat",
-      "note": "Snapshot generation 60m <75m limit but bar age 61.85m >45m. No new price signal or price stability may be inferred. The 13:35 ET scheduled collector occurs after 13:30 ET assessment, a potential schedule mismatch; actual 13:35 collection status not yet observable.",
+      "note": "14:30 data valid. No new event, only moderate intraday rebound. Preserve prior 13:30 risk alert for duplicate management. Collector success does not imply push delivery.",
       "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
       "scheduled_nominal_et": "2026-11-09T13:30:00-05:00",
-      "valid_snapshot": false,
-      "invalid_reason": "latest bar is >45min old; 13:30 US price signal evaluation blocked",
-      "blob_sha": "6cf723bbd1af73b0c9756ee8c7f3b1512c615a93",
-      "generated_utc": "2026-11-09T17:31:53.439291+00:00",
-      "reference_as_of_session": "2026-11-06",
-      "reference_initialized_after_open": true,
-      "generated_age_minutes": 59.96,
-      "price_bar_age_minutes": 61.85,
-      "price_bar_start_et": "2026-11-09T12:30:00-05:00",
-      "external_collector_job_status_at_check": "unverified; GitHub contents alone do not verify collect/deploy steps",
+      "valid_snapshot": true,
+      "invalid_reason": null,
+      "blob_sha": "07cb355b5d5b1314c2e806782ddd09b0c5100994",
+      "generated_utc": "2026-11-10T19:28:30.184701+00:00",
+      "reference_as_of_session": "2026-11-09",
+      "reference_initialized_after_open": false,
+      "generated_age_minutes": 1.5,
+      "price_bar_age_minutes": 5,
+      "price_bar_start_et": "2026-11-10T14:25:00-05:00",
+      "external_collector_job_status_at_check": "not independently checked; valid fresh latest.json confirmed",
       "new_price_condition_assessment": "not performed because latest bar exceeded 45m freshness requirement",
       "last_known_valid_snapshot_et": "2026-11-09T12:31:53-05:00",
       "last_known_valid_prices_not_current": {
@@ -936,5 +933,15 @@
     "collector_job_status": "not checked via workflow run endpoint; content latest verified via Github connector",
     "last_json_sha": "040c0d48f7c022595e8be844014473c3503d342c"
   },
-  "last_check_report_decision": "notify_risk_expansion"
+  "last_check_report_decision": "notify_risk_expansion",
+  "last_assessment_nominal_et": "2026-11-10T14:30:00-05:00",
+  "last_assessment_prepared_utc": "2026-11-10T19:30:00Z",
+  "last_assessment_kind": "no_update",
+  "last_assessment_condition_ids": [
+    "QQQ:high252:-10",
+    "QQQM:below:first",
+    "QQQM:below:second",
+    "QQQM:below:third",
+    "VOO:below:first"
+  ]
 }
