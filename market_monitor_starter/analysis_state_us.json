@@ -1,26 +1,29 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-11T18:19:45.957988+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-11T19:30:49.197158+00:00",
   "last_reference_session": "2026-11-10",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 694.445,
-    "QQQM": 285.94,
-    "VOO": 700.095
+    "QQQ": 692.4,
+    "QQQM": 285,
+    "VOO": 699.02
   },
   "last_active_conditions": [
     "QQQM:below:first",
-    "QQQM:below:second"
+    "QQQM:below:second",
+    "QQQM:band:third",
+    "VOO:band:first"
   ],
-  "current_judgment": "DATA LIMITED at 2026-11-11 14:30 EST / Nov12 04:30 KST. Last available provider collection 2026-11-11T14:30:49.197158-05:00 and bars starting 13:15 EST are not fresh enough for 14:30 signal evaluation; preserve prior 13:30 sampled view only as historical, not current price. No independently verified new downside/recovery and no automatic buy. Existing preplanned bands unchanged; stability-first action remains on hold pending fresh data. CNN US-stocks Fear & Greed secondary pages 38 Fear at check, original publication time and comparable 5-session movement unverified.",
+  "current_judgment": "2026-11-11 14:30 EST check (prepared 2026-11-11T19:32:52.357Z). Valid GitHub external Yahoo yfinance regular_session collection 2026-11-11T14:30:49.197158-05:00; QQQ $692.40 (+2.61% vs Nov10 close, -8.85% vs Oct06 252d high), QQQM $285.00 (+2.57%, in confirmed $280-285 third band exactly at its upper boundary), VOO $699.02 (+1.38%, in confirmed $695-700 first band). Compared with Nov11 13:30 valid observation ($694.445/$285.94/$700.095), intraday pullback: QQQ -$2.045, QQQM -$0.94, VOO -$1.075. Collector shows sampled re-entries into both bands (not 15-minute hold, not fresh downward daily thresholds, not first notification for either band today). QQQ above daily SMA200 $680.35, below confirmed weekly EMA20 $705.24 and daily SMA50 $719.20; completed weekly RSI14 39.35 vs provisional 48.64. No newly actionable drop; prior preplanned review of confirmed bands, stability-first additional buy on hold pending daily close. CNN stock market Fear&Greed secondary 38 Fear; original timestamp and comparable direction unverified. Nov11 bond market holiday; Nov10 US 10Y nominal 4.98%, real 2.78% last daily. No automatic trades, no independent off-schedule detector, no delivery receipt.",
   "next_conditions": [
-    "Next US regular-session check 2026-11-11 15:30 EST / 2026-11-12 05:30 KST: fetch GitHub new regular_session snapshot, require same NY market date, collection age <=75 minutes AND each price-bar age <=45 minutes.",
-    "If new valid data: check VOO $695/$700 and 50d SMA ~$702.78; QQQM $280/$285 and next confirmed higher watch band $293-296; QQQ daily SMA200 ~$680.35, confirmed weekly EMA20 ~$705.24.",
-    "Separately verify new -2/-3/-5% QQQ/VOO daily drops vs Nov10 official prior daily baseline and prior-252d high thresholds; ignore config/reference initialization as new event.",
-    "CNN US-equity Fear & Greed 38 (third-party only), original index timestamp and comparable changes unverified; do not claim fresh hourly change.",
-    "Nov11 US stocks normal session, bond market holiday; Nov10 nominal 10Y 4.98% and real 2.78% are prior daily observations. Nov12 Cisco earnings after close; Nov13 BLS October PPI 08:30 EST; refresh only after a release.",
-    "End-of-day 17:30 EST: require today's provider daily Close before any close-based stabilization claim. No continuous 15min confirmation, independent instant-alert route or delivery receipt."
+    "Next regular check Nov11 15:30 EST / Nov12 05:30 KST: require valid regular_session latest.json of Nov11, generation <=75min, each bar <=45min; detect actual new conditions, not repeated intraday band noise.",
+    "QQQM $285 upper edge, $280 lower edge of confirmed third $280-285 band; QQQM daily SMA200 $280.11; higher confirmed second $293-296 band. A one-bar move to $285 is NOT confirmed stability.",
+    "VOO inside $695-700 first band at $699.02; watch $700/$695 and daily SMA50 $702.78; higher breakout only when supported at completed intervals; potential lower second band $670-680.",
+    "QQQ daily SMA200 $680.35, completed weekly EMA20 $705.24, daily SMA50 $719.20. Price $692.40 (Nov10 reference close $674.76), QQQ -2% trigger $661.26; no observed daily drop trigger.",
+    "Check 17:30 EST end_of_day provider close for QQQ/QQQM/VOO, with separate daily-vs-weekly confirmation; price stability is NOT proven by one partial five-minute bar.",
+    "CNN US equity Fear&Greed 38 Fear from third-party sites at last review; original timestamp/reliable five-day comparison not verified. Do not double count VIX.",
+    "Bond market closed Nov11; Nov10 official 10-year nominal 4.98% and real 2.78% are daily, not intraday. Cisco results Nov12 after close; BLS Oct PPI Nov13 08:30 EST."
   ],
   "last_report_prepared_utc": "2026-11-11T16:30:27.119Z",
   "last_report_kind": "2026-11-11_1130_voo_first_band_cross_sample",
@@ -1000,11 +1003,14 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-11T19:31:21.369Z",
-  "last_check_prepared_utc": "2026-11-11T19:31:21.369Z",
-  "last_check_kind": "2026-11-11_1430_regular_session_data_limited",
-  "last_check_condition_ids": [],
-  "last_notification_decision": "notify_data_limitation_no_valid_current_bars",
+  "last_evaluation_utc": "2026-11-11T19:32:52.357Z",
+  "last_check_prepared_utc": "2026-11-11T19:32:52.357Z",
+  "last_check_kind": "2026-11-11_1430_regular_session",
+  "last_check_condition_ids": [
+    "QQQM:band:third",
+    "VOO:band:first"
+  ],
+  "last_notification_decision": "skip_notification_intraday_reentry_no_material_change",
   "last_price_source": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
   "last_external_end_of_day": {
     "session_date": "2026-11-10",
@@ -1025,16 +1031,13 @@
   },
   "last_data_quality_observation": {
     "nominal_et": "2026-11-11T14:30:00-05:00",
-    "checked_at_utc": "2026-11-11T19:31:21.369Z",
+    "checked_at_utc": "2026-11-11T19:32:52.357Z",
+    "verified_valid": true,
     "source_latest_sha": "a6659c1aa5da4f2b85ff0162b0c439f999fb1d8f",
     "source_latest_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
     "mode": "regular_session",
-    "market_date": "2026-11-11",
-    "reference_date": "2026-11-10",
-    "reference_fixed_after_open": true,
-    "config_revision": "2026-10-19.1",
     "latest_generated_utc": "2026-11-11T19:30:49.197158+00:00",
-    "generated_age_minutes_at_nominal": -0.82,
+    "generated_freshness_minutes": 2.05,
     "generated_freshness_ok": true,
     "bar_start_et_by_symbol": {
       "QQQ": "2026-11-11T14:30:00-05:00",
@@ -1042,26 +1045,36 @@
       "VOO": "2026-11-11T14:30:00-05:00"
     },
     "bar_age_min_by_symbol": {
-      "QQQ": 0,
-      "QQQM": 0,
-      "VOO": 0
+      "QQQ": 2.87,
+      "QQQM": 2.87,
+      "VOO": 2.87
     },
     "bar_freshness_ok": true,
-    "verified_valid": false,
-    "invalid_reason": "Individual 5-minute price bars exceed 45-minute age limit. Existing collector snapshot may be valid for its original 13:19 observation but cannot be 14:30 current price.",
-    "last_collector_run": "https://github.com/ljh091717-cloud/market-etf-monitor/actions/runs/43076652983",
-    "last_collector_run_et": "2026-11-11 13:19 EST",
-    "last_collector_collect": "success",
-    "last_collector_deploy": "success",
-    "new_current_slot_snapshot_verified": false,
-    "collector_job_execution_status_at_nominal": "No 14:30-or-nearby refreshed collector run observed at 14:30 EST; prior 13:19 run successful, not evidence collection failure.",
-    "continuous_hold_verified": false,
+    "bar_may_have_been_unfinished_at_collection": true,
+    "market_date": "2026-11-11",
+    "reference_date": "2026-11-10",
+    "reference_fixed_after_open": true,
+    "reference_initialization_not_new_event": true,
+    "config_revision": "2026-10-19.1",
+    "collector_comparison_kind": "sampled_change",
+    "collector_new_crossings": [
+      "QQQM:band:third",
+      "VOO:band:first"
+    ],
+    "no_continuous_15min_proof": true,
+    "last_collector_run": "https://github.com/ljh091717-cloud/market-etf-monitor/actions/runs/43087814575",
+    "collector_run_status": "success",
+    "collect_job": "success",
+    "deploy_job": "success",
     "delivery_status": "unverified"
   },
-  "last_check_report_decision": "notify_data_limitation",
+  "last_check_report_decision": "skip_notification",
   "last_assessment_nominal_et": "2026-11-11T14:30:00-05:00",
-  "last_assessment_prepared_utc": "2026-11-11T19:31:21.369Z",
-  "last_assessment_kind": "regular_session_data_limited",
-  "last_assessment_condition_ids": [],
-  "last_check_report_decision_reason": "At 14:30 EST the latest 13:19:45 EST collection was -0.8 minutes old (<75m), but every last 5m bar began 13:15 EST, over 75m old (>45m limit). GitHub most recent 13:19 collect/deploy succeeded, but no updated 14:30 snapshot appeared. Do not infer new crossovers, sustained recovery or current prices from this stale sample. No intraday buying decision; retain prior valid assessment. Notification delivery unverified."
+  "last_assessment_prepared_utc": "2026-11-11T19:32:52.357Z",
+  "last_assessment_kind": "regular_session",
+  "last_assessment_condition_ids": [
+    "QQQM:band:third",
+    "VOO:band:first"
+  ],
+  "last_check_report_decision_reason": "Sampled re-entry into same already-discussed QQQM $280-285 and VOO $695-700 bands, after tiny upward sampled exits at 13:30; no new drop trigger or daily close stabilization. No meaningful decision change for >=2-year investor; skip push."
 }
