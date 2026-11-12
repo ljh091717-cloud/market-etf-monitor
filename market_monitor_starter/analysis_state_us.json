@@ -1,26 +1,25 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-12T16:31:10.447171+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-12T17:24:41.883139+00:00",
   "last_reference_session": "2026-11-11",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 692.255,
-    "QQQM": 284.95,
-    "VOO": 699.905
+    "QQQ": 689.6005,
+    "QQQM": 283.955,
+    "VOO": 698.995
   },
   "last_active_conditions": [
+    "QQQM:band:third",
     "QQQM:below:first",
     "QQQM:below:second",
-    "QQQM:band:third",
     "VOO:band:first"
   ],
-  "current_judgment": "2026-11-12 11:30 EST regular check using NEW VALID GitHub yfinance 11:31:10 EST regular-session collection (QQQ $692.255 +0.27%; QQQM $284.95 +0.25%; VOO $699.905 +0.22% versus Nov11 completed provider daily closes). All three are 11:30 EST START 5min bars, still potentially incomplete. QQQ daily SMA200 prior-close value $680.65 below sampled price; confirmed prior weekly EMA20 $705.24 still above. QQQM in existing $280-285 third interest band near upper edge, VOO in existing $695-700 first interest band near upper edge. QQQ drawdown 252-day high -8.87%, VOO -2.28%; no new -2% daily/-10% high close risk threshold or fresh band crossings. NEW MATERIAL EXTERNAL RISK: Reuters and AP confirmed NVIDIA CEO Jensen Huang resigning on Nov12 and CFO Colette Kress becoming interim CEO, exposing NASDAQ100 AI concentration leadership uncertainty; Reuters intraday 10-year nominal US yield 5.066% above 5%, not an official Treasury daily observation. Today's ETF prices recovered from 10:25 sample, so do not claim the external risk has already caused new benchmark breakdown. Market breadth, synchronized volumes, VXN/VIX and official Nov12 Treasury real yields not verified. CNN today original/5day comparisons unverified; third-party 38-39 differing, classified Fear. Plan-based conditional consideration only in existing bands; stabilization-first additional buying on hold pending Nov12 closing support. No automatic orders, sizes, or guaranteed recovery.",
+  "current_judgment": "2026-11-12 12:30 EST scheduled regular check using yfinance GitHub 12:24:41 EST regular-session collection, with 12:20 EST START 5-minute bar (may be incomplete). QQQ $689.6005 (-0.11% vs Nov11 EOD $690.38; -9.22% vs 252-day high); QQQM $283.955 (-0.10%, existing confirmed third interest zone $280-285); VOO $698.995 (+0.09%, existing first zone $695-700). Latest versus 11:30 previous QQQ $692.255, QQQM $284.95, VOO $699.905 shows modest pullback with no new daily -2% or 252-high -10% threshold, new band crossings, or risk escalation. Prior NVIDIA CEO resignation and Reuters intraday 10-year 5.066% were previously reported at 11:30; neither is a new event this run. Confirmed QQQ last weekly EMA20 $705.24 remains above, daily SMA200 $680.65 remains below latest price. CNN primary/consistently comparable daily scores unverified; do not treat secondary 37-39 as refreshed hourly. Advance planned split-buy only under existing band/risk assumptions; stabilize-first buys await durable daily support. No orders, size/amount decisions or continuous detector claims. Regular-session reference fixed after market open, but base closes correctly date Nov11, with no reset-induced event.",
   "next_conditions": [
-    "2026-11-12 12:30 EST (2026-11-13 02:30 KST): recheck fresh bar <45min, generated <75min; compare against Nov11 completed daily close, no new crossing from reference initialization.",
-    "QQQ daily SMA200 $680.65 support, $705.24 previous completed weekly EMA20; QQQ daily -2% boundary $676.57. QQQM existing $280-285 with next downside below $280; VOO $695-700 and below $695; VOO daily -2% boundary $684.38.",
-    "Check whether NVIDIA headline risk/US 10y above5% is reflected in synchronized QQQ/VOO, confirmed Nasdaq/SOX breadth and market volatility; do not infer from news alone.",
-    "2026-11-12 17:30 EST: confirm end_of_day provider close; 2026-11-13 08:30 EST official PPI release, analyze in next scheduled report."
+    "2026-11-12 13:30 EST / 2026-11-13 03:30 KST: new regular-session snapshot generated within 75min, 5min bar within 45min; verify independent latest.json advancement.",
+    "Intraday QQQ $680.65 (prior daily SMA200) and $676.57 (daily -2%); QQQM $280 third-band lower bound/$285 upper; VOO $695 first-band lower bound/$700 upper, $702.77 daily SMA50; compare fresh data before alerting.",
+    "Close 2026-11-12 17:30 EST: verify provider daily end_of_day Close and sustained daily support separately, not unfinished 15:55 bar; 2026-11-13 08:30 EST PPI official BLS upcoming."
   ],
   "last_report_prepared_utc": "2026-11-12T16:32:37.016Z",
   "last_report_kind": "2026-11-12_1130_external_risk_escalation_data_limited",
@@ -213,26 +212,26 @@
       }
     },
     "DATA_QUALITY": {
-      "observed_at_utc": "2026-11-12T16:32:37.016Z",
-      "nominal_check_et": "2026-11-12 11:30 EST",
+      "observed_at_utc": "2026-11-12T17:34:00.000Z",
+      "nominal_check_et": "2026-11-12 12:30 EST",
       "mode": "regular_session",
-      "source_generated_et": "2026-11-12T11:31:10.447171-05:00",
+      "source_generated_et": "2026-11-12T12:24:41.883139-05:00",
       "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
-      "latest_blob_sha": "f7dfeb8e4b21f3b2be59e9efcf6eec66fcad75fe",
+      "latest_blob_sha": "4ca9d009e886f3fd9b2f763142f3ced098e07c6e",
       "reference_last_close_session": "2026-11-11",
       "reference_initialized_after_open": true,
-      "age_generated_minutes": 1.44,
-      "age_price_bar_minutes": 2.6169333333333333,
+      "age_generated_minutes": 9.3,
+      "age_price_bar_minutes": 14,
       "verified_regular_session": true,
       "price_bar_may_be_incomplete": true,
-      "provider": "Yahoo Finance via yfinance, unofficial",
-      "condition_change_since_prior_eod": {
+      "provider": "Yahoo Finance via yfinance; unofficial",
+      "condition_change_since_previous": {
         "new": [],
         "gone": []
       },
-      "collector_run_status": "not independently checked",
+      "collector_run_status": "not independently checked; latest data blob verified advanced versus previous",
       "delivery_status": "unverified",
-      "refresh_condition": "next scheduled US price refresh or provider revision",
+      "refresh_condition": "next scheduled US data refresh or provider revision",
       "verified_price_fresh": true
     },
     "FOMC_2026_OCT": {
@@ -1132,5 +1131,6 @@
   "last_evaluation_condition_ids": [
     "NVDA:CEO_change_Nov12_Reuters_AP",
     "UST10Y:Reuters_intraday_above_5pct"
-  ]
+  ],
+  "last_check_completed_utc": "2026-11-12T17:34:00.000Z"
 }
