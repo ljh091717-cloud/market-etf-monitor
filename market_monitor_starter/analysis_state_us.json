@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-12T15:25:17.735119+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-12T16:31:10.447171+00:00",
   "last_reference_session": "2026-11-11",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 686.26,
-    "QQQM": 282.63,
-    "VOO": 695.905
+    "QQQ": 692.255,
+    "QQQM": 284.95,
+    "VOO": 699.905
   },
   "last_active_conditions": [
     "QQQM:below:first",
@@ -15,19 +15,18 @@
     "QQQM:band:third",
     "VOO:band:first"
   ],
-  "current_judgment": "2026-11-12 11:30 EST: NEW EXTERNAL RISK: Reuters and AP 2026-11-12 confirmed Nvidia cofounder CEO Jensen Huang resigned and CFO Colette Kress became interim CEO; Nvidia sold off, reflecting material Nasdaq/AI concentration headline risk (not an index drop threshold). Reuters reported indicative US 10-year nominal Treasury yield 5.066% intraday, not an official Treasury daily fixing, exact quote timestamp unclear. The Nov12 GitHub latest file is unchanged since 10:25:17 EST and 10:25 start 5min bars age 65min at 11:30, failing <=45min price validity despite generation age 64.7min <=75. Therefore do NOT label 10:25 prices current at 11:30 or infer new QQQ/VOO -2% or band crossing. Last valid 10:25 snapshot QQQ 686.26, QQQM 282.63, VOO 695.905 is for historical context only. Existing prior signals maintained as unknown for current time. CNN original not directly verifiable; Nov12 10:30 secondary displays 38 and 39, direction unverified. Preplanned interest bands continue as observations, stability-first new buys on hold; no sizing/automatic trading.",
+  "current_judgment": "2026-11-12 11:30 EST regular check using NEW VALID GitHub yfinance 11:31:10 EST regular-session collection (QQQ $692.255 +0.27%; QQQM $284.95 +0.25%; VOO $699.905 +0.22% versus Nov11 completed provider daily closes). All three are 11:30 EST START 5min bars, still potentially incomplete. QQQ daily SMA200 prior-close value $680.65 below sampled price; confirmed prior weekly EMA20 $705.24 still above. QQQM in existing $280-285 third interest band near upper edge, VOO in existing $695-700 first interest band near upper edge. QQQ drawdown 252-day high -8.87%, VOO -2.28%; no new -2% daily/-10% high close risk threshold or fresh band crossings. NEW MATERIAL EXTERNAL RISK: Reuters and AP confirmed NVIDIA CEO Jensen Huang resigning on Nov12 and CFO Colette Kress becoming interim CEO, exposing NASDAQ100 AI concentration leadership uncertainty; Reuters intraday 10-year nominal US yield 5.066% above 5%, not an official Treasury daily observation. Today's ETF prices recovered from 10:25 sample, so do not claim the external risk has already caused new benchmark breakdown. Market breadth, synchronized volumes, VXN/VIX and official Nov12 Treasury real yields not verified. CNN today original/5day comparisons unverified; third-party 38-39 differing, classified Fear. Plan-based conditional consideration only in existing bands; stabilization-first additional buying on hold pending Nov12 closing support. No automatic orders, sizes, or guaranteed recovery.",
   "next_conditions": [
-    "2026-11-12 12:30 EST (2026-11-13 02:30 KST): fresh regular_session Nov12 5min bar under 45min and generated within 75min; compare against Nov11 provider close; confirm collector refresh independently of job success.",
-    "At fresh sample check QQQ $680.65 SMA200 and -2% daily threshold $676.57; QQQM $280 lower band, VOO $695 lower band and VOO -2% daily threshold $684.38; condition crossings cannot be inferred from 10:25 data.",
-    "Check market breadth, technology/semiconductor participation, VIX/VXN when verified and official Treasury daily yield on next publication; Reuters 5.066% indicative quote is not daily official fixing.",
-    "2026-11-13 08:30 EST BLS October PPI release; monitor reaction at next scheduled observation, not off-schedule."
+    "2026-11-12 12:30 EST (2026-11-13 02:30 KST): recheck fresh bar <45min, generated <75min; compare against Nov11 completed daily close, no new crossing from reference initialization.",
+    "QQQ daily SMA200 $680.65 support, $705.24 previous completed weekly EMA20; QQQ daily -2% boundary $676.57. QQQM existing $280-285 with next downside below $280; VOO $695-700 and below $695; VOO daily -2% boundary $684.38.",
+    "Check whether NVIDIA headline risk/US 10y above5% is reflected in synchronized QQQ/VOO, confirmed Nasdaq/SOX breadth and market volatility; do not infer from news alone.",
+    "2026-11-12 17:30 EST: confirm end_of_day provider close; 2026-11-13 08:30 EST official PPI release, analyze in next scheduled report."
   ],
-  "last_report_prepared_utc": "2026-11-12T16:31:20.884Z",
+  "last_report_prepared_utc": "2026-11-12T16:32:37.016Z",
   "last_report_kind": "2026-11-12_1130_external_risk_escalation_data_limited",
   "last_report_condition_ids": [
     "NVDA:CEO_change_Nov12_Reuters_AP",
-    "UST10Y:Reuters_intraday_above_5pct",
-    "MARKET_DATA:stale_5m_bar"
+    "UST10Y:Reuters_intraday_above_5pct"
   ],
   "last_end_of_day_review_session": "2026-11-11",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -214,7 +213,7 @@
       }
     },
     "DATA_QUALITY": {
-      "observed_at_utc": "2026-11-12T16:31:20.884Z",
+      "observed_at_utc": "2026-11-12T16:32:37.016Z",
       "nominal_check_et": "2026-11-12 11:30 EST",
       "mode": "regular_session",
       "source_generated_et": "2026-11-12T11:31:10.447171-05:00",
@@ -222,8 +221,8 @@
       "latest_blob_sha": "f7dfeb8e4b21f3b2be59e9efcf6eec66fcad75fe",
       "reference_last_close_session": "2026-11-11",
       "reference_initialized_after_open": true,
-      "age_generated_minutes": -1.17,
-      "age_price_bar_minutes": 0,
+      "age_generated_minutes": 1.44,
+      "age_price_bar_minutes": 2.6169333333333333,
       "verified_regular_session": true,
       "price_bar_may_be_incomplete": true,
       "provider": "Yahoo Finance via yfinance, unofficial",
@@ -233,7 +232,7 @@
       },
       "collector_run_status": "not independently checked",
       "delivery_status": "unverified",
-      "refresh_condition": "next scheduled US data and price-freshness check",
+      "refresh_condition": "next scheduled US price refresh or provider revision",
       "verified_price_fresh": true
     },
     "FOMC_2026_OCT": {
@@ -1045,13 +1044,12 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-12T16:31:20.884Z",
-  "last_check_prepared_utc": "2026-11-12T16:31:20.884Z",
+  "last_evaluation_utc": "2026-11-12T16:32:37.016Z",
+  "last_check_prepared_utc": "2026-11-12T16:32:37.016Z",
   "last_check_kind": "2026-11-12_1130_regular_session_external_risk",
   "last_check_condition_ids": [
     "NVDA:CEO_change_Nov12_Reuters_AP",
-    "UST10Y:Reuters_intraday_above_5pct",
-    "MARKET_DATA:stale_5m_bar"
+    "UST10Y:Reuters_intraday_above_5pct"
   ],
   "last_notification_decision": "prepare_notification_material_new_material_NVDA_leadership_and_reuters_10y_above5_despite_stale_etf_snapshot; delivery_unverified",
   "last_price_source": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
@@ -1074,8 +1072,8 @@
   },
   "last_data_quality_observation": {
     "nominal_et": "2026-11-12T11:30:00-05:00",
-    "checked_at_utc": "2026-11-12T16:31:20.884Z",
-    "verified_valid": false,
+    "checked_at_utc": "2026-11-12T16:32:37.016Z",
+    "verified_valid": true,
     "source_latest_sha": "f7dfeb8e4b21f3b2be59e9efcf6eec66fcad75fe",
     "source_latest_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
     "mode": "regular_session",
@@ -1084,56 +1082,55 @@
     "market_date": "2026-11-12",
     "reference_prior_close": "2026-11-11",
     "reference_initialized_after_open": true,
-    "source_generated_age_min_at_nominal": -1.17,
-    "individual_price_bar_age_min_at_nominal": {
-      "QQQ": 0,
-      "QQQM": 0,
-      "VOO": 0
+    "source_generated_age_min_at_analysis": 1.44,
+    "individual_price_bar_age_min_at_analysis": {
+      "QQQ": 2.6169333333333333,
+      "QQQM": 2.6169333333333333,
+      "VOO": 2.6169333333333333
     },
     "price_bar_fresh": true,
-    "provider": "Yahoo Finance via yfinance, unofficial",
+    "price_bar_start_et": "2026-11-12T11:30:00-05:00",
+    "may_be_incomplete": true,
+    "provider": "Yahoo Finance via yfinance; unofficial",
     "collector_run_status": "not independently checked",
     "delivery_status": "unverified",
     "config_revision": "2026-10-19.1"
   },
   "last_check_report_decision": "notify",
   "last_assessment_nominal_et": "2026-11-12T11:30:00-05:00",
-  "last_assessment_prepared_utc": "2026-11-12T16:31:20.884Z",
+  "last_assessment_prepared_utc": "2026-11-12T16:32:37.016Z",
   "last_assessment_kind": "regular_session_risk_external_data_limit",
   "last_assessment_condition_ids": [
     "NVDA:CEO_change_Nov12_Reuters_AP",
-    "UST10Y:Reuters_intraday_above_5pct",
-    "MARKET_DATA:stale_5m_bar"
+    "UST10Y:Reuters_intraday_above_5pct"
   ],
-  "last_check_report_decision_reason": "Material new November 12 confirmed NVDA CEO departure plus Reuters indicative nominal 10y 5.066%, while 11:30 GitHub price bars remain stale. Notify as external risk with data limitation; do not call stale price a current market move.",
-  "last_check_attempt_utc": "2026-11-12T16:31:20.884Z",
+  "last_check_report_decision_reason": "Nov12 confirmed Nvidia executive departure and Reuters 10y nominal quote >5% raise external risk despite fresh 11:30 ET ETF sample rising slightly versus Nov11 close; regular session latest generated 11:31 valid. New price alert conditions absent. Notify external material risk distinct from price thresholds.",
+  "last_check_attempt_utc": "2026-11-12T16:32:37.016Z",
   "last_check_nominal_et": "2026-11-12 11:30 EST",
   "last_check_data_status": {
-    "signal": "위험확대·데이터제한",
+    "signal": "위험확대(외부요인)·가격은 반등",
     "session": "2026-11-12",
     "source_latest_sha": "f7dfeb8e4b21f3b2be59e9efcf6eec66fcad75fe",
     "generated_et": "2026-11-12T11:31:10.447171-05:00",
     "mode": "regular_session",
     "reference_date": "2026-11-11",
     "reference_fixed_before_open": false,
-    "generated_age_minutes_at_nominal": -1.17,
-    "price_bar_ages_minutes_at_nominal": {
-      "QQQ": 0,
-      "QQQM": 0,
-      "VOO": 0
+    "source_generated_age_minutes_at_analysis": 1.44,
+    "individual_price_bar_ages_minutes_at_analysis": {
+      "QQQ": 2.6169333333333333,
+      "QQQM": 2.6169333333333333,
+      "VOO": 2.6169333333333333
     },
-    "generated_within_75min": false,
+    "generated_within_75min": true,
     "price_bars_within_45min": true,
-    "usable_as_current_quote": false,
-    "source_unchanged_since_prior_assessment": true,
+    "usable_as_current_quote": true,
     "collector_run_status": "not independently checked",
     "notification_delivery_status": "unverified"
   },
-  "last_evaluation_prepared_utc": "2026-11-12T16:31:20.884Z",
+  "last_evaluation_prepared_utc": "2026-11-12T16:32:37.016Z",
   "last_evaluation_kind": "2026-11-12_1130_new_external_risk_and_data_limitation",
   "last_evaluation_condition_ids": [
     "NVDA:CEO_change_Nov12_Reuters_AP",
-    "UST10Y:Reuters_intraday_above_5pct",
-    "MARKET_DATA:stale_5m_bar"
+    "UST10Y:Reuters_intraday_above_5pct"
   ]
 }
