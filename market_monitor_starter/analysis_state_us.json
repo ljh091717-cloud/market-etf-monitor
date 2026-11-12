@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-11T22:29:23.272610+00:00",
-  "last_reference_session": "2026-11-10",
+  "last_valid_snapshot_generated_utc": "2026-11-12T15:25:17.735119+00:00",
+  "last_reference_session": "2026-11-11",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 690.38,
-    "QQQM": 284.23,
-    "VOO": 698.35
+    "QQQ": 686.26,
+    "QQQM": 282.63,
+    "VOO": 695.905
   },
   "last_active_conditions": [
     "QQQM:below:first",
@@ -15,12 +15,12 @@
     "QQQM:band:third",
     "VOO:band:first"
   ],
-  "current_judgment": "2026-11-11 17:30 EST post-close: QQQ $690.38 (+2.31%) recovered above daily SMA200 $680.65 on November 11 provider daily Close; 252-day-high drawdown eased to -9.12% (above -10% initial watch line). QQQ still below SMA50 $718.87 and last completed weekly EMA20 $705.24. QQQM $284.23 (+2.29%) in established third band $280-285, above SMA200 $280.24; VOO $698.35 (+1.28%) in established first band $695-700, below SMA50 $702.77. Reuters Nov11: semiconductor index +5.7%, VIX closing 17.49, Nasdaq A/D 1.77:1, NYSE 1.48:1, full-session volume 14.74bn vs full-session 20-day average 18.68bn. Market improving but not full price/participation stabilization. CNN Fear & Greed secondary 37 (Fear), previous score incompatible across sources, no independently verified original new signal. No automatic orders or definitive buy recommendation; preplanned buying at an already-set band may be considered conditionally, stability-first additional buys remain on hold. Closing prices provider daily, exchange certification unverified; may be revised.",
+  "current_judgment": "2026-11-12 10:30 EST regular-session check: QQQ $686.26 (-0.60% vs Nov11 provider daily close $690.38; -9.66% from 252-day high), QQQM $282.63 (-0.56%; existing third band $280-285), VOO $695.905 (-0.35%; existing first band $695-700). No QQQ/VOO -2% daily or -10% 252-high new warning; no changes to active conditions vs Nov11 EOD. QQQ stays above reference daily SMA200 $680.65 but below confirmed weekly EMA20 $705.24; intraday observation is not a completed daily close. Latest regular 5-minute bar began 10:25 EST and may be incomplete; Yahoo Finance/yfinance unofficial. Reference was initialized late at 10:25 EST (not before open); do not interpret reference initialization as a new crossing. CNN Fear & Greed current third-party displays conflict (fgscore 39; GuruTrack 38), primary CNN source/time and comparable 5-session scores unverified, no independent sentiment trigger. Market breadth, synchronized volumes, VIX/VXN and today's official 10y yields unverified at this intraday check. Existing preplanned band may be considered conditionally; stability-first additional buying remains on hold pending subsequent price support / daily close. No automatic orders or size allocation.",
   "next_conditions": [
-    "Nov12 10:30 EST (Nov13 00:30 KST): valid Nov12 5-min regular-session, new data <=75min, price bar <=45min, updated Nov11 prior-close reference.",
-    "QQQ $680.65 daily SMA200 and last completed weekly EMA20 $705.24; observe next daily close to test whether above-SMA200 hold persists.",
-    "QQQM $280-285 established third interest zone and next higher zone $293-296; VOO $695-700 first zone and daily SMA50 $702.77; a fall below near-term levels would challenge recovery.",
-    "After Veterans Day bond holiday, check updated official 10y nominal/real rates and VIX/VXN; Nov12 Cisco results and Nov13 08:30 EST BLS PPI."
+    "Nov12 11:30 EST (Nov13 01:30 KST): verify new Nov12 regular-session 5min price sample and freshness <=75min generated / <=45min price bars, compare fixed Nov11 completed close reference.",
+    "QQQ $680.65 daily SMA200 intraday hold or breach; test Nov12 daily Close after 16:00 ET; last completed weekly EMA20 $705.24 remains unrecaptured.",
+    "QQQM third $280-285 band lower support and potential below $280; VOO first $695-700 band and potential below $695; new -2% QQQ/VOO daily only if verified.",
+    "Nov13 08:30 EST BLS PPI release and Nov12 Cisco earnings; check official 10y yields after Nov11 bond-market closure, and CNN primary comparable source only if available."
   ],
   "last_report_prepared_utc": "2026-11-11T22:37:34.466Z",
   "last_report_kind": "2026-11-11_1730_EOD_QQQ_daily_SMA200_reclaim",
@@ -83,7 +83,7 @@
       ],
       "no_new_verified_original_score": true,
       "latest_current_verified": false,
-      "latest_current_unverified_reason": "Original CNN restricted; secondary sites corroborate Nov11 current 37 but disagree on preceding closing score; exact original headline update time and comparable five-day values unverified",
+      "latest_current_unverified_reason": "Nov12 intraday secondary scores 39 vs 38 and previous values differ. Original CNN headline timestamp and comparable 5-session history unavailable.",
       "latest_secondary_nov06": {
         "score": 20,
         "band": "극단적 공포",
@@ -194,23 +194,47 @@
         ],
         "checked_at_utc": "2026-11-11T18:30:06.618Z",
         "refresh_condition": "New original publication/score or comparable history"
+      },
+      "latest_secondary_nov12_1030": {
+        "fgscore_current": 39,
+        "gurutrack_current": 38,
+        "classification": "Fear / 공포 (25-44)",
+        "factor_timestamp_et": "2026-11-12 09:49 EST on fgscore, factor timestamp not original CNN headline release",
+        "fgscore_display_previous": 39,
+        "guru_track_previous_close": 37,
+        "direction": "unverified: secondary sources conflict on present and previous comparison",
+        "comparable_five_sessions": "unverified",
+        "original_CNN_publication_verified": false,
+        "source_urls": [
+          "https://fgscore.com/en/markets/sp500",
+          "https://gurutrack.ai/en/sentiment"
+        ],
+        "checked_at_utc": "2026-11-12T15:33:08Z",
+        "refresh_condition": "new original CNN score with verified timestamp or same-method comparable history",
+        "not_independent_of_vix": true
       }
     },
     "DATA_QUALITY": {
-      "observed_at_utc": "2026-11-11T22:37:34.466Z",
-      "nominal_check_et": "2026-11-11 17:30 EST",
-      "mode": "end_of_day",
-      "source_generated_et": "2026-11-11T17:29:23.272610-05:00",
+      "observed_at_utc": "2026-11-12T15:33:08Z",
+      "nominal_check_et": "2026-11-12 10:30 EST",
+      "mode": "regular_session",
+      "source_generated_et": "2026-11-12T10:25:17.735119-05:00",
       "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
-      "latest_blob_sha": "b4370ad13ef0af1eb816792b31bd9cb8b36da1a1",
-      "reference_last_close_session": "2026-11-10",
+      "latest_blob_sha": "2f23924f3ca6121022491fc374a51c9bec1648a6",
+      "reference_last_close_session": "2026-11-11",
       "reference_initialized_after_open": true,
-      "end_of_day_provider_close_date": "2026-11-11",
-      "provider_close_valid": true,
-      "exchange_certified": false,
+      "age_generated_minutes": 7.84,
+      "age_price_bar_minutes": 8.13,
+      "verified_regular_session": true,
+      "price_bar_may_be_incomplete": true,
+      "provider": "Yahoo Finance via yfinance, unofficial",
+      "condition_change_since_prior_eod": {
+        "new": [],
+        "gone": []
+      },
       "collector_run_status": "not independently checked",
       "delivery_status": "unverified",
-      "refresh_condition": "next US valid regular session or provider revision"
+      "refresh_condition": "next scheduled US observation or provider revision"
     },
     "FOMC_2026_OCT": {
       "meeting_dates_et": "2026-10-27/2026-10-28",
@@ -1075,5 +1099,13 @@
     "exchange_certified": false,
     "collector_run_status": "not independently checked",
     "notification_delivery_status": "unverified"
-  }
+  },
+  "last_evaluation_prepared_utc": "2026-11-12T15:33:08Z",
+  "last_evaluation_kind": "2026-11-12_1030_regular_no_new_significant_change",
+  "last_evaluation_condition_ids": [
+    "QQQM:below:first",
+    "QQQM:below:second",
+    "QQQM:band:third",
+    "VOO:band:first"
+  ]
 }
