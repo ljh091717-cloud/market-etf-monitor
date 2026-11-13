@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-13T19:27:29.433132+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-13T20:23:50.728273+00:00",
   "last_reference_session": "2026-11-12",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 679.91,
-    "QQQM": 279.95,
-    "VOO": 692.73
+    "QQQ": 679.61,
+    "QQQM": 279.895,
+    "VOO": 692.58
   },
   "last_active_conditions": [
     "QQQ:high252:-10",
@@ -16,12 +16,12 @@
     "QQQM:below:third",
     "VOO:below:first"
   ],
-  "current_judgment": "2026-11-13 14:30 EST nominal scheduled assessment using actual valid 14:27:29 EST regular-session provider snapshot (14:25 EST start five-minute bars, possibly still forming). QQQ $679.91 (-1.200% vs Nov12 $688.17; -10.498% vs Oct06 $759.66 high close), 1.03 below Nov12 daily SMA200 $680.94 and above prior confirmed weekly EMA50 $671.39. Compared with prior 13:17:55 snapshot QQQ $676.02, bounce +$3.89 but no $680.94 reclaim or validated multi-observation stability; daily -2% threshold not active, high252 -10% remains. QQQM $279.95 (-1.214%) only $0.05 below accepted $280-285 third band; VOO $692.73 (-0.470%) still below $695-700 first band. No new crossing/verified recovery. CNN secondary indexes disagree (fgscore 38 at component market timestamp 13:56 EST versus GuruTrack 37 daily), original headline publication and comparable prior/5d values not verified. Planned conditional tranche consideration only, stabilization-confirmed buy remains deferred. No amount/quantity without current budget/risk cap. No autonomous trading, no off-schedule monitoring, duplicate user notification suppressed.",
+  "current_judgment": "Nov13 15:30 EST nominal assessment: QQQ $679.61 (-1.24%); QQQM $279.895 (-1.23%); VOO $692.58 (-0.49%). QQQ remains below Nov12 SMA200 $680.94 and above prior confirmed weekly EMA50 $671.39; its -2% daily alert no longer active, high252 -10% still active. QQQM remains below established $280-285 third band; VOO remains below $695-700 first band, above $670-680 second band. No new crossings compared with last saved state; $280/$695 recoveries and QQQ SMA200 reclaim unconfirmed. CNN third-party proxies disagree 39 vs 38 Fear, original publication and aligned previous 5-day series unverified. Planned conditional tranche review only; stabilization purchase deferred, amounts unassigned. No continuous event detector or automatic order.",
   "next_conditions": [
-    "2026-11-13 15:30 EST / 2026-11-14 05:30 KST next scheduled intraday: check QQQ $680.94 daily SMA200 reclaim vs $674.41 -2% and $667.53 -3% thresholds; distinguish bar sample from completed daily/weekly closes, with confirmed weekly EMA50 prior $671.39.",
-    "QQQM $280 return into existing third band $280-285; VOO $695 regain existing first band $695-700 or next confirmed band $670-680 approach. No reactivation or 15m hold claims from sampled data.",
-    "2026-11-13 Friday 17:30 EST / 2026-11-14 07:30 KST: require end_of_day and Nov13 provider daily Close to confirm; also confirm the completed weekly QQQ EMA20/50/100/200 and RSI14.",
-    "CNN original verified change or aligned comparable history, plus official new release or expiry for rates/VIX/VXN, economic and earnings references; source-timestamp or comparator gaps remain unverified."
+    "2026-11-13 17:30 EST / 2026-11-14 07:30 KST Friday close check: verify mode=end_of_day, Nov13 provider daily Close for QQQ/QQQM/VOO and source timestamps; do not substitute 15:55 intraday bar for official exchange close.",
+    "QQQ daily Close relative to $680.94 Nov12 SMA200, $674.41 (~-2% versus Nov12 close), $667.53 (~-3%), and prior weekly EMA50 $671.39; assess confirmed weekly EMA20/50/100/200 and RSI14 only after week close.",
+    "QQQM return to third confirmed band $280-285; VOO return to first confirmed band $695-700 or approach second $670-680; keep cash size and tranche quantity undecided.",
+    "CNN original verified score and previous/five aligned observations if available; no standalone out-of-schedule monitoring."
   ],
   "last_report_prepared_utc": "2026-11-13T16:29:45.926Z",
   "last_report_kind": "2026-11-13_1130_new_daily_minus_2_sampled",
@@ -353,38 +353,57 @@
         ],
         "refresh_condition": "Verified original CNN release/time or consistent comparable confirmed closing history",
         "not_independent_of_vix": true
+      },
+      "latest_secondary_nov13_1530": {
+        "fgscore": 39,
+        "gurutrack": 38,
+        "classification": "Fear (25-44)",
+        "fgscore_component_timestamp_et": "2026-11-13 14:58 EST",
+        "fgscore_site_prior": 39,
+        "gurutrack_prior_close": 40,
+        "original_cnn_publication_verified": false,
+        "direction": "unverified: original inaccessible; secondary sites disagree and their comparator clocks differ",
+        "comparable_recent_five_sessions": "unverified",
+        "sources": [
+          "https://fgscore.com/en/markets/sp500",
+          "https://gurutrack.ai/en/sentiment",
+          "https://www.cnn.com/markets/fear-and-greed"
+        ],
+        "observed_at_utc": "2026-11-13T20:33:20Z",
+        "refresh_condition": "verified original CNN release or time-aligned comparable prior/five-session history",
+        "not_independent_of_vix": true
       }
     },
     "DATA_QUALITY": {
-      "observed_at_utc": "2026-11-13T19:27:59Z",
-      "nominal_check_et": "2026-11-13 14:30 EST (snapshot collected at 14:27:29, not exactly 14:30)",
+      "observed_at_utc": "2026-11-13T20:33:20Z",
+      "nominal_check_et": "2026-11-13 15:30 EST",
       "mode": "regular_session",
-      "source_generated_et": "2026-11-13T14:27:29.433132-05:00",
+      "source_generated_et": "2026-11-13T15:23:50.728273-05:00",
       "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
-      "latest_blob_sha": "3e9c6e660b57cacf39530cd8c222ddee52fd1cec",
+      "latest_blob_sha": "c6eaf2df4247607c62f023b436bf4484431a594a",
       "reference_last_close_session": "2026-11-12",
       "reference_initialized_after_open": false,
-      "age_generated_minutes_at_nominal_time": 2.51,
-      "age_price_bar_minutes_at_nominal_time": 5,
+      "age_generated_minutes_at_assessment": 9.49,
+      "age_price_bar_minutes_at_assessment": {
+        "QQQ": 13.33,
+        "QQQM": 13.33,
+        "VOO": 13.33
+      },
       "verified_regular_session": true,
-      "price_bar_may_be_incomplete": true,
+      "price_bar_may_be_incomplete_at_collection": true,
       "collector_comparison_kind": "sampled_change",
       "new_crossings": [],
       "recovered_conditions": [],
       "recovery_confirmed_15min": false,
-      "collector_run_url": "https://github.com/ljh091717-cloud/market-etf-monitor/actions/runs/43492320747",
-      "collector_jobs": {
-        "collect": "success",
-        "deploy": "success"
-      },
+      "collector_jobs": "not individually verified in this run; valid latest.json advanced",
       "last_seen_prices": {
-        "QQQ": 679.91,
-        "QQQM": 279.95,
-        "VOO": 692.73
+        "QQQ": 679.61,
+        "QQQM": 279.895,
+        "VOO": 692.58
       },
       "delivery_status": "unverified",
       "verified_price_fresh": true,
-      "refresh_condition": "next 15:30 EST scheduled observation / 17:30 EST Friday close, no event detector"
+      "refresh_condition": "Nov13 17:30 EST end_of_day + confirmed weekly indicators; not off-schedule detector"
     },
     "FOMC_2026_OCT": {
       "meeting_dates_et": "2026-10-27/2026-10-28",
@@ -1303,8 +1322,8 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-13T18:35:25.159Z",
-  "last_check_prepared_utc": "2026-11-13T18:35:25.159Z",
+  "last_evaluation_utc": "2026-11-13T20:33:20Z",
+  "last_check_prepared_utc": "2026-11-13T20:33:20Z",
   "last_check_kind": "regular_session_same_conditions_no_new_crossing",
   "last_check_condition_ids": [
     "QQQ:high252:-10",
@@ -1373,9 +1392,9 @@
     "collector_job_status": "not individually verified; latest.json advanced"
   },
   "last_check_report_decision": "skip_notification",
-  "last_assessment_nominal_et": "2026-11-13 13:30 EST",
-  "last_assessment_prepared_utc": "2026-11-13T18:35:25.159Z",
-  "last_assessment_kind": "2026-11-13_1430_regular_no_new_crossings",
+  "last_assessment_nominal_et": "2026-11-13 15:30 EST",
+  "last_assessment_prepared_utc": "2026-11-13T20:33:20Z",
+  "last_assessment_kind": "regular_session_same_conditions_no_new_crossing",
   "last_assessment_condition_ids": [
     "QQQ:high252:-10",
     "QQQM:below:first",
@@ -1383,11 +1402,11 @@
     "QQQM:below:third",
     "VOO:below:first"
   ],
-  "last_check_report_decision_reason": "Valid Nov13 13:17 ET collection; no new -2/-3/-5 daily drop, no band crossing, no 200-day SMA reclaim and no change to buying judgment. CNN secondary 38 vs 37 (Fear) with incomparable time/history; no confirmed new independent signal.",
-  "last_check_attempt_utc": "2026-11-13T18:35:25.159Z",
-  "last_check_nominal_et": "2026-11-13 13:30 EST",
-  "last_check_data_status": "valid_regular_session_2026-11-13_provider_5m_13:15_et_possibly_incomplete_at_collection",
-  "last_evaluation_prepared_utc": "2026-11-13T18:35:25.159Z",
+  "last_check_report_decision_reason": "No new daily drop threshold, no restored $280/$695 band or $680.94 QQQ SMA200, no validated price stabilization or CNN original fear score trend.",
+  "last_check_attempt_utc": "2026-11-13T20:33:20Z",
+  "last_check_nominal_et": "2026-11-13 15:30 EST",
+  "last_check_data_status": "valid Nov13 regular_session 15:20 ET start 5m bar, possibly incomplete at collection; no daily/weekly close",
+  "last_evaluation_prepared_utc": "2026-11-13T20:33:20Z",
   "last_evaluation_kind": "no_new_crossings_no_buyer_decision_change",
   "last_evaluation_condition_ids": [
     "QQQ:high252:-10",
@@ -1396,6 +1415,6 @@
     "QQQM:below:third",
     "VOO:below:first"
   ],
-  "last_check_completed_utc": "2026-11-13T18:35:25.159Z",
-  "last_assessment_snapshot_generated_utc": "2026-11-13T19:27:29.433132+00:00"
+  "last_check_completed_utc": "2026-11-13T20:33:20Z",
+  "last_assessment_snapshot_generated_utc": "2026-11-13T20:23:50.728273+00:00"
 }
