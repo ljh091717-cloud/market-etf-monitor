@@ -16,16 +16,17 @@
     "QQQM:below:third",
     "VOO:below:first"
   ],
-  "current_judgment": "Mon 2026-11-16 12:30 EST scheduled check: DATA LIMIT, not a newly confirmed market signal. latest.json only 11:21:43 EST (11:20 5m bars); as of 12:34 EST bar age 74m (>45), generation age 72.5m. Previous 11:30 valid sample QQQ $668.76, QQQM $275.3201, VOO $686.1528 was already assessed and cannot be reused as 12:30 price. QQQ had been below last confirmed weekly EMA50 $671.73, QQQM below $280, VOO below $695. Current move/new -2% threshold/recovery cannot be determined. Existing conditional review preserved; stability-confirmation buying on hold; no orders.",
+  "current_judgment": "2026-11-16 13:30 EST scheduled observation, assessed 2026-11-16T18:35:45.350Z: DATA LIMIT: latest generated 12:41:20 EST and all three latest 5m bar starts 12:40 EST; bar is ~55.8 minutes old, exceeding 45-minute intraday price-bar rule (even though file generation age is <75m). Do NOT treat last prices as live 13:30 prices or use as buy signals. A NEWER HISTORICAL 12:40 sample contains QQQ $665.07 / -2.18% vs Nov13 official prior trading-day reference Close $679.89 (crosses -2% threshold), QQQM $273.85 (-2.19%), VOO $683.16 (-1.47%), but current signal persistence and any recovery are UNKNOWN. Last valid snapshot was 11:20 5m bars (previously confirmed 11:30 check), so last_valid fields are intentionally unchanged. Advance no new active condition, preserve planned-buy assessment but hold stability-confirmation purchases. Latest CNN score primary unverified, secondary fgscore 34 and GuruTrack 36 disagreement. No orders.",
   "next_conditions": [
-    "Next supported 13:30 EST: require Nov16 regular_session generated <=75min and all symbol bar starts <=45min, verify Nov13 preceding session baseline and 2026-10-19.1 revision, then compare conditions with 11:30 last valid sample; do not infer interim price path.",
-    "QQQ <=$666.29 for -2% from Nov13 $679.89, reclaim last confirmed weekly EMA50 $671.73 and daily SMA200 $681.20, QQQM $280, VOO $695 or $680 second band; intraday only until close.",
-    "Nov16 17:30 EST end_of_day daily close; unverified CNN original and comparable prior-5 sessions require new validated data."
+    "Next supported 14:30 EST: require Nov16 regular_session generated <=75min AND all latest symbol 5m bar starts <=45min, and distinguish latest sample from 12:40 historical observation.",
+    "QQQ Nov13 reference Close $679.89: -2% threshold <=$666.29; previous confirmed weekly EMA50 $671.73 and daily SMA200 $681.20; QQQM own $280 and VOO $695 or next $670-$680 watch band. Need valid current snapshot to certify any new crossing/recovery.",
+    "Nov16 17:30 EST: provider end_of_day Nov16 daily Close must actually be reflected; no 15:55 5m bar substitution; CNN primary and comparable five sessions currently unverified."
   ],
-  "last_report_prepared_utc": "2026-11-16T17:34:12Z",
-  "last_report_kind": "2026-11-16_1230_data_limitation_stale_price",
+  "last_report_prepared_utc": "2026-11-16T18:35:45.350Z",
+  "last_report_kind": "2026-11-16_1330_data_limitation_old_price_with_prior_qqq_minus2",
   "last_report_condition_ids": [
-    "DATA:REGULAR_BAR_OLDER_THAN_45M"
+    "DATA:REGULAR_BAR_OLDER_THAN_45M",
+    "QQQ:DAILY:-2_HISTORICAL_SAMPLE_NOT_CURRENTLY_VALIDATED"
   ],
   "last_end_of_day_review_session": "2026-11-13",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -408,6 +409,23 @@
         ],
         "checked_at_utc": "2026-11-16T16:34:06.770Z",
         "refresh_condition": "New confirmed CNN original publication or aligned comparable history",
+        "not_independent_of_vix": true
+      },
+      "latest_secondary_nov16_1330": {
+        "fgscore_score": 34,
+        "gurutrack_score": 36,
+        "classification": "공포 / Fear (25-44)",
+        "fgscore_latest_factor_et": "2026-11-16 12:58 EST (component timestamp only, not CNN headline publication)",
+        "gurutrack_daily_asof": "2026-11-16 (daily, no exact publication time)",
+        "current_comparison": "Secondary sources disagree; no confirmed CNN headline or comparable 5-session original trend.",
+        "previous_close_gurutrack": 39,
+        "fgscore_one_day_ago": 34,
+        "source_urls": [
+          "https://fgscore.com/en/markets/sp500",
+          "https://gurutrack.ai/en/sentiment"
+        ],
+        "observed_at_utc": "2026-11-16T18:35:45.350Z",
+        "refresh_condition": "New verified CNN original update/time or same-source reliable prior 5-session history",
         "not_independent_of_vix": true
       }
     },
@@ -1497,5 +1515,20 @@
     "DATA:REGULAR_BAR_OLDER_THAN_45M"
   ],
   "last_check_completed_utc": "2026-11-16T17:34:12Z",
-  "last_assessment_snapshot_generated_utc": "2026-11-16T16:21:43.781473+00:00"
+  "last_assessment_snapshot_generated_utc": "2026-11-16T16:21:43.781473+00:00",
+  "last_stale_snapshot_observed": {
+    "generated_utc": "2026-11-16T17:41:20.397718+00:00",
+    "last_bar_start_utc": "2026-11-16T17:40:00+00:00",
+    "checked_at_utc": "2026-11-16T18:35:45.350Z",
+    "age_minutes": 55.76,
+    "source": "market_monitor_starter/docs/data/latest.json",
+    "price_by_symbol": {
+      "QQQ": 665.07,
+      "QQQM": 273.85,
+      "VOO": 683.16
+    },
+    "qqq_daily_drop_pct": -2.1797664812154505,
+    "data_valid_for_1330_signal": false,
+    "new_condition_id_not_activated": "QQQ:daily:-2"
+  }
 }
