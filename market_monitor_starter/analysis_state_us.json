@@ -1,32 +1,34 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-16T16:21:43.781473+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-16T19:29:29.339246+00:00",
   "last_reference_session": "2026-11-13",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 668.76,
-    "QQQM": 275.3201,
-    "VOO": 686.1528
+    "QQQ": 663.42,
+    "QQQM": 273.19,
+    "VOO": 680.3294
   },
   "last_active_conditions": [
+    "QQQ:daily:-2",
     "QQQ:high252:-10",
     "QQQM:below:first",
     "QQQM:below:second",
     "QQQM:below:third",
     "VOO:below:first"
   ],
-  "current_judgment": "2026-11-16 13:30 EST scheduled observation, assessed 2026-11-16T18:35:45.350Z: DATA LIMIT: latest generated 12:41:20 EST and all three latest 5m bar starts 12:40 EST; bar is ~55.8 minutes old, exceeding 45-minute intraday price-bar rule (even though file generation age is <75m). Do NOT treat last prices as live 13:30 prices or use as buy signals. A NEWER HISTORICAL 12:40 sample contains QQQ $665.07 / -2.18% vs Nov13 official prior trading-day reference Close $679.89 (crosses -2% threshold), QQQM $273.85 (-2.19%), VOO $683.16 (-1.47%), but current signal persistence and any recovery are UNKNOWN. Last valid snapshot was 11:20 5m bars (previously confirmed 11:30 check), so last_valid fields are intentionally unchanged. Advance no new active condition, preserve planned-buy assessment but hold stability-confirmation purchases. Latest CNN score primary unverified, secondary fgscore 34 and GuruTrack 36 disagreement. No orders.",
+  "current_judgment": "2026-11-16 14:30 EST valid regular-session observation (generated 2026-11-16T14:29:29.339246-05:00), assessed 2026-11-16T19:31:46.033Z: QQQ $663.42 (-2.42% from 11/13 $679.89; -12.67% from 10/06 highest close), confirms ongoing <=-2% daily threshold on valid fresh 14:25 EST 5m sample; crosses from last VALID 11:20 sample -1.64% but earlier 12:40 historic stale-at-review had already observed -2.18%, so do NOT claim first ever crossing time. QQQ under prior completed weekly EMA50 $671.73 and daily SMA200 $681.20 (only intraday; current weekly bar provisional). QQQM $273.19 (-2.42%; still below accepted third interest band $280-285); VOO $680.33 (-1.88%, only $0.33 above confirmed next interest band $670-680 and $0.82 above VOO daily -2% threshold; NOT yet within band or -2%. Previous market-feed gap recovered with latest.json refresh and completed collect/deploy steps; last 5-minute bars may still have been incomplete when collected (14:25 start at 14:29). No 15-minute continuous stability proof. CNN original unavailable; third-party 31 vs 35, change direction not validated. Plan-based conditional entry review only; stability-confirmation buying remains on hold, no amounts or orders.",
   "next_conditions": [
-    "Next supported 14:30 EST: require Nov16 regular_session generated <=75min AND all latest symbol 5m bar starts <=45min, and distinguish latest sample from 12:40 historical observation.",
-    "QQQ Nov13 reference Close $679.89: -2% threshold <=$666.29; previous confirmed weekly EMA50 $671.73 and daily SMA200 $681.20; QQQM own $280 and VOO $695 or next $670-$680 watch band. Need valid current snapshot to certify any new crossing/recovery.",
-    "Nov16 17:30 EST: provider end_of_day Nov16 daily Close must actually be reflected; no 15:55 5m bar substitution; CNN primary and comparable five sessions currently unverified."
+    "Next supported 15:30 EST regular-session sample: QQQ <= $659.49 (daily -3%) vs <=$666.29 (-2% threshold), recover $671.73 previous completed weekly EMA50 or $681.20 last completed daily SMA200; intraday observations not daily/weekly confirmation.",
+    "VOO next accepted $670-680 watch band starts at <=$680.00 (14:25 quote $680.33), daily -2% threshold <=$679.51; check genuine band entry and next $670.27 daily SMA200. QQQM own accepted third band $280-285 remains below; watch recovery of $280, not double-count QQQ index decline.",
+    "Nov16 17:30 EST: end_of_day provider daily Close must reflect Nov16 and may be revised. CNN original/new aligned comparison and risk/breadth refresh only if verified. No new mid-hour instant alert capability."
   ],
-  "last_report_prepared_utc": "2026-11-16T18:35:45.350Z",
-  "last_report_kind": "2026-11-16_1330_data_limitation_old_price_with_prior_qqq_minus2",
+  "last_report_prepared_utc": "2026-11-16T19:31:46.033Z",
+  "last_report_kind": "2026-11-16_1430_valid_qqq_minus2_and_voo_second_band_near",
   "last_report_condition_ids": [
-    "DATA:REGULAR_BAR_OLDER_THAN_45M",
-    "QQQ:DAILY:-2_HISTORICAL_SAMPLE_NOT_CURRENTLY_VALIDATED"
+    "QQQ:daily:-2_valid_at_1425_ET",
+    "VOO:second_band_680_approach_no_touch",
+    "QQQ:prev_completed_week_ema50_intraday_below"
   ],
   "last_end_of_day_review_session": "2026-11-13",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -427,6 +429,24 @@
         "observed_at_utc": "2026-11-16T18:35:45.350Z",
         "refresh_condition": "New verified CNN original update/time or same-source reliable prior 5-session history",
         "not_independent_of_vix": true
+      },
+      "latest_secondary_nov16_1430": {
+        "fgscore_score": 31,
+        "gurutrack_score": 35,
+        "band": "Fear (25-44)",
+        "fgscore_market_factor_timestamp_et": "2026-11-16 13:58 EST (component timestamp, not verified CNN headline publication)",
+        "gurutrack_as_of_date": "2026-11-16 (exact index timestamp unknown)",
+        "direction": "unverified: secondary latest points and previous-day comparators disagree",
+        "verified_original_CNN_score": false,
+        "verified_recent_five_sessions": false,
+        "urls": [
+          "https://fgscore.com/en/markets/sp500",
+          "https://gurutrack.ai/en/sentiment",
+          "https://www.cnn.com/markets/fear-and-greed"
+        ],
+        "observed_at_utc": "2026-11-16T19:31:46.033Z",
+        "refresh_condition": "Next original verified publication or internally aligned five-trading-day series",
+        "not_independent_of_VIX": true
       }
     },
     "DATA_QUALITY": {
