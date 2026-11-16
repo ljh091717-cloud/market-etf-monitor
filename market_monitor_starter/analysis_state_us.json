@@ -16,19 +16,16 @@
     "QQQM:below:third",
     "VOO:below:first"
   ],
-  "current_judgment": "Mon 2026-11-16 11:30 EST scheduled check, source generated 11:21:43 EST. QQQ $668.76 (-1.64% vs Fri Nov13 $679.89; -11.97% vs Oct06 highest close), remains below last completed week EMA50 $671.73 and prior daily SMA200 $681.20. QQQM $275.3201 (-1.66%), still below final third band $280-285 and prior daily SMA200 $280.46, tied Nasdaq100 risk. VOO $686.1528 (-1.04%) remains below first $695-700 band and above next $670-680. No new or recovered collector conditions vs 10:58 EST snapshot; late preopen reference initialization was already identified in previous run. QQQ daily -2% threshold $666.29 not met; no fresh material signal; do not claim price stabilization. CNN primary blocked; secondary fgscore 34 Fear vs GuruTrack 38 Fear for Nov16, previous-day values and timestamps differ, no verified point change; scores above <=25 threshold. Continue pre-planned conditional review without amount sizing; stabilization purchase on hold. No orders.",
+  "current_judgment": "Mon 2026-11-16 12:30 EST scheduled check: DATA LIMIT, not a newly confirmed market signal. latest.json only 11:21:43 EST (11:20 5m bars); as of 12:34 EST bar age 74m (>45), generation age 72.5m. Previous 11:30 valid sample QQQ $668.76, QQQM $275.3201, VOO $686.1528 was already assessed and cannot be reused as 12:30 price. QQQ had been below last confirmed weekly EMA50 $671.73, QQQM below $280, VOO below $695. Current move/new -2% threshold/recovery cannot be determined. Existing conditional review preserved; stability-confirmation buying on hold; no orders.",
   "next_conditions": [
-    "Mon Nov16 12:30 EST scheduled: QQQ daily -2% at <=$666.29 (new threshold if hit), last confirmed weekly EMA50 $671.73 reclaim in intraday sample vs daily close, daily SMA200 $681.20; distinguish current-week provisional EMA50.",
-    "QQQM $280 reclaim vs further lows; VOO $695 reclaim, or $680 entry to second final band $670-680; do not duplicate QQQ/QQQM common-index changes.",
-    "Nov16 17:30 EST end_of_day provider daily close confirmation; CNN original new score/last five comparable points only if verified. Nov17 08:30 EST import-export prices / approx 16:20 EST Nvidia results: refresh at actual publication only."
+    "Next supported 13:30 EST: require Nov16 regular_session generated <=75min and all symbol bar starts <=45min, verify Nov13 preceding session baseline and 2026-10-19.1 revision, then compare conditions with 11:30 last valid sample; do not infer interim price path.",
+    "QQQ <=$666.29 for -2% from Nov13 $679.89, reclaim last confirmed weekly EMA50 $671.73 and daily SMA200 $681.20, QQQM $280, VOO $695 or $680 second band; intraday only until close.",
+    "Nov16 17:30 EST end_of_day daily close; unverified CNN original and comparable prior-5 sessions require new validated data."
   ],
-  "last_report_prepared_utc": "2026-11-16T16:09:06.997Z",
-  "last_report_kind": "2026-11-16_1030_delayed_snapshot_intraday_QQQ_weekly_EMA50_support_breach_risk_expansion",
+  "last_report_prepared_utc": "2026-11-16T17:34:12Z",
+  "last_report_kind": "2026-11-16_1230_data_limitation_stale_price",
   "last_report_condition_ids": [
-    "INTRADAY:QQQ:below_last_confirmed_weekly_EMA50",
-    "INTRADAY:QQQM:below_confirmed_third_band",
-    "INTRADAY:VOO:below_first_band",
-    "DATA:reference_initialized_after_open_not_new_crossing"
+    "DATA:REGULAR_BAR_OLDER_THAN_45M"
   ],
   "last_end_of_day_review_session": "2026-11-13",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -1424,10 +1421,12 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-16T16:34:06.770Z",
-  "last_check_prepared_utc": "2026-11-16T16:34:06.770Z",
-  "last_check_kind": "regular_session_no_new_crossings",
-  "last_check_condition_ids": [],
+  "last_evaluation_utc": "2026-11-16T17:34:12Z",
+  "last_check_prepared_utc": "2026-11-16T17:34:12Z",
+  "last_check_kind": "regular_session_stale_price_data",
+  "last_check_condition_ids": [
+    "DATA:REGULAR_BAR_OLDER_THAN_45M"
+  ],
   "last_notification_decision": "skip_notification",
   "last_price_source": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
   "last_external_end_of_day": {
@@ -1462,44 +1461,41 @@
     "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json"
   },
   "last_data_quality_observation": {
-    "observed_at_utc": "2026-11-16T16:34:06.770Z",
-    "nominal_check_et": "2026-11-16 11:30 EST",
-    "mode": "regular_session",
+    "observed_at_utc": "2026-11-16T17:34:12Z",
+    "nominal_check_et": "2026-11-16 12:30 EST",
     "source_generated_et": "2026-11-16T11:21:43.781473-05:00",
     "source_blob_sha": "e241cbe0074943de90812219537d6dbd10b6dc2a",
-    "source_age_minutes": 12.38,
-    "last_bar_start_et": {
-      "QQQ": "2026-11-16T11:20:00-05:00",
-      "QQQM": "2026-11-16T11:20:00-05:00",
-      "VOO": "2026-11-16T11:20:00-05:00"
-    },
+    "source_age_minutes": 72.47,
     "last_bar_ages_minutes": {
-      "QQQ": 14.112833333333333,
-      "QQQM": 14.112833333333333,
-      "VOO": 14.112833333333333
+      "QQQ": 74.2,
+      "QQQM": 74.2,
+      "VOO": 74.2
     },
-    "bar_incomplete_possible": true,
-    "valid_reference_session": "2026-11-13",
-    "reference_initialized_after_open": true,
-    "collector_comparison": "sampled_change",
-    "new_crossings": [],
-    "recovered_conditions": [],
-    "recovery_15min_unverified": true,
+    "data_stale_because_bar_gt45min": true,
+    "generated_age_le75min": true,
+    "market_date": "2026-11-16",
+    "reference_as_of_session": "2026-11-13",
+    "late_reference_init": true,
+    "collector_run_verified_at_1121": true,
+    "collector_latest_data_refreshed_at_1121": true,
+    "no_1230_fresh_sample": true,
     "delivery_status": "unverified",
     "config_revision": "2026-10-19.1"
   },
-  "last_check_report_decision": "skip_notification",
+  "last_check_report_decision": "report_data_limitation",
   "last_assessment_nominal_et": "2026-11-16 11:30 EST",
   "last_assessment_prepared_utc": "2026-11-13T20:33:20Z",
   "last_assessment_kind": "regular_session_no_material_change",
   "last_assessment_condition_ids": [],
-  "last_check_report_decision_reason": "No newly crossed or recovered collector condition; intraday ETF prices only modestly lower than previous 10:58 EST observation; no confirmed new sentiment inflection; previous risk assessment remains.",
-  "last_check_attempt_utc": "2026-11-13T20:33:20Z",
-  "last_check_nominal_et": "2026-11-16 11:30 EST",
-  "last_check_data_status": "verified_fresh_regular_session_late_reference_initialization_known",
-  "last_evaluation_prepared_utc": "2026-11-16T16:09:06.997Z",
-  "last_evaluation_kind": "risk_expansion_support_breach_not_new_collector_event",
-  "last_evaluation_condition_ids": [],
-  "last_check_completed_utc": "2026-11-16T16:34:06.770Z",
+  "last_check_report_decision_reason": "As of 12:34:12 EST, latest.json generated at 11:21:43 EST and every 5-minute price bar began 11:20 EST. At nominal 12:30 inspection the observations are outside individual 45-min price-bar validity; 11:21 collector run succeeded, but there is no fresh 12:30 data. No new market-price change or stabilization may be confirmed.",
+  "last_check_attempt_utc": "2026-11-16T17:34:12Z",
+  "last_check_nominal_et": "2026-11-16 12:30 EST",
+  "last_check_data_status": "data_limit_stale_intraday_bar_over_45min_at_1230_nominal",
+  "last_evaluation_prepared_utc": "2026-11-16T17:34:12Z",
+  "last_evaluation_kind": "data_limit_no_new_valid_price_signal",
+  "last_evaluation_condition_ids": [
+    "DATA:REGULAR_BAR_OLDER_THAN_45M"
+  ],
+  "last_check_completed_utc": "2026-11-16T17:34:12Z",
   "last_assessment_snapshot_generated_utc": "2026-11-16T16:21:43.781473+00:00"
 }
