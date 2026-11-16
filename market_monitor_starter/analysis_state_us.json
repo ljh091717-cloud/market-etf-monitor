@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-16T19:29:29.339246+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-16T20:20:29.507197+00:00",
   "last_reference_session": "2026-11-13",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 663.42,
-    "QQQM": 273.19,
-    "VOO": 680.3294
+    "QQQ": 661.12,
+    "QQQM": 272.26,
+    "VOO": 679.455
   },
   "last_active_conditions": [
     "QQQ:daily:-2",
@@ -15,20 +15,22 @@
     "QQQM:below:first",
     "QQQM:below:second",
     "QQQM:below:third",
-    "VOO:below:first"
+    "VOO:daily:-2",
+    "VOO:below:first",
+    "VOO:band:second"
   ],
-  "current_judgment": "2026-11-16 14:30 EST valid regular-session observation (generated 2026-11-16T14:29:29.339246-05:00), assessed 2026-11-16T19:31:46.033Z: QQQ $663.42 (-2.42% from 11/13 $679.89; -12.67% from 10/06 highest close), confirms ongoing <=-2% daily threshold on valid fresh 14:25 EST 5m sample; crosses from last VALID 11:20 sample -1.64% but earlier 12:40 historic stale-at-review had already observed -2.18%, so do NOT claim first ever crossing time. QQQ under prior completed weekly EMA50 $671.73 and daily SMA200 $681.20 (only intraday; current weekly bar provisional). QQQM $273.19 (-2.42%; still below accepted third interest band $280-285); VOO $680.33 (-1.88%, only $0.33 above confirmed next interest band $670-680 and $0.82 above VOO daily -2% threshold; NOT yet within band or -2%. Previous market-feed gap recovered with latest.json refresh and completed collect/deploy steps; last 5-minute bars may still have been incomplete when collected (14:25 start at 14:29). No 15-minute continuous stability proof. CNN original unavailable; third-party 31 vs 35, change direction not validated. Plan-based conditional entry review only; stability-confirmation buying remains on hold, no amounts or orders.",
+  "current_judgment": "2026-11-16 15:30 EST slot, analyzed 2026-11-16T20:30:41.941Z, snapshot generated 2026-11-16T15:20:29.507197-05:00: NEW VOO daily -2% threshold and second accepted price band $670-680 both observed on 15:20 EST 5min starting bar (VOO $679.455, -2.0083% vs Nov13 provider close $693.38). Last valid 14:25 bar was $680.3294 (-1.882%) and outside band, so new observed crossings; not final daily close, not verified first crossing minute. QQQ $661.12 (-2.7607%; 252-close drawdown -12.97%) continues decline toward daily -3% threshold $659.49 (distance $1.63); still below previous completed weekly EMA50 $671.726 and daily SMA200 $681.201. QQQM $272.26 (-2.754%; below confirmed third watch band $280-285), correlated QQQ decline counted once. VOO remains above $670.265 daily SMA200 with little cushion. Reuters Nov16 reports SOX -4.6%, Nasdaq decliners~3.2:1; not synchronized with ETF quote; Cboe VIX official displayed 20.03 as-of 10:16 EST only, VXN unverified. 10y official Nov13 nominal 5.15%/real 2.91%, Nov16 rates not confirmed. CNN primary unavailable, third-party replicas 31 vs 32 Fear, fgscore factor timestamp 13:58 EST; original publication and consistent prior/Five sessions unverified. Prior Nov13 baseline fixed late 10:58 ET (not before open), but dates and prices validated and mechanical action guard false; no artificial drop from fixed reference. Plan-based conditional split-entry review due to accepted VOO band reached; stabilization confirmation absent and risk remains high, so hold stabilization-based adds; no allocations or orders.",
   "next_conditions": [
-    "Next supported 15:30 EST regular-session sample: QQQ <= $659.49 (daily -3%) vs <=$666.29 (-2% threshold), recover $671.73 previous completed weekly EMA50 or $681.20 last completed daily SMA200; intraday observations not daily/weekly confirmation.",
-    "VOO next accepted $670-680 watch band starts at <=$680.00 (14:25 quote $680.33), daily -2% threshold <=$679.51; check genuine band entry and next $670.27 daily SMA200. QQQM own accepted third band $280-285 remains below; watch recovery of $280, not double-count QQQ index decline.",
-    "Nov16 17:30 EST: end_of_day provider daily Close must reflect Nov16 and may be revised. CNN original/new aligned comparison and risk/breadth refresh only if verified. No new mid-hour instant alert capability."
+    "Next supported 2026-11-16 17:30 EST end_of_day: verify Nov16 provider daily Close, distinguish from 15:55-start intraday 5m; confirm whether VOO closes <=$679.51 (-2%) inside $670-680 band, whether its $670.27 SMA200 remains supported; provider EOD is revisable.",
+    "QQQ intraday <=$659.49 (daily -3%) or recovery above completed weekly EMA50 $671.73, daily SMA200 $681.20; daily/weekly closing confirmation separate. QQQM $280 own third band reentry versus continuing below $280.",
+    "CNN original score/time and comparable 5-session history only when verifiable, VIX/VXN and Nov16 official 10y nom/real daily rates if published; monitor Nov17 08:30 ET BLS import/export prices, Nov17 NVDA report and Nov18 Fed minutes. No off-schedule event detection."
   ],
-  "last_report_prepared_utc": "2026-11-16T19:31:46.033Z",
-  "last_report_kind": "2026-11-16_1430_valid_qqq_minus2_and_voo_second_band_near",
+  "last_report_prepared_utc": "2026-11-16T20:30:41.941Z",
+  "last_report_kind": "2026-11-16_1530_voo_second_band_and_minus2",
   "last_report_condition_ids": [
-    "QQQ:daily:-2_valid_at_1425_ET",
-    "VOO:second_band_680_approach_no_touch",
-    "QQQ:prev_completed_week_ema50_intraday_below"
+    "VOO:band:second",
+    "VOO:daily:-2",
+    "QQQ:daily:-2_ongoing_near_minus3"
   ],
   "last_end_of_day_review_session": "2026-11-13",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -1456,16 +1458,47 @@
       ],
       "observed_at_utc": "2026-11-16T16:09:06.997Z",
       "refresh_condition": "New verified market indicator snapshot / upcoming close"
+    },
+    "CNN_NOV16_1530_SECONDARY": {
+      "fgscore": 31,
+      "gurutrack": 32,
+      "band": "공포 (25-44)",
+      "fgscore_market_factor_asof_et": "2026-11-16 13:58 EST (not CNN original publication)",
+      "fgscore_reported_1_day_ago": 31,
+      "gurutrack_reported_prev_close": 39,
+      "original_cnn_verified": false,
+      "prior_change_direction": "unverified, cross-source inconsistent",
+      "five_session_comparable": "unverified",
+      "checked_at_utc": "2026-11-16T20:30:41.941Z",
+      "source_urls": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment",
+        "https://www.cnn.com/markets/fear-and-greed"
+      ],
+      "refresh_condition": "New verified original CNN score/date or trustworthy same-method trading-day history",
+      "not_independent_of_vix": true
+    },
+    "US_NOV16_AFTERNOON_REUTERS": {
+      "as_of_session": "2026-11-16",
+      "sox_pct": -4.6,
+      "nasdaq_decliners_to_advancers_approx": 3.2,
+      "nyse_decliners_to_advancers_approx": 3.22,
+      "breadth_proxy": "decliners/advancers NOT stock percentage above 50/200-day averages",
+      "time_et": "intraday Nov16, exact timestamp not resolved / not synchronous with ETF 15:20 bar",
+      "source_url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/",
+      "checked_at_utc": "2026-11-16T20:30:41.941Z",
+      "refresh_condition": "Material updated market report or official closing breadth"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-16T17:34:12Z",
-  "last_check_prepared_utc": "2026-11-16T17:34:12Z",
-  "last_check_kind": "regular_session_stale_price_data",
+  "last_evaluation_utc": "2026-11-16T20:30:41.941Z",
+  "last_check_prepared_utc": "2026-11-16T20:30:41.941Z",
+  "last_check_kind": "regular_session_new_voo_price_band_and_daily_drop",
   "last_check_condition_ids": [
-    "DATA:REGULAR_BAR_OLDER_THAN_45M"
+    "VOO:daily:-2",
+    "VOO:band:second"
   ],
-  "last_notification_decision": "skip_notification",
+  "last_notification_decision": "notify",
   "last_price_source": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
   "last_external_end_of_day": {
     "session_date": "2026-11-12",
@@ -1520,22 +1553,26 @@
     "delivery_status": "unverified",
     "config_revision": "2026-10-19.1"
   },
-  "last_check_report_decision": "report_data_limitation",
-  "last_assessment_nominal_et": "2026-11-16 11:30 EST",
-  "last_assessment_prepared_utc": "2026-11-13T20:33:20Z",
-  "last_assessment_kind": "regular_session_no_material_change",
-  "last_assessment_condition_ids": [],
-  "last_check_report_decision_reason": "As of 12:34:12 EST, latest.json generated at 11:21:43 EST and every 5-minute price bar began 11:20 EST. At nominal 12:30 inspection the observations are outside individual 45-min price-bar validity; 11:21 collector run succeeded, but there is no fresh 12:30 data. No new market-price change or stabilization may be confirmed.",
-  "last_check_attempt_utc": "2026-11-16T17:34:12Z",
-  "last_check_nominal_et": "2026-11-16 12:30 EST",
-  "last_check_data_status": "data_limit_stale_intraday_bar_over_45min_at_1230_nominal",
-  "last_evaluation_prepared_utc": "2026-11-16T17:34:12Z",
-  "last_evaluation_kind": "data_limit_no_new_valid_price_signal",
-  "last_evaluation_condition_ids": [
-    "DATA:REGULAR_BAR_OLDER_THAN_45M"
+  "last_check_report_decision": "report_material_new_conditions",
+  "last_assessment_nominal_et": "2026-11-16 15:30 EST",
+  "last_assessment_prepared_utc": "2026-11-16T20:30:41.941Z",
+  "last_assessment_kind": "2026-11-16_1530_voo_second_band_and_minus2",
+  "last_assessment_condition_ids": [
+    "VOO:daily:-2",
+    "VOO:band:second"
   ],
-  "last_check_completed_utc": "2026-11-16T17:34:12Z",
-  "last_assessment_snapshot_generated_utc": "2026-11-16T16:21:43.781473+00:00",
+  "last_check_report_decision_reason": "VOO -2% daily and $670-680 second interest band both observed as true on valid 15:20 ET 5m bar, whereas last valid 14:25 bar was outside. Not guaranteed at close; duplicate QQQ/QQQM signals suppressed.",
+  "last_check_attempt_utc": "2026-11-16T20:30:41.941Z",
+  "last_check_nominal_et": "2026-11-16 15:30 EST",
+  "last_check_data_status": "valid_regular_session_5m_bar_may_be_incomplete",
+  "last_evaluation_prepared_utc": "2026-11-16T20:30:41.941Z",
+  "last_evaluation_kind": "new_conditions_valid_5m_sample",
+  "last_evaluation_condition_ids": [
+    "VOO:daily:-2",
+    "VOO:band:second"
+  ],
+  "last_check_completed_utc": "2026-11-16T20:30:41.941Z",
+  "last_assessment_snapshot_generated_utc": "2026-11-16T20:20:29.507197+00:00",
   "last_stale_snapshot_observed": {
     "generated_utc": "2026-11-16T17:41:20.397718+00:00",
     "last_bar_start_utc": "2026-11-16T17:40:00+00:00",
