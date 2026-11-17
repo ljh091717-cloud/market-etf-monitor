@@ -17,19 +17,19 @@
     "VOO:below:first",
     "VOO:band:second"
   ],
-  "current_judgment": "2026-11-17 13:30 EST: DATA INSUFFICIENT for new ETF price/drop/recovery inference. Repository latest remained 10:23:08 EST / 10:20 5m bar, both age limits failed. Previous VOO second-band watch and QQQ below last completed weekly EMA50 remain historical status only; additional buying stabilization unverified. CNN secondary sites 23 and 24 (extreme fear), source values diverge and original release not confirmed; <25 threshold was already noted at prior 12:30 check, not a fresh independent trigger. No automated order or off-schedule detector.",
+  "current_judgment": "2026-11-17 14:30 EST: DATA INSUFFICIENT; repository latest remains 10:23:08 EST (5m 10:20 EST). Generated and bar both stale 251.4 and 254.6 min at 14:34:35 ET. No confirmed new intraday ETF conditions or stabilization; last valid observations only. GitHub scheduled runs list shows no runs for nominal 10:35-13:35 ET; last successful published data run initiated 10:22:50 ET and earlier 09:33 ET collect-save/deploy skipped. This indicates missing intraday collection updates; schedule cause not proven. Third-party CNN sources both show 25 Fear (factor timestamp 13:10 ET on fgscore), compared to earlier 23/24 secondary, but original CNN/index publication and comparable prior-day history unverified, so cannot confirm true recovery. No auto orders.",
   "next_conditions": [
-    "2026-11-17 14:30 EST: check current main/latest regular_session, 75min generation and 45min 5m-bar freshness; verify US date and Nov16 daily reference; if still stale classify data limit and inspect collection job before new price inference",
-    "If valid: QQQ $648.52 daily -2% from 661.75, QQQ prior completed weekly EMA50 $671.73; VOO 670-680 zone with prior daily SMA200 $670.51; QQQM $280-285 recovery, separate intraday from daily close",
-    "Check whether ETF low stabilizes before equating extreme fear with buying opportunity. CNN 23/24 third-party mismatch; original release and comparable 5-session history unverified",
-    "2026-11-17 17:30 EST: end_of_day provider Close verification; NVIDIA earnings after market; Nov18 FOMC minutes"
+    "2026-11-17 15:30 EST: inspect repository latest mode/date and new generation <=75 min and per-symbol 5m bar <=45 min; inspect new GitHub collect/save/deploy workflow execution separately, especially 14:35 ET scheduled collection delayed",
+    "With fresh data QQQ -2% from Nov16 $661.75 is $648.52, previous completed weekly EMA50 ~$671.73; VOO 670-680 second band, prior SMA200 $670.51; QQQM 280-285 prior third band recovery; separate observed intraday vs closing data",
+    "If no fresh data, keep data-limited, avoid re-triggering pre-existing fear/price thresholds; CGI fear 25 from two secondary sources is not independently verified CNN original, same-day score crossing cannot prove price stabilization",
+    "2026-11-17 17:30 EST: provider end-of-day daily Close validation and next confirmed date; 2026-11-18 FOMC minutes check"
   ],
-  "last_report_prepared_utc": "2026-11-17T17:30:49.532Z",
-  "last_report_kind": "2026-11-17_1230_secondary_extreme_fear_data_limit",
+  "last_report_prepared_utc": "2026-11-17T19:34:35Z",
+  "last_report_kind": "2026-11-17_1430_missing_collection_updates_data_limit",
   "last_report_condition_ids": [
-    "CNN:SECONDARY_UNDER25",
     "DATA:STALE_GENERATION",
-    "DATA:STALE_5M_BAR"
+    "DATA:STALE_5M_BAR",
+    "OPS:NO_1035_TO_1335_COLLECTION_RUNS"
   ],
   "last_end_of_day_review_session": "2026-11-16",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -468,6 +468,24 @@
         "observed_at_utc": "2026-11-17T18:30:47.927Z",
         "refresh_condition": "new verified original CNN publication or consistent timestamped comparable closing series; do not relabel repeated below25 as new signal",
         "not_independent_of_vix": true
+      },
+      "latest_secondary_nov17_1430": {
+        "fgscore": 25,
+        "gurutrack": 25,
+        "band": "공포 / Fear 25~44 (user interest extreme-fear criterion is <25)",
+        "fgscore_factor_timestamp_et": "2026-11-17 13:10 EST; market factor, NOT primary CNN headline publication",
+        "source_urls": [
+          "https://fgscore.com/en/markets/sp500",
+          "https://gurutrack.ai/en/sentiment"
+        ],
+        "fgscore_site_one_day_ago": 25,
+        "gurutrack_prev_close": 31,
+        "previous_intraday_secondary_readings": "13:30 ET secondary 23/24; different secondary snapshot times, so no verified underlying index or primary CNN recovery",
+        "direction": "Not confirmed; third-party previous-day comparators disagree and original CNN publication unverified",
+        "recent_five_sessions": "Unverified",
+        "checked_at_utc": "2026-11-17T19:34:35Z",
+        "refresh_condition": "New verified original CNN release or aligned same-source prior and five-day history",
+        "do_not_double_count_vix": true
       }
     },
     "DATA_QUALITY": {
@@ -1637,15 +1655,15 @@
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-17T17:30:49.532Z",
-  "last_check_prepared_utc": "2026-11-17T18:30:47.927Z",
-  "last_check_kind": "regular_session",
+  "last_evaluation_utc": "2026-11-17T19:34:35Z",
+  "last_check_prepared_utc": "2026-11-17T19:34:35Z",
+  "last_check_kind": "us_regular_1430_data_limitation",
   "last_check_condition_ids": [
     "DATA:STALE_GENERATION",
     "DATA:STALE_5M_BAR",
-    "CNN:SECONDARY_UNDER25_PREVIOUSLY_REPORTED"
+    "OPS:NO_1035_TO_1335_COLLECTION_RUNS"
   ],
-  "last_notification_decision": "no_new_notification_duplicate_stale_context",
+  "last_notification_decision": "report_operational_data_gap_once",
   "last_price_source": "Yahoo Finance via GitHub yfinance, sampled 5min close, may be unfinished",
   "last_external_end_of_day": {
     "session_date": "2026-11-16",
@@ -1705,47 +1723,45 @@
     "source_blob_sha": "fe8210afb79f13ac2602a35cd7ebd0c332ff392b",
     "warning": "GitHub latest.json unchanged since 10:23 EST. Generated age >75min and each 5m price bar >45min, no new valid intraday event; latest individually verified successful collect/deploy was 10:23 ET and newer job status not established."
   },
-  "last_check_report_decision": "skip_duplicate_data_limitation_no_new_valid_etf_condition",
-  "last_assessment_nominal_et": "2026-11-17 13:30 EST",
-  "last_assessment_prepared_utc": "2026-11-17T18:30:47.927Z",
-  "last_assessment_kind": "2026-11-17_1330_regular_us",
+  "last_check_report_decision": "report_data_limitation_operational_gap",
+  "last_assessment_nominal_et": "2026-11-17 14:30 EST",
+  "last_assessment_prepared_utc": "2026-11-17T19:34:35Z",
+  "last_assessment_kind": "data_limit_missing_collection_runs",
   "last_assessment_condition_ids": [
     "DATA:STALE_GENERATION",
     "DATA:STALE_5M_BAR",
-    "CNN:SECONDARY_UNDER25_PREVIOUSLY_REPORTED"
+    "OPS:NO_1035_TO_1335_COLLECTION_RUNS"
   ],
-  "last_check_report_decision_reason": "Previous 11:30 and 12:30 ET runs already reported stale ETF collector; no new valid price. CNN below25 was reported at 12:30; 23 vs24 across secondary sources does not independently establish a new meaningful signal.",
+  "last_check_report_decision_reason": "Consecutive stale 11:30-14:30 market observations and verified missing GitHub scheduled workflow runs for 10:35-13:35 ET; new operational diagnosis; cannot confirm ETF price movements.",
   "last_check_attempt_utc": "2026-11-17T18:30:47.927Z",
-  "last_check_nominal_et": "2026-11-17 13:30 EST",
-  "last_check_data_status": "stale_generation_over75min_and_price_bars_over45min",
-  "last_evaluation_prepared_utc": "2026-11-17T16:31:22.591Z",
-  "last_evaluation_kind": "2026-11-17_1030_regular_us",
+  "last_check_nominal_et": "2026-11-17 14:30 EST",
+  "last_check_data_status": "stale_251min_generation_255min_5m_bar; missing_midday_scheduled_runs; current intraday inference prohibited",
+  "last_evaluation_prepared_utc": "2026-11-17T19:34:35Z",
+  "last_evaluation_kind": "us_regular_1430_data_limit",
   "last_evaluation_condition_ids": [
-    "QQQ:high252:-10",
-    "QQQM:below:first",
-    "QQQM:below:second",
-    "QQQM:below:third",
-    "VOO:below:first",
-    "VOO:band:second"
+    "DATA:STALE_GENERATION",
+    "DATA:STALE_5M_BAR",
+    "OPS:NO_1035_TO_1335_COLLECTION_RUNS"
   ],
-  "last_check_completed_utc": "2026-11-17T18:30:47.927Z",
+  "last_check_completed_utc": "2026-11-17T19:34:35Z",
   "last_assessment_snapshot_generated_utc": "2026-11-17T15:23:08.441338+00:00",
   "last_stale_snapshot_observed": {
-    "generated_utc": "2026-11-17T15:23:08.441338+00:00",
-    "last_bar_start_utc": "2026-11-17T15:20:00+00:00",
-    "checked_at_utc": "2026-11-17T18:30:47.927Z",
-    "generated_age_minutes": 187.66,
-    "bar_age_minutes": 190.8,
-    "source": "market_monitor_starter/docs/data/latest.json",
-    "source_blob_sha": "fe8210afb79f13ac2602a35cd7ebd0c332ff392b",
-    "price_by_symbol": {
-      "QQQ": 659.1001,
-      "QQQM": 271.41,
-      "VOO": 677.16
-    },
-    "valid_for_1330_signal": false,
-    "not_new_price_event": true,
-    "individual_job_status": "Last confirmed 10:23 ET run 44113653384 collect+deploy succeeded; no newer job status verified"
+    "at_utc": "2026-11-17T19:34:35Z",
+    "nominal_et": "2026-11-17 14:30 EST",
+    "snapshot_generated_utc": "2026-11-17T15:23:08.441338+00:00",
+    "last_bar_et": "2026-11-17 10:20 EST",
+    "generation_age_minutes": 251.4,
+    "bar_age_minutes": 254.6,
+    "latest_file_sha": "fe8210afb79f13ac2602a35cd7ebd0c332ff392b",
+    "github_last_published_run": 44113653384,
+    "github_last_run_created_utc": "2026-11-17T15:22:50Z",
+    "observed_missing_nominal_collection_hours_et": [
+      "10:35",
+      "11:35",
+      "12:35",
+      "13:35"
+    ],
+    "reason": "No newer workflow runs appeared in GitHub Actions recent runs; cannot infer exact schedule failure cause."
   },
   "last_end_of_day_data_quality": {
     "checked_at_utc": "2026-11-16T22:31:07.250Z",
