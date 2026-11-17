@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-17T15:23:08.441338+00:00",
+  "last_valid_snapshot_generated_utc": "2026-11-17T22:26:23.397309+00:00",
   "last_reference_session": "2026-11-16",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 659.1001,
-    "QQQM": 271.41,
-    "VOO": 677.16
+    "QQQ": 656.9500122070312,
+    "QQQM": 270.4200134277344,
+    "VOO": 673.1900024414062
   },
   "last_active_conditions": [
     "QQQ:high252:-10",
@@ -17,21 +17,22 @@
     "VOO:below:first",
     "VOO:band:second"
   ],
-  "current_judgment": "2026-11-17 15:30 EST: DATA INSUFFICIENT. GitHub latest.json still 10:23:08 EST (last 5m bar 10:20 EST), beyond 75m generation and 45m bar freshness. No newer GitHub Actions workflow runs than 10:22:50 ET; new 14:35 data collection/deployment not observed. Old success does not imply fresh intraday prices. No new ETF price conditions can be verified. Secondary CNN-linked sites both 25 Fear (latest source factor market snapshot 14:09 ET, NOT verified CNN headline publication), unchanged vs prior 14:30 assessment; no confirmed price stabilization. Retain prior plan, do not trade.",
+  "current_judgment": "2026-11-17 17:30 EST EOD: Data collection resumed at 17:26 EST; mode=end_of_day; all Nov17 provider daily closes verified by session date, not exchange-certified. QQQ $656.95 (-0.73% vs Nov16, -13.52% vs Oct06 252d close), below prior completed-week EMA50 $671.73, daily SMA200 $681.58; QQQM $270.42 (-0.76%) below confirmed third $280-285 zone; VOO $673.19 (-1.04%), EOD confirmed inside second $670-680 zone, above daily SMA200 $670.71 by $2.48. New daily -2% alert none; preexisting QQQ -10% drawdown persists. After extended intraday data outage, EOD restores verifiable close but does not establish intraday stability. CNN-linked secondary sites 25 Fear as of Nov17 (factor latest 16:03 ET) and prior-day comparators conflict; original headline time/5-session comparable trend unverified. Risk remains elevated; scheduled plan-type band evaluation only, stability-confirmation type no new buys; no automatic orders.",
   "next_conditions": [
-    "2026-11-17 17:30 EST: check new GitHub end_of_day mode with Nov17 Yahoo daily Close; verify close data is dated Nov17, latest freshness and run collection/deploy steps separately. If missing, report data limitation; no substitution of 15:55 bar.",
-    "Next eligible valid intraday observation: QQQ daily -2% at $648.52 (Nov16 $661.75 base), prior confirmed weekly EMA50 $671.73; VOO second band $670-680, SMA200 $670.51, QQQM third band $280-285; do not treat old bars as prices.",
-    "Do not newly alert repeat prior VOO band or secondary CNN 25; distinguish price stabilization with confirmed newer intraday/day close and broader market/credit confirmation.",
-    "November 18 FOMC minutes & Nvidia Nov17 after-close earnings: official release updates only."
+    "2026-11-18 10:30 EST next regular-session check: require fresh 2026-11-18 regular_session, generation <=75m and each price bar <=45m; confirm 11/17 as prior completed daily baseline; do not use Nov17 EOD as Nov18 intraday price.",
+    "QQQ next-session -2% threshold ~$643.81 from Nov17 $656.95; assess $671.73 previous completed-week EMA50 recovery separately from daily SMA200 ~$681.58. Weekly Nov16-20 is provisional.",
+    "VOO Nov17 EOD $673.19 inside confirmed $670-680 second zone; watch further low against Nov17 SMA200 ~$670.71, $670 band bottom; Nov18 -2% day alert ~$659.73 vs Nov17 close. Repeated band status alone not a new entry alert.",
+    "QQQM Nov17 EOD $270.42 below confirmed third band $280-285; track independent product-price entry/re-entry, not extra correlated index-drop alert.",
+    "Verify Nov18 14:00 EST Fed Oct27-28 FOMC minutes and market response; Nov17 16:20 EST NVIDIA Q3 results officially issued, call at 17:00 ET; next regular-session prices may incorporate results. Check VIX/VXN, market breadth, yields/credit on actual dated sources, no realtime implication from daily data."
   ],
-  "last_report_prepared_utc": "2026-11-17T19:34:35Z",
-  "last_report_kind": "2026-11-17_1430_missing_collection_updates_data_limit",
+  "last_report_prepared_utc": "2026-11-17T22:35:43.517Z",
+  "last_report_kind": "2026-11-17_1730_eod_post_collection_recovery",
   "last_report_condition_ids": [
-    "DATA:STALE_GENERATION",
-    "DATA:STALE_5M_BAR",
-    "OPS:NO_1035_TO_1335_COLLECTION_RUNS"
+    "OPS:EOD_COLLECTION_RECOVERED",
+    "VOO:BAND:SECOND:EOD_CONFIRMED",
+    "QQQ:DRAWDOWN:-10:PERSISTENT"
   ],
-  "last_end_of_day_review_session": "2026-11-16",
+  "last_end_of_day_review_session": "2026-11-17",
   "rearm_status": "not_implemented_no_continuous_detector",
   "notification_delivery_status": "unverified",
   "low_frequency_cache": {
@@ -1652,138 +1653,138 @@
       ],
       "interpretation": "Secondary-source observation reached user watch threshold under25; not a buy signal, ETF quote is stale, CNN includes volatility so not double-count with VIX/VXN",
       "refresh_condition": "Next independently verified original CNN release or comparable same-source prior session and price stabilization"
+    },
+    "CNN_FEAR_GREED_LATEST_SECONDARY": {
+      "score": 25,
+      "band": "공포 (25~44); 25 is not below 25",
+      "session_date": "2026-11-17",
+      "provider_factor_timestamp_et": "2026-11-17 16:03 EST (factor time, NOT CNN headline release)",
+      "sources": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment"
+      ],
+      "site_comparison_disagreement": "fgscore 1 day ago=25; gurutrack prev close=31; original CNN change and comparable 5-session history unverified",
+      "cnn_original_verified": false,
+      "last_checked_at_utc": "2026-11-17T22:35:43.517Z",
+      "refresh_condition": "verified original CNN publication or aligned historical daily comparison"
+    },
+    "US_EOD_BREADTH_20261117": {
+      "value": "AP: four of five S&P 500 stocks declined Nov17; this is not % above moving averages",
+      "source_url": "https://apnews.com/article/4d5a35288288389d894e63e6bebe8240",
+      "observed_session": "2026-11-17",
+      "checked_at_utc": "2026-11-17T22:35:43.517Z",
+      "refresh_condition": "new official breadth data or new trading day"
+    },
+    "US_YIELDS_LATEST_OFFICIAL": {
+      "last_official_date": "2026-11-16",
+      "nominal_10y_pct": 5.12,
+      "real_10y_pct": 2.92,
+      "source_url": "https://www.federalreserve.gov/releases/h15/",
+      "publication_date": "2026-11-17",
+      "not_live": true,
+      "checked_at_utc": "2026-11-17T22:35:43.517Z",
+      "refresh_condition": "next H15/FRED observation for Nov17"
+    },
+    "NVDA_EARNINGS_20261117": {
+      "event_date": "2026-11-17",
+      "event": "FY2027 Q3 results announced after regular-session close; revenue 115.8bn USD, Q4 guidance 130bn USD +/-3%",
+      "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
+      "checked_at_utc": "2026-11-17T22:35:43.517Z",
+      "refresh_condition": "future earnings/guidance or materially new official disclosure"
+    },
+    "FOMC_MINUTES_NEXT": {
+      "event_date_et": "2026-11-18 14:00 EST",
+      "event": "Fed release of October 27-28 FOMC meeting minutes",
+      "source_url": "https://www.federalreserve.gov/newsevents/2026-November.htm",
+      "checked_at_utc": "2026-11-17T22:35:43.517Z",
+      "refresh_condition": "after scheduled publication"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-17T20:32:43.052Z",
-  "last_check_prepared_utc": "2026-11-17T20:32:43.052Z",
-  "last_check_kind": "us_regular_1530_data_limited",
+  "last_evaluation_utc": "2026-11-17T22:35:43.517Z",
+  "last_check_prepared_utc": "2026-11-17T22:35:43.517Z",
+  "last_check_kind": "2026-11-17_1730_eod_post_collection_recovery",
   "last_check_condition_ids": [
-    "DATA:STALE_GENERATION",
-    "DATA:STALE_5M_BAR",
-    "OPS:NO_NEW_COLLECTION_AFTER_1022_ET"
+    "OPS:EOD_COLLECTION_RECOVERED",
+    "VOO:BAND:SECOND:EOD_CONFIRMED",
+    "QQQ:DRAWDOWN:-10:PERSISTENT"
   ],
-  "last_notification_decision": "skip_notification_no_new_market_or_operational_event",
-  "last_price_source": "Yahoo Finance via GitHub yfinance, sampled 5min close, may be unfinished",
+  "last_notification_decision": "report_warranted: EOD data collection recovery after multiple missed intraday observations and VOO second band close confirmation",
+  "last_price_source": "GitHub market_monitor_starter/docs/data/latest.json (Yahoo Finance via yfinance; provider daily closes not exchange-certified)",
   "last_external_end_of_day": {
-    "session_date": "2026-11-16",
-    "generated_utc": "2026-11-16T22:21:10.783648+00:00",
+    "session": "2026-11-17",
+    "generated_utc": "2026-11-17T22:26:23.397309+00:00",
     "mode": "end_of_day",
-    "daily_close_confirmed": true,
-    "exchange_certified": false,
-    "price_by_symbol": {
-      "QQQ": 661.75,
-      "QQQM": 272.489990234375,
-      "VOO": 680.260009765625
+    "daily_close_by_symbol": {
+      "QQQ": 656.9500122070312,
+      "QQQM": 270.4200134277344,
+      "VOO": 673.1900024414062
     },
-    "price_changes": {
-      "QQQ": {
-        "daily_pct": -2.6680807568290943,
-        "drawdown_pct": -12.888657637079836
-      },
-      "QQQM": {
-        "daily_pct": -2.671718739048601,
-        "drawdown_pct": -12.875693270833255
-      },
-      "VOO": {
-        "daily_pct": -1.8921796164867666,
-        "drawdown_pct": -5.018151609723387
-      }
-    },
-    "new_crossings": [],
-    "recovered_conditions": [
-      "VOO:daily:-2",
-      "VOO:band:second"
-    ],
-    "collector_comparison_kind": "sampled_change",
-    "latest_file_sha": "66b056a3872f8ab68cd7ee85fb58e806b4b29a8b",
-    "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json"
+    "reference_date": "2026-11-16",
+    "checked_at_utc": "2026-11-17T22:35:43.517Z"
   },
   "last_data_quality_observation": {
-    "observed_at_utc": "2026-11-17T20:32:43.052Z",
+    "checked_at_utc": "2026-11-17T22:35:43.517Z",
+    "collector_run_id": 44190005060,
+    "collector_run_created_utc": "2026-11-17T22:26:02Z",
+    "collect_conclusion": "success",
+    "deploy_conclusion": "success",
+    "data_generated_utc": "2026-11-17T22:26:23.397309+00:00",
+    "data_mode": "end_of_day",
     "market_session": "2026-11-17",
-    "mode": "regular_session",
-    "config_revision": "2026-10-19.1",
-    "config_match": true,
-    "generated_utc": "2026-11-17T15:23:08.441338+00:00",
-    "generated_minutes": 309.58,
-    "bar_minutes_by_symbol": {
-      "QQQ": 312.72,
-      "QQQM": 312.72,
-      "VOO": 312.72
-    },
-    "reference_daily_as_of": [
-      "2026-11-16",
-      "2026-11-16",
-      "2026-11-16"
-    ],
     "reference_fixed_before_open": false,
-    "valid": false,
-    "source_blob_sha": "fe8210afb79f13ac2602a35cd7ebd0c332ff392b",
-    "warning": "No new ETF price observations; both freshness criteria violated. Old collect/deploy success not equivalent to up-to-date latest.json; newest workflow run is 10:22 ET."
+    "reference_session": "2026-11-16",
+    "status": "fresh_2026-11-17_eod_provider_daily_close",
+    "exchange_certified": false,
+    "late_reference_init": true,
+    "duplicate_old_snapshot": false
   },
-  "last_check_report_decision": "no_update_duplicate_data_limitation_suppressed",
-  "last_assessment_nominal_et": "2026-11-17 15:30 EST",
-  "last_assessment_prepared_utc": "2026-11-17T20:32:43.052Z",
-  "last_assessment_kind": "data_limit_unresolved_prior_reported",
+  "last_check_report_decision": "notify_meaningful_eod_recovery",
+  "last_assessment_nominal_et": "2026-11-17 17:30 EST",
+  "last_assessment_prepared_utc": "2026-11-17T22:35:43.517Z",
+  "last_assessment_kind": "2026-11-17_1730_eod_post_collection_recovery",
   "last_assessment_condition_ids": [
-    "DATA:STALE_GENERATION",
-    "DATA:STALE_5M_BAR",
-    "OPS:NO_NEW_COLLECTION_AFTER_1022_ET"
+    "OPS:EOD_COLLECTION_RECOVERED",
+    "VOO:BAND:SECOND:EOD_CONFIRMED",
+    "QQQ:DRAWDOWN:-10:PERSISTENT"
   ],
-  "last_check_report_decision_reason": "Same stale 10:23 ET snapshot and previously reported GitHub collection gap; no new verified price event or distinct operating-status change. CNN secondary 25 remained in Fear from previous assessment; no new verified headline.",
-  "last_check_attempt_utc": "2026-11-17T20:32:43.052Z",
-  "last_check_nominal_et": "2026-11-17 15:30 EST",
-  "last_check_data_status": "stale_310min_generation_313min_5m_bar; no newer workflow run after 10:22 EST; no new market signal",
-  "last_evaluation_prepared_utc": "2026-11-17T20:32:43.052Z",
-  "last_evaluation_kind": "us_regular_1530_data_limit_duplicate_suppressed",
+  "last_check_report_decision_reason": "New post-close daily records and verified collect/deploy success after all-day gap. Existing VOO second band confirmed on closing price; not a fresh daily drop or automatic buy signal.",
+  "last_check_attempt_utc": "2026-11-17T22:35:43.517Z",
+  "last_check_nominal_et": "2026-11-17 17:30 EST",
+  "last_check_data_status": "valid_eod_post_close_provider_daily_close_2026-11-17",
+  "last_evaluation_prepared_utc": "2026-11-17T22:35:43.517Z",
+  "last_evaluation_kind": "2026-11-17_1730_eod_post_collection_recovery",
   "last_evaluation_condition_ids": [
-    "DATA:STALE_GENERATION",
-    "DATA:STALE_5M_BAR",
-    "OPS:NO_NEW_COLLECTION_AFTER_1022_ET"
+    "OPS:EOD_COLLECTION_RECOVERED",
+    "VOO:BAND:SECOND:EOD_CONFIRMED",
+    "QQQ:DRAWDOWN:-10:PERSISTENT"
   ],
-  "last_check_completed_utc": "2026-11-17T20:32:43.052Z",
-  "last_assessment_snapshot_generated_utc": "2026-11-17T15:23:08.441338+00:00",
+  "last_check_completed_utc": "2026-11-17T22:35:43.517Z",
+  "last_assessment_snapshot_generated_utc": "2026-11-17T22:26:23.397309+00:00",
   "last_stale_snapshot_observed": {
-    "at_utc": "2026-11-17T20:32:43.052Z",
-    "nominal_et": "2026-11-17 15:30 EST",
-    "snapshot_generated_utc": "2026-11-17T15:23:08.441338+00:00",
-    "last_bar_et": "2026-11-17 10:20 EST",
-    "generation_age_minutes": 309.58,
-    "bar_age_minutes": 312.72,
-    "latest_file_sha": "fe8210afb79f13ac2602a35cd7ebd0c332ff392b",
-    "github_last_published_run": 44113653384,
-    "github_last_run_created_utc": "2026-11-17T15:22:50Z",
-    "observed_missing_nominal_collection_hours_et": [
-      "10:35",
-      "11:35",
-      "12:35",
-      "13:35",
-      "14:35"
-    ],
-    "reason": "GitHub Actions recent runs collection contains no new run after 10:22 ET; collection schedule cause not established."
+    "previous_intraday_generated_utc": "2026-11-17T15:23:08.441338+00:00",
+    "recovered_eod_generated_utc": "2026-11-17T22:26:23.397309+00:00",
+    "previous_intraday_staleness_not_retroactively_filled": true
   },
   "last_end_of_day_data_quality": {
-    "checked_at_utc": "2026-11-16T22:31:07.250Z",
-    "generated_utc": "2026-11-16T22:21:10.783648+00:00",
-    "generated_age_minutes": 9.94,
+    "checked_at_utc": "2026-11-17T22:35:43.517Z",
+    "generated_utc": "2026-11-17T22:26:23.397309+00:00",
     "mode": "end_of_day",
-    "market_session": "2026-11-16",
+    "market_session": "2026-11-17",
     "close_session_date_by_symbol": {
-      "QQQ": "2026-11-16",
-      "QQQM": "2026-11-16",
-      "VOO": "2026-11-16"
+      "QQQ": "2026-11-17",
+      "QQQM": "2026-11-17",
+      "VOO": "2026-11-17"
     },
-    "reference_session": "2026-11-13",
+    "reference_session": "2026-11-16",
     "reference_fixed_before_open": false,
-    "reference_fixed_at_utc": "2026-11-16T15:58:36.717988+00:00",
     "verified_regular_session_false_is_normal_for_eod": true,
-    "provider_daily_close_as_of": "2026-11-16",
+    "provider_daily_close_as_of": "2026-11-17",
     "last_5m_bar_not_used": true,
     "late_reference_init": true,
     "exchange_certified": false,
     "delivery_status": "unverified",
     "revision": "2026-10-19.1"
   },
-  "last_data_update_verified_at_this_check": false
+  "last_data_update_verified_at_this_check": true
 }
