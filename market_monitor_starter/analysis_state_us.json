@@ -1,36 +1,33 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-16T22:21:10.783648+00:00",
-  "last_reference_session": "2026-11-13",
+  "last_valid_snapshot_generated_utc": "2026-11-17T15:23:08.441338+00:00",
+  "last_reference_session": "2026-11-16",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 661.75,
-    "QQQM": 272.489990234375,
-    "VOO": 680.260009765625
+    "QQQ": 659.1001,
+    "QQQM": 271.41,
+    "VOO": 677.16
   },
   "last_active_conditions": [
-    "QQQ:daily:-2",
     "QQQ:high252:-10",
     "QQQM:below:first",
     "QQQM:below:second",
     "QQQM:below:third",
-    "VOO:below:first"
+    "VOO:below:first",
+    "VOO:band:second"
   ],
-  "current_judgment": "2026-11-16 17:30 EST end_of_day review: provider 2026-11-16 daily Close QQQ $661.75 (-2.67% vs Nov13; drawdown -12.89%), QQQM $272.49 (-2.67%; below accepted third $280-285 band), VOO $680.26 (-1.89%; drawdown -5.02%). VOO at 15:20 ET had $679.455 inside accepted 2nd $670-680 band and -2.0083%, but EOD provider Close $680.26 is $0.26 above band and about $0.75 above -2% reference $679.51. EOD sampled recovery of two prior alert conditions; no claim of continuous 15-minute recovery/rearm. QQQ remains under prior completed weekly EMA50 $671.7261 and updated daily SMA200 $681.4106, and has NOT met -3% at EOD (ref trigger $659.49), while high252 -10% continues. QQQ current week EMA50 $671.3349 and RSI14 42.115 are provisional, not completed weekly confirmation. VOO above updated daily SMA200 $670.5127 but lower than prior close and not stabilized. External Reuters/AP Nov16 Nasdaq -2.47%, S&P500 -1.89%, semiconductor selling broad; dates not synced quote. Third-party secondary CNN-FG both show 30 Fear Nov16, fgscore component time 15:59 ET, original headline publish time inaccessible, and previous score conflicts between sites (fgscore 30, GuruTrack 39), so day-over-day and 5-session comparable original direction unverified; below-25 plan review threshold NOT satisfied. Nov16 VIX exchange-certified closing and VXN absent, Cboe 10:16 AM snapshot 20.03 is stale; Yahoo VIX historical 23.82 as of 14:37 CST/15:37 ET is not exchange-certified closing. Real yield latest verified Nov13 2.91%; Nov16 10y nominal secondary AP 5.13%, real Nov16 unverified. Preplanned conditional entry review remains while prices low, stabilization-based additions remain deferred, especially pending Nov17 Nvidia results, Nov17 BLS import/export indexes and Nov18 FOMC minutes. No allocation, continuous detector, or automatic trades.",
+  "current_judgment": "Nov17 10:30 EST scheduled check, valid regular_session generated 2026-11-17T10:23:08.441338-05:00, 2026-11-17T10:20:00-05:00 5m opening bar may be incomplete: QQQ $659.1001 (-0.40% vs Nov16 EOD $661.75, -13.24% from Oct6 high; below completed weekly EMA50 671.7261 and daily SMA200 681.4106; no new -2% daily since reference reset), QQQM $271.41 (-0.40%, below preconfirmed third band $280-285), VOO $677.16 (-0.46%, -5.45% from high) entered established second watch band $670-680 after Nov16 provider close $680.26 outside band. This is new observed band re-entry at a 5m sampled price, NOT daily close, exact crossing time or a buy order. VOO SMA200 ~670.51 remains below current sampled price by $6.65. CNN primary blocked; 11/17 third parties disagree 31 (fgscore factor 08:55 EST) vs 33 (GuruTrack published daily), previous comparable and 5-session primary scores not independently verified; both Fear 25-44 and not <25. Nov16 official 10Y nominal 5.12% and real 2.92% are previous-day daily data; VIX 11/17 ~23.07 at 09:31 EST on third-party YCharts, VXN comparable now unverified. BLS Oct import price +1.1% MoM (8:30 EST Nov17), Reuters says consensus 0.7%; Nvidia earnings scheduled ~16:20 EST and 17:00 EST webcast today, FOMC Oct minutes Nov18 14:00 EST. Direct current breadth and elapsed-time matched volume unverified. Preplanned conditional buy review only; stabilization-confirmed additional purchase deferred until price support and risk context improve. No budget/share allocation, no automatic trades, no continuous rearm detector.",
   "next_conditions": [
-    "Next US regular session Nov17 10:30 EST / Nov18 00:30 KST: current regular_session data generated <=75m, own 5-minute bar <=45m, reference Nov16 official prior session; confirm QQQ daily -2/-3 thresholds using Nov16 close as newly reset baseline, and separate price crossings vs changing reference.",
-    "QQQ daily SMA200 (~681.41) recovery and prior completed weekly EMA50 (~671.73) reclaim, or new day low; provisional weekly EMA50 (~671.33) is NOT a confirmed weekly close. QQQM own third band $280-285 reentry or continuing below.",
-    "VOO renewed inside $670-680 band or drop below $670.51 recent daily SMA200, with valid bars; Nov16 EOD $680.26 no longer in band, daily -2% condition recovered by snapshot, 15-minute continuous rearm not verified.",
-    "Track Nov17 08:30 ET BLS import/export prices; Nov17 ~16:20 ET NVIDIA fiscal 2027 Q3 results (5pm ET webcast); Nov18 14:00 ET FOMC minutes; CNN primary history/timestamp and official close VIX/VXN when verified."
+    "11/17 11:30 EST valid regular_session quote: VOO maintain/re-enter $670-680 or leave above $680, or break $670.51 daily SMA200; distinguish sampled bar from 11/17 daily close",
+    "QQQ $671.73 prior confirmed weekly EMA50 reclaim or sustained weakening; daily -2% Nov16 close reference trigger $648.515, daily -3% $641.8975; drawdown -15% near $645.71; check as separate events",
+    "QQQM move back inside $280-285 from below or further decline; don't double count Nasdaq100 movement",
+    "CNN newly verified comparable scores with date/time; Nvidia 11/17 after-close results; Nov18 FOMC minutes and macro calendar; official VIX/VXN if available"
   ],
-  "last_report_prepared_utc": "2026-11-16T22:31:07.250Z",
-  "last_report_kind": "2026-11-16_1730_eod_voo_close_outside_second_band_and_minus2_recovered",
+  "last_report_prepared_utc": "2026-11-17T15:30:54.081Z",
+  "last_report_kind": "2026-11-17_1030_voo_second_band_reentry",
   "last_report_condition_ids": [
-    "VOO:daily:-2:sample_recovered",
-    "VOO:band:second:sample_recovered",
-    "QQQ:daily:-2:continues",
-    "QQQ:below_completed_weekly_ema50:daily_close"
+    "VOO:band:second:new_session_reentry"
   ],
   "last_end_of_day_review_session": "2026-11-16",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -1547,18 +1544,51 @@
       ],
       "checked_at_utc": "2026-11-16T22:31:07.250Z",
       "refresh_condition": "new authoritative postclose figures or scheduled official releases"
+    },
+    "US_2026_NOV17_1030_MACRO_RISK": {
+      "checked_at_utc": "2026-11-17T15:30:54.081Z",
+      "nominal_10y_last_2026_11_16_pct": 5.12,
+      "real_10y_last_2026_11_16_pct": 2.92,
+      "official_nominal_source": "https://home.treasury.gov/",
+      "official_real_source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202611&type=daily_treasury_real_yield_curve",
+      "bls_import_oct2026_pct": 1.1,
+      "bls_export_oct2026_pct": 1.1,
+      "bls_release_et": "2026-11-17 08:30 EST",
+      "bls_source": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm",
+      "nvidia_results_et": "2026-11-17 ~16:20 EST",
+      "nvidia_call_et": "2026-11-17 17:00 EST",
+      "nvidia_source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/",
+      "fomc_minutes_et": "2026-11-18 14:00 EST",
+      "fed_source": "https://www.federalreserve.gov/newsevents/2026-November.htm",
+      "next_refresh": "newly published official market-day values or company results"
+    },
+    "CNN_NOV17_1030_SECONDARY": {
+      "checked_at_utc": "2026-11-17T15:30:54.081Z",
+      "cnn_primary_access": "blocked",
+      "first_score": 31,
+      "first_band": "Fear",
+      "first_factor_market_as_of_et": "2026-11-17 08:55 EST",
+      "first_source": "https://fgscore.com/en/markets/sp500",
+      "second_score": 33,
+      "second_band": "Fear",
+      "second_source": "https://gurutrack.ai/en/sentiment",
+      "second_updated": "2026-11-17 daily, exact time unverified",
+      "comparable_prior_close": "unverified",
+      "comparable_5day": "unverified",
+      "direction": "unverified; do not treat as confirmed improvement",
+      "refresh_condition": "verified original or aligned same-provider historical score"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-16T22:31:07.250Z",
-  "last_check_prepared_utc": "2026-11-16T22:31:07.250Z",
-  "last_check_kind": "end_of_day_valid_provider_daily_close_recovery_two_sample_conditions",
+  "last_evaluation_utc": "2026-11-17T15:30:54.081Z",
+  "last_check_prepared_utc": "2026-11-17T15:30:54.081Z",
+  "last_check_kind": "regular_session",
   "last_check_condition_ids": [
     "VOO:daily:-2:sample_recovered",
     "VOO:band:second:sample_recovered"
   ],
-  "last_notification_decision": "notify",
-  "last_price_source": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
+  "last_notification_decision": "report_prepared_delivery_unverified",
+  "last_price_source": "Yahoo Finance via GitHub yfinance, sampled 5min close, may be unfinished",
   "last_external_end_of_day": {
     "session_date": "2026-11-16",
     "generated_utc": "2026-11-16T22:21:10.783648+00:00",
@@ -1594,47 +1624,49 @@
     "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json"
   },
   "last_data_quality_observation": {
-    "observed_at_utc": "2026-11-16T17:34:12Z",
-    "nominal_check_et": "2026-11-16 12:30 EST",
-    "source_generated_et": "2026-11-16T11:21:43.781473-05:00",
-    "source_blob_sha": "e241cbe0074943de90812219537d6dbd10b6dc2a",
-    "source_age_minutes": 72.47,
-    "last_bar_ages_minutes": {
-      "QQQ": 74.2,
-      "QQQM": 74.2,
-      "VOO": 74.2
-    },
-    "data_stale_because_bar_gt45min": true,
-    "generated_age_le75min": true,
-    "market_date": "2026-11-16",
-    "reference_as_of_session": "2026-11-13",
-    "late_reference_init": true,
-    "collector_run_verified_at_1121": true,
-    "collector_latest_data_refreshed_at_1121": true,
-    "no_1230_fresh_sample": true,
-    "delivery_status": "unverified",
-    "config_revision": "2026-10-19.1"
+    "observed_at_utc": "2026-11-17T15:30:54.081Z",
+    "mode": "regular_session",
+    "market_session": "2026-11-17",
+    "refdays": [
+      "2026-11-16",
+      "2026-11-16",
+      "2026-11-16"
+    ],
+    "config_match": true,
+    "generated_minutes": 7.760666666666666,
+    "oldest_bar_minutes": 10.90135,
+    "corporate_guard": false,
+    "valid": true,
+    "warning": "reference_fixed_before_open=false, initial reference set 10:23 EST; valid as_of 11/16; condition initialization may miss crossings before this snapshot"
   },
-  "last_check_report_decision": "report_material_eod_reversal_prior_voo_conditions",
-  "last_assessment_nominal_et": "2026-11-16 17:30 EST",
-  "last_assessment_prepared_utc": "2026-11-16T22:31:07.250Z",
-  "last_assessment_kind": "2026-11-16_1730_eod_voo_close_outside_second_band_and_minus2_recovered",
+  "last_check_report_decision": "notify",
+  "last_assessment_nominal_et": "2026-11-17 10:30 EST",
+  "last_assessment_prepared_utc": "2026-11-17T15:30:54.081Z",
+  "last_assessment_kind": "2026-11-17_1030_voo_reentry",
   "last_assessment_condition_ids": [
-    "VOO:daily:-2:sample_recovered",
-    "VOO:band:second:sample_recovered"
+    "QQQ:high252:-10",
+    "QQQM:below:first",
+    "QQQM:below:second",
+    "QQQM:below:third",
+    "VOO:below:first",
+    "VOO:band:second"
   ],
-  "last_check_report_decision_reason": "Both Nov16 15:20 ET VOO -2% and $670-680 band entry conditions were no longer true at Nov16 EOD; important prior alert status correction, despite overall bearish market. QQQ -2% and 252-day -10% remain active. All provider data may revise.",
-  "last_check_attempt_utc": "2026-11-16T22:31:07.250Z",
-  "last_check_nominal_et": "2026-11-16 17:30 EST",
-  "last_check_data_status": "valid_end_of_day_provider_daily_bars_nov16_unofficial_revision_possible",
-  "last_evaluation_prepared_utc": "2026-11-16T22:31:07.250Z",
-  "last_evaluation_kind": "provider_eod_close_recovery_sample",
+  "last_check_report_decision_reason": "VOO newly reentered finalized $670-$680 watch band on regular-session observation compared with prior EOD outside.",
+  "last_check_attempt_utc": "2026-11-17T15:30:54.081Z",
+  "last_check_nominal_et": "2026-11-17 10:30 EST",
+  "last_check_data_status": "valid: generated and bar are fresh; regular-session verified, daily_reference as_of 2026-11-16 fixed late at 10:23 EST (not fixed preopen); day boundary NOT a fresh -2% crossing",
+  "last_evaluation_prepared_utc": "2026-11-17T15:30:54.081Z",
+  "last_evaluation_kind": "2026-11-17_1030_regular_us",
   "last_evaluation_condition_ids": [
-    "VOO:daily:-2:sample_recovered",
-    "VOO:band:second:sample_recovered"
+    "QQQ:high252:-10",
+    "QQQM:below:first",
+    "QQQM:below:second",
+    "QQQM:below:third",
+    "VOO:below:first",
+    "VOO:band:second"
   ],
-  "last_check_completed_utc": "2026-11-16T22:31:07.250Z",
-  "last_assessment_snapshot_generated_utc": "2026-11-16T22:21:10.783648+00:00",
+  "last_check_completed_utc": "2026-11-17T15:30:54.081Z",
+  "last_assessment_snapshot_generated_utc": "2026-11-17T15:23:08.441338+00:00",
   "last_stale_snapshot_observed": {
     "generated_utc": "2026-11-16T17:41:20.397718+00:00",
     "last_bar_start_utc": "2026-11-16T17:40:00+00:00",
