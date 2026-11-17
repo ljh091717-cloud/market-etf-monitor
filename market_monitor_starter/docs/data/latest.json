@@ -1,18 +1,18 @@
 {
   "schema_version": 2,
   "source": "Yahoo Finance via yfinance; unofficial",
-  "mode": "regular_session",
+  "mode": "end_of_day",
   "config_revision": "2026-10-19.1",
-  "generated_utc": "2026-11-17T15:23:08.441338+00:00",
-  "generated_kst": "2026-11-18T00:23:08.441338+09:00",
-  "generated_new_york": "2026-11-17T10:23:08.441338-05:00",
+  "generated_utc": "2026-11-17T22:26:23.397309+00:00",
+  "generated_kst": "2026-11-18T07:26:23.397309+09:00",
+  "generated_new_york": "2026-11-17T17:26:23.397309-05:00",
   "reference_session_date": "2026-11-17",
   "reference_fixed_at_utc": "2026-11-17T15:23:08.441338+00:00",
   "reference_fixed_before_open": false,
-  "verified_regular_session": true,
+  "verified_regular_session": false,
   "market": {
     "ny_date": "2026-11-17",
-    "is_open_at_collection": true,
+    "is_open_at_collection": false,
     "ny_open": "2026-11-17T09:30:00-05:00",
     "ny_close": "2026-11-17T16:00:00-05:00",
     "last_session_of_week_closed": false
@@ -21,10 +21,10 @@
     "QQQ": {
       "symbol": "QQQ",
       "currency": "USD",
-      "last_price": 659.1001,
-      "last_5m_bar_start_utc": "2026-11-17T15:20:00+00:00",
-      "last_5m_bar_start_ny": "2026-11-17T10:20:00-05:00",
-      "data_age_minutes": 3.14,
+      "last_price": 656.9500122070312,
+      "last_5m_bar_start_utc": null,
+      "last_5m_bar_start_ny": null,
+      "data_age_minutes": null,
       "regular_session_only": true,
       "weekly_indicators": {
         "last_completed_week": {
@@ -37,20 +37,20 @@
           "sample_weeks": 1445
         },
         "current_week_provisional": {
-          "ema_20": 698.6579,
-          "ema_50": 671.2309,
-          "ema_100": 617.2156,
-          "ema_200": 534.2258,
-          "rsi_14": 41.628,
-          "sample_weeks": 1446,
-          "week_in_progress": 47
+          "ema_20": 698.4531,
+          "ema_50": 671.1466,
+          "ema_100": 617.173,
+          "ema_200": 534.2044,
+          "rsi_14": 41.241,
+          "sample_weeks": 1446
         },
         "provisional_price_to_ema_gap_pct": {
-          "ema_20_gap_pct": -5.662,
-          "ema_50_gap_pct": -1.807,
-          "ema_100_gap_pct": 6.786,
-          "ema_200_gap_pct": 23.375
-        }
+          "ema_20_gap_pct": -5.94214383084114,
+          "ema_50_gap_pct": -2.115273740933621,
+          "ema_100_gap_pct": 6.445034408023553,
+          "ema_200_gap_pct": 22.97727465498811
+        },
+        "week_closed_in_this_snapshot": false
       },
       "price_source_url": "https://finance.yahoo.com/quote/QQQ/history/",
       "daily_reference": {
@@ -64,10 +64,22 @@
         "adjustment": "Adj Close factor applied to OHLC, normalized to last completed raw Close",
         "source": "Yahoo Finance via yfinance; daily observations may be revised"
       },
-      "price_status": "regular-session 5m bar Close, may be delayed or still forming",
+      "price_status": "post-close provider daily bar; not exchange-certified and may be revised",
+      "close_session_date": "2026-11-17",
+      "daily_close_indicators": {
+        "as_of_session": "2026-11-17",
+        "last_close": 656.9500122070312,
+        "sma_50": 715.3762036132813,
+        "sma_200": 681.5753045654296,
+        "atr_14": 16.57077813094277,
+        "highest_close_252": 759.6599731445312,
+        "highest_close_252_date": "2026-10-06",
+        "adjustment": "Adj Close factor applied to OHLC, normalized to last completed raw Close",
+        "source": "Yahoo Finance via yfinance; daily observations may be revised"
+      },
       "event_evaluation": {
-        "previous_close_change_pct": -0.40043823196070916,
-        "high252_drawdown_pct": -13.237484756275153,
+        "previous_close_change_pct": -0.7253476075509968,
+        "high252_drawdown_pct": -13.520517674814837,
         "mechanical_action_guard": false,
         "corporate_actions": {
           "complete": true,
@@ -90,10 +102,10 @@
     "QQQM": {
       "symbol": "QQQM",
       "currency": "USD",
-      "last_price": 271.41,
-      "last_5m_bar_start_utc": "2026-11-17T15:20:00+00:00",
-      "last_5m_bar_start_ny": "2026-11-17T10:20:00-05:00",
-      "data_age_minutes": 3.14,
+      "last_price": 270.4200134277344,
+      "last_5m_bar_start_utc": null,
+      "last_5m_bar_start_ny": null,
+      "data_age_minutes": null,
       "regular_session_only": true,
       "weekly_indicators": {
         "last_completed_week": {
@@ -106,20 +118,20 @@
           "sample_weeks": 318
         },
         "current_week_provisional": {
-          "ema_20": 287.682,
-          "ema_50": 276.3705,
-          "ema_100": 254.2067,
-          "ema_200": 220.4819,
-          "rsi_14": 41.621,
-          "sample_weeks": 319,
-          "week_in_progress": 47
+          "ema_20": 287.5877,
+          "ema_50": 276.3317,
+          "ema_100": 254.1871,
+          "ema_200": 220.472,
+          "rsi_14": 41.189,
+          "sample_weeks": 319
         },
         "provisional_price_to_ema_gap_pct": {
-          "ema_20_gap_pct": -5.656,
-          "ema_50_gap_pct": -1.795,
-          "ema_100_gap_pct": 6.767,
-          "ema_200_gap_pct": 23.099
-        }
+          "ema_20_gap_pct": -5.969548270759006,
+          "ema_50_gap_pct": -2.139344335907045,
+          "ema_100_gap_pct": 6.386206628005264,
+          "ema_200_gap_pct": 22.655037114796595
+        },
+        "week_closed_in_this_snapshot": false
       },
       "buy_watch": {
         "price_band_status": {
@@ -157,10 +169,22 @@
         "adjustment": "Adj Close factor applied to OHLC, normalized to last completed raw Close",
         "source": "Yahoo Finance via yfinance; daily observations may be revised"
       },
-      "price_status": "regular-session 5m bar Close, may be delayed or still forming",
+      "price_status": "post-close provider daily bar; not exchange-certified and may be revised",
+      "close_session_date": "2026-11-17",
+      "daily_close_indicators": {
+        "as_of_session": "2026-11-17",
+        "last_close": 270.4200134277344,
+        "sma_50": 294.5693505859375,
+        "sma_200": 280.61890861511233,
+        "atr_14": 6.758285114057985,
+        "highest_close_252": 312.760009765625,
+        "highest_close_252_date": "2026-10-06",
+        "adjustment": "Adj Close factor applied to OHLC, normalized to last completed raw Close",
+        "source": "Yahoo Finance via yfinance; daily observations may be revised"
+      },
       "event_evaluation": {
-        "previous_close_change_pct": -0.39634125035054035,
-        "high252_drawdown_pct": -13.221002837482864,
+        "previous_close_change_pct": -0.7596524205752297,
+        "high252_drawdown_pct": -13.537535175810756,
         "mechanical_action_guard": false,
         "corporate_actions": {
           "complete": true,
@@ -182,10 +206,10 @@
     "VOO": {
       "symbol": "VOO",
       "currency": "USD",
-      "last_price": 677.16,
-      "last_5m_bar_start_utc": "2026-11-17T15:20:00+00:00",
-      "last_5m_bar_start_ny": "2026-11-17T10:20:00-05:00",
-      "data_age_minutes": 3.14,
+      "last_price": 673.1900024414062,
+      "last_5m_bar_start_utc": null,
+      "last_5m_bar_start_ny": null,
+      "data_age_minutes": null,
       "regular_session_only": true,
       "weekly_indicators": {
         "last_completed_week": {
@@ -198,20 +222,20 @@
           "sample_weeks": 845
         },
         "current_week_provisional": {
-          "ema_20": 691.4974,
-          "ema_50": 666.454,
-          "ema_100": 622.4851,
-          "ema_200": 553.5193,
-          "rsi_14": 46.159,
-          "sample_weeks": 846,
-          "week_in_progress": 47
+          "ema_20": 691.1193,
+          "ema_50": 666.2984,
+          "ema_100": 622.4065,
+          "ema_200": 553.4798,
+          "rsi_14": 44.836,
+          "sample_weeks": 846
         },
         "provisional_price_to_ema_gap_pct": {
-          "ema_20_gap_pct": -2.073,
-          "ema_50_gap_pct": 1.606,
-          "ema_100_gap_pct": 8.783,
-          "ema_200_gap_pct": 22.337
-        }
+          "ema_20_gap_pct": -2.594240612090226,
+          "ema_50_gap_pct": 1.0343117200050767,
+          "ema_100_gap_pct": 8.159217881144599,
+          "ema_200_gap_pct": 21.628648857899833
+        },
+        "week_closed_in_this_snapshot": false
       },
       "buy_watch": {
         "price_band_status": {
@@ -249,10 +273,22 @@
         "adjustment": "Adj Close factor applied to OHLC, normalized to last completed raw Close",
         "source": "Yahoo Finance via yfinance; daily observations may be revised"
       },
-      "price_status": "regular-session 5m bar Close, may be delayed or still forming",
+      "price_status": "post-close provider daily bar; not exchange-certified and may be revised",
+      "close_session_date": "2026-11-17",
+      "daily_close_indicators": {
+        "as_of_session": "2026-11-17",
+        "last_close": 673.1900024414062,
+        "sma_50": 701.2516357421875,
+        "sma_200": 670.7077682495117,
+        "atr_14": 10.341882319223206,
+        "highest_close_252": 716.2000122070312,
+        "highest_close_252_date": "2026-10-06",
+        "adjustment": "Adj Close factor applied to OHLC, normalized to last completed raw Close",
+        "source": "Yahoo Finance via yfinance; daily observations may be revised"
+      },
       "event_evaluation": {
-        "previous_close_change_pct": -0.4557095406347744,
-        "high252_drawdown_pct": -5.450992954709144,
+        "previous_close_change_pct": -1.0393095614505743,
+        "high252_drawdown_pct": -6.0053070416860255,
         "mechanical_action_guard": false,
         "corporate_actions": {
           "complete": true,
@@ -286,7 +322,8 @@
     "Weekly EMA/RSI use provider split-adjusted, non-dividend-adjusted closes; daily baselines use recorded adjusted prices"
   ],
   "comparison": {
-    "kind": "late_reference_initialization_not_a_new_price_event",
+    "kind": "sampled_change",
+    "previous_generated_utc": "2026-11-17T15:23:08.441338+00:00",
     "active_conditions": [
       "QQQ:high252:-10",
       "QQQM:below:first",
@@ -296,6 +333,7 @@
       "VOO:band:second"
     ],
     "new_crossings": [],
-    "recovered_conditions": []
+    "recovered_conditions": [],
+    "recovery_confirmation": "sample only; 15-minute continuous hold NOT verified"
   }
 }
