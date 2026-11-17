@@ -17,16 +17,18 @@
     "VOO:below:first",
     "VOO:band:second"
   ],
-  "current_judgment": "Nov17 11:30 EST DATA LIMITATION. Github snapshot remains generated 10:23:08 EST, bar from 10:20 EST. Do not treat its prices QQQ 659.1001 QQQM 271.41 VOO 677.16 as 11:30 prices. Prior 10:30 judgment preserved: VOO 2nd band was re-entered in earlier sample; QQQ long-term support under pressure, stabilization buy deferred; no new signal verified.",
+  "current_judgment": "Nov17 12:30 EST: DATA INSUFFICIENT for fresh ETF buy/drop assessment. GitHub latest snapshot 10:23:08 EST / 10:20 5m bar is outside 75m/45m validity. Last VALID 10:30 observation (QQQ 659.10, QQQM 271.41, VOO 677.16) is historical only; maintain VOO 2nd band watch and QQQ weak weekly EMA50 position, no stabilized buy. NEW secondary-source CNN Fear & Greed 24 (two sources agree, CNN original publication unverified) meets <25 review interest only, not purchase trigger. AP late morning index selloff unsynchronized with ETF sample. No automatic trade.",
   "next_conditions": [
-    "11/17 12:30 EST: require new regular_session generated within 75 min and every price bar within 45 min, today's date and Nov16 reference verified",
-    "Valid updated QQQ monitor $648.52 daily -2% from Nov16 close $661.75 and $671.73 completed weekly EMA50 reclaim; VOO $670-680 band and SMA200 $670.51; QQQM $280-285 reentry",
-    "17:30 EST end_of_day: provider daily closing bar, do not use 15:55 5m as close; distinguish daily and provisional weekly",
-    "CNN original comparable score/time and price stability, Nvidia earnings after market, FOMC minutes Nov18 14:00 EST"
+    "2026-11-17 13:30 EST: Verify new regular_session, today's NY trading date, revision match, generated <=75m and each last_5m_bar_start <=45m; stale data stays non-actionable",
+    "If valid: VOO 670-680 second band, $670.51 previous daily SMA200; QQQ $648.52 daily -2% from Nov16 $661.75 plus confirmed prior weekly EMA50 $671.73; QQQM $280-285 return, distinguish intraday and daily close",
+    "CNN original/consistent-source timestamped <=25, plus ETF low stability and market breadth/rate/credit conditions; worsening ETF low overrides contrarian sentiment",
+    "2026-11-17 17:30 EST: verify provider end_of_day daily Close; do not use last 5-min bar; weekly remains provisional; Nvidia after-hours earnings, Nov18 FOMC minutes"
   ],
-  "last_report_prepared_utc": "2026-11-17T16:31:22.591Z",
-  "last_report_kind": "2026-11-17_1130_data_limitation",
+  "last_report_prepared_utc": "2026-11-17T17:30:49.532Z",
+  "last_report_kind": "2026-11-17_1230_secondary_extreme_fear_data_limit",
   "last_report_condition_ids": [
+    "CNN:SECONDARY_UNDER25",
+    "DATA:STALE_GENERATION",
     "DATA:STALE_5M_BAR"
   ],
   "last_end_of_day_review_session": "2026-11-16",
@@ -1593,14 +1595,35 @@
       "checked_at_utc": "2026-11-17T16:31:22.591Z",
       "refresh_condition": "Original CNN publication or consistent comparable time-series update",
       "overlap_with_vix": true
+    },
+    "CNN_NOV17_1230_SECONDARY_EXTREME_FEAR": {
+      "checked_at_utc": "2026-11-17T17:30:49.532Z",
+      "score_secondary_1": 24,
+      "score_secondary_2": 24,
+      "stage": "Extreme Fear (under 25)",
+      "market_factor_timestamp_et": "2026-11-17 11:10 EST (fgscore; NOT CNN headline publication)",
+      "gurutrack_period": "2026-11-17; updated daily; exact publication time unverified",
+      "cnn_original_verified": false,
+      "cnn_headline_publication_time": "unverified",
+      "day_comparison": "unverified: fgscore lists 1 day ago 24, GuruTrack prev close 31; incompatible reference times",
+      "recent_5_comparable_sessions": "unverified; fgscore lists 1 week ago 37; not five-session dataset",
+      "source_urls": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment",
+        "https://www.cnn.com/markets/fear-and-greed"
+      ],
+      "interpretation": "Secondary-source observation reached user watch threshold under25; not a buy signal, ETF quote is stale, CNN includes volatility so not double-count with VIX/VXN",
+      "refresh_condition": "Next independently verified original CNN release or comparable same-source prior session and price stabilization"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-17T16:31:22.591Z",
-  "last_check_prepared_utc": "2026-11-17T16:31:22.591Z",
+  "last_evaluation_utc": "2026-11-17T17:30:49.532Z",
+  "last_check_prepared_utc": "2026-11-17T17:30:49.532Z",
   "last_check_kind": "regular_session",
   "last_check_condition_ids": [
-    "DATA:STALE_5M_BAR"
+    "DATA:STALE_GENERATION",
+    "DATA:STALE_5M_BAR",
+    "CNN:SECONDARY_UNDER25"
   ],
   "last_notification_decision": "report_prepared_delivery_unverified",
   "last_price_source": "Yahoo Finance via GitHub yfinance, sampled 5min close, may be unfinished",
@@ -1639,17 +1662,17 @@
     "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json"
   },
   "last_data_quality_observation": {
-    "observed_at_utc": "2026-11-17T16:31:22.591Z",
-    "mode": "regular_session",
+    "observed_at_utc": "2026-11-17T17:30:49.532Z",
     "market_session": "2026-11-17",
-    "config_match": true,
+    "mode": "regular_session",
     "config_revision": "2026-10-19.1",
+    "config_match": true,
     "generated_utc": "2026-11-17T15:23:08.441338+00:00",
-    "generated_minutes": 68.24,
+    "generated_minutes": 127.68,
     "bar_minutes_by_symbol": {
-      "QQQ": 71.38,
-      "QQQM": 71.38,
-      "VOO": 71.38
+      "QQQ": 130.83,
+      "QQQM": 130.83,
+      "VOO": 130.83
     },
     "reference_daily_as_of": [
       "2026-11-16",
@@ -1659,24 +1682,21 @@
     "reference_fixed_before_open": false,
     "corporate_guard": false,
     "valid": false,
-    "warning": "Market latest.json did not advance since the 10:30 ET analysis; bar age exceeds the 45-minute constraint; job execution status not individually verified"
+    "warning": "Latest file unchanged since 10:30 EST; 75-minute generation and 45-minute 5m-bar limits failed. Latest GitHub workflow success at 10:23 ET but no subsequent latest.json file refresh seen; do not claim a new collect/deploy success."
   },
-  "last_check_report_decision": "notify_data_limit",
-  "last_assessment_nominal_et": "2026-11-17 11:30 EST",
-  "last_assessment_prepared_utc": "2026-11-17T16:31:22.591Z",
-  "last_assessment_kind": "2026-11-17_1130_regular_us",
+  "last_check_report_decision": "notify_new_sentiment_threshold_with_data_limitation",
+  "last_assessment_nominal_et": "2026-11-17 12:30 EST",
+  "last_assessment_prepared_utc": "2026-11-17T17:30:49.532Z",
+  "last_assessment_kind": "2026-11-17_1230_regular_us",
   "last_assessment_condition_ids": [
-    "QQQ:high252:-10",
-    "QQQM:below:first",
-    "QQQM:below:second",
-    "QQQM:below:third",
-    "VOO:below:first",
-    "VOO:band:second"
+    "DATA:STALE_GENERATION",
+    "DATA:STALE_5M_BAR",
+    "CNN:SECONDARY_UNDER25"
   ],
-  "last_check_report_decision_reason": "Latest GitHub snapshot is from 10:23 EST, 10:20 5m bar too old for 11:30 EST; no current market-price event can be determined",
-  "last_check_attempt_utc": "2026-11-17T16:31:22.591Z",
-  "last_check_nominal_et": "2026-11-17 11:30 EST",
-  "last_check_data_status": "stale_price_bar_over_45min_not_usable_as_1130_price",
+  "last_check_report_decision_reason": "Two CNN secondary sources now display 24 (<25) on Nov17; original exact update not verified; GitHub snapshot stale and unchanged since prior run; cannot confirm any ETF condition crossing.",
+  "last_check_attempt_utc": "2026-11-17T17:30:49.532Z",
+  "last_check_nominal_et": "2026-11-17 12:30 EST",
+  "last_check_data_status": "stale_generation_over75min_and_price_bars_over45min",
   "last_evaluation_prepared_utc": "2026-11-17T16:31:22.591Z",
   "last_evaluation_kind": "2026-11-17_1030_regular_us",
   "last_evaluation_condition_ids": [
@@ -1687,23 +1707,23 @@
     "VOO:below:first",
     "VOO:band:second"
   ],
-  "last_check_completed_utc": "2026-11-17T16:31:22.591Z",
+  "last_check_completed_utc": "2026-11-17T17:30:49.532Z",
   "last_assessment_snapshot_generated_utc": "2026-11-17T15:23:08.441338+00:00",
   "last_stale_snapshot_observed": {
     "generated_utc": "2026-11-17T15:23:08.441338+00:00",
     "last_bar_start_utc": "2026-11-17T15:20:00+00:00",
-    "checked_at_utc": "2026-11-17T16:31:22.591Z",
-    "generated_age_minutes": 68.24,
-    "bar_age_minutes": 71.38,
+    "checked_at_utc": "2026-11-17T17:30:49.532Z",
+    "generated_age_minutes": 127.68,
+    "bar_age_minutes": 130.83,
     "source": "market_monitor_starter/docs/data/latest.json",
     "price_by_symbol": {
       "QQQ": 659.1001,
       "QQQM": 271.41,
       "VOO": 677.16
     },
-    "valid_for_1130_signal": false,
+    "valid_for_1230_signal": false,
     "not_new_price_event": true,
-    "individual_job_status": "not verified"
+    "individual_job_status": "last run 44113653384 succeeded 10:23 ET; no new updated collector snapshot since then"
   },
   "last_end_of_day_data_quality": {
     "checked_at_utc": "2026-11-16T22:31:07.250Z",
