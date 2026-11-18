@@ -1745,16 +1745,33 @@
       "checked_utc": "2026-11-18T15:30:59.476Z",
       "refresh_condition": "verified original publication/score or comparable same-source history; changed investment decision with fresh ETF price",
       "overlap_vix": true
+    },
+    "CNN_NOV18_1230_SECONDARY_INCONSISTENT": {
+      "checked_at_utc": "2026-11-18T17:33:55.273Z",
+      "date": "2026-11-18",
+      "fgscore_score": 25,
+      "gurutrack_score": 26,
+      "fgscore_factor_asof_et": "2026-11-18 11:20 EST (component timestamp, not headline release)",
+      "cnn_primary_verified": false,
+      "previous_comparable_day_change": "unverified",
+      "five_comparable_sessions": "unverified",
+      "stage": "Fear (25-44) under user convention; not below25 confirmed",
+      "sources": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment"
+      ],
+      "refresh_condition": "new original CNN publication or aligned comparable trading-day values and confirmed ETF price change",
+      "overlap_vix": true
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-18T16:31:04.478Z",
-  "last_check_prepared_utc": "2026-11-18T16:31:04.478Z",
+  "last_evaluation_utc": "2026-11-18T17:33:55.273Z",
+  "last_check_prepared_utc": "2026-11-18T17:33:55.273Z",
   "last_check_kind": "regular_session_data_limit",
   "last_check_condition_ids": [
-    "OPS:NO_NOV18_COLLECTOR_RUN_AND_STALE_20261117_EOD"
+    "OPS:STALE_NOV17_EOD_NO_NOV18_REGULAR_DATA"
   ],
-  "last_notification_decision": "notify: repeated Nov18 intraday data absence plus verified lack of Nov18 scheduled Actions execution; no market price signal",
+  "last_notification_decision": "skip: no new independently verified market/operational condition",
   "last_price_source": "GitHub market_monitor_starter/docs/data/latest.json (Yahoo Finance via yfinance; provider daily closes not exchange-certified)",
   "last_external_end_of_day": {
     "session": "2026-11-17",
@@ -1768,35 +1785,35 @@
     "reference_date": "2026-11-16",
     "checked_at_utc": "2026-11-17T22:35:43.517Z"
   },
-  "last_data_quality_observation": "2026-11-18 11:30 EST: latest.json still Nov17 17:26 EST end_of_day, ~18h04m old; no 11/18 intraday 5m bars. GitHub API latest run Nov17 18:04 EST after hours had save skipped and deploy skipped; no Nov18 run recorded by 11:30 ET, despite workflow cron 08:35/09:35/10:35. Scheduler omission or delay suspected, precise cause unknown. No new price/volatility/ETF signal valid.",
-  "last_check_report_decision": "notify_data_limit_new_operational_evidence",
-  "last_assessment_nominal_et": "2026-11-18T11:30:00-05:00",
-  "last_assessment_prepared_utc": "2026-11-18T16:31:04.478Z",
-  "last_assessment_kind": "2026-11-18_1130_data_limit_no_github_run",
+  "last_data_quality_observation": "2026-11-18 12:30 EST: latest.json remains Nov17 17:26 EST end_of_day (about 19h04m old); not Nov18 regular_session, no Nov18 5-minute price bars. Prior observed Actions omissions remain an unresolved possibility, not independently rechecked in this run.",
+  "last_check_report_decision": "skip_notification_repeated_data_limit",
+  "last_assessment_nominal_et": "2026-11-18T12:30:00-05:00",
+  "last_assessment_prepared_utc": "2026-11-18T17:33:55.273Z",
+  "last_assessment_kind": "2026-11-18_1230_stale_prior_eod_duplicate_data_limit",
   "last_assessment_condition_ids": [
-    "OPS:NO_NOV18_COLLECTOR_RUN_AND_STALE_20261117_EOD"
+    "OPS:STALE_NOV17_EOD_NO_NOV18_REGULAR_DATA"
   ],
-  "last_check_report_decision_reason": "GitHub Actions latest run Nov17 18:04 EST, despite Nov18 08:35/09:35/10:35 ET schedules specified in workflow; no Nov18 run listed by GitHub API at 11:30 ET. Previous run marked success but collect saving and deploy skipped. Nov17 EOD price cannot be used as Nov18 regular-session quote. CNN secondary current 26 Fear but primary/time-aligned prior not verified.",
-  "last_check_attempt_utc": "2026-11-18T16:31:04.478Z",
-  "last_check_nominal_et": "2026-11-18T11:30:00-05:00",
-  "last_check_data_status": "invalid_for_Nov18_regular_session: 2026-11-17 end_of_day; no Nov18 Actions schedule run as of check",
-  "last_evaluation_prepared_utc": "2026-11-18T16:31:04.478Z",
+  "last_check_report_decision_reason": "At 12:30 EST latest.json still Nov17 17:26 EST end_of_day (~19h04m old), not today's regular_session; no new valid ETF price, band crossing, drop or stability evidence. No independent Nov18 GitHub Actions run listing available in this check. Secondary CNN-linked snapshots disagree (25 vs 26) so no new confirmed original CNN change. Repeated operational issue previously notified; no distinct new development.",
+  "last_check_attempt_utc": "2026-11-18T17:33:55.273Z",
+  "last_check_nominal_et": "2026-11-18T12:30:00-05:00",
+  "last_check_data_status": "invalid_for_Nov18_regular_session: Nov17 end_of_day only; no Nov18 5min bars; run execution status not independently checked this run",
+  "last_evaluation_prepared_utc": "2026-11-18T17:33:55.273Z",
   "last_evaluation_kind": "regular_session_data_limit",
   "last_evaluation_condition_ids": [
-    "OPS:NO_NOV18_COLLECTOR_RUN_AND_STALE_20261117_EOD"
+    "OPS:STALE_NOV17_EOD_NO_NOV18_REGULAR_DATA"
   ],
-  "last_check_completed_utc": "2026-11-18T16:31:04.478Z",
+  "last_check_completed_utc": "2026-11-18T17:33:55.273Z",
   "last_assessment_snapshot_generated_utc": "2026-11-17T22:26:23.397309+00:00",
   "last_stale_snapshot_observed": {
-    "nominal_et": "2026-11-18T11:30:00-05:00",
-    "checked_utc": "2026-11-18T16:31:04.478Z",
+    "nominal_et": "2026-11-18T12:30:00-05:00",
+    "checked_utc": "2026-11-18T17:33:55.273Z",
     "source_generated_utc": "2026-11-17T22:26:23.397309+00:00",
     "mode": "end_of_day",
     "market_ny_date": "2026-11-17",
     "expected_ny_date": "2026-11-18",
-    "source_status": "stale prior-session provider EOD, NOT today's regular-session observation",
-    "bar_age": "N/A; end_of_day data has no intraday 5m bars",
-    "reason": "No new GitHub Actions runs for Nov18 in first 3 configured collector slots as of 11:30 ET; cannot validate price events"
+    "source_status": "stale prior session EOD; NOT today's regular-session quote",
+    "bar_age": "N/A; EOD no 5m bars",
+    "reason": "No new valid price snapshot; same data gap as previous check; latest Actions run status not independently verified in this run"
   },
   "last_end_of_day_data_quality": {
     "checked_at_utc": "2026-11-17T22:35:43.517Z",
@@ -1818,5 +1835,10 @@
     "delivery_status": "unverified",
     "revision": "2026-10-19.1"
   },
-  "last_data_update_verified_at_this_check": false
+  "last_data_update_verified_at_this_check": false,
+  "last_check_report_prepared_utc": "2026-11-18T17:33:55.273Z",
+  "last_check_report_kind": "regular_session_data_limit",
+  "last_check_report_condition_ids": [
+    "OPS:STALE_NOV17_EOD_NO_NOV18_REGULAR_DATA"
+  ]
 }
