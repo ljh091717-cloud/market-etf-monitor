@@ -19,18 +19,16 @@
   ],
   "current_judgment": "2026-11-17 17:30 EST EOD: Data collection resumed at 17:26 EST; mode=end_of_day; all Nov17 provider daily closes verified by session date, not exchange-certified. QQQ $656.95 (-0.73% vs Nov16, -13.52% vs Oct06 252d close), below prior completed-week EMA50 $671.73, daily SMA200 $681.58; QQQM $270.42 (-0.76%) below confirmed third $280-285 zone; VOO $673.19 (-1.04%), EOD confirmed inside second $670-680 zone, above daily SMA200 $670.71 by $2.48. New daily -2% alert none; preexisting QQQ -10% drawdown persists. After extended intraday data outage, EOD restores verifiable close but does not establish intraday stability. CNN-linked secondary sites 25 Fear as of Nov17 (factor latest 16:03 ET) and prior-day comparators conflict; original headline time/5-session comparable trend unverified. Risk remains elevated; scheduled plan-type band evaluation only, stability-confirmation type no new buys; no automatic orders.",
   "next_conditions": [
-    "2026-11-18 10:30 EST next regular-session check: require fresh 2026-11-18 regular_session, generation <=75m and each price bar <=45m; confirm 11/17 as prior completed daily baseline; do not use Nov17 EOD as Nov18 intraday price.",
-    "QQQ next-session -2% threshold ~$643.81 from Nov17 $656.95; assess $671.73 previous completed-week EMA50 recovery separately from daily SMA200 ~$681.58. Weekly Nov16-20 is provisional.",
-    "VOO Nov17 EOD $673.19 inside confirmed $670-680 second zone; watch further low against Nov17 SMA200 ~$670.71, $670 band bottom; Nov18 -2% day alert ~$659.73 vs Nov17 close. Repeated band status alone not a new entry alert.",
-    "QQQM Nov17 EOD $270.42 below confirmed third band $280-285; track independent product-price entry/re-entry, not extra correlated index-drop alert.",
-    "Verify Nov18 14:00 EST Fed Oct27-28 FOMC minutes and market response; Nov17 16:20 EST NVIDIA Q3 results officially issued, call at 17:00 ET; next regular-session prices may incorporate results. Check VIX/VXN, market breadth, yields/credit on actual dated sources, no realtime implication from daily data."
+    "2026-11-18 11:30 EST: require Nov18 regular_session latest.json, generated <=75 min, each 5m bar <=45 min, correct 11/17 daily_reference, and corporate action guard false before any new signal; if still stale report data limit",
+    "QQQ: new daily -2% alert ~$643.81 relative to Nov17 provider close $656.95; previous completed-week EMA50 $671.73 (weekly provisional only during current week).",
+    "VOO: Nov17 historical close $673.19 inside 670-680; confirm Nov18 fresh price relative to 670 and Nov17 daily SMA200 $670.71; -2% ~$659.73 vs Nov17 close; do not count previous band as new crossing.",
+    "QQQM: own price status vs confirmed third 280-285; Nov17 historical close $270.42 below band; avoid counting correlated QQQ index decline separately.",
+    "Nov18 14:00 EST Federal Reserve release of Oct27-28 FOMC minutes; assess after actual publication, not in advance."
   ],
-  "last_report_prepared_utc": "2026-11-17T22:35:43.517Z",
-  "last_report_kind": "2026-11-17_1730_eod_post_collection_recovery",
+  "last_report_prepared_utc": "2026-11-18T15:30:59.476Z",
+  "last_report_kind": "2026-11-18_1030_regular_data_limit",
   "last_report_condition_ids": [
-    "OPS:EOD_COLLECTION_RECOVERED",
-    "VOO:BAND:SECOND:EOD_CONFIRMED",
-    "QQQ:DRAWDOWN:-10:PERSISTENT"
+    "OPS:STALE_LATEST_PREVIOUS_US_SESSION:2026-11-18_1030"
   ],
   "last_end_of_day_review_session": "2026-11-17",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -1698,18 +1696,36 @@
       "source_url": "https://www.federalreserve.gov/newsevents/2026-November.htm",
       "checked_at_utc": "2026-11-17T22:35:43.517Z",
       "refresh_condition": "after scheduled publication"
+    },
+    "CNN_NOV18_1030_SECONDARY": {
+      "score_fgscore": 26,
+      "score_gurutrack": 26,
+      "classification": "Fear (25-44)",
+      "date": "2026-11-18",
+      "fgscore_latest_component_time_et": "2026-11-18 09:05 EST, factor time not original CNN headline publish time",
+      "gurutrack_previous_close": 25,
+      "fgscore_previous_day": 26,
+      "direction": "not confirmed because previous comparison differs across providers",
+      "cnn_original_publication_verified": false,
+      "verified_comparable_5_session_history": false,
+      "source_urls": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment",
+        "https://www.cnn.com/markets/fear-and-greed"
+      ],
+      "checked_utc": "2026-11-18T15:30:59.476Z",
+      "refresh_condition": "verified original publication/score or comparable same-source history; changed investment decision with fresh ETF price",
+      "overlap_vix": true
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-17T22:35:43.517Z",
-  "last_check_prepared_utc": "2026-11-17T22:35:43.517Z",
-  "last_check_kind": "2026-11-17_1730_eod_post_collection_recovery",
+  "last_evaluation_utc": "2026-11-18T15:30:59.476Z",
+  "last_check_prepared_utc": "2026-11-18T15:30:59.476Z",
+  "last_check_kind": "regular_session_data_limit",
   "last_check_condition_ids": [
-    "OPS:EOD_COLLECTION_RECOVERED",
-    "VOO:BAND:SECOND:EOD_CONFIRMED",
-    "QQQ:DRAWDOWN:-10:PERSISTENT"
+    "OPS:STALE_LATEST_PREVIOUS_US_SESSION:2026-11-18_1030"
   ],
-  "last_notification_decision": "report_warranted: EOD data collection recovery after multiple missed intraday observations and VOO second band close confirmation",
+  "last_notification_decision": "notify: new trading-day opening check lacks a valid Nov18 intraday collector snapshot",
   "last_price_source": "GitHub market_monitor_starter/docs/data/latest.json (Yahoo Finance via yfinance; provider daily closes not exchange-certified)",
   "last_external_end_of_day": {
     "session": "2026-11-17",
@@ -1723,48 +1739,35 @@
     "reference_date": "2026-11-16",
     "checked_at_utc": "2026-11-17T22:35:43.517Z"
   },
-  "last_data_quality_observation": {
-    "checked_at_utc": "2026-11-17T22:35:43.517Z",
-    "collector_run_id": 44190005060,
-    "collector_run_created_utc": "2026-11-17T22:26:02Z",
-    "collect_conclusion": "success",
-    "deploy_conclusion": "success",
-    "data_generated_utc": "2026-11-17T22:26:23.397309+00:00",
-    "data_mode": "end_of_day",
-    "market_session": "2026-11-17",
-    "reference_fixed_before_open": false,
-    "reference_session": "2026-11-16",
-    "status": "fresh_2026-11-17_eod_provider_daily_close",
-    "exchange_certified": false,
-    "late_reference_init": true,
-    "duplicate_old_snapshot": false
-  },
-  "last_check_report_decision": "notify_meaningful_eod_recovery",
-  "last_assessment_nominal_et": "2026-11-17 17:30 EST",
-  "last_assessment_prepared_utc": "2026-11-17T22:35:43.517Z",
-  "last_assessment_kind": "2026-11-17_1730_eod_post_collection_recovery",
+  "last_data_quality_observation": "2026-11-18 10:30 EST: GitHub latest.json and state_us.json unchanged since Nov17 17:26 EST EOD; Nov18 current regular_session not verified. Cannot check new price crossings nor intraday stabilization. Job success/skipped cannot be inferred from stale data; run status not verified. User's prior Nov17 close remains historical only.",
+  "last_check_report_decision": "notify_data_limit",
+  "last_assessment_nominal_et": "2026-11-18T10:30:00-05:00",
+  "last_assessment_prepared_utc": "2026-11-18T15:30:59.476Z",
+  "last_assessment_kind": "2026-11-18_1030_data_limit_stale_prior_eod",
   "last_assessment_condition_ids": [
-    "OPS:EOD_COLLECTION_RECOVERED",
-    "VOO:BAND:SECOND:EOD_CONFIRMED",
-    "QQQ:DRAWDOWN:-10:PERSISTENT"
+    "OPS:STALE_LATEST_PREVIOUS_US_SESSION:2026-11-18_1030"
   ],
-  "last_check_report_decision_reason": "New post-close daily records and verified collect/deploy success after all-day gap. Existing VOO second band confirmed on closing price; not a fresh daily drop or automatic buy signal.",
-  "last_check_attempt_utc": "2026-11-17T22:35:43.517Z",
-  "last_check_nominal_et": "2026-11-17 17:30 EST",
-  "last_check_data_status": "valid_eod_post_close_provider_daily_close_2026-11-17",
-  "last_evaluation_prepared_utc": "2026-11-17T22:35:43.517Z",
-  "last_evaluation_kind": "2026-11-17_1730_eod_post_collection_recovery",
+  "last_check_report_decision_reason": "New US trading session lacks valid regular-session data, despite previous EOD collection recovery; report limitation explicitly rather than pretend prior close is current. No price action claimed.",
+  "last_check_attempt_utc": "2026-11-18T15:30:59.476Z",
+  "last_check_nominal_et": "2026-11-18T10:30:00-05:00",
+  "last_check_data_status": "invalid_for_Nov18_regular_session: latest still Nov17 end_of_day",
+  "last_evaluation_prepared_utc": "2026-11-18T15:30:59.476Z",
+  "last_evaluation_kind": "regular_session_data_limit",
   "last_evaluation_condition_ids": [
-    "OPS:EOD_COLLECTION_RECOVERED",
-    "VOO:BAND:SECOND:EOD_CONFIRMED",
-    "QQQ:DRAWDOWN:-10:PERSISTENT"
+    "OPS:STALE_LATEST_PREVIOUS_US_SESSION:2026-11-18_1030"
   ],
-  "last_check_completed_utc": "2026-11-17T22:35:43.517Z",
+  "last_check_completed_utc": "2026-11-18T15:30:59.476Z",
   "last_assessment_snapshot_generated_utc": "2026-11-17T22:26:23.397309+00:00",
   "last_stale_snapshot_observed": {
-    "previous_intraday_generated_utc": "2026-11-17T15:23:08.441338+00:00",
-    "recovered_eod_generated_utc": "2026-11-17T22:26:23.397309+00:00",
-    "previous_intraday_staleness_not_retroactively_filled": true
+    "nominal_et": "2026-11-18T10:30:00-05:00",
+    "checked_utc": "2026-11-18T15:30:59.476Z",
+    "source_generated_utc": "2026-11-17T22:26:23.397309+00:00",
+    "mode": "end_of_day",
+    "market_ny_date": "2026-11-17",
+    "expected_ny_date": "2026-11-18",
+    "source_status": "not a Nov18 regular-session snapshot",
+    "bar_age": "not applicable: EOD has no 5m bars",
+    "reason": "Different US session date; neither time-valid intraday price nor a basis for new signal"
   },
   "last_end_of_day_data_quality": {
     "checked_at_utc": "2026-11-17T22:35:43.517Z",
@@ -1786,5 +1789,5 @@
     "delivery_status": "unverified",
     "revision": "2026-10-19.1"
   },
-  "last_data_update_verified_at_this_check": true
+  "last_data_update_verified_at_this_check": false
 }
