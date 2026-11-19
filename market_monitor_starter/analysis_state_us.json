@@ -17,19 +17,19 @@
     "VOO:below:first",
     "VOO:band:second"
   ],
-  "current_judgment": "2026-11-19 10:30 EST: Data insufficient for current ETF levels: GitHub latest.json remained 2026-11-18 16:31:32 EST end_of_day, not a Nov19 regular_session observation. No new independently verified price threshold or band crossing. External Reuters 09:56 EST reports Nasdaq tech-led rebound with mixed breadth, and third-party CNN US stock Fear & Greed=30, but this does not validate ETF prices or bottom/stabilization. Prior EOD VOO $671.31 close just above SMA200 $670.92; planned split-buy conditional watch only; confirmation buy on hold pending fresh ETF lows, support and market breadth. Do not issue orders or set quantity/budget.",
+  "current_judgment": "2026-11-19 12:30 EST: DATA LIMITED for ETF signal: main latest.json remains Nov18 16:31:32 EST end_of_day (no Nov19 5m bars). Do not treat Nov18 closes as current quotes. New significant broader-market risk context: Reuters Nov19 intraday account reports Nasdaq Composite -0.58%, S&P500 -0.77% after earlier Reuters 09:56 EST +1.46% and +0.76%; article's precise price observation timestamp not confirmed. Intraday index rally reversal is NOT independently verified QQQ/VOO threshold crossing. Existing Nov18 VOO EOD $671.31 was near SMA200 $670.92 and band $670-680; no Nov19 support holding/break or buy execution authorized. Plan-first entry conditional only, stabilization entry on hold until fresh ETF regular bars and breadth. CNN original unavailable; Nov19 third-party 25 vs27 inconsistent, no comparable headline publication time/trend. Risk context important, defer purchases/amounts without validated ETF prices; no orders.",
   "next_conditions": [
-    "Next supported regular observation 2026-11-19 12:30 EST / 2026-11-20 02:30 KST: confirm new GitHub main latest.json mode=regular_session market.ny_date=Nov19, snapshot age<=75m and every bar age<=45m; daily reference Nov18, verified before new drop comparisons.",
-    "QQQ 11/18 provider EOD $659.51; -2% $646.32, -3% $639.72. Need current valid 5m and explicit intraday vs day close; completed weekly EMA50 $671.73 (week of Nov9).",
-    "VOO 11/18 provider EOD $671.31, day SMA200 $670.92; check current 5m versus $670.92 and $670, plus close confirmation and next $645-655 band; don't infer fresh support break without valid data.",
-    "QQQM 11/18 EOD $271.58 below established $280-285 third band. New recovery to $280 must be verified on actual 11/19 bar; not separate QQQ independent event.",
-    "CNN Fear&Greed third-party sources 11/19 differ (FGScore 26 with factors 10:38 EST, GuruTrack 30 daily); original headline timestamp and comparable original prior-day/last-5-day scores not verified. Not a buy trigger; VIX overlaps."
+    "At 2026-11-19 13:30 EST / 2026-11-20 03:30 KST supported observation: fetch GitHub main docs/data/latest.json, require regular_session and market.ny_date=2026-11-19, generated age<=75m, each 5m start age<=45m, and Nov18 official prior-session daily_reference (no late-init misclassification).",
+    "Check QQQ Nov18 close $659.51 -> -2% $646.32, -3% $639.72, $671.73 last completed weekly EMA50 (week Nov09). Intraday bar/close distinction; no duplicate QQQM index signal.",
+    "VOO last Nov18 close $671.31; Nov18 daily SMA200 $670.92 and existing band $670-$680; need valid Nov19 bars to verify breach/recovery, then daily close; if sustained under $670 monitor previously confirmed next $645-$655 band, no synthetic price support.",
+    "QQQM prior Nov18 close $271.58 below confirmed third $280-$285 band; new rise above $280 cannot be asserted without same-session bar. Monitor CNN original release and aligned five-session history before fear-turning claims; VIX overlaps.",
+    "If GitHub Actions no new data, distinguish collection runs from actual latest update; independent collector job list unavailable this check. At Nov19 17:30 EST postclose verify provider Nov19 Close not 15:55 5m; weekly only final market session."
   ],
-  "last_report_prepared_utc": "2026-11-19T15:31:16.916Z",
-  "last_report_kind": "2026-11-19_1030_DATA_LIMITED_TECH_REBOUND_CONTEXT",
+  "last_report_prepared_utc": "2026-11-19T17:37:36.555Z",
+  "last_report_kind": "2026-11-19_1230_DATA_LIMITED_BROAD_INDEX_RALLY_REVERSAL",
   "last_report_condition_ids": [
     "DATA:20261119_REGULAR_SESSION_NOT_UPDATED",
-    "CONTEXT:TECH_RALLY_EXTERNAL_NOT_PRICE_CONFIRMATION"
+    "CONTEXT:20261119_REUTERS_INDEX_RALLY_REVERSAL"
   ],
   "last_end_of_day_review_session": "2026-11-18",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -1942,16 +1942,50 @@
       "checked_at_utc": "2026-11-19T16:32:00Z",
       "refresh_condition": "new original CNN publication or aligned same-source verified past readings; only include as material new signal when price/support context shifts",
       "overlap_with_VIX": true
+    },
+    "US_NOV19_1230_REUTERS_MARKET_REVERSAL": {
+      "as_of_market_date_et": "2026-11-19",
+      "retrieved_at_utc": "2026-11-19T17:37:36.555Z",
+      "earlier_reuters_time_et": "09:56 EST",
+      "earlier_nasdaq_composite_pct": 1.46,
+      "earlier_sp500_pct": 0.76,
+      "latest_reuters_nasdaq_composite_pct": -0.58,
+      "latest_reuters_sp500_pct": -0.77,
+      "latest_price_observation_time_et": "not published or independently verified; do not represent as exact 12:30 snapshot",
+      "source_url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/",
+      "type": "Reuters published intraday broad-index context, not validated ETF quote",
+      "refresh_condition": "new timestamped Reuters index update, validated current ETF data, or Nov19 daily close"
+    },
+    "CNN_NOV19_1230_SECONDARY": {
+      "fgscore": 25,
+      "gurutrack": 27,
+      "band": "Fear 25-44 (user agreed: below 25 Extreme Fear)",
+      "reference": "US stocks CNN Fear & Greed, not crypto",
+      "as_of_date": "2026-11-19",
+      "cnn_primary_verified": false,
+      "cnn_original_publication_et": "unverified (access restricted)",
+      "fgscore_site_previous_1day": 24,
+      "gurutrack_site_previous_close": 25,
+      "comparable_prior_us_trading_day_and_five_day_time_series": "unverified; providers conflict, differing method/time; no intraday trend claim",
+      "sources": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment",
+        "https://www.cnn.com/markets/fear-and-greed"
+      ],
+      "checked_at_utc": "2026-11-19T17:37:36.555Z",
+      "refresh_condition": "verified CNN primary/new comparable release; only new material inference if ETF price stabilization also confirmed",
+      "vix_overlap": true
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-19T15:31:16.916Z",
-  "last_check_prepared_utc": "2026-11-19T16:32:00Z",
-  "last_check_kind": "regular_session_stale",
+  "last_evaluation_utc": "2026-11-19T17:37:36.555Z",
+  "last_check_prepared_utc": "2026-11-19T17:37:36.555Z",
+  "last_check_kind": "regular_session_stale_external_market_reversal",
   "last_check_condition_ids": [
-    "DATA:20261119_REGULAR_SESSION_NOT_UPDATED"
+    "DATA:20261119_REGULAR_SESSION_NOT_UPDATED",
+    "CONTEXT:20261119_REUTERS_INDEX_RALLY_REVERSAL"
   ],
-  "last_notification_decision": "skip_notification: still prior-day EOD, no valid current-session ETF bar, no independently verified new threshold crossing; repeated data limitation from 10:30 check",
+  "last_notification_decision": "notify: material Reuters intraday broader-index reversal since 09:56 EST earlier snapshot, BUT ETF current data unavailable; no verified buy/sell threshold",
   "last_price_source": "GitHub market_monitor_starter/docs/data/latest.json (Yahoo Finance via yfinance; 2026-11-18 unofficial close, may be revised)",
   "last_external_end_of_day": {
     "session": "2026-11-18",
@@ -1965,18 +1999,19 @@
     "reference_date": "2026-11-17",
     "checked_at_utc": "2026-11-18T22:28:40.597Z"
   },
-  "last_data_quality_observation": "At Nov19 11:30 EST, main latest SHA dee07d81f82dd5e1d23e033ff6b9c4ca0e820ab9 unchanged from 10:30, generated Nov18 16:31:32 EST, stale by approx 19h; last session 2026-11-18, end_of_day, no Nov19 5m bars; daily_reference Nov17 relevant only to Nov18 EOD, not Nov19 intraday. Workflow-run statuses not checked.",
-  "last_check_report_decision": "notify_new_eod_and_support_risk",
-  "last_assessment_nominal_et": "2026-11-19T11:30:00-05:00",
-  "last_assessment_prepared_utc": "2026-11-19T16:32:00Z",
-  "last_assessment_kind": "2026-11-19_1130_DATA_LIMITED_NO_NEW_VERIFIED_PRICE_SIGNAL",
+  "last_data_quality_observation": "GitHub main latest.json SHA dee07d81f82dd5e1d23e033ff6b9c4ca0e820ab9 unchanged, end_of_day generated Nov18 2026 16:31:32 EST (about 20 hours stale as of nominal 12:30 ET; now a few minutes more); no Nov19 5min bars. Daily reference Nov17 belongs to old Nov18 EOD, invalid to compare with Nov19. GitHub Actions individual run status not verified.",
+  "last_check_report_decision": "notify_new_external_market_risk_despite_stale_etf_data",
+  "last_assessment_nominal_et": "2026-11-19T12:30:00-05:00",
+  "last_assessment_prepared_utc": "2026-11-19T17:37:36.555Z",
+  "last_assessment_kind": "2026-11-19_1230_DATA_LIMITED_BROAD_INDEX_RALLY_REVERSAL",
   "last_assessment_condition_ids": [
-    "DATA:20261119_REGULAR_SESSION_NOT_UPDATED"
+    "DATA:20261119_REGULAR_SESSION_NOT_UPDATED",
+    "CONTEXT:20261119_REUTERS_INDEX_RALLY_REVERSAL"
   ],
-  "last_check_report_decision_reason": "New provider EOD after intraday outage; VOO within prior band but next to 200d average, QQQ modest rebound and market split; no new registered price crossings and no confirmed new buy signal.",
-  "last_check_attempt_utc": "2026-11-19T16:32:00Z",
-  "last_check_nominal_et": "2026-11-19T11:30:00-05:00",
-  "last_check_data_status": "Stale Nov18 EOD: 2026-11-18T21:31:32.530106+00:00 (approx 1140min), no Nov19 regular_session or Nov19 5m bars; do not treat Nov18 closes as current market prices; GitHub Actions jobs not independently verified on this run",
+  "last_check_report_decision_reason": "Media-index rally reversed since morning; no valid ETF levels; prevent premature stabilization/buy conclusion.",
+  "last_check_attempt_utc": "2026-11-19T17:37:36.555Z",
+  "last_check_nominal_et": "2026-11-19T12:30:00-05:00",
+  "last_check_data_status": "GitHub main latest.json SHA dee07d81f82dd5e1d23e033ff6b9c4ca0e820ab9 unchanged, end_of_day generated Nov18 2026 16:31:32 EST (about 20 hours stale as of nominal 12:30 ET; now a few minutes more); no Nov19 5min bars. Daily reference Nov17 belongs to old Nov18 EOD, invalid to compare with Nov19. GitHub Actions individual run status not verified.",
   "last_evaluation_prepared_utc": "2026-11-18T22:28:40.597Z",
   "last_evaluation_kind": "end_of_day_market_reassessment",
   "last_evaluation_condition_ids": [
