@@ -19,12 +19,11 @@
   ],
   "current_judgment": "2026-11-19 10:30 EST: Data insufficient for current ETF levels: GitHub latest.json remained 2026-11-18 16:31:32 EST end_of_day, not a Nov19 regular_session observation. No new independently verified price threshold or band crossing. External Reuters 09:56 EST reports Nasdaq tech-led rebound with mixed breadth, and third-party CNN US stock Fear & Greed=30, but this does not validate ETF prices or bottom/stabilization. Prior EOD VOO $671.31 close just above SMA200 $670.92; planned split-buy conditional watch only; confirmation buy on hold pending fresh ETF lows, support and market breadth. Do not issue orders or set quantity/budget.",
   "next_conditions": [
-    "Next US scheduled observation 2026-11-19 11:30 EST / 2026-11-20 01:30 KST: verify GitHub latest.json market.ny_date=Nov19, mode=regular_session, generated age <=75m, EACH 5m bar start age <=45m, correct 2026-11-18 prior-day reference; if stale do not count any new crossings.",
-    "QQQ Nov18 provider close $659.51: daily -2% approximately $646.32, -3% approximately $639.72; Nov09 completed weekly EMA50 $671.73; distinguish live 5m sample from close and last completed week; corroborate new low/stabilization.",
-    "VOO Nov18 provider close $671.31, SMA200 $670.92, user second band $670-680 and lower confirmed band $645-655. Check recovery versus close below $670.92 / $670; daily -2% about $657.88.",
-    "QQQM Nov18 close $271.58, remains below user third band $280-285; consider return to $280 only with fresh quote; QQQ and QQQM not distinct independent index events.",
-    "CNN index 30/100 Fear as seen on Nov19 from fgscore/GuruTrack, factor observation 09:37 EST on fgscore; comparison to Nov18 closing 25 is cross-snapshot not proven comparable because fgscore '1 day ago'=30 whereas GuruTrack 'prev close'=25. No independent CNN original timestamp or 5-session comparable history. Track joint ETF support confirmation, not stand-alone signal.",
-    "After Nov19 published 08:30 EST jobless claims 203k and Philadelphia Fed November survey 6.3 (vs Oct 20.9), monitor market reaction and announced Fed speakers; daily bond yields and VIX/VXN cannot be represented as live unless separately verified."
+    "Next supported regular observation 2026-11-19 12:30 EST / 2026-11-20 02:30 KST: confirm new GitHub main latest.json mode=regular_session market.ny_date=Nov19, snapshot age<=75m and every bar age<=45m; daily reference Nov18, verified before new drop comparisons.",
+    "QQQ 11/18 provider EOD $659.51; -2% $646.32, -3% $639.72. Need current valid 5m and explicit intraday vs day close; completed weekly EMA50 $671.73 (week of Nov9).",
+    "VOO 11/18 provider EOD $671.31, day SMA200 $670.92; check current 5m versus $670.92 and $670, plus close confirmation and next $645-655 band; don't infer fresh support break without valid data.",
+    "QQQM 11/18 EOD $271.58 below established $280-285 third band. New recovery to $280 must be verified on actual 11/19 bar; not separate QQQ independent event.",
+    "CNN Fear&Greed third-party sources 11/19 differ (FGScore 26 with factors 10:38 EST, GuruTrack 30 daily); original headline timestamp and comparable original prior-day/last-5-day scores not verified. Not a buy trigger; VIX overlaps."
   ],
   "last_report_prepared_utc": "2026-11-19T15:31:16.916Z",
   "last_report_kind": "2026-11-19_1030_DATA_LIMITED_TECH_REBOUND_CONTEXT",
@@ -1924,17 +1923,35 @@
         "https://qz.com/us-jobless-claims-203000-second-week-above-200000-111926"
       ],
       "refresh_condition": "valid new intraday ETF price, new official macro release or next close; do not call 09:56 Reuters figures current at any later time"
+    },
+    "CNN_NOV19_1130_SECONDARY": {
+      "fgscore": 26,
+      "gurutrack": 30,
+      "classification": "Fear (25-44)",
+      "as_of": "2026-11-19",
+      "fgscore_market_factor_time_et": "2026-11-19 10:38 EST (not original CNN publication)",
+      "fgscore_site_prior": 26,
+      "gurutrack_prev_close": 25,
+      "cnn_original_verified": false,
+      "aligned_comparison_verified": false,
+      "five_session_history_verified": false,
+      "source_urls": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment"
+      ],
+      "checked_at_utc": "2026-11-19T16:32:00Z",
+      "refresh_condition": "new original CNN publication or aligned same-source verified past readings; only include as material new signal when price/support context shifts",
+      "overlap_with_VIX": true
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
   "last_evaluation_utc": "2026-11-19T15:31:16.916Z",
-  "last_check_prepared_utc": "2026-11-19T15:31:16.916Z",
+  "last_check_prepared_utc": "2026-11-19T16:32:00Z",
   "last_check_kind": "regular_session_stale",
   "last_check_condition_ids": [
-    "DATA:20261119_REGULAR_SESSION_NOT_UPDATED",
-    "CONTEXT:TECH_RALLY_EXTERNAL_NOT_PRICE_CONFIRMATION"
+    "DATA:20261119_REGULAR_SESSION_NOT_UPDATED"
   ],
-  "last_notification_decision": "notify_prepared: Nov19 first scheduled regular check has stale prior-day EOD and no current valid 5m; external verified tech-led opening recovery contextual but not confirmed ETF/price signal; delivery unverified",
+  "last_notification_decision": "skip_notification: still prior-day EOD, no valid current-session ETF bar, no independently verified new threshold crossing; repeated data limitation from 10:30 check",
   "last_price_source": "GitHub market_monitor_starter/docs/data/latest.json (Yahoo Finance via yfinance; 2026-11-18 unofficial close, may be revised)",
   "last_external_end_of_day": {
     "session": "2026-11-18",
@@ -1948,19 +1965,18 @@
     "reference_date": "2026-11-17",
     "checked_at_utc": "2026-11-18T22:28:40.597Z"
   },
-  "last_data_quality_observation": "At 2026-11-19 10:30 EST, GitHub latest blob dee07d81f82dd5e1d23e033ff6b9c4ca0e820ab9 remains 2026-11-18 end_of_day, generated 16:31:32 EST Nov18 (~1079 minutes old); reference Nov17 correct for Nov18 EOD but NOT Nov19 daily comparison. No valid 5m timestamps and individual GitHub workflow runs not fetched/verified; do not attribute root cause or claim successful collector run.",
+  "last_data_quality_observation": "At Nov19 11:30 EST, main latest SHA dee07d81f82dd5e1d23e033ff6b9c4ca0e820ab9 unchanged from 10:30, generated Nov18 16:31:32 EST, stale by approx 19h; last session 2026-11-18, end_of_day, no Nov19 5m bars; daily_reference Nov17 relevant only to Nov18 EOD, not Nov19 intraday. Workflow-run statuses not checked.",
   "last_check_report_decision": "notify_new_eod_and_support_risk",
-  "last_assessment_nominal_et": "2026-11-19T10:30:00-05:00",
-  "last_assessment_prepared_utc": "2026-11-19T15:31:16.916Z",
-  "last_assessment_kind": "2026-11-19_1030_DATA_LIMITED_TECH_REBOUND_CONTEXT",
+  "last_assessment_nominal_et": "2026-11-19T11:30:00-05:00",
+  "last_assessment_prepared_utc": "2026-11-19T16:32:00Z",
+  "last_assessment_kind": "2026-11-19_1130_DATA_LIMITED_NO_NEW_VERIFIED_PRICE_SIGNAL",
   "last_assessment_condition_ids": [
-    "DATA:20261119_REGULAR_SESSION_NOT_UPDATED",
-    "CONTEXT:TECH_RALLY_EXTERNAL_NOT_PRICE_CONFIRMATION"
+    "DATA:20261119_REGULAR_SESSION_NOT_UPDATED"
   ],
   "last_check_report_decision_reason": "New provider EOD after intraday outage; VOO within prior band but next to 200d average, QQQ modest rebound and market split; no new registered price crossings and no confirmed new buy signal.",
-  "last_check_attempt_utc": "2026-11-19T15:31:16.916Z",
-  "last_check_nominal_et": "2026-11-19T10:30:00-05:00",
-  "last_check_data_status": "Stale Nov18 EOD (GitHub generated 2026-11-18T21:31:32.530106+00:00), age 1079m, not a valid Nov19 regular_session observation, no Nov19 5m bars; external news does NOT substitute for collector data; GitHub Actions individual runs NOT independently verified on this check.",
+  "last_check_attempt_utc": "2026-11-19T16:32:00Z",
+  "last_check_nominal_et": "2026-11-19T11:30:00-05:00",
+  "last_check_data_status": "Stale Nov18 EOD: 2026-11-18T21:31:32.530106+00:00 (approx 1140min), no Nov19 regular_session or Nov19 5m bars; do not treat Nov18 closes as current market prices; GitHub Actions jobs not independently verified on this run",
   "last_evaluation_prepared_utc": "2026-11-18T22:28:40.597Z",
   "last_evaluation_kind": "end_of_day_market_reassessment",
   "last_evaluation_condition_ids": [
