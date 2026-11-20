@@ -19,14 +19,13 @@
     "VOO:below:first",
     "VOO:below:second"
   ],
-  "current_judgment": "2026-11-20 10:30 EST: DATA INSUFFICIENT for fresh ETF signal. Github latest.json retains 2026-11-19 end_of_day generated 16:44:09 EST previous day. QQQ $645.04 (-2.19% on Nov19, -15.09% vs 252-day high), QQQM $265.64 below final agreed $280-285 band, VOO $658.01 below 200-day SMA $671.08, $3.01 above $655 third band; all are prior-session EOD, not current. Official intraday 5m feed in repo missing; reference_us.json still Nov19 with Nov18 as reference, not valid for Friday baseline. Reuters Nov20 09:56 ET Nasdaq -0.51%, SPX +0.04%, semiconductor index -3.0%, 407 Nasdaq 52-week lows vs 9 highs; no QQQ/VOO equivalent change asserted. CNN equity Fear Greed two secondary sources FGScore 17 as of Nov20 UTC, market-factor 09:45 EST and GuruTrack 15 Nov20 daily, previous 19; original CNN release and comparable historical direction unverified, one only equals concentration threshold <=15. Stronger risk environment, no verified ETF stabilization. Plan-type monitor only; confirmation-type hold; no sizes or orders.",
+  "current_judgment": "2026-11-20 11:30 EST: DATA INSUFFICIENT; no Friday ETF intraday snapshot or validated new crossing; prior Nov19 -2.19% QQQ and -15.09% drawdown, QQQM 265.64 and VOO 658.01 are historical EOD. Risk remains elevated, but no verified new Friday ETF price decision. Advance-plan wait for validated fixed price band/limit, stabilization-confirm plan remain on hold. No quantity allocated. No automatic orders.",
   "next_conditions": [
-    "2026-11-20 11:30 EST / 2026-11-21 01:30 KST: retrieve GitHub regular_session snapshot (session Nov20) generated <75m before check, each 5m bar <45m; if no new collect or postmarket runs continue, report missing current prices, do not treat job success + skipped save/deploy as freshness.",
-    "Nov19 PROVIDER EOD reference prices are QQQ 645.04, VOO 658.01, QQQM 265.64. Friday initial -2% QQQ=632.14, -3%=625.69, -5%=612.79, VOO -2%=644.85 (same as VOO 645-655 price band range); only valid Nov20 market price can trigger. Avoid false crossing due to late reference and changing baseline.",
-    "VOO: watch entry into next fixed 645-655 band, confirm whether 655 holds / recovers and 670 regained, daily SMA200 about 671.08 as of Nov19; QQQ weekly EMA50 last completed week 671.73, RSI14 last completed 45.78, provisional Nov19 RSI39.22; no finalized Nov20 weekly indicators yet.",
-    "QQQM: below third fixed band 280-285 as of Nov19; do not invent fourth band or count correlated Nasdaq100 drop twice.",
-    "CNN: secondary scores 15 vs17 disagree Nov20, both extreme fear under25; one <=15 not confirmed by second or primary; verify later if a new original publication with matching timestamp becomes available, and distinguish from price stabilization. Ignore overlapping VIX risk as extra independent signal.",
-    "2026-11-20 17:30 EST Friday close: confirm end_of_day provided daily bar as of Nov20 and only then review QQQ CONFIRMED weekly EMA20/50/100/200 and RSI14. No separate weekly automation."
+    "2026-11-20 12:30 EST / 2026-11-21 02:30 KST: check new GitHub main latest.json: mode regular_session, session Nov20, generated <75m, QQQ/QQQM/VOO 5m bars <45m and session window valid; do not treat outside-session successful Actions run or skipped save/deploy as new snapshot.",
+    "Friday Nov20 previous completed session Nov19 provider EOD closes are QQQ 645.04, QQQM 265.64, VOO 658.01; conditional QQQ -2% 632.14, -3% 625.69, -5% 612.79, VOO -2% 644.85; thresholds are NOT triggered unless current validated prices arrive.",
+    "Monitor VOO fixed band 645-655 (above it by 3.01 at Nov19 close), QQQM below fixed 280-285 (no fourth band invented), and whether QQQ holds/recovers from Nov19 low. 200d SMA QQQ 682.01, VOO 671.08 as of Nov19; Friday intraday new trend values not verified.",
+    "CNN original equity score 0-100 publication and comparable 1d / 5d readings remain unverified; secondary 14/15 indicate extreme fear and concentration review threshold but not bottom or automatic buy. Distinguish fear from verified support/volume/breadth stabilization.",
+    "Friday 2026-11-20 17:30 EST EOD review: confirm provider daily close for Nov20 then compare confirmed QQQ weekly EMA20/50/100/200 and RSI14 to prior completed Nov09 weekly EMA20 702.82 EMA50 671.73 EMA100 616.37 EMA200 532.97 RSI 45.78."
   ],
   "last_report_prepared_utc": "2026-11-20T15:32:29.337Z",
   "last_report_kind": "2026-11-20_1030_ET_DATA_STALE_RISK_WATCH",
@@ -531,6 +530,24 @@
         "observed_at_utc": "2026-11-20T15:32:29.337Z",
         "refresh_condition": "verified new CNN original score/time and aligned 5-session history, or next daily secondary update",
         "non_independent_from_VIX": true
+      },
+      "latest_secondary_nov20_1130": {
+        "source_1": "https://fgscore.com/en/markets/sp500",
+        "score_1": 14,
+        "source_1_factor_timestamp_et": "2026-11-20 10:45 EST (market factor timestamp; NOT CNN headline publication time)",
+        "source_1_displayed_one_day_ago": 14,
+        "source_2": "https://gurutrack.ai/en/sentiment",
+        "score_2": 15,
+        "source_2_display_date": "2026-11-20",
+        "source_2_previous_close": 19,
+        "band": "Extreme Fear / 극단적 공포 (<25), both third-party scores <=15",
+        "original_cnn_score_verified": false,
+        "comparable_previous_and_recent_five_sessions_verified": false,
+        "comparison_direction": "Unverified: different providers and snapshot cycles; cannot treat same-page factors as minute-by-minute official changes",
+        "verified_ETF_price_stabilization": false,
+        "not_independent_of_vix": true,
+        "checked_at_utc": "2026-11-20T16:30:39Z",
+        "refresh_condition": "Original CNN publication with matching date/time or comparable same-method history; otherwise avoid claiming fresh every hour"
       }
     },
     "DATA_QUALITY": {
@@ -2210,13 +2227,12 @@
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
   "last_evaluation_utc": "2026-11-20T15:32:29.337Z",
-  "last_check_prepared_utc": "2026-11-19T22:25:04Z",
-  "last_check_kind": "regular_session_data_limitation",
+  "last_check_prepared_utc": "2026-11-20T16:30:39Z",
+  "last_check_kind": "2026-11-20_1130_ET_DATA_STALE_NO_NEW_VERIFIED_ETF_SIGNAL",
   "last_check_condition_ids": [
-    "DATA:US:STALE_2026-11-20_1030",
-    "COLLECTOR:MISSING_US_MORNING_RUN",
-    "CNN:SECONDARY_EXTREME_FEAR_15_17_UNVERIFIED_ORIGINAL",
-    "MARKET:REUTERS_0956_NASDAQ_WEAK"
+    "DATA:US:STALE_2026-11-20_1130",
+    "COLLECTOR:NO_FRIDAY_REGULAR_SESSION_PUBLICATION",
+    "CNN:SECONDARY_14_15_NOT_PRIMARY_VERIFIED"
   ],
   "last_notification_decision": "report prepared: delivery unverified",
   "last_price_source": "GitHub 2026-11-19 end_of_day provider Yahoo/yfinance (prior session; no current price)",
@@ -2305,5 +2321,6 @@
     "COLLECTOR:MISSING_US_MORNING_RUN",
     "CNN:SECONDARY_EXTREME_FEAR_15_17_UNVERIFIED_ORIGINAL",
     "MARKET:REUTERS_0956_NASDAQ_WEAK"
-  ]
+  ],
+  "last_check_summary": "2026-11-20 11:30 EST: no new verifiable QQQ/QQQM/VOO price signal. Main latest.json still EOD Nov19 16:44:09 EST (>18h old), cannot use as Friday current quote; no Friday regular_session 5m bars or valid Friday baseline in repository. Last public Actions run 2026-11-19 21:31:57 EST (Nov20 02:31:57Z) is outside US regular session; job concluded success but market snapshot save and deploy skipped, latest.json unchanged. Same failure as prior 10:30 observation, not collector recovery. QQQ last provider EOD 645.04, QQQM 265.64, VOO 658.01 from Nov19, no current band arrival or threshold crossing verified. CNN stock market Fear/Greed secondary FGScore 14 (factor timestamp Nov20 10:45 EST) vs GuruTrack 15 (daily Nov20); both <=15, but original headline publication/timing and aligned historical change unverified, not independent buy or market-bottom signal. No verified ETF stabilization or change to previous data-insufficient / hold-new-additions judgment. No notification prepared; previous notification status remains unverified."
 }
