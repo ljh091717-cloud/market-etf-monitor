@@ -1,21 +1,27 @@
 {
-  "last_check_utc": "2026-11-19T21:44:08.994029+00:00",
-  "reference_date": "2026-11-19",
+  "last_check_utc": "2026-11-20T21:26:38.664655+00:00",
+  "reference_date": "2026-11-20",
   "config_revision": "2026-10-19.1",
   "last_prices": {
-    "QQQ": 645.0399780273438,
-    "QQQM": 265.6400146484375,
-    "VOO": 658.010009765625
+    "QQQ": 608.4500122070312,
+    "QQQM": 251.22999572753906,
+    "VOO": 635.125
   },
   "active_conditions": [
     "QQQ:daily:-2",
+    "QQQ:daily:-3",
+    "QQQ:daily:-5",
     "QQQ:high252:-10",
     "QQQ:high252:-15",
     "QQQM:below:first",
     "QQQM:below:second",
     "QQQM:below:third",
+    "VOO:daily:-2",
+    "VOO:daily:-3",
+    "VOO:high252:-10",
     "VOO:below:first",
-    "VOO:below:second"
+    "VOO:below:second",
+    "VOO:below:third"
   ],
   "last_notification": null,
   "delivery_status": "not observable by collector",
