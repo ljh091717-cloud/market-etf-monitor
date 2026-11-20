@@ -19,21 +19,21 @@
     "VOO:below:first",
     "VOO:below:second"
   ],
-  "current_judgment": "2026-11-20 11:30 EST: DATA INSUFFICIENT; no Friday ETF intraday snapshot or validated new crossing; prior Nov19 -2.19% QQQ and -15.09% drawdown, QQQM 265.64 and VOO 658.01 are historical EOD. Risk remains elevated, but no verified new Friday ETF price decision. Advance-plan wait for validated fixed price band/limit, stabilization-confirm plan remain on hold. No quantity allocated. No automatic orders.",
+  "current_judgment": "2026-11-20 12:30 EST: DATA INSUFFICIENT; no Nov20 regular-session collection and no validated fresh 5m QQQ/QQQM/VOO price. Last verified Nov19 EOD QQQ 645.04, QQQM 265.64, VOO 658.01; prior QQQ daily -2.19%, high-close drawdown -15.09% remain historical, not a new Friday event. The global selling environment and secondary extreme fear persist, but no confirmed new ETF price threshold, support recovery, or stabilization. Advance-plan watch fixed bands without allocating amounts; stabilization-confirm plan remains on hold. No automatic orders.",
   "next_conditions": [
-    "2026-11-20 12:30 EST / 2026-11-21 02:30 KST: check new GitHub main latest.json: mode regular_session, session Nov20, generated <75m, QQQ/QQQM/VOO 5m bars <45m and session window valid; do not treat outside-session successful Actions run or skipped save/deploy as new snapshot.",
-    "Friday Nov20 previous completed session Nov19 provider EOD closes are QQQ 645.04, QQQM 265.64, VOO 658.01; conditional QQQ -2% 632.14, -3% 625.69, -5% 612.79, VOO -2% 644.85; thresholds are NOT triggered unless current validated prices arrive.",
-    "Monitor VOO fixed band 645-655 (above it by 3.01 at Nov19 close), QQQM below fixed 280-285 (no fourth band invented), and whether QQQ holds/recovers from Nov19 low. 200d SMA QQQ 682.01, VOO 671.08 as of Nov19; Friday intraday new trend values not verified.",
-    "CNN original equity score 0-100 publication and comparable 1d / 5d readings remain unverified; secondary 14/15 indicate extreme fear and concentration review threshold but not bottom or automatic buy. Distinguish fear from verified support/volume/breadth stabilization.",
-    "Friday 2026-11-20 17:30 EST EOD review: confirm provider daily close for Nov20 then compare confirmed QQQ weekly EMA20/50/100/200 and RSI14 to prior completed Nov09 weekly EMA20 702.82 EMA50 671.73 EMA100 616.37 EMA200 532.97 RSI 45.78."
+    "2026-11-20 13:30 EST / 2026-11-21 03:30 KST: validate main latest.json generated within 75 minutes, mode regular_session, NY trade date Nov20, individual completed 5m bars started within 45 minutes. If unavailable, report DATA LIMITATION and do not reuse Nov19 EOD as current price.",
+    "Compare verified Friday prices to Nov19 EOD QQQ 645.04 (daily -2% 632.14, -3% 625.69, -5% 612.79), VOO 658.01 (daily -2% 644.85) and fixed next VOO band 645-655. QQQM fixed bands end at 280-285; last Nov19 close 265.64 already below, no invented fourth band or duplicate NASDAQ100 signal.",
+    "If true intraday bar arrives, distinguish observed touch, completed 5m candle and subsequent daily close; separately verify corporate actions, reference date and price-band cross. QQQ Nov19 SMA200 682.01, VOO Nov19 SMA200 671.08 are historical, not updated Friday trend indicators.",
+    "CNN original equity fear-greed index still unverified. At roughly 11:44 EST third-party FGScore=12 (extreme fear), GuruTrack daily Nov20=16 with unaligned refresh cycles; do not label <=15 as independently confirmed. No verified comparable original previous/5-session trend and no price stabilization confirmation. Do not double-count VIX.",
+    "2026-11-20 17:30 EST / 2026-11-21 07:30 KST weekly+EOD combined review: verify Nov20 provider Close (not 15:55 five-minute start bar), compare finalized QQQ weekly EMA20/50/100/200 and RSI14 with Nov09 completed EMA20 702.82, EMA50 671.73, EMA100 616.37, EMA200 532.97, RSI14 45.78. EOD provider bar may be revised."
   ],
-  "last_report_prepared_utc": "2026-11-20T15:32:29.337Z",
-  "last_report_kind": "2026-11-20_1030_ET_DATA_STALE_RISK_WATCH",
+  "last_report_prepared_utc": "2026-11-20T17:30:43.997Z",
+  "last_report_kind": "2026-11-20_1230_ET_NO_NEW_VALID_ETF_DATA_WITH_LIMITATION",
   "last_report_condition_ids": [
-    "DATA:US:STALE_2026-11-20_1030",
-    "COLLECTOR:MISSING_US_MORNING_RUN",
-    "CNN:SECONDARY_EXTREME_FEAR_15_17_UNVERIFIED_ORIGINAL",
-    "MARKET:REUTERS_0956_NASDAQ_WEAK"
+    "DATA:US:STALE_NOV19_EOD_2026-11-20_1230",
+    "COLLECTOR:FRIDAY_INTRADAY_NO_ACTIONS_NEW",
+    "CNN:SECONDARY_DISAGREE_12_16_EXTREME_FEAR_NO_PRICE_CONFIRMATION",
+    "MARKET:ONGOING_BROAD_TECH_WEAKNESS_NOT_NEW_ETF_TRIGGER"
   ],
   "last_end_of_day_review_session": "2026-11-19",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -548,6 +548,27 @@
         "not_independent_of_vix": true,
         "checked_at_utc": "2026-11-20T16:30:39Z",
         "refresh_condition": "Original CNN publication with matching date/time or comparable same-method history; otherwise avoid claiming fresh every hour"
+      },
+      "latest_secondary_nov20_1230": {
+        "fgscore": 12,
+        "fgscore_factor_market_timestamp_et": "2026-11-20 11:44 EST (last component, NOT CNN official index publication)",
+        "fgscore_site_one_day_ago": 12,
+        "gurutrack": 16,
+        "gurutrack_display_date": "2026-11-20",
+        "gurutrack_prev_close": 19,
+        "classification": "both extreme fear (<25), <=15 only on FGScore secondary, not confirmed original",
+        "original_cnn_score_verified": false,
+        "original_cnn_publication_time_verified": false,
+        "comparable_original_previous_and_five_sessions_verified": false,
+        "change_direction": "unverified; provider values and update frequencies differ",
+        "source_urls": [
+          "https://fgscore.com/en/markets/sp500",
+          "https://gurutrack.ai/en/sentiment",
+          "https://www.cnn.com/markets/fear-and-greed"
+        ],
+        "observed_at_utc": "2026-11-20T17:30:43.997Z",
+        "refresh_condition": "next actual CNN release with aligned comparable time/history; do not treat repeated extreme fear as fresh buy signal",
+        "overlaps_with_vix": true
       }
     },
     "DATA_QUALITY": {
@@ -590,6 +611,24 @@
         "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/actions",
         "verified_at_utc": "2026-11-18T16:31:04.478Z",
         "refresh_condition": "next scheduled GitHub collector run and new valid Nov18 regular_session data"
+      },
+      "latest_check_2026_11_20_1230": {
+        "observed_at_utc": "2026-11-20T17:30:43.997Z",
+        "nominal_check_et": "2026-11-20 12:30 EST",
+        "data_mode": "end_of_day",
+        "data_session": "2026-11-19",
+        "source_generated_utc": "2026-11-19T21:44:08.994029+00:00",
+        "source_blob_sha": "5e8e44844d0da832824f19d2982dc49398a92e07",
+        "config_revision": "2026-10-19.1",
+        "eligible_as_regular_session": false,
+        "verified_new_price_signal": false,
+        "reason": "Nov19 end_of_day source, not Nov20 regular_session; generated >75 min prior, no Nov20 5m bar <45 min",
+        "latest_confirmed_actions_run_id": 44661465422,
+        "latest_actions_run_created_utc": "2026-11-20T02:31:57Z",
+        "last_actions_collect_conclusion": "success",
+        "last_actions_save_deploy": "skipped",
+        "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
+        "refresh_condition": "new Nov20 regular_session GitHub snapshot, later Nov20 EOD, or change in Actions"
       }
     },
     "FOMC_2026_OCT": {
