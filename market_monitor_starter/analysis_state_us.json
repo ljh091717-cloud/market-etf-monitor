@@ -19,23 +19,22 @@
     "VOO:below:first",
     "VOO:below:second"
   ],
-  "current_judgment": "2026-11-19 17:25 EST pre-17:30 close review: 2026-11-19 end_of_day provider Close VALID in GitHub main, generated 16:44:09 EST (41min old); QQQ $645.04, -2.194% vs Nov18 $659.51 and -15.088% vs Oct06 $759.66, both -2% day/-15% high thresholds met on today provider closing bar; QQQM $265.64 -2.187%, existing third band $280-285 already below and correlated with QQQ; VOO $658.01 -1.981% (does NOT meet -2%, threshold $657.88) below $670-680 second band and daily SMA200 $671.08, still above $645-655 third band by $3.01. AP reports SPX -2.0% / Nasdaq -2.3%, over 90% SPX constituents down. Primary CNN inaccessible; FGScore/GuruTrack secondary both 19 extreme fear (under25 already active), prior-day comparators conflict, trend unverified. Late-initialized reference_fixed_before_open=false means collector new_crossings empty; classify as changed confirmed EOD levels versus prior EOD, not independent new intraday crossing. Plan-type only conditional interest, confirmation-type HOLD pending stabilization, do not set position sizes. No automatic orders.",
+  "current_judgment": "2026-11-20 10:30 EST: DATA INSUFFICIENT for fresh ETF signal. Github latest.json retains 2026-11-19 end_of_day generated 16:44:09 EST previous day. QQQ $645.04 (-2.19% on Nov19, -15.09% vs 252-day high), QQQM $265.64 below final agreed $280-285 band, VOO $658.01 below 200-day SMA $671.08, $3.01 above $655 third band; all are prior-session EOD, not current. Official intraday 5m feed in repo missing; reference_us.json still Nov19 with Nov18 as reference, not valid for Friday baseline. Reuters Nov20 09:56 ET Nasdaq -0.51%, SPX +0.04%, semiconductor index -3.0%, 407 Nasdaq 52-week lows vs 9 highs; no QQQ/VOO equivalent change asserted. CNN equity Fear Greed two secondary sources FGScore 17 as of Nov20 UTC, market-factor 09:45 EST and GuruTrack 15 Nov20 daily, previous 19; original CNN release and comparable historical direction unverified, one only equals concentration threshold <=15. Stronger risk environment, no verified ETF stabilization. Plan-type monitor only; confirmation-type hold; no sizes or orders.",
   "next_conditions": [
-    "2026-11-20 10:30 EST (Nov21 00:30 KST) regular check: validate provider regular_session timestamp same session and 5m bar age <45m, collection <75m; Nov19 close now baseline. With prior QQQ $645.04, -2% $632.14, -3% $625.69, -5% $612.79; do not recalculate a new event from changed baseline alone.",
-    "QQQ on Friday: assess whether Nov19 -2% close condition continues, whether $645.04 EOD holds or new daily low, weekly EMA50/RSI confirmation only after Friday final close; last CONFIRMED week EMA20 702.82, EMA50 671.73, EMA100 616.37, EMA200 532.97, RSI14 45.78, current week provisional RSI 39.22.",
-    "VOO Nov19 close $658.01, SMA200 $671.08 breached; $670 recovery / next third watch $645-655, currently $3.01 above top 655. Daily -2% next-session threshold $644.85, not to conflate with third band. Observe stability before confirming buying.",
-    "QQQM Nov19 close $265.64 is BELOW $280-285 third band, no fourth predefined band; do not invent one and do not duplicate correlated QQQ drop threshold.",
-    "CNN equities sentiment 19 on both secondary sources dated Nov19, original CNN release and comparable prior five sessions unverified; repeat below25 without new price stabilization is not a new independent buying signal.",
-    "Friday Nov20 17:30 EST / Nov21 07:30 KST: close verification and CONFIRMED QQQ weekly EMA20/50/100/200 and RSI14; no separate weekly analysis. BLS October State Employment/Unemployment scheduled Nov20 10:00 EST."
+    "2026-11-20 11:30 EST / 2026-11-21 01:30 KST: retrieve GitHub regular_session snapshot (session Nov20) generated <75m before check, each 5m bar <45m; if no new collect or postmarket runs continue, report missing current prices, do not treat job success + skipped save/deploy as freshness.",
+    "Nov19 PROVIDER EOD reference prices are QQQ 645.04, VOO 658.01, QQQM 265.64. Friday initial -2% QQQ=632.14, -3%=625.69, -5%=612.79, VOO -2%=644.85 (same as VOO 645-655 price band range); only valid Nov20 market price can trigger. Avoid false crossing due to late reference and changing baseline.",
+    "VOO: watch entry into next fixed 645-655 band, confirm whether 655 holds / recovers and 670 regained, daily SMA200 about 671.08 as of Nov19; QQQ weekly EMA50 last completed week 671.73, RSI14 last completed 45.78, provisional Nov19 RSI39.22; no finalized Nov20 weekly indicators yet.",
+    "QQQM: below third fixed band 280-285 as of Nov19; do not invent fourth band or count correlated Nasdaq100 drop twice.",
+    "CNN: secondary scores 15 vs17 disagree Nov20, both extreme fear under25; one <=15 not confirmed by second or primary; verify later if a new original publication with matching timestamp becomes available, and distinguish from price stabilization. Ignore overlapping VIX risk as extra independent signal.",
+    "2026-11-20 17:30 EST Friday close: confirm end_of_day provided daily bar as of Nov20 and only then review QQQ CONFIRMED weekly EMA20/50/100/200 and RSI14. No separate weekly automation."
   ],
-  "last_report_prepared_utc": "2026-11-19T22:25:04Z",
-  "last_report_kind": "2026-11-19_EOD_QQQ_MINUS2_MINUS15_VOO_SMA200_BREACH",
+  "last_report_prepared_utc": "2026-11-20T15:32:29.337Z",
+  "last_report_kind": "2026-11-20_1030_ET_DATA_STALE_RISK_WATCH",
   "last_report_condition_ids": [
-    "QQQ:daily:-2",
-    "QQQ:high252:-15",
-    "VOO:BELOW_SECOND_BAND_EOD",
-    "VOO:SMA200_BREACH_EOD",
-    "CNN:SECONDARY_UNDER25_CONTINUED"
+    "DATA:US:STALE_2026-11-20_1030",
+    "COLLECTOR:MISSING_US_MORNING_RUN",
+    "CNN:SECONDARY_EXTREME_FEAR_15_17_UNVERIFIED_ORIGINAL",
+    "MARKET:REUTERS_0956_NASDAQ_WEAK"
   ],
   "last_end_of_day_review_session": "2026-11-19",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -510,6 +509,28 @@
         "observed_at_utc": "2026-11-18T16:31:04.478Z",
         "refresh_condition": "new confirmed CNN original score/time or aligned same-method historical close",
         "overlap_with_vix": true
+      },
+      "latest_secondary_nov20_1030": {
+        "fgscore_score": 17,
+        "gurutrack_score": 15,
+        "band": "극단적 공포 (<25)",
+        "fgscore_factor_timestamp_et": "2026-11-20 09:45 EST (market component, NOT CNN headline publication)",
+        "fgscore_display_previous": 17,
+        "gurutrack_previous_close": 19,
+        "weekly_comparison_fgscore": 37,
+        "gurutrack_week_ago": 37,
+        "original_CNN_publication_time_verified": false,
+        "primary_score_verified": false,
+        "aligned_prior_five_sessions_verified": false,
+        "direction": "Secondary sources differ for current 17 vs15; GuruTrack reports 19 prior close and FGScore reports 17 one day ago; cannot assert comparable primary point change. <=15 only one secondary; concentration review unconfirmed.",
+        "source_urls": [
+          "https://fgscore.com/en/markets/sp500",
+          "https://gurutrack.ai/en/sentiment",
+          "https://www.cnn.com/markets/fear-and-greed"
+        ],
+        "observed_at_utc": "2026-11-20T15:32:29.337Z",
+        "refresh_condition": "verified new CNN original score/time and aligned 5-session history, or next daily secondary update",
+        "non_independent_from_VIX": true
       }
     },
     "DATA_QUALITY": {
@@ -2171,21 +2192,34 @@
       "sp500_decliners_pct_description": ">90%",
       "market_breadth_type": "same-day decliners share, NOT 50/200-day SMA breadth",
       "refresh_condition": "next close or independently verified large market reversal"
+    },
+    "NOV20_US_MARKET_0956_ET": {
+      "value": {
+        "nasdaq_composite_change_pct": -0.51,
+        "sp500_change_pct": 0.04,
+        "semiconductors_change_pct": -3,
+        "nasdaq_new_highs": 9,
+        "nasdaq_new_lows": 407
+      },
+      "observed_at_et": "2026-11-20 09:56 EST",
+      "checked_at_utc": "2026-11-20T15:32:29.337Z",
+      "source_url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
+      "refresh_condition": "new timestamped actual market observation after 09:56 EST",
+      "price_not_ETF": true
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-19T19:33:12Z",
+  "last_evaluation_utc": "2026-11-20T15:32:29.337Z",
   "last_check_prepared_utc": "2026-11-19T22:25:04Z",
-  "last_check_kind": "2026-11-19_CLOSE_REVIEW_EOD_DATA_RECOVERED",
+  "last_check_kind": "regular_session_data_limitation",
   "last_check_condition_ids": [
-    "QQQ:daily:-2",
-    "QQQ:high252:-15",
-    "VOO:BELOW_SECOND_BAND_EOD",
-    "VOO:SMA200_BREACH_EOD",
-    "CNN:SECONDARY_UNDER25_CONTINUED"
+    "DATA:US:STALE_2026-11-20_1030",
+    "COLLECTOR:MISSING_US_MORNING_RUN",
+    "CNN:SECONDARY_EXTREME_FEAR_15_17_UNVERIFIED_ORIGINAL",
+    "MARKET:REUTERS_0956_NASDAQ_WEAK"
   ],
-  "last_notification_decision": "notify: new valid EOD after day-long collector gap, QQQ daily -2 and drawdown -15, VOO below $670/SMA200, broad index selloff; distinct from already alerted under25 sentiment; no trade/order",
-  "last_price_source": "GitHub main market_monitor_starter/docs/data/latest.json; unofficial yfinance end_of_day Nov19 16:44:09 EST, provider closes may revise",
+  "last_notification_decision": "report prepared: delivery unverified",
+  "last_price_source": "GitHub 2026-11-19 end_of_day provider Yahoo/yfinance (prior session; no current price)",
   "last_external_end_of_day": {
     "session": "2026-11-18",
     "generated_utc": "2026-11-18T21:31:32.530106+00:00",
@@ -2198,22 +2232,37 @@
     "reference_date": "2026-11-17",
     "checked_at_utc": "2026-11-18T22:28:40.597Z"
   },
-  "last_data_quality_observation": "2026-11-19 17:25 EST verification: 16:44:09 EST new end_of_day file, GitHub sha 5e8e44844d0da832824f19d2982dc49398a92e07, current session Nov19 all QQQ/QQQM/VOO provider daily closes Nov19; daily_reference as_of Nov18 correct previous trading day but reference_fixed_before_open=false, new_crossings suppressed by collector; data is NOT a 5m snapshot, 15:55 bar not substituted. GitHub run 44621676297 16:43 ET complete Save and Deploy success, run 44628043359 17:22 ET success but Save/Deploy skipped.",
-  "last_check_report_decision": "notify_significant_new_eod_price_conditions_and_collector_recovery",
-  "last_assessment_nominal_et": "2026-11-19T17:30:00-05:00",
-  "last_assessment_prepared_utc": "2026-11-19T22:25:04Z",
-  "last_assessment_kind": "2026-11-19_EOD_VALID_QQQ_RISK_VOO_SUPPORT_BREACH",
+  "last_data_quality_observation": {
+    "checked_at_utc": "2026-11-20T15:32:29.337Z",
+    "source": "GitHub main latest.json, GitHub Actions list and jobs",
+    "latest_generated_utc": "2026-11-19T21:44:08.994029+00:00",
+    "mode": "end_of_day",
+    "latest_session": "2026-11-19",
+    "checked_session": "2026-11-20",
+    "regular_session_current": false,
+    "collection_within_75m": false,
+    "bar_within_45m": false,
+    "last_5m_bar_start_ny": null,
+    "most_recent_actions_run": 44661465422,
+    "most_recent_actions_created_utc": "2026-11-20T02:31:57Z",
+    "recent_actions_save_step": "skipped",
+    "recent_actions_deploy": "skipped",
+    "data_freshness_verified": false
+  },
+  "last_check_report_decision": "REPORT_DATA_LIMITATION_AND_UNVERIFIED_RISK",
+  "last_assessment_nominal_et": "2026-11-20 10:30 EST",
+  "last_assessment_prepared_utc": "2026-11-20T15:32:29.337Z",
+  "last_assessment_kind": "regular_session_data_limitation_market_risk",
   "last_assessment_condition_ids": [
-    "QQQ:daily:-2",
-    "QQQ:high252:-15",
-    "VOO:BELOW_SECOND_BAND_EOD",
-    "VOO:SMA200_BREACH_EOD",
-    "CNN:SECONDARY_UNDER25_CONTINUED"
+    "DATA:US:STALE_2026-11-20_1030",
+    "COLLECTOR:MISSING_US_MORNING_RUN",
+    "CNN:SECONDARY_EXTREME_FEAR_15_17_UNVERIFIED_ORIGINAL",
+    "MARKET:REUTERS_0956_NASDAQ_WEAK"
   ],
-  "last_check_report_decision_reason": "Earlier 15:30 only index proxies and stale Nov18 ETF close; now Nov19 provider daily Close confirms QQQ -2.19% daily/-15.09% high and VOO 200d/$670 breach. More than daily noise but no bottom confirmation. Early check occurred at 17:25 EST, not falsely 17:30.",
-  "last_check_attempt_utc": "2026-11-19T22:25:04Z",
-  "last_check_nominal_et": "2026-11-19T17:30:00-05:00",
-  "last_check_data_status": "valid 2026-11-19 provider end_of_day generated 16:44:09 EST, 41m old as of 17:25; EOD no regular session 5m, false is_open_at_collection normal. 16:43 GitHub collector saved and deployed, 17:22 later run skipped save/deploy; provider close not exchange-certified.",
+  "last_check_report_decision_reason": "Nov20 10:30 EST US intraday collection not available despite morning monitoring schedule; recurring collection gap confirmed after Nov19 EOD recovery; Reuters 09:56 EST Nasdaq -0.51%, SOX -3% and 407 Nasdaq new 52-week lows versus 9 highs (Reuters 2026-11-20 report). Secondary CNN scores FGScore 17 and GuruTrack 15 extreme fear (both below25; single source reaches <=15), primary CNN timestamp and comparable previous/five sessions not validated. No new QQQ/VOO price threshold can be claimed. Prior Nov19 EOD conditions persist as LAST VERIFIED, not new signal.",
+  "last_check_attempt_utc": "2026-11-20T15:32:29.337Z",
+  "last_check_nominal_et": "2026-11-20 10:30 EST / 2026-11-21 00:30 KST",
+  "last_check_data_status": "NO_VALID_INTRADAY_SNAPSHOT: latest main end_of_day 2026-11-19 16:44:08 EST, prior session; age about 17h46m at 10:30 EST, >75m and no 2026-11-20 5m bar. Valid as Nov19 EOD, NOT Nov20 live price. GitHub workflow most recent scheduled run 2026-11-19 21:31 EST, successful job but save/deploy skipped; no Nov20 morning runs in inspected latest 15 as of 10:30 EST. Workflow time alignment unresolved.",
   "last_evaluation_prepared_utc": "2026-11-18T22:28:40.597Z",
   "last_evaluation_kind": "end_of_day_market_reassessment",
   "last_evaluation_condition_ids": [
@@ -2221,18 +2270,14 @@
     "VOO:SECOND_BAND_EOD_SUPPORT_NARROW",
     "MARKET:QQQ_VOO_DIVERGENCE"
   ],
-  "last_check_completed_utc": "2026-11-18T22:28:40.597Z",
-  "last_assessment_snapshot_generated_utc": "2026-11-18T21:31:32.530106+00:00",
+  "last_check_completed_utc": "2026-11-20T15:32:29.337Z",
+  "last_assessment_snapshot_generated_utc": "2026-11-19T21:44:08.994029+00:00",
   "last_stale_snapshot_observed": {
-    "nominal_et": "2026-11-18T15:30:00-05:00",
-    "checked_utc": "2026-11-18T20:31:31Z",
-    "source_generated_utc": "2026-11-17T22:26:23.397309+00:00",
+    "at_utc": "2026-11-20T15:32:29.337Z",
+    "source": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
+    "generated_utc": "2026-11-19T21:44:08.994029+00:00",
     "mode": "end_of_day",
-    "market_ny_date": "2026-11-17",
-    "expected_ny_date": "2026-11-18",
-    "source_status": "prior-session EOD not valid Nov18 regular session",
-    "bar_age": "N/A",
-    "reason": "No Nov18 Actions runs in latest workflow-run listing; last Nov17 job 18:04 ET success but save/deploy skipped"
+    "market_date": "2026-11-19"
   },
   "last_end_of_day_data_quality": {
     "checked_at_utc": "2026-11-19T22:25:04Z",
@@ -2252,14 +2297,13 @@
     "snapshot_sha": "5e8e44844d0da832824f19d2982dc49398a92e07",
     "provider_exchange_certified": false
   },
-  "last_data_update_verified_at_this_check": true,
-  "last_check_report_prepared_utc": "2026-11-19T22:25:04Z",
-  "last_check_report_kind": "2026-11-19_EOD_HIGH_RISK",
+  "last_data_update_verified_at_this_check": false,
+  "last_check_report_prepared_utc": "2026-11-20T15:32:29.337Z",
+  "last_check_report_kind": "2026-11-20_1030_ET_DATA_STALE_RISK_WATCH",
   "last_check_report_condition_ids": [
-    "QQQ:daily:-2",
-    "QQQ:high252:-15",
-    "VOO:BELOW_SECOND_BAND_EOD",
-    "VOO:SMA200_BREACH_EOD",
-    "CNN:SECONDARY_UNDER25_CONTINUED"
+    "DATA:US:STALE_2026-11-20_1030",
+    "COLLECTOR:MISSING_US_MORNING_RUN",
+    "CNN:SECONDARY_EXTREME_FEAR_15_17_UNVERIFIED_ORIGINAL",
+    "MARKET:REUTERS_0956_NASDAQ_WEAK"
   ]
 }
