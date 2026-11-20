@@ -1,54 +1,63 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-19T21:44:08.994029+00:00",
-  "last_reference_session": "2026-11-19",
+  "last_valid_snapshot_generated_utc": "2026-11-20T21:26:38.664655+00:00",
+  "last_reference_session": "2026-11-20",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 645.0399780273438,
-    "QQQM": 265.6400146484375,
-    "VOO": 658.010009765625
+    "QQQ": 608.4500122070312,
+    "QQQM": 251.22999572753906,
+    "VOO": 635.125
   },
   "last_active_conditions": [
     "QQQ:daily:-2",
+    "QQQ:daily:-3",
+    "QQQ:daily:-5",
     "QQQ:high252:-10",
     "QQQ:high252:-15",
     "QQQM:below:first",
     "QQQM:below:second",
     "QQQM:below:third",
+    "VOO:daily:-2",
+    "VOO:daily:-3",
+    "VOO:high252:-10",
     "VOO:below:first",
-    "VOO:below:second"
+    "VOO:below:second",
+    "VOO:below:third"
   ],
-  "current_judgment": "2026-11-20 15:25:49 EST pre-15:30 scheduled check: DATA LIMITED, NO NEW VERIFIED ETF BUY/RECOVERY SIGNAL. Main latest.json remains Nov19 16:44:09 EST end_of_day (about 22h42m old) and contains no Nov20 regular_session QQQ/QQQM/VOO 5m prices; these Nov19 EOD prices MUST NOT be shown as current. GitHub last schedule run Nov19 21:31:57 EST was job success but collect save/deploy skipped; no Nov20 collector run appears in API list. Reuters Nov20 report shows Nasdaq Composite -3.40%, SP500 -2.06%, Nasdaq 52-week new lows 692 vs 13 highs; quotation time within updated page unverified, not independent ETF price. Third-party stock CNN Fear & Greed clones FGScore 10 (factor latest 14:44 EST), GuruTrack 11 daily, both extreme fear and <=15 focus threshold (already reported); original CNN blocked and previous-day/5-session comparable values unverified. Compared with 13:30 risk notice, no verified NEW ETF event or decision-changing recovery; do not repeat full alert. Advance planned entry only with verified own-price band and personally defined budget/limits; stabilization type held. No orders.",
+  "current_judgment": "2026-11-20 17:30 EST Friday end-of-day: VERIFIED_NEW_MAJOR_DROP since prior Nov19 close via Nov20 Yahoo/yfinance end_of_day provider daily Close (may be revised, NOT exchange-certified). QQQ $608.45, -5.6725% day, -19.9050% vs Oct06 highest 252-session close $759.66, $0.722 above -20% threshold $607.728; QQQM $251.23, -5.4246% day and below final confirmed third watch band $280-285 (correlated QQQ, no separate index signal); VOO $635.125, -3.4779% day, -11.3202% vs Oct06 peak $716.20 and BELOW third confirmed watch band $645-655 (close below, cannot assert intraday crossing time). New active daily conditions QQQ -3/-5, VOO -2/-3, VOO 252-peak -10, VOO below third. QQQ weekly confirmed EMA20 $693.8341, EMA50 $669.2447, EMA100 $616.2126, EMA200 $533.7218, RSI14 34.099; QQQ weekly CLOSE below EMA100, above EMA200, no stabilization. AP Nov20 reports S&P500 -3.7%, Nasdaq Composite -5.3%, PHLX SOX -10.7%, 10yr US nominal ~4.93% vs 5.04% Thurs; 10yr real/VXN/full breadth/time-matched volume unverified. CNN original inaccessible; secondary FGScore/GuruTrack both 10 extreme fear; FGScore prior '1 day ago'=10 conflicts with GuruTrack prev close 19, thus original day-over-day change and 5-session comparable scores unverified. 10 is <=15 focus but NOT <10 emergency threshold; not a price bottom or buy signal. Yahoo provider bars verified at dataset, fixed reference late at 16:26 EST so comparison.new_crossings=[] is NOT evidence of no new drop. GitHub 16:26 EST schedule run 44820288677 saved and deployed successfully; 16:55 EST run 44824540818 success job but save/deploy skipped, not second successful refresh. Planned advance purchases still require explicit budget/limits and tolerating further falls; stabilization-confirmation approach deferred. No auto orders.",
   "next_conditions": [
-    "Next scheduled 2026-11-20 17:30 EST / 2026-11-21 07:30 KST: verify main docs/data/latest.json for Nov20 end_of_day with actual provider daily Close on QQQ/QQQM/VOO; data may be late, never substitute 15:55 5m bar for Close.",
-    "With Nov20 provider close, compare against 2026-11-19 daily close QQQ $645.04 (-2% $632.14; -3% $625.69; -5% $612.79), VOO $658.01 (-2% $644.85), VOO confirmed $645-655 band; assess QQQM own price without double-counting QQQ index signal.",
-    "Week's last actual trading day close: QQQ confirmed weekly EMA20/50/100/200 and RSI14; compare completed week vs previously completed 2026-11-09, do NOT treat Nov19 provisional values as Friday close.",
-    "CNN original source/time and comparable prior/five-session scores unverified; secondary score <=15 is focus review, NOT buy; ongoing new price lows void stabilization idea."
+    "Next US scheduled market session Monday 2026-11-23 10:30 EST / 2026-11-24 00:30 KST: verify fresh regular_session data age <=75min and individual 5m start age <=45min; do not label bar start as completion; inspect continuation vs bounce.",
+    "QQQ check $607.728 (-20% from Oct06 252-close $759.66) with completed intraday bar vs daily close separated; below confirmed weekly EMA100 $616.21 and EMA50 $669.24; reversal needs low stabilization/support reclaim and market breadth improvement, no automatic order.",
+    "VOO verify $635.125 Nov20 close vs 3rd confirmed $645-655 band now already below (lower boundary $645); check return into $645-655 and especially $655, plus SMA200 $671.17; QQQM $251.23 remains well below confirmed $280-285 third band, evaluate own price only, no duplicate QQQ signal.",
+    "Next completed daily close on Nov23 and confirmed weekly close at end of next actual trading week; distinguish provisional week from closed 2026-11-20 weekly EMA20/50/100/200 and RSI14.",
+    "Revisit CNN ORIGINAL only upon verified new publication and time-aligned daily comparators (secondary 10/100, original unverified), and 10yr real DFII10, VXN, 50/200d market breadth or labeled proxy, matched volume when verified; monitor Nov25 08:30 EST BEA GDP+Personal Income/Outlays, 11/26 Thanksgiving CLOSED and 11/27 early 13:00 EST."
   ],
-  "last_report_prepared_utc": "2026-11-20T20:25:49Z",
-  "last_report_kind": "2026-11-20_1530_ET_DATA_LIMIT_NO_NEW_VERIFIED_ETF_EVENT_SKIP_NOTIFICATION",
+  "last_report_prepared_utc": "2026-11-20T22:34:38.064Z",
+  "last_report_kind": "2026-11-20_1730_ET_VERIFIED_EOD_RISK_EXPANSION_WEEKLY_CONFIRMED_NOTIFY",
   "last_report_condition_ids": [
-    "DATA:US:20261120_NO_REGULAR_SESSION_NOV19_EOD_ONLY",
-    "RISK:MARKET_20261120_SELL_OFF_CONTINUES_NO_NEW_OWN_ETF_PRICE",
-    "CNN:SECONDARY_EXTREME_FEAR_10_11_PRIMARY_UNVERIFIED"
+    "US:EOD:20261120:QQQ_DAILY_MINUS3_MINUS5_AND_NEAR_HIGH252_MINUS20",
+    "US:EOD:20261120:VOO_DAILY_MINUS2_MINUS3_HIGH252_MINUS10_BELOW_THIRD_BAND",
+    "US:EOD:20261120:QQQM_OWN_PRICE_251_23_BELOW_THIRD_CORRELATED_WITH_QQQ",
+    "US:WEEKLY:20261120_QQQ_BELOW_EMA100_RSI34_099",
+    "US:DATA:20261120_VALID_EOD_AT_1626_ET_REFERENCE_FIXED_LATE"
   ],
-  "last_end_of_day_review_session": "2026-11-19",
+  "last_end_of_day_review_session": "2026-11-20",
   "rearm_status": "not_implemented_no_continuous_detector",
   "notification_delivery_status": "unverified",
   "low_frequency_cache": {
     "CNN_FEAR_GREED": {
-      "value": 41,
-      "band": "공포 (25~44)",
-      "as_of_et": "2026-11-13 09:57 EST factor timestamp on third-party site (not independently verified CNN headline publication time)",
+      "value": 10,
+      "band": "극단적 공포 (<25)",
+      "as_of_et": "2026-11-20 US market date; FGScore factor market timestamp 2026-11-20 16:30 EST, not independently verified CNN original publication",
       "source_url": "https://fgscore.com/en/markets/sp500",
-      "source_type": "Third party displaying CNN US stocks fear and greed index; not crypto",
-      "observed_at_utc": "2026-11-13T15:30:49Z",
+      "source_type": "Two third-party mirrors displaying CNN US STOCK Fear & Greed Index, not cryptocurrency",
+      "observed_at_utc": "2026-11-20T22:34:38.064Z",
       "previous_cached_value": 19,
       "previous_cached_as_of_et": "2026-11-03 15:45 EST prior third-party factor timestamp",
-      "direction": "Cross-day point change NOT confirmed comparable because source/snapshot methodology differed; not counted as independent recovery signal",
-      "recent_five_trading_days": "comparable 5-session verified original scores unavailable",
-      "refresh_condition": "New verified CNN original publication/score or aligned comparable closing history",
+      "direction": "Original CNN exact prev-day change UNVERIFIED: FGScore '1 day ago'=10, GuruTrack 'prev close'=19; secondary sites differ on prior comparator; both current 10",
+      "recent_five_trading_days": "verified aligned CNN original 5-session series unavailable",
+      "refresh_condition": "After verified CNN original publication or time-aligned comparable next-close readings",
       "last_reliable_cached_value": 31,
       "last_reliable_cached_as_of_et": "2026-10-30T09:37:00-04:00",
       "latest_verification_status": "CNN primary URL inaccessible at this check; Nov05 secondary detailed fgscore page shows 27 (market factor timestamp Nov04 20:00 EST) while same site's index summary shows 35; finhacker Nov05 03:43 EST also 35, Benzinga Nov05 01:45 EST reported previous Nov04 value 27. Values/timestamps inconsistent, so no current independently verified comparable CNN score or intraday direction.",
@@ -86,7 +95,7 @@
       ],
       "no_new_verified_original_score": true,
       "latest_current_verified": false,
-      "latest_current_unverified_reason": "CNN primary blocked; two secondary sites both display 41 Fear Nov13, but the site's prior-day comparators diverge (fgscore 41, GuruTrack 40); 5-session comparable primary readings unverified",
+      "latest_current_unverified_reason": "CNN primary inaccessible; both secondary mirrors agree on 10/100 but exact CNN original publication time and previous 5 sessions not independently verified.",
       "latest_secondary_nov06": {
         "score": 20,
         "band": "극단적 공포",
@@ -585,6 +594,24 @@
         ],
         "checked_at_utc": "2026-11-20T20:25:49Z",
         "refresh_condition": "New verifiable CNN publication or comparable original history; do not count VIX twice"
+      },
+      "latest_secondary_nov20_eod": {
+        "fgscore": 10,
+        "gurutrack": 10,
+        "band": "극단적 공포",
+        "gurutrack_prior_close": 19,
+        "fgscore_display_prior": 10,
+        "fgscore_factor_asof_et": "2026-11-20 16:30 EST (latest component, not CNN original headline publish)",
+        "current_date": "2026-11-20",
+        "direction": "Cannot assert verified CNN original day-to-day decline because secondary sites conflict about previous score",
+        "urls": [
+          "https://fgscore.com/en/markets/sp500",
+          "https://gurutrack.ai/en/sentiment",
+          "https://www.cnn.com/markets/fear-and-greed"
+        ],
+        "checked_utc": "2026-11-20T22:34:38.064Z",
+        "updated_condition": "new independently verified original CNN score or aligned closing values",
+        "duplicate_vix_risk": true
       }
     },
     "DATA_QUALITY": {
@@ -2370,6 +2397,46 @@
       "observed_at_utc": "2026-11-20T20:25:49Z",
       "significance": "continuation of earlier same-day risk expansion; no independent current ETF price or new confirmed technical threshold",
       "refresh_condition": "Next relevant newly time-stamped publication or Friday provider close"
+    },
+    "US_MARKET_CONTEXT_EOD": {
+      "as_of_session": "2026-11-20",
+      "source": "Associated Press Nov20 market close",
+      "url": "https://apnews.com/article/stock-markets-anthropic-ai-chips-boom-c4c3f4878b12989347f8a930ed813dad",
+      "sp500_daily_drop_pct_approx": -3.7,
+      "nasdaq_composite_daily_drop_pct_approx": -5.3,
+      "phlx_semiconductor_daily_drop_pct_approx": -10.7,
+      "us10y_nominal_yield_pct_approx": 4.93,
+      "us10y_yield_previous_thursday_pct_approx": 5.04,
+      "real10y_yield_status": "unverified",
+      "VIX_VXN_current_official_status": "unverified",
+      "breadth_50_200_pct_status": "unverified",
+      "time_matched_volume_status": "unverified",
+      "observed_at_utc": "2026-11-20T22:34:38.064Z",
+      "refresh_condition": "next market close or newly verified official series"
+    },
+    "US_MACRO_CALENDAR": {
+      "as_of_utc": "2026-11-20T22:34:38.064Z",
+      "verified_sources": [
+        "https://www.bls.gov/schedule/2026/11_sched_list.htm",
+        "https://www.bea.gov/news/schedule/",
+        "https://www.nyse.com/markets/hours-calendars"
+      ],
+      "next_two_sessions": "2026-11-23 and 2026-11-24; no BLS release listed for these dates, other agencies not exhaustive",
+      "next_major_verified_release": "2026-11-25 08:30 EST BEA GDP second estimate Q3 and Personal Income & Outlays Oct",
+      "holidays": "2026-11-26 NYSE CLOSED Thanksgiving, 2026-11-27 closes 13:00 EST",
+      "refresh_condition": "new official schedule revision or after 2026-11-25 release"
+    },
+    "US_UPCOMING_EARNINGS": {
+      "as_of_utc": "2026-11-20T22:34:38.064Z",
+      "url": "https://finviz.com/calendar/earnings?dateFrom=2026-11-24&sort=-marketCap",
+      "scope": "Upcoming 5-trading-day watch; list visible but specific per-ticker reporting date requires issuer IR verification",
+      "symbols_to_watch": [
+        "DELL",
+        "ADI",
+        "ADSK",
+        "WDAY"
+      ],
+      "refresh_condition": "issuer IR confirms dates, reports earnings or calendar expires"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
@@ -2469,5 +2536,6 @@
   "last_check_summary": "Nov20 14:30 EST: GitHub latest and previous unchanged; latest Nov19 end_of_day provider close (QQQ 645.04, QQQM 265.64, VOO 658.01) is yesterday's, not Friday quote. 75m snapshot and 45m 5-minute-bar freshness checks fail; no valid Nov20 ETF threshold or stabilization. Previous 13:30 Reuters risk expansion still stands; Reuters index observation (~Nasdaq -3.4%, S&P -2.06%, Nasdaq 692 new 52-week lows, 13 highs) is consistent with ongoing risk but not a separately verified ETF signal and observation clock not independently established. FGScore secondary 11 (latest factor timestamp Nov20 13:45 EST), GuruTrack 12 Nov20 daily, both extreme fear and <=15 concentration-review, but source clocks and original CNN index time/prior/five-session comparability not verified; no buy confirmation. Strategic judgment remains data-insufficient/new buys on hold; next 15:30 ET regular-session dataset; Friday 17:30 ET EOD+final weekly only if actual Friday provider Close exists. Push receipt unverified. No automatic orders.",
   "last_checked_at_utc": "2026-11-20T20:25:49Z",
   "last_check_slot_et": "2026-11-20 15:30 EST (execution observed 15:25:49 EST; no claim of exact 15:30 data)",
-  "notification_decision": "skip_notification_no_new_valid_ETF_signal"
+  "notification_decision": "skip_notification_no_new_valid_ETF_signal",
+  "last_daily_reference_session_date": "2026-11-19"
 }
