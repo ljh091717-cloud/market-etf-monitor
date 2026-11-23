@@ -25,19 +25,20 @@
     "VOO:below:second",
     "VOO:below:third"
   ],
-  "current_judgment": "2026-11-23 Monday 12:30 EST nominal regular-session check: no valid Nov23 ETF current session snapshot. Repo latest is still Nov20 16:26:38 EST end_of_day; invalid for today's intraday levels, no 5-min bar. GitHub Actions most recent Nov20 21:43 EST (Nov21 02:43Z) job success with collect code success, save/deploy skipped; no confirmed Nov23 collector run. Broad market rebound already reported at 10:30 and 11:30; separate 24/7 Wall St 12:00 ET report Nasdaq Composite +6.67%, S&P500 +4.27%, less than Reuters 10:45 +7.11%/+5.09% but not proven ETF support recovery or reversal; no new independently verified QQQ/QQQM/VOO triggers. CNN original inaccessible; secondary FGScore 18 (component timestamp Nov23 11:20 EST) and GuruTrack 17 (daily), different reading times; direction from original and aligned 5 sessions unverified. Extreme fear remains, no stabilization corroboration. Skip duplicate notification; maintain data_insufficient/additional purchase hold. No automated orders. No actual push receipt (unverified).",
+  "current_judgment": "Nov23 13:30 EST scheduled check: first independently time-stamped Nov23 intraday ETF quotes (StockAnalysis) show sharp recovery after Nov20 selloff: QQQ 652.07 at 13:28 EST (+7.17% vs 608.45) above last confirmed Nov20 weekly EMA100 616.21; VOO 665.49 at 13:18 EST (+4.71% vs provider Nov20 635.54) above third confirmed band 645–655 but day's low 655.87, so no proven trade/retest inside the band; QQQM 268.40 at 13:17 EST (+6.83%) still below 280–285. These are intraday last quotes, NOT finished 5min bars/daily closes, do not establish persistent support or 15-minute rearm. Repo latest.json STILL Nov20 16:26:38 EST end_of_day, stale for Nov23, collector mode/75m/45m criteria fail; no validated Nov23 regular_session 5m. External last close discrepancy VOO GitHub 635.125 vs StockAnalysis 635.54; don't force a single previous-close %-change. Reuters midday broad Nasdaq/semiconductor rally corroborates. CNN original inaccessible; secondary FGScore 17 around 13:15 EST vs GuruTrack 18 daily, prior-daily comparisons misaligned and last-5-day aligned trend unverified; extreme fear, not buy trigger. Treat price recovery as significant newly independently verified intraday observation but not confirmed stabilization; planned tranche review only, no amount or orders, confirmation-style buying deferred. Delivery status unverified.",
   "next_conditions": [
-    "Next scheduled Nov23 13:30 EST / Nov24 03:30 KST: recheck main latest.json for regular_session Nov23 with generated age <=75min and per-symbol 5m-bar start <=45min; state start-times and possible unfinished final bar. Data absence is a collector/monitoring limitation, not evidence of no market movement.",
-    "QQQ own valid quote vs Nov20 provider close 608.45; weekly last confirmed EMA100 616.21 and prior 252-day top 759.66 (-20% 607.73); intraday level contact != daily close.",
-    "VOO own valid quote vs Nov20 provider close 635.125 and confirmed third band 645-655; QQQM own valid quote vs 251.23, confirmed third band 280-285. Differentiate price rebound from stable intraday lows.",
-    "Today 17:30 EST end of day: require November23 same-date daily Close for three ETFs. November27 Friday early close 13:00; verify all Nov27 daily closes and completed QQQ weekly EMA/RSI once at 13:30 or, if delayed, 14:30 ET; do not substitute the final 5-minute candle."
+    "Next scheduled Nov23 14:30 EST / Nov24 04:30 KST: verify GitHub latest.json for Nov23 regular_session and generated age <=75min, each 5m-bar start age <=45min; do not substitute external last quote for verified GitHub 5m bar or daily close.",
+    "QQQ: intraday > Nov20 confirmed EMA100 616.21 via independently timestamped quote; check persistence and Nov23 daily closing price. Watch Nov20 low 606.23 and Nov20 high 643.28 as historical context, not invented supports; quoted Nov23 641.95 session low from provider.",
+    "VOO: intraday quote > confirmed third $645–655 band, but no confirmed intraday retest, quote > $655 does not mean band was traded. Test Nov23 day-close >655 vs renewed decline below 645; check provider close difference 635.125 vs 635.54.",
+    "QQQM: $268.40 below confirmed third $280–285; look for low stability and band reclaim; no independent Nasdaq100 repeat risk event from QQQM.",
+    "Nov23 17:30 EST require three same-date verified provider daily Close bars; Nov27 early-close 13:30/14:30 validate 3 matching Nov27 closes and finished weekly indicators once; avoid 5m candle substitution."
   ],
-  "last_report_prepared_utc": "2026-11-23T15:30:14.157Z",
-  "last_report_kind": "2026-11-23_1030_ET_MAJOR_NASDAQ_REBOUND_BUT_GITHUB_STALE_NOTIFY_DATA_LIMIT",
+  "last_report_prepared_utc": "2026-11-23T18:37:10.932Z",
+  "last_report_kind": "2026-11-23_1330_ET_INTRADAY_RECOVERY_WITH_STALE_COLLECTOR",
   "last_report_condition_ids": [
-    "NASDAQ100:+6.6%_Reuters_10:07EST_external_only",
-    "GITHUB:no_2026-11-23_regular_session_snapshot",
-    "CNN:secondary_11_vs_16_unaligned_extreme_fear"
+    "QQQ:external_quote_above_last_confirmed_weekly_EMA100",
+    "VOO:external_quote_above_third_price_band",
+    "QQQM:external_quote_below_third_band"
   ],
   "last_end_of_day_review_session": "2026-11-20",
   "rearm_status": "not_implemented_no_continuous_detector",
@@ -2528,18 +2529,81 @@
       "source_type": "news market snapshot; NOT QQQ/QQQM/VOO price bar",
       "last_checked_at_utc": "2026-11-23T17:31:08Z",
       "refresh_condition": "New substantial verified change in market leadership, valid ETF quote or end-of-day close"
+    },
+    "US_INTRADAY_ETFS_20261123_1330": {
+      "value": {
+        "QQQ": {
+          "price": 652.07,
+          "at_et": "2026-11-23T13:28:00-05:00",
+          "previous_close": 608.45,
+          "prev_source": "GitHub Nov20 provider daily close",
+          "pct": 7.17,
+          "reference_ema100_confirmed": 616.21,
+          "url": "https://stockanalysis.com/etf/qqq/"
+        },
+        "QQQM": {
+          "price": 268.4,
+          "at_et": "2026-11-23T13:17:00-05:00",
+          "previous_close": 251.23,
+          "prev_source": "GitHub Nov20 provider daily close",
+          "pct": 6.83,
+          "reference_interest_band": [
+            280,
+            285
+          ],
+          "url": "https://stockanalysis.com/etf/qqqm/"
+        },
+        "VOO": {
+          "price": 665.49,
+          "at_et": "2026-11-23T13:18:00-05:00",
+          "previous_close": 635.54,
+          "prev_source": "stockanalysis Nov20 provider raw daily close (GitHub unadjusted 635.125 discrepancy ~0.42 USD)",
+          "pct": 4.71,
+          "reference_interest_band": [
+            645,
+            655
+          ],
+          "session_low": 655.87,
+          "url": "https://stockanalysis.com/etf/voo/"
+        }
+      },
+      "source": [
+        "https://stockanalysis.com/etf/qqq/",
+        "https://stockanalysis.com/etf/qqqm/",
+        "https://stockanalysis.com/etf/voo/"
+      ],
+      "observed_at_et": "2026-11-23 13:17-13:28 EST",
+      "checked_at_utc": "2026-11-23T18:37:10.932Z",
+      "refresh_condition": "New same-day valid GitHub 5m snapshot or later time stamped quote or daily Close; do not re-label as close"
+    },
+    "CNN_NOV23_1330_SECONDARY": {
+      "value": "FGScore secondary 17 (as of Nov23, factor components last at 13:15 EST), GuruTrack secondary 18 (Nov23 daily), both extreme fear; CNN direct blocked and prior comparison not synchronized",
+      "source": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment"
+      ],
+      "observed_at_et": "2026-11-23 around 13:15 EST/daily",
+      "checked_at_utc": "2026-11-23T18:37:10.932Z",
+      "refresh_condition": "CNN published new reading with time and comparable trading-day history"
+    },
+    "US_NOV23_REUTERS_MIDDAY": {
+      "value": "Reuters around midday Nasdaq Composite +6.69%, S&P500 +4.85%, semiconductor +13.4%, leading sharp bounce; same-day press quote not instantaneous quote",
+      "source": "https://www.reuters.com/business/wall-street-futures-rebound-after-rough-week-ai-linked-shares-2026-11-23/",
+      "observed_at_et": "2026-11-23 midday",
+      "checked_at_utc": "2026-11-23T18:37:10.932Z",
+      "refresh_condition": "New materially relevant market event or confirmed market close"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
   "last_evaluation_utc": "2026-11-20T15:32:29.337Z",
-  "last_check_prepared_utc": "2026-11-23T15:30:14.157Z",
-  "last_check_kind": "scheduled_us_regular_session_inspection_skip_duplicate_notification",
+  "last_check_prepared_utc": "2026-11-23T18:37:10.932Z",
+  "last_check_kind": "2026-11-23_1330_ET_INTRADAY_RECOVERY_WITH_STALE_COLLECTOR",
   "last_check_condition_ids": [
-    "COLLECTOR:STALE_2026-11-20_EOD",
-    "MARKET:REBOUND_ALREADY_REPORTED",
-    "CNN:SECONDARY_18_vs_17_UNALIGNED"
+    "QQQ:external_quote_above_last_confirmed_weekly_EMA100",
+    "VOO:external_quote_above_third_price_band",
+    "QQQM:external_quote_below_third_band"
   ],
-  "last_notification_decision": "skip_notification_no_new_verified_material_change",
+  "last_notification_decision": "notify_major_intraday_recovery_independent_quotes_with_data_limitations",
   "last_price_source": "GitHub 2026-11-19 end_of_day provider Yahoo/yfinance (prior session; no current price)",
   "last_external_end_of_day": {
     "session": "2026-11-18",
@@ -2564,19 +2628,19 @@
     "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
     "checked_at_utc": "2026-11-23T17:31:08Z"
   },
-  "last_check_report_decision": "skip_notification",
-  "last_assessment_nominal_et": "2026-11-23T12:30:00-05:00",
-  "last_assessment_prepared_utc": "2026-11-23T17:31:08Z",
-  "last_assessment_kind": "2026-11-23_1230_ET_REPEAT_NO_ETF_PRICING",
+  "last_check_report_decision": "notify_intraday_qualified_recovery",
+  "last_assessment_nominal_et": "2026-11-23T13:30:00-05:00",
+  "last_assessment_prepared_utc": "2026-11-23T18:37:10.932Z",
+  "last_assessment_kind": "2026-11-23_1330_ET_INTRADAY_RECOVERY_WITH_STALE_COLLECTOR",
   "last_assessment_condition_ids": [
-    "COLLECTOR:STALE_2026-11-20_EOD",
-    "MARKET:REBOUND_ALREADY_REPORTED",
-    "CNN:SECONDARY_18_vs_17_UNALIGNED"
+    "QQQ:external_quote_above_last_confirmed_weekly_EMA100",
+    "VOO:external_quote_above_third_price_band",
+    "QQQM:external_quote_below_third_band"
   ],
-  "last_check_report_decision_reason": "At 12:30 ET Monday repo latest.json still Nov20 Friday EOD, no Monday ETF quote. Broad rebound already notified, new index observation does not establish ETF own trigger/recovery; no additional major verified change.",
-  "last_check_attempt_utc": "2026-11-20T19:32:44Z",
-  "last_check_nominal_et": "2026-11-23T12:30:00-05:00",
-  "last_check_data_status": "stale_unfit_for_today_intraday",
+  "last_check_report_decision_reason": "Previous reports had no validated ETF price recovery; fresh same-date timed external quotes now verify rebound and thresholds, while GitHub collector remains stale.",
+  "last_check_attempt_utc": "2026-11-23T18:37:10.932Z",
+  "last_check_nominal_et": "2026-11-23T13:30:00-05:00",
+  "last_check_data_status": "GitHub stale Nov20 end_of_day; independent same-date Nov23 ETF intraday quotes verified; no valid collector regular_session 5m",
   "last_evaluation_prepared_utc": "2026-11-23T17:31:08Z",
   "last_evaluation_kind": "12:30_ET_NO_NEW_VERIFIED_ETF_SIGNAL",
   "last_evaluation_condition_ids": [
@@ -2587,10 +2651,10 @@
   "last_check_completed_utc": "2026-11-23T17:31:08Z",
   "last_assessment_snapshot_generated_utc": "2026-11-20T21:26:38.664655+00:00",
   "last_stale_snapshot_observed": {
-    "generated_utc": "2026-11-20T21:26:38.664655+00:00",
-    "mode": "end_of_day",
-    "reference_session_date": "2026-11-20",
-    "check_utc": "2026-11-23T15:30:14.157Z"
+    "latest_generated_utc": "2026-11-20T21:26:38.664655+00:00",
+    "latest_mode": "end_of_day",
+    "requested_session": "2026-11-23",
+    "note": "Invalid for Nov23 regular session signal"
   },
   "last_end_of_day_data_quality": {
     "checked_at_utc": "2026-11-19T22:25:04Z",
@@ -2611,19 +2675,67 @@
     "provider_exchange_certified": false
   },
   "last_data_update_verified_at_this_check": false,
-  "last_check_report_prepared_utc": "2026-11-20T18:30:53.459Z",
-  "last_check_report_kind": "no_new_verified_etf_condition_and_stale_github_snapshot",
+  "last_check_report_prepared_utc": "2026-11-23T18:37:10.932Z",
+  "last_check_report_kind": "2026-11-23_1330_ET_INTRADAY_RECOVERY_WITH_STALE_COLLECTOR",
   "last_check_report_condition_ids": [
-    "COLLECTOR:STALE_2026-11-20_EOD",
-    "MARKET:REBOUND_ALREADY_REPORTED",
-    "CNN:SECONDARY_18_vs_17_UNALIGNED"
+    "QQQ:external_quote_above_last_confirmed_weekly_EMA100",
+    "VOO:external_quote_above_third_price_band",
+    "QQQM:external_quote_below_third_band"
   ],
-  "last_check_summary": "Nov23 12:30 ET: Latest remains Nov20 16:26 ET end_of_day, no Monday current ETF bar. Rebound remains externally visible but already notified; further source shows mild fade from 10:45 ET index observations. CNN original not verified; secondary 18/17 extreme fear. No validated new ETF thresholds or stabilization. No notification. Next 13:30 ET.",
-  "last_checked_at_utc": "2026-11-23T17:31:08Z",
-  "last_check_slot_et": "2026-11-23 10:30 EST nominal",
-  "notification_decision": "skip_notification",
+  "last_check_summary": "Nov23 13:30 EST scheduled check: first independently time-stamped Nov23 intraday ETF quotes (StockAnalysis) show sharp recovery after Nov20 selloff: QQQ 652.07 at 13:28 EST (+7.17% vs 608.45) above last confirmed Nov20 weekly EMA100 616.21; VOO 665.49 at 13:18 EST (+4.71% vs provider Nov20 635.54) above third confirmed band 645–655 but day's low 655.87, so no proven trade/retest inside the band; QQQM 268.40 at 13:17 EST (+6.83%) still below 280–285. These are intraday last quotes, NOT finished 5min bars/daily closes, do not establish persistent support or 15-minute rearm. Repo latest.json STILL Nov20 16:26:38 EST end_of_day, stale for Nov23, collector mode/75m/45m criteria fail; no validated Nov23 regular_session 5m. External last close discrepancy VOO GitHub 635.125 vs StockAnalysis 635.54; don't force a single previous-close %-change. Reuters midday broad Nasdaq/semiconductor rally corroborates. CNN original inaccessible; secondary FGScore 17 around 13:15 EST vs GuruTrack 18 daily, prior-daily comparisons misaligned and last-5-day aligned trend unverified; extreme fear, not buy trigger. Treat price recovery as significant newly independently verified intraday observation but not confirmed stabilization; planned tranche review only, no amount or orders, confirmation-style buying deferred. Delivery status unverified.",
+  "last_checked_at_utc": "2026-11-23T18:37:10.932Z",
+  "last_check_slot_et": "2026-11-23T13:30:00-05:00",
+  "notification_decision": "notify_major_intraday_recovery_independent_quotes_with_data_limitations",
   "last_daily_reference_session_date": "2026-11-20",
-  "last_inspection_utc": "2026-11-23T17:31:08Z",
-  "last_inspection_kind": "2026-11-23_1230_ET_SCHEDULED_US_REGULAR_CHECK",
-  "last_inspection_data_status": "stale_2026-11-20_end_of_day_no_2026-11-23_regular_session"
+  "last_inspection_utc": "2026-11-23T18:37:10.932Z",
+  "last_inspection_kind": "2026-11-23_1330_ET_INTRADAY_RECOVERY_WITH_STALE_COLLECTOR",
+  "last_inspection_data_status": "GitHub stale Nov20 end_of_day; independent same-date Nov23 ETF intraday quotes verified; no valid collector regular_session 5m",
+  "last_external_intraday": {
+    "observed_market_date": "2026-11-23",
+    "quote_provider": "StockAnalysis",
+    "quote_type": "timestamped_intraday_last_price_not_5m_bar_not_close",
+    "quotes": {
+      "QQQ": {
+        "price": 652.07,
+        "at_et": "2026-11-23T13:28:00-05:00",
+        "previous_close": 608.45,
+        "prev_source": "GitHub Nov20 provider daily close",
+        "pct": 7.17,
+        "reference_ema100_confirmed": 616.21,
+        "url": "https://stockanalysis.com/etf/qqq/"
+      },
+      "QQQM": {
+        "price": 268.4,
+        "at_et": "2026-11-23T13:17:00-05:00",
+        "previous_close": 251.23,
+        "prev_source": "GitHub Nov20 provider daily close",
+        "pct": 6.83,
+        "reference_interest_band": [
+          280,
+          285
+        ],
+        "url": "https://stockanalysis.com/etf/qqqm/"
+      },
+      "VOO": {
+        "price": 665.49,
+        "at_et": "2026-11-23T13:18:00-05:00",
+        "previous_close": 635.54,
+        "prev_source": "stockanalysis Nov20 provider raw daily close (GitHub unadjusted 635.125 discrepancy ~0.42 USD)",
+        "pct": 4.71,
+        "reference_interest_band": [
+          645,
+          655
+        ],
+        "session_low": 655.87,
+        "url": "https://stockanalysis.com/etf/voo/"
+      }
+    },
+    "validated_as_same_day": true,
+    "limitations": [
+      "quotes not synchronized to same instant",
+      "VOO prior close differs from last official GitHub provider snapshot",
+      "not continuous 15m confirmation"
+    ],
+    "confirmed_github_data": false
+  }
 }
