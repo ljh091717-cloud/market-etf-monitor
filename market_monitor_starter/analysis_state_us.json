@@ -25,20 +25,21 @@
     "VOO:below:second",
     "VOO:below:third"
   ],
-  "current_judgment": "Observation; confirmation-style additional buying deferred. Nov23 15:30 external quotes preserve earlier rebound conditions, no new verified material ETF price threshold. GitHub collector stale Nov20 EOD; today intraday five-minute bars and pre-open reference not verified. Planned tranche prices unchanged; no amount or orders.",
+  "current_judgment": "Observation / confirmation-style additional buying deferred: Nov23 external daily closes confirm rebound above prior weekly EMA100 for QQQ and above VOO third band, not a confirmed current weekly recovery. QQQM below all bands. No new daily downside stage. Price stability beyond one day and current daily/weekly technical indicators not established. No orders or sizing.",
   "next_conditions": [
-    "Nov23 17:30 EST / Nov24 07:30 KST: verify same-day provider daily Close for QQQ, QQQM and VOO, not 15:55 bar; inspect latest GitHub mode and date, and use independently timed daily close as supplemental if available.",
-    "QQQ close relative to Nov20 completed weekly EMA100 616.2126, daily SMA50 710.8832 and SMA200 682.0747; VOO close relative to 645–655 and 670–680, QQQM relative to 280–285. Current week not completed.",
-    "Nov27 early close: verify same-day daily closes and completed weekly indicators once at 13:30 or 14:30 ET; no duplicate review."
+    "Nov24 10:30 EST / Nov25 00:30 KST: validate new regular_session and Nov23 pre-open reference; watch QQQ 641.95 then 616.21; QQQM 264.41 then 249.64 and 280–285; VOO 655.87 and 645–655, 670–680.",
+    "Nov24 daily close: whether recovery holds and market participation improves; new lower low invalidates stabilization thesis; November 25 BEA 08:30 ET releases.",
+    "Nov27 13:30 or 14:30 EST: early-close daily and completed-week review once; no use of stale or 5-minute bars as close."
   ],
-  "last_report_prepared_utc": "2026-11-23T18:37:10.932Z",
-  "last_report_kind": "2026-11-23_1330_ET_INTRADAY_RECOVERY_WITH_STALE_COLLECTOR",
+  "last_report_prepared_utc": "2026-11-23T22:30:07Z",
+  "last_report_kind": "2026-11-23_1730_ET_EXTERNAL_DAILY_CLOSE_RECOVERY_STALE_COLLECTOR",
   "last_report_condition_ids": [
-    "QQQ:external_quote_above_last_confirmed_weekly_EMA100",
-    "VOO:external_quote_above_third_price_band",
-    "QQQM:external_quote_below_third_band"
+    "QQQ:external_daily_close_above_2026-11-20_weekly_EMA100",
+    "VOO:external_daily_close_above_third_band",
+    "QQQM:external_daily_close_below_third_band",
+    "COLLECTOR:STALE_2026-11-20_EOD"
   ],
-  "last_end_of_day_review_session": "2026-11-20",
+  "last_end_of_day_review_session": "2026-11-23",
   "rearm_status": "not_implemented_no_continuous_detector",
   "notification_delivery_status": "unverified",
   "low_frequency_cache": {
@@ -2646,108 +2647,261 @@
       "time_matched_volume": "unverified",
       "checked_at_utc": "2026-11-23T20:30:16Z",
       "refresh_condition": "material risk update or close"
+    },
+    "US_NOV23_EOD_EXTERNAL": {
+      "value": {
+        "QQQ": {
+          "open": 655.98,
+          "high": 657.53,
+          "low": 641.95,
+          "close": 651.03,
+          "prev_close": 608.45,
+          "pct": 7,
+          "volume": 84695175,
+          "high252_reference": 759.6599731445312,
+          "source_url": "https://stockanalysis.com/etf/qqq/history/",
+          "approx_drawdown_pct": -14.299815310114228
+        },
+        "QQQM": {
+          "open": 270.29,
+          "high": 270.73,
+          "low": 264.41,
+          "close": 267.97,
+          "prev_close": 251.23,
+          "pct": 6.66,
+          "volume": 11296214,
+          "high252_reference": 312.760009765625,
+          "source_url": "https://stockanalysis.com/etf/qqqm/history/",
+          "approx_drawdown_pct": -14.320887698906759
+        },
+        "VOO": {
+          "open": 665.92,
+          "high": 669.17,
+          "low": 655.87,
+          "close": 663.91,
+          "prev_close": 635.54,
+          "pct": 4.46,
+          "volume": 16776375,
+          "high252_reference": 716.2000122070312,
+          "source_url": "https://stockanalysis.com/etf/voo/history/",
+          "approx_drawdown_pct": -7.301034810917573
+        }
+      },
+      "observed_at_et": "2026-11-23 16:00 EST",
+      "checked_at_utc": "2026-11-23T22:30:07Z",
+      "source_urls": [
+        "https://stockanalysis.com/etf/qqq/history/",
+        "https://stockanalysis.com/etf/qqqm/history/",
+        "https://stockanalysis.com/etf/voo/history/"
+      ],
+      "refresh_condition": "next verified daily close or collector correction",
+      "technical_reference": "Nov20 last valid GitHub weekly EMA20/50/100/200 693.8341/669.2447/616.2126/533.7218 RSI14 34.099; QQQ daily SMA50/200 ATR14 710.8832/682.0747/18.7731; VOO 698.6467/671.1703/12.3064; Nov23 recalculated technical indicators unverified."
+    },
+    "CNN_NOV23_EOD_SECONDARY": {
+      "fgscore": 17,
+      "gurutrack": 17,
+      "fgscore_factor_time_et": "2026-11-23 16:11 EST",
+      "gurutrack_date": "2026-11-23",
+      "gurutrack_prev_close": 10,
+      "fgscore_one_day_ago": 17,
+      "both_one_week_ago": 31,
+      "band": "extreme fear",
+      "original_verified": false,
+      "five_aligned_sessions_verified": false,
+      "source_urls": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment"
+      ],
+      "checked_at_utc": "2026-11-23T22:30:07Z",
+      "refresh_condition": "new verified CNN release or aligned daily history"
+    },
+    "US_NOV23_EOD_RISK": {
+      "value": {
+        "RSP_pct": 2.59,
+        "VOO_pct": 4.46,
+        "QQQ_pct": 7,
+        "SOX_pct": 14.03,
+        "VIX": 26.61,
+        "VIX_prior": 35.89,
+        "VXN_intraday": 36.38,
+        "VXN_intraday_time": "Nov23 12:13 as displayed",
+        "VXN_prior_close": 45.25,
+        "nominal_10y_pct": 4.92,
+        "real_10y_pct": 2.79,
+        "real_10y_prior_pct": 2.77
+      },
+      "observed_date": "2026-11-23",
+      "sources": [
+        "https://stockanalysis.com/etf/rsp/",
+        "https://www.investing.com/news/stock-market-news/wall-street-futures-rebound-after-rough-week-for-ailinked-shares-5044594",
+        "https://www.investing.com/indices/volatility-s-p-500-historical-data",
+        "https://ycharts.com/indices/%5EVXN/level",
+        "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
+        "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value_month=202611"
+      ],
+      "checked_at_utc": "2026-11-23T22:30:07Z",
+      "refresh_condition": "next official publication or verified daily close",
+      "limitations": "RSP equal-weight proxy only; VXN current close unverified; Treasury daily not live; ETF full-day volumes lower than Fri, same-elapsed intraday comparison not available"
+    },
+    "US_EARNINGS_NOV24_IR": {
+      "observed_at_utc": "2026-11-23T22:30:07Z",
+      "date": "2026-11-24",
+      "value": {
+        "ADI": "07:00 ET release",
+        "DELL": "16:30 ET call; results before call",
+        "WDAY": "after close; 16:30 ET call"
+      },
+      "source_urls": [
+        "https://investor.analog.com/news-releases/news-release-details/analog-devices-report-fourth-quarter-fiscal-year-2026-financial/",
+        "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results",
+        "https://investor.workday.com/news-and-events/press-releases/news-details/2026/Workday-to-Announce-Fiscal-2027-Third-Quarter-Financial-Results-on-November-24-2026/default.aspx"
+      ],
+      "refresh_condition": "issuer release or schedule revision"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-20T15:32:29.337Z",
-  "last_check_prepared_utc": "2026-11-23T20:30:16Z",
-  "last_check_kind": "2026-11-23_1530_ET_NO_NEW_MATERIAL_CHANGE_STALE_COLLECTOR",
+  "last_evaluation_utc": "2026-11-23T22:30:07Z",
+  "last_check_prepared_utc": "2026-11-23T22:30:07Z",
+  "last_check_kind": "2026-11-23_1730_ET_EXTERNAL_DAILY_CLOSE_RECOVERY_STALE_COLLECTOR",
   "last_check_condition_ids": [
-    "QQQ:external_quote_above_last_confirmed_weekly_EMA100",
-    "VOO:external_quote_above_third_price_band",
-    "QQQM:external_quote_below_third_band",
+    "QQQ:external_daily_close_above_2026-11-20_weekly_EMA100",
+    "VOO:external_daily_close_above_third_band",
+    "QQQM:external_daily_close_below_third_band",
     "COLLECTOR:STALE_2026-11-20_EOD"
   ],
-  "last_notification_decision": "skip_notification_no_material_change",
-  "last_price_source": "GitHub 2026-11-19 end_of_day provider Yahoo/yfinance (prior session; no current price)",
+  "last_notification_decision": "report_material_external_daily_close_recovery",
+  "last_price_source": "Last valid GitHub snapshot Nov20; Nov23 external close separately stored; not current collector data",
   "last_external_end_of_day": {
-    "session": "2026-11-18",
-    "generated_utc": "2026-11-18T21:31:32.530106+00:00",
-    "mode": "end_of_day",
+    "session": "2026-11-23",
+    "mode": "external_provider_daily_close",
+    "provider": "StockAnalysis",
+    "generated_utc": null,
+    "close_at_et": "2026-11-23T16:00:00-05:00",
     "daily_close_by_symbol": {
-      "QQQ": 659.510009765625,
-      "QQQM": 271.5799865722656,
-      "VOO": 671.3099975585938
+      "QQQ": 651.03,
+      "QQQM": 267.97,
+      "VOO": 663.91
     },
-    "reference_date": "2026-11-17",
-    "checked_at_utc": "2026-11-18T22:28:40.597Z"
+    "reference_date": "2026-11-20",
+    "checked_at_utc": "2026-11-23T22:30:07Z",
+    "quotes": {
+      "QQQ": {
+        "open": 655.98,
+        "high": 657.53,
+        "low": 641.95,
+        "close": 651.03,
+        "prev_close": 608.45,
+        "pct": 7,
+        "volume": 84695175,
+        "high252_reference": 759.6599731445312,
+        "source_url": "https://stockanalysis.com/etf/qqq/history/",
+        "approx_drawdown_pct": -14.299815310114228
+      },
+      "QQQM": {
+        "open": 270.29,
+        "high": 270.73,
+        "low": 264.41,
+        "close": 267.97,
+        "prev_close": 251.23,
+        "pct": 6.66,
+        "volume": 11296214,
+        "high252_reference": 312.760009765625,
+        "source_url": "https://stockanalysis.com/etf/qqqm/history/",
+        "approx_drawdown_pct": -14.320887698906759
+      },
+      "VOO": {
+        "open": 665.92,
+        "high": 669.17,
+        "low": 655.87,
+        "close": 663.91,
+        "prev_close": 635.54,
+        "pct": 4.46,
+        "volume": 16776375,
+        "high252_reference": 716.2000122070312,
+        "source_url": "https://stockanalysis.com/etf/voo/history/",
+        "approx_drawdown_pct": -7.301034810917573
+      }
+    },
+    "exchange_certified": false,
+    "github_confirmed": false,
+    "prior_voo_discrepancy": "StockAnalysis 635.54 vs GitHub 635.125; returns use same-source external prev close; drawdowns approximate with prior GitHub Oct6 reference; no fresh pre-open or corporate action guard."
   },
   "last_data_quality_observation": {
-    "as_of_et": "2026-11-23 15:30 EST",
+    "as_of_et": "2026-11-23T17:30:00-05:00",
     "last_snapshot_generated_et": "2026-11-20T16:26:38.664655-05:00",
     "mode": "end_of_day",
     "usable_as_today_intraday": false,
-    "generated_age_minutes": 4264,
+    "usable_as_today_end_of_day": false,
     "collector_last_run_started_utc": "2026-11-21T02:43:53Z",
-    "collector_last_run_result": "Latest 10 Actions runs show no Monday execution; prior latest success not proof of fresh data",
-    "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
-    "checked_at_utc": "2026-11-23T20:30:16Z"
+    "collector_last_run_result": "success but save/deploy skipped; no Nov23 run in fetched latest 10",
+    "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/actions/runs/44857461964",
+    "checked_at_utc": "2026-11-23T22:30:07Z"
   },
-  "last_check_report_decision": "skip_notification_no_material_change",
-  "last_assessment_nominal_et": "2026-11-23T15:30:00-05:00",
-  "last_assessment_prepared_utc": "2026-11-23T20:30:16Z",
-  "last_assessment_kind": "2026-11-23_1530_ET_NO_NEW_MATERIAL_CHANGE_STALE_COLLECTOR",
+  "last_check_report_decision": "report_material_external_daily_close_recovery",
+  "last_assessment_nominal_et": "2026-11-23T17:30:00-05:00",
+  "last_assessment_prepared_utc": "2026-11-23T22:30:07Z",
+  "last_assessment_kind": "2026-11-23_1730_ET_EXTERNAL_DAILY_CLOSE_RECOVERY_STALE_COLLECTOR",
   "last_assessment_condition_ids": [
-    "QQQ:external_quote_above_last_confirmed_weekly_EMA100",
-    "VOO:external_quote_above_third_price_band",
-    "QQQM:external_quote_below_third_band",
+    "QQQ:external_daily_close_above_2026-11-20_weekly_EMA100",
+    "VOO:external_daily_close_above_third_band",
+    "QQQM:external_daily_close_below_third_band",
     "COLLECTOR:STALE_2026-11-20_EOD"
   ],
-  "last_check_report_decision_reason": "External quotes remain above/below same relevant levels as 14:30; CNN secondary 18/17 still extreme fear, no new decision threshold; collector remains stale.",
-  "last_check_attempt_utc": "2026-11-23T20:30:16Z",
-  "last_check_nominal_et": "2026-11-23T15:30:00-05:00",
-  "last_check_data_status": "GitHub Nov20 end_of_day unchanged SHA ffa844b39cebafc2e817675ef09ad8722a3fb380; external Nov23 15:07–15:29 quotes available; no validated regular_session 5m.",
-  "last_evaluation_prepared_utc": "2026-11-23T20:30:16Z",
-  "last_evaluation_kind": "2026-11-23_1530_ET_NO_NEW_MATERIAL_CHANGE_STALE_COLLECTOR",
+  "last_check_report_decision_reason": "New same-day daily closes confirm earlier intraday price recovery; report once for EOD; collector unresolved.",
+  "last_check_attempt_utc": "2026-11-23T22:30:07Z",
+  "last_check_nominal_et": "2026-11-23T17:30:00-05:00",
+  "last_check_data_status": "GitHub latest.json Nov20 16:26:38 EST unchanged; no Nov23 workflow runs listed; last Nov20 21:43 EST job success but save/deploy skipped. StockAnalysis Nov23 16:00 daily close rows for all 3 symbols independently observed; not exchange certified, no current GitHub corporate action/adjusted reference verification.",
+  "last_evaluation_prepared_utc": "2026-11-23T22:30:07Z",
+  "last_evaluation_kind": "2026-11-23_1730_ET_EXTERNAL_DAILY_CLOSE_RECOVERY_STALE_COLLECTOR",
   "last_evaluation_condition_ids": [
-    "QQQ:external_quote_above_last_confirmed_weekly_EMA100",
-    "VOO:external_quote_above_third_price_band",
-    "QQQM:external_quote_below_third_band",
+    "QQQ:external_daily_close_above_2026-11-20_weekly_EMA100",
+    "VOO:external_daily_close_above_third_band",
+    "QQQM:external_daily_close_below_third_band",
     "COLLECTOR:STALE_2026-11-20_EOD"
   ],
-  "last_check_completed_utc": "2026-11-23T20:30:16Z",
+  "last_check_completed_utc": "2026-11-23T22:30:07Z",
   "last_assessment_snapshot_generated_utc": "2026-11-20T21:26:38.664655+00:00",
   "last_stale_snapshot_observed": {
     "latest_generated_utc": "2026-11-20T21:26:38.664655+00:00",
     "latest_mode": "end_of_day",
     "requested_session": "2026-11-23",
     "snapshot_sha": "ffa844b39cebafc2e817675ef09ad8722a3fb380",
-    "note": "Invalid for Nov23 regular_session, 75-minute generated and 45-minute bar checks fail; no newer snapshot identified"
+    "note": "GitHub latest.json Nov20 16:26:38 EST unchanged; no Nov23 workflow runs listed; last Nov20 21:43 EST job success but save/deploy skipped. StockAnalysis Nov23 16:00 daily close rows for all 3 symbols independently observed; not exchange certified, no current GitHub corporate action/adjusted reference verification."
   },
   "last_end_of_day_data_quality": {
-    "checked_at_utc": "2026-11-19T22:25:04Z",
-    "generated_utc": "2026-11-19T21:44:08.994029+00:00",
+    "checked_at_utc": "2026-11-23T22:30:07Z",
+    "generated_utc": "2026-11-20T21:26:38.664655+00:00",
     "mode": "end_of_day",
-    "market_session": "2026-11-19",
+    "market_session": "2026-11-20",
+    "provider_daily_close_as_of": "2026-11-23 (external only)",
     "close_session_date_by_symbol": {
-      "QQQ": "2026-11-19",
-      "QQQM": "2026-11-19",
-      "VOO": "2026-11-19"
+      "QQQ": "2026-11-23",
+      "QQQM": "2026-11-23",
+      "VOO": "2026-11-23"
     },
-    "reference_session": "2026-11-18",
+    "reference_session": "2026-11-20 external; GitHub daily_reference as_of Nov19",
     "reference_fixed_before_open": false,
-    "verified_regular_session_false_is_normal_for_eod": true,
-    "provider_daily_close_as_of": "2026-11-19",
-    "last_5m_bars_all_null": true,
-    "snapshot_sha": "5e8e44844d0da832824f19d2982dc49398a92e07",
-    "provider_exchange_certified": false
+    "snapshot_sha": "ffa844b39cebafc2e817675ef09ad8722a3fb380",
+    "provider_exchange_certified": false,
+    "github_valid_for_current_session": false
   },
   "last_data_update_verified_at_this_check": false,
-  "last_check_report_prepared_utc": "2026-11-23T18:37:10.932Z",
-  "last_check_report_kind": "2026-11-23_1330_ET_INTRADAY_RECOVERY_WITH_STALE_COLLECTOR",
+  "last_check_report_prepared_utc": "2026-11-23T22:30:07Z",
+  "last_check_report_kind": "2026-11-23_1730_ET_EXTERNAL_DAILY_CLOSE_RECOVERY_STALE_COLLECTOR",
   "last_check_report_condition_ids": [
-    "QQQ:external_quote_above_last_confirmed_weekly_EMA100",
-    "VOO:external_quote_above_third_price_band",
-    "QQQM:external_quote_below_third_band"
+    "QQQ:external_daily_close_above_2026-11-20_weekly_EMA100",
+    "VOO:external_daily_close_above_third_band",
+    "QQQM:external_daily_close_below_third_band",
+    "COLLECTOR:STALE_2026-11-20_EOD"
   ],
-  "last_check_summary": "Observation; confirmation-style additional buying deferred. Nov23 15:30 external quotes preserve earlier rebound conditions, no new verified material ETF price threshold. GitHub collector stale Nov20 EOD; today intraday five-minute bars and pre-open reference not verified. Planned tranche prices unchanged; no amount or orders.",
-  "last_checked_at_utc": "2026-11-23T20:30:16Z",
-  "last_check_slot_et": "2026-11-23T15:30:00-05:00",
-  "notification_decision": "skip_notification_no_material_change",
+  "last_check_summary": "Observation / confirmation-style additional buying deferred: Nov23 external daily closes confirm rebound above prior weekly EMA100 for QQQ and above VOO third band, not a confirmed current weekly recovery. QQQM below all bands. No new daily downside stage. Price stability beyond one day and current daily/weekly technical indicators not established. No orders or sizing.",
+  "last_checked_at_utc": "2026-11-23T22:30:07Z",
+  "last_check_slot_et": "2026-11-23T17:30:00-05:00",
+  "notification_decision": "report_material_external_daily_close_recovery",
   "last_daily_reference_session_date": "2026-11-20",
-  "last_inspection_utc": "2026-11-23T20:30:16Z",
-  "last_inspection_kind": "2026-11-23_1530_ET_NO_NEW_MATERIAL_CHANGE_STALE_COLLECTOR",
-  "last_inspection_data_status": "GitHub Nov20 end_of_day unchanged SHA ffa844b39cebafc2e817675ef09ad8722a3fb380; external Nov23 15:07–15:29 quotes available; no validated regular_session 5m.",
+  "last_inspection_utc": "2026-11-23T22:30:07Z",
+  "last_inspection_kind": "2026-11-23_1730_ET_EXTERNAL_DAILY_CLOSE_RECOVERY_STALE_COLLECTOR",
+  "last_inspection_data_status": "GitHub latest.json Nov20 16:26:38 EST unchanged; no Nov23 workflow runs listed; last Nov20 21:43 EST job success but save/deploy skipped. StockAnalysis Nov23 16:00 daily close rows for all 3 symbols independently observed; not exchange certified, no current GitHub corporate action/adjusted reference verification.",
   "last_external_intraday": {
     "observed_market_date": "2026-11-23",
     "quote_provider": "StockAnalysis",
@@ -2818,7 +2972,8 @@
     "confirmed_github_data": false,
     "note": "Nov23 independent quotes valid as timed external observations only; QQQ weekly EMA100 616.21 reference is Nov20 completed weekly, not new weekly close; no proof of 15-minute continuous stability or same-time volume"
   },
-  "next_check_condition": "Nov23 17:30 EST / Nov24 07:30 KST: verify same-day provider daily Close for QQQ, QQQM and VOO, not 15:55 bar; inspect latest GitHub mode and date, and use independently timed daily close as supplemental if available. QQQ close relative to Nov20 completed weekly EMA100 616.2126, daily SMA50 710.8832 and SMA200 682.0747; VOO close relative to 645–655 and 670–680, QQQM relative to 280–285. Current week not completed. Nov27 early close: verify same-day daily closes and completed weekly indicators once at 13:30 or 14:30 ET; no duplicate review.",
+  "next_check_condition": "Nov24 10:30 EST / Nov25 00:30 KST: validate new regular_session and Nov23 pre-open reference; watch QQQ 641.95 then 616.21; QQQM 264.41 then 249.64 and 280–285; VOO 655.87 and 645–655, 670–680. Nov24 daily close: whether recovery holds and market participation improves; new lower low invalidates stabilization thesis; November 25 BEA 08:30 ET releases. Nov27 13:30 or 14:30 EST: early-close daily and completed-week review once; no use of stale or 5-minute bars as close.",
   "delivery_status": "unverified",
-  "last_assessment_report_decision": "skip_notification_no_material_change"
+  "last_assessment_report_decision": "report_material_external_daily_close_recovery",
+  "last_external_review_session": "2026-11-23"
 }
