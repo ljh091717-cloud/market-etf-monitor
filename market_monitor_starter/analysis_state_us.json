@@ -25,12 +25,12 @@
     "VOO:below:second",
     "VOO:below:third"
   ],
-  "current_judgment": "2026-11-23 Monday 10:30 EST nominal check: important broad Nasdaq-100 rally observed externally, Reuters published Nov23 15:07 UTC (10:07 EST) reported .NDX +6.6% on Nvidia leadership restoration; NOT confirmed QQQ/QQQM/VOO current ETF prices or lasting stabilization. Repository latest.json remains Friday Nov20 16:26 EST end_of_day (QQQ 608.45, QQQM 251.23, VOO 635.125) stale, no Monday regular_session/5-minute bars, not buy signals. Monday current regular session open per NYSE calendar. Github Actions last known schedule run Nov20 21:43 EST Nov21 02:43Z, collect success but save/deploy skipped; no Nov23 run as of this check. CNN original robots restricted; FGScore secondary 16 09:05 EST factor timestamp vs GuruTrack secondary 11 daily, both extreme fear, no aligned same-method day-over-day or 5-session trend. Important rebound regime shift but cannot issue ETF confirmation. Planned layering still requires confirmed budget/risk and own price; confirmation approach waits for completed bar/day, low maintenance and breadth. No auto orders.",
+  "current_judgment": "2026-11-23 Monday 11:30 EST nominal inspection (observed ~11:32): broad rebound continued (Reuters 10:45 EST Nasdaq Composite +7.11%, S&P500 +5.09%, NYSE adv/decl 4.26:1; same rebound context reported 10:30, distinct from Nasdaq-100 +6.6% at 10:07); but no new verified ETF own regular-session prices or new purchase/stabilization condition. GitHub latest remains Nov20 16:26 EST EOD, invalid for Monday current. CNN original inaccessible; FGScore secondary 19 at factor market timestamp 10:20 EST, GuruTrack secondary 17 daily, both extreme fear, not synchronized with each other or verified vs prior session; not independent from VIX. No fresh verified independent rate/VXN/breadth SMA%/same-elapsed-volume data. No new material valid ETF trigger beyond already-notified 10:30 market rebound; suppress duplicate detail/notification, not AI execution. Maintain data_insufficient and additional purchase hold; prior confirmed config revision 2026-10-19.1; no automated orders. Actual push receipt unavailable (unverified).",
   "next_conditions": [
-    "Next scheduled regular session 2026-11-23 11:30 EST / 2026-11-24 01:30 KST: re-read latest.json; require mode=regular_session, ny_date=Nov23, generated age<=75m, each ETF 5min bar start age<=45m; distinguish uncompleted 5-min bar.",
-    "QQQ: verify own price relative to 2026-11-20 close $608.45, 252-day highest closing price $759.66 (Oct06), -20%=$607.728, last CONFIRMED weekly EMA100=$616.21; never call NDX +6.6% an ETF price or intraday-to-close recovery.",
-    "VOO: assess own price relative Nov20 close $635.125, confirmed third band $645-655, last SMA200 $671.17; QQQM own price relative $251.23, third band $280-285. New prices not assumed, no orders.",
-    "Next completed Nov23 daily close; weekly indicators for current new week are provisional until last actual trading session (Nov27 13:00 early close; verify all 3 provider daily closes and weekly completion, combine once)."
+    "Next scheduled 2026-11-23 12:30 EST / 2026-11-24 02:30 KST: re-read repo main latest.json; require mode regular_session, NY market date Nov23, generated <=75 minutes and each ETF's 5m bar-start age <=45 minutes; report collector absent/late if still stale, don't substitute Friday EOD as intraday.",
+    "QQQ verify its own intraday quote against Fri Nov20 close $608.45, last confirmed weekly EMA100 $616.21, prior highest 252 close $759.66 and -20% price $607.73. Separate incomplete 5-min bar/complete bar/current daily provisional; corroborate price rebound and support hold.",
+    "VOO verify its own quote vs Fri close $635.125 and confirmed third band $645-655; QQQM vs Fri close $251.23 and confirmed third band $280-285. No amount/sizing without finalized budget/risk.",
+    "End-of-day 17:30 EST Nov23: only provider same-session daily close. Week provisional until Nov27 13:00 early close with date-aligned all 3 closes; verify once with no premature last 5m bar as official close."
   ],
   "last_report_prepared_utc": "2026-11-23T15:30:14.157Z",
   "last_report_kind": "2026-11-23_1030_ET_MAJOR_NASDAQ_REBOUND_BUT_GITHUB_STALE_NOTIFY_DATA_LIMIT",
@@ -2464,6 +2464,44 @@
       "observed_at_utc": "2026-11-23T15:30:14.157Z",
       "actions_url": "https://github.com/ljh091717-cloud/market-etf-monitor/actions/runs/44857461964",
       "refresh_condition": "new scheduled GitHub run and actual latest.json updated for Nov23"
+    },
+    "CNN_NOV23_1130_SECONDARY": {
+      "fgscore_19": "19/100 extreme fear, site Nov23; factor market timestamp 2026-11-23 10:20 EST",
+      "gurutrack_17": "17/100 extreme fear Nov23 daily; previous close shown 10, but inconsistent with FGScore '1 day ago'=19",
+      "original_verified": false,
+      "comparable_direction": "unverified original + conflicting prior-day comparator; apparent improvement in current secondary snapshots vs 10:30 check (FGScore 16, GuruTrack 11) is not like-for-like source publication or confirmed daily comparison",
+      "five_session_history": "unverified",
+      "source_urls": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment",
+        "https://www.cnn.com/markets/fear-and-greed"
+      ],
+      "factor_timestamp_et": "2026-11-23 10:20 EST; not original CNN index publication time",
+      "checked_at_utc": "2026-11-23T16:33:11.099Z",
+      "refresh_condition": "Next verified primary CNN release or consistent market-day aligned secondary close",
+      "not_independent_of_vix": true
+    },
+    "MARKET_NOV23_1130_BREADTH_NEWS": {
+      "published_at": "2026-11-23",
+      "observed_at_et": "2026-11-23 10:45 EST",
+      "nasdaq_composite_pct": 7.11,
+      "sp500_pct": 5.09,
+      "nyse_adv_dec_ratio": "4.26:1",
+      "nasdaq_adv_dec_ratio": "4.53:1",
+      "semiconductor_index_pct": 14.8,
+      "source_url": "https://www.reuters.com/business/wall-street-futures-rebound-after-rough-week-ai-linked-shares-2026-11-23/",
+      "label": "External contemporaneous Reuters intraday market breadth counts/sector movements; NOT QQQ intraday price, SMA breadth, close or volume ratio",
+      "checked_at_utc": "2026-11-23T16:33:11.099Z",
+      "refresh_condition": "When new confirmed data or session close materially changes stabilization assessment"
+    },
+    "COLLECTOR_NOV23_1130": {
+      "latest_sha": "ffa844b39cebafc2e817675ef09ad8722a3fb380",
+      "latest_generated_et": "2026-11-20T16:26:38.664655-05:00",
+      "checked_at_utc": "2026-11-23T16:33:11.099Z",
+      "today_ny_date": "2026-11-23",
+      "status": "stale Friday end_of_day; Monday 11:30 regular session snapshot missing, fresh intraday price invalid",
+      "actions_today": "not independently checked in this 11:30 inspection",
+      "next_check": "2026-11-23 12:30 EST"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
@@ -2562,5 +2600,8 @@
   "last_checked_at_utc": "2026-11-23T15:30:14.157Z",
   "last_check_slot_et": "2026-11-23 10:30 EST nominal",
   "notification_decision": "skip_notification_no_new_valid_ETF_signal",
-  "last_daily_reference_session_date": "2026-11-20"
+  "last_daily_reference_session_date": "2026-11-20",
+  "last_inspection_utc": "2026-11-23T16:33:11.099Z",
+  "last_inspection_kind": "2026-11-23_1130_ET_NO_VERIFIED_NEW_ETF_PRICE_SIGNAL_SKIP_NOTIFY",
+  "last_inspection_data_status": "GitHub main latest.json unchanged from Nov20 16:26:38 EST end_of_day; Nov23 regular_session snapshot absent as of 11:32 ET check; all 3 ETF intraday quotes invalid for Nov23, no 75m/45m freshness; last verified closes Friday QQQ 608.45, QQQM 251.23, VOO 635.125, not Monday quotes."
 }
