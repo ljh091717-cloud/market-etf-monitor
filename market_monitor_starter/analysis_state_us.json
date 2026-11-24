@@ -25,16 +25,13 @@
     "VOO:below:second",
     "VOO:below:third"
   ],
-  "current_judgment": "External downside continues, QQQ low 632.28 above -3% threshold 631.50, VOO low unchanged 654.61 and last 656.95 above third band. QQQM below all bands. SOX -8.76% and VIX 28.83 indicate worsening tech risk, but no new ETF threshold or change in plan-style conditional watch / confirmation-style hold. No fresh collector, corporate-action guard or pre-open reference. No new full report.",
-  "next_conditions": [
-    "Nov24 12:30 EST: verify regular_session, Nov23 fixed reference; QQQ 631.50 (-3%), 618.48 (-5%), 616.21 prior weekly EMA100, QQQM 264.41 recovery / 249.64 risk; VOO 645–655 and 650.63 (-2%).",
-    "Nov24 17:30 EST: verify same-day daily close, Nov23 low recovery, market participation; provisional weekly only.",
-    "Nov25 08:30 ET BEA GDP/PCE; Nov26 closed, Nov27 13:00 early close then 13:30/14:30 one combined EOD and weekly review."
-  ],
-  "last_report_prepared_utc": "2026-11-24T15:30:11Z",
-  "last_report_kind": "2026-11-24_1030_ET_EXTERNAL_DOWNSIDE_STALE_COLLECTOR",
+  "current_judgment": "External QQQ day low 631.15 (-3.05%) newly touched -3% threshold 631.4991, latest 637.76 (-2.04%) back above -3% but below -2%; not a verified 5m close or continuous rearm. QQQM low 259.90, latest 262.02 below all bands; VOO low 654.61 unchanged, latest 660.38 outside third band. VIX 27.06 eased from 28.83 but SOX -8.84%, RSP +0.20%. Conditional plan-style watch / confirmation-style hold, no sizing. Collector stale, corporate action guard and pre-open fixed reference unverified. Report external touch provisionally.",
+  "next_conditions": "Nov24 13:30 EST: verify fresh regular_session and Nov23 fixed reference; QQQ 631.50 retest, 618.48 (-5%), 616.21 prior weekly EMA100, 641.95 Nov23 low recovery; QQQM 259.90/249.64 downside, 264.41 recovery; VOO 645–655 and 650.63 (-2%). Nov24 17:30 EST verify daily closes; Nov27 13:30 or 14:30 combined EOD and weekly review.",
+  "last_report_prepared_utc": "2026-11-24T17:30:05Z",
+  "last_report_kind": "2026-11-24_1230_ET_EXTERNAL_QQQ_MINUS3_INTRADAY_TOUCH_STALE_COLLECTOR",
   "last_report_condition_ids": [
     "QQQ:external_daily:-2",
+    "QQQ:external_intraday_low:-3",
     "QQQ:external_approx_high252:-15",
     "QQQ:external_below_Nov23_low",
     "QQQM:external_below_Nov23_low",
@@ -2855,22 +2852,63 @@
       "checked_at_utc": "2026-11-24T16:30:02Z",
       "limitations": "Not synchronized; RSP proxy not direct breadth; yields Nov23 cache; VXN Nov23 provider daily close; current VXN and same elapsed volume unverified.",
       "refresh_condition": "new market observation or official daily publication"
+    },
+    "CNN_NOV24_1230_SECONDARY": {
+      "fgscore": 15,
+      "fgscore_market_time_et": "2026-11-24 11:26 EST",
+      "gurutrack": 16,
+      "gurutrack_prev_close": 17,
+      "gurutrack_date": "2026-11-24",
+      "one_week_both": 26,
+      "original_verified": false,
+      "five_aligned_sessions_verified": false,
+      "source_urls": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment"
+      ],
+      "checked_at_utc": "2026-11-24T17:30:05Z",
+      "refresh_condition": "new verified release or aligned daily history"
+    },
+    "US_NOV24_1230_RISK": {
+      "value": {
+        "RSP_pct": 0.2,
+        "RSP_at_et": "11:59",
+        "SOX_pct": -8.84,
+        "SOX_at_display": "12:03:41",
+        "VIX": 27.06,
+        "VIX_at_display": "12:24:46",
+        "VIX_prior": 26.62,
+        "VXN_prior_close": 36.31,
+        "VXN_date": "2026-11-23",
+        "nominal_10y_prior_pct": 4.92,
+        "real_10y_prior_pct": 2.79
+      },
+      "source_urls": [
+        "https://stockanalysis.com/etf/rsp/",
+        "https://www.investing.com/indices/phlx-semiconductor",
+        "https://www.investing.com/indices/volatility-s-p-500"
+      ],
+      "observed_date": "2026-11-24",
+      "checked_at_utc": "2026-11-24T17:30:05Z",
+      "limitations": "Not synchronized, RSP proxy not direct breadth; yield and VXN prior cache; current VXN and same elapsed volume unverified.",
+      "refresh_condition": "new market observation or official daily publication"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-24T16:30:02Z",
-  "last_check_prepared_utc": "2026-11-24T16:30:02Z",
-  "last_check_kind": "2026-11-24_1130_ET_EXTERNAL_DOWNSIDE_CONTINUED_STALE_COLLECTOR",
+  "last_evaluation_utc": "2026-11-24T17:30:05Z",
+  "last_check_prepared_utc": "2026-11-24T17:30:05Z",
+  "last_check_kind": "2026-11-24_1230_ET_EXTERNAL_QQQ_MINUS3_INTRADAY_TOUCH_STALE_COLLECTOR",
   "last_check_condition_ids": [
     "QQQ:external_daily:-2",
+    "QQQ:external_intraday_low:-3",
     "QQQ:external_approx_high252:-15",
     "QQQ:external_below_Nov23_low",
     "QQQM:external_below_Nov23_low",
     "VOO:external_intraday_third_band_touch",
     "COLLECTOR:STALE_2026-11-20_EOD"
   ],
-  "last_notification_decision": "skip_no_new_etf_condition_existing_judgment",
-  "last_price_source": "Last valid GitHub Nov20; Nov24 separate external intraday quotes, not collector data",
+  "last_notification_decision": "report_new_external_intraday_minus3_touch_provisional",
+  "last_price_source": "Last valid GitHub Nov20; separate Nov24 external intraday observations, not collector data",
   "last_external_end_of_day": {
     "session": "2026-11-23",
     "mode": "external_provider_daily_close",
@@ -2927,7 +2965,7 @@
     "prior_voo_discrepancy": "StockAnalysis 635.54 vs GitHub 635.125; returns use same-source external prev close; drawdowns approximate with prior GitHub Oct6 reference; no fresh pre-open or corporate action guard."
   },
   "last_data_quality_observation": {
-    "as_of_et": "2026-11-24T11:30:00-05:00",
+    "as_of_et": "2026-11-24T12:30:00-05:00",
     "last_snapshot_generated_et": "2026-11-20T16:26:38.664655-05:00",
     "mode": "end_of_day",
     "usable_as_today_intraday": false,
@@ -2935,42 +2973,44 @@
     "collector_last_run_started_utc": "2026-11-24T05:28:28Z",
     "collector_last_run_result": "success but save/deploy skipped; no newer run in latest five",
     "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/actions/runs/45333563120",
-    "checked_at_utc": "2026-11-24T16:30:02Z"
+    "checked_at_utc": "2026-11-24T17:30:05Z"
   },
-  "last_check_report_decision": "skip_no_new_etf_condition_existing_judgment",
-  "last_assessment_nominal_et": "2026-11-24T11:30:00-05:00",
-  "last_assessment_prepared_utc": "2026-11-24T16:30:02Z",
-  "last_assessment_kind": "2026-11-24_1130_ET_EXTERNAL_DOWNSIDE_CONTINUED_STALE_COLLECTOR",
+  "last_check_report_decision": "report_new_external_intraday_minus3_touch_provisional",
+  "last_assessment_nominal_et": "2026-11-24T12:30:00-05:00",
+  "last_assessment_prepared_utc": "2026-11-24T17:30:05Z",
+  "last_assessment_kind": "2026-11-24_1230_ET_EXTERNAL_QQQ_MINUS3_INTRADAY_TOUCH_STALE_COLLECTOR",
   "last_assessment_condition_ids": [
     "QQQ:external_daily:-2",
+    "QQQ:external_intraday_low:-3",
     "QQQ:external_approx_high252:-15",
     "QQQ:external_below_Nov23_low",
     "QQQM:external_below_Nov23_low",
     "VOO:external_intraday_third_band_touch",
     "COLLECTOR:STALE_2026-11-20_EOD"
   ],
-  "last_check_report_decision_reason": "External downside continues, QQQ low 632.28 above -3% threshold 631.50, VOO low unchanged 654.61 and last 656.95 above third band. QQQM below all bands. SOX -8.76% and VIX 28.83 indicate worsening tech risk, but no new ETF threshold or change in plan-style conditional watch / confirmation-style hold. No fresh collector, corporate-action guard or pre-open reference. No new full report.",
-  "last_check_attempt_utc": "2026-11-24T16:30:02Z",
-  "last_check_nominal_et": "2026-11-24T11:30:00-05:00",
-  "last_check_data_status": "GitHub latest unchanged Nov20 16:26:38 EST end_of_day, reference_us and state_us still Nov20; reference not fixed before open. Latest workflow 45333563120 Nov24 00:28 EST success but save/deploy skipped, no newer run in latest five. External quotes Nov24 11:07–11:28 EST not 5m bars, current guard unverified.",
-  "last_evaluation_prepared_utc": "2026-11-24T16:30:02Z",
-  "last_evaluation_kind": "2026-11-24_1130_ET_EXTERNAL_DOWNSIDE_CONTINUED_STALE_COLLECTOR",
+  "last_check_report_decision_reason": "External QQQ day low 631.15 (-3.05%) newly touched -3% threshold 631.4991, latest 637.76 (-2.04%) back above -3% but below -2%; not a verified 5m close or continuous rearm. QQQM low 259.90, latest 262.02 below all bands; VOO low 654.61 unchanged, latest 660.38 outside third band. VIX 27.06 eased from 28.83 but SOX -8.84%, RSP +0.20%. Conditional plan-style watch / confirmation-style hold, no sizing. Collector stale, corporate action guard and pre-open fixed reference unverified. Report external touch provisionally.",
+  "last_check_attempt_utc": "2026-11-24T17:30:05Z",
+  "last_check_nominal_et": "2026-11-24T12:30:00-05:00",
+  "last_check_data_status": "GitHub latest unchanged Nov20 16:26:38 EST end_of_day; reference_us session Nov20/as-of Nov19, not fixed before open. Latest Actions run 45333563120 Nov24 00:28 EST collect success but save/deploy skipped, latest five show no newer run. External Nov24 quotes 12:07–12:28 EST, not collector 5m bars.",
+  "last_evaluation_prepared_utc": "2026-11-24T17:30:05Z",
+  "last_evaluation_kind": "2026-11-24_1230_ET_EXTERNAL_QQQ_MINUS3_INTRADAY_TOUCH_STALE_COLLECTOR",
   "last_evaluation_condition_ids": [
     "QQQ:external_daily:-2",
+    "QQQ:external_intraday_low:-3",
     "QQQ:external_approx_high252:-15",
     "QQQ:external_below_Nov23_low",
     "QQQM:external_below_Nov23_low",
     "VOO:external_intraday_third_band_touch",
     "COLLECTOR:STALE_2026-11-20_EOD"
   ],
-  "last_check_completed_utc": "2026-11-24T16:30:02Z",
+  "last_check_completed_utc": "2026-11-24T17:30:05Z",
   "last_assessment_snapshot_generated_utc": "2026-11-20T21:26:38.664655+00:00",
   "last_stale_snapshot_observed": {
     "latest_generated_utc": "2026-11-20T21:26:38.664655+00:00",
     "latest_mode": "end_of_day",
     "requested_session": "2026-11-24",
     "snapshot_sha": "ffa844b39cebafc2e817675ef09ad8722a3fb380",
-    "note": "GitHub latest unchanged Nov20 16:26:38 EST end_of_day, reference_us and state_us still Nov20; reference not fixed before open. Latest workflow 45333563120 Nov24 00:28 EST success but save/deploy skipped, no newer run in latest five. External quotes Nov24 11:07–11:28 EST not 5m bars, current guard unverified."
+    "note": "GitHub latest unchanged Nov20 16:26:38 EST end_of_day; reference_us session Nov20/as-of Nov19, not fixed before open. Latest Actions run 45333563120 Nov24 00:28 EST collect success but save/deploy skipped, latest five show no newer run. External Nov24 quotes 12:07–12:28 EST, not collector 5m bars."
   },
   "last_end_of_day_data_quality": {
     "checked_at_utc": "2026-11-23T22:30:07Z",
@@ -2990,25 +3030,77 @@
     "github_valid_for_current_session": false
   },
   "last_data_update_verified_at_this_check": false,
-  "last_check_report_prepared_utc": "2026-11-24T15:30:11Z",
-  "last_check_report_kind": "2026-11-24_1030_ET_EXTERNAL_DOWNSIDE_STALE_COLLECTOR",
+  "last_check_report_prepared_utc": "2026-11-24T17:30:05Z",
+  "last_check_report_kind": "2026-11-24_1230_ET_EXTERNAL_QQQ_MINUS3_INTRADAY_TOUCH_STALE_COLLECTOR",
   "last_check_report_condition_ids": [
     "QQQ:external_daily:-2",
+    "QQQ:external_intraday_low:-3",
     "QQQ:external_approx_high252:-15",
     "QQQ:external_below_Nov23_low",
     "QQQM:external_below_Nov23_low",
     "VOO:external_intraday_third_band_touch",
     "COLLECTOR:STALE_2026-11-20_EOD"
   ],
-  "last_check_summary": "External downside continues, QQQ low 632.28 above -3% threshold 631.50, VOO low unchanged 654.61 and last 656.95 above third band. QQQM below all bands. SOX -8.76% and VIX 28.83 indicate worsening tech risk, but no new ETF threshold or change in plan-style conditional watch / confirmation-style hold. No fresh collector, corporate-action guard or pre-open reference. No new full report.",
-  "last_checked_at_utc": "2026-11-24T16:30:02Z",
-  "last_check_slot_et": "2026-11-24T11:30:00-05:00",
-  "notification_decision": "skip_no_new_etf_condition_existing_judgment",
+  "last_check_summary": "External QQQ day low 631.15 (-3.05%) newly touched -3% threshold 631.4991, latest 637.76 (-2.04%) back above -3% but below -2%; not a verified 5m close or continuous rearm. QQQM low 259.90, latest 262.02 below all bands; VOO low 654.61 unchanged, latest 660.38 outside third band. VIX 27.06 eased from 28.83 but SOX -8.84%, RSP +0.20%. Conditional plan-style watch / confirmation-style hold, no sizing. Collector stale, corporate action guard and pre-open fixed reference unverified. Report external touch provisionally.",
+  "last_checked_at_utc": "2026-11-24T17:30:05Z",
+  "last_check_slot_et": "2026-11-24T12:30:00-05:00",
+  "notification_decision": "report_new_external_intraday_minus3_touch_provisional",
   "last_daily_reference_session_date": "2026-11-23",
-  "last_inspection_utc": "2026-11-24T16:30:02Z",
-  "last_inspection_kind": "2026-11-24_1130_ET_EXTERNAL_DOWNSIDE_CONTINUED_STALE_COLLECTOR",
-  "last_inspection_data_status": "GitHub latest unchanged Nov20 16:26:38 EST end_of_day, reference_us and state_us still Nov20; reference not fixed before open. Latest workflow 45333563120 Nov24 00:28 EST success but save/deploy skipped, no newer run in latest five. External quotes Nov24 11:07–11:28 EST not 5m bars, current guard unverified.",
+  "last_inspection_utc": "2026-11-24T17:30:05Z",
+  "last_inspection_kind": "2026-11-24_1230_ET_EXTERNAL_QQQ_MINUS3_INTRADAY_TOUCH_STALE_COLLECTOR",
+  "last_inspection_data_status": "GitHub latest unchanged Nov20 16:26:38 EST end_of_day; reference_us session Nov20/as-of Nov19, not fixed before open. Latest Actions run 45333563120 Nov24 00:28 EST collect success but save/deploy skipped, latest five show no newer run. External Nov24 quotes 12:07–12:28 EST, not collector 5m bars.",
   "last_external_intraday": {
+    "observed_market_date": "2026-11-24",
+    "quote_provider": "StockAnalysis",
+    "quote_type": "timestamped_intraday_last_prices_not_5min_bars_or_daily_close",
+    "quotes": {
+      "QQQ": {
+        "price": 637.76,
+        "pct": -2.038308526488797,
+        "previous_close": 651.03,
+        "low": 631.15,
+        "low_pct": -3.053622720919158,
+        "at_et": "2026-11-24T12:13:00-05:00",
+        "high252_reference": 759.6599731445312,
+        "approx_drawdown_pct": -16.046649481864804,
+        "age_minutes": 17.083333333333332,
+        "source_url": "https://stockanalysis.com/etf/qqq/"
+      },
+      "QQQM": {
+        "price": 262.02,
+        "pct": -2.220397805724539,
+        "previous_close": 267.97,
+        "low": 259.9,
+        "low_pct": -3.011531141545709,
+        "at_et": "2026-11-24T12:07:00-05:00",
+        "high252_reference": 312.760009765625,
+        "approx_drawdown_pct": -16.223304828404494,
+        "age_minutes": 23.083333333333332,
+        "source_url": "https://stockanalysis.com/etf/qqqm/"
+      },
+      "VOO": {
+        "price": 660.38,
+        "pct": -0.5316985736018354,
+        "previous_close": 663.91,
+        "low": 654.61,
+        "low_pct": -1.4007922760615021,
+        "at_et": "2026-11-24T12:28:00-05:00",
+        "high252_reference": 716.2000122070312,
+        "approx_drawdown_pct": -7.793913886571591,
+        "age_minutes": 2.0833333333333335,
+        "source_url": "https://stockanalysis.com/etf/voo/"
+      }
+    },
+    "quotes_not_same_instant": true,
+    "validated_as_same_day": true,
+    "confirmed_github_data": false,
+    "external_reference_session": "2026-11-23",
+    "still_above_last_confirmed_qqq_weekly_ema100": true,
+    "still_above_voo_third_band": true,
+    "qqqm_still_below_third_band": true,
+    "note": "External QQQ day low 631.15 (-3.05%) newly touched -3% threshold 631.4991, latest 637.76 (-2.04%) back above -3% but below -2%; not a verified 5m close or continuous rearm. QQQM low 259.90, latest 262.02 below all bands; VOO low 654.61 unchanged, latest 660.38 outside third band. VIX 27.06 eased from 28.83 but SOX -8.84%, RSP +0.20%. Conditional plan-style watch / confirmation-style hold, no sizing. Collector stale, corporate action guard and pre-open fixed reference unverified. Report external touch provisionally."
+  },
+  "last_external_intraday_previous": {
     "observed_market_date": "2026-11-24",
     "quote_provider": "StockAnalysis",
     "quote_type": "timestamped_intraday_last_prices_not_5min_bars_or_daily_close",
@@ -3056,60 +3148,13 @@
     "qqqm_still_below_third_band": true,
     "note": "QQQ low 632.28 above -3% threshold; VOO low unchanged. No continuous rearm proof; old high-close reference approximate."
   },
-  "last_external_intraday_previous": {
-    "observed_market_date": "2026-11-24",
-    "quote_provider": "StockAnalysis",
-    "quote_type": "timestamped_intraday_last_prices_not_5min_bars_or_daily_close",
-    "quotes": {
-      "QQQ": {
-        "price": 637.64,
-        "pct": -2.06,
-        "previous_close": 651.03,
-        "low": 635.85,
-        "at_et": "2026-11-24T10:10:00-05:00",
-        "high252_reference": 759.6599731445312,
-        "source_url": "https://stockanalysis.com/etf/qqq/",
-        "approx_drawdown_pct": -16.06244602298087,
-        "age_minutes": 20.183333333333334
-      },
-      "QQQM": {
-        "price": 262.98,
-        "pct": -1.86,
-        "previous_close": 267.97,
-        "low": 261.85,
-        "at_et": "2026-11-24T10:06:00-05:00",
-        "high252_reference": 312.760009765625,
-        "source_url": "https://stockanalysis.com/etf/qqqm/",
-        "approx_drawdown_pct": -15.916360215914093,
-        "age_minutes": 24.183333333333334
-      },
-      "VOO": {
-        "price": 656.76,
-        "pct": -1.08,
-        "previous_close": 663.91,
-        "low": 654.61,
-        "at_et": "2026-11-24T10:28:00-05:00",
-        "high252_reference": 716.2000122070312,
-        "source_url": "https://stockanalysis.com/etf/voo/",
-        "approx_drawdown_pct": -8.299359284267782,
-        "age_minutes": 2.183333333333333
-      }
-    },
-    "quotes_not_same_instant": true,
-    "validated_as_same_day": true,
-    "confirmed_github_data": false,
-    "external_reference_session": "2026-11-23",
-    "still_above_last_confirmed_qqq_weekly_ema100": true,
-    "still_above_voo_third_band": true,
-    "qqqm_still_below_third_band": true,
-    "note": "VOO intraday low 654.61 in band; no 15-minute hold proof; old adjusted high reference approximate."
-  },
-  "next_check_condition": "Nov24 12:30 EST: verify regular_session, Nov23 fixed reference; QQQ 631.50 (-3%), 618.48 (-5%), 616.21 prior weekly EMA100, QQQM 264.41 recovery / 249.64 risk; VOO 645–655 and 650.63 (-2%). Nov24 17:30 EST: verify same-day daily close, Nov23 low recovery, market participation; provisional weekly only. Nov25 08:30 ET BEA GDP/PCE; Nov26 closed, Nov27 13:00 early close then 13:30/14:30 one combined EOD and weekly review.",
+  "next_check_condition": "Nov24 13:30 EST: verify fresh regular_session and Nov23 fixed reference; QQQ 631.50 retest, 618.48 (-5%), 616.21 prior weekly EMA100, 641.95 Nov23 low recovery; QQQM 259.90/249.64 downside, 264.41 recovery; VOO 645–655 and 650.63 (-2%). Nov24 17:30 EST verify daily closes; Nov27 13:30 or 14:30 combined EOD and weekly review.",
   "delivery_status": "unverified",
-  "last_assessment_report_decision": "skip_no_new_etf_condition_existing_judgment",
+  "last_assessment_report_decision": "report_new_external_intraday_minus3_touch_provisional",
   "last_external_review_session": "2026-11-23",
   "last_external_active_conditions": [
     "QQQ:external_daily:-2",
+    "QQQ:external_intraday_low:-3",
     "QQQ:external_approx_high252:-15",
     "QQQ:external_below_Nov23_low",
     "QQQM:external_below_Nov23_low",
