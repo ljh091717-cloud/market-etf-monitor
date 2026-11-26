@@ -3609,9 +3609,9 @@
     "VOO:external_approx_intraday_high252:-10",
     "QQQM:external_below:third"
   ],
-  "last_check_report_decision_reason": "NYSE and Nasdaq official calendars confirm Nov26 holiday; prior reviewed Nov25 EOD snapshot unchanged; no new price signal. Nov27 early close 13:00 ET. No new report prepared.",
-  "last_check_attempt_utc": "2026-11-26T17:34:25Z",
-  "last_check_nominal_et": "2026-11-26T12:30:00-05:00",
+  "last_check_report_decision_reason": "NYSE and Nasdaq official calendars confirm Nov26 holiday and Nov27 13:00 ET early close. Nov25 EOD snapshot SHA unchanged. No new price event or report prepared.",
+  "last_check_attempt_utc": "2026-11-26T20:34:26Z",
+  "last_check_nominal_et": "2026-11-26T15:30:00-05:00",
   "last_check_data_status": "holiday_no_regular_session_prior_eod_unchanged",
   "last_evaluation_prepared_utc": "2026-11-25T22:31:05Z",
   "last_evaluation_kind": "2026-11-25_EOD_EXTERNAL_PROVIDER_CLOSE_STALE_COLLECTOR",
@@ -3625,7 +3625,7 @@
     "VOO:external_approx_intraday_high252:-10",
     "QQQM:external_below:third"
   ],
-  "last_check_completed_utc": "2026-11-26T17:34:25Z",
+  "last_check_completed_utc": "2026-11-26T20:34:26Z",
   "last_assessment_snapshot_generated_utc": "2026-11-20T21:26:38.664655+00:00",
   "last_stale_snapshot_observed": {
     "latest_generated_utc": "2026-11-20T21:26:38.664655+00:00",
@@ -3665,11 +3665,11 @@
     "QQQM:external_below:third"
   ],
   "last_check_summary": "Nov25 provider daily closes QQQ 633.93 (-0.65%), QQQM 261.05 (-0.66%), VOO 658.87 (-0.28%); QQQ/QQQM close above Nov24 lows but below old ATR-buffer thresholds 635.84/261.81. VOO closes above old 658.08 buffer. QQQ intraday low 607.74 near old 252d -20% threshold 607.728 (not crossed at displayed precision; provisional); VOO low 639.26 below third band and approximate -10%, close above. Both intraday -3% thresholds reached, not -5%. RSP +0.83%, SOX -0.65%, VIX 28.32 provider display 16:14:46 (another source 28.19, exact official close unverified), VXN 38.53 16:15 YCharts. Official daily 10y nominal 4.85 and real 2.73, both -6 bp. FGScore 15 (components 16:20) vs prior sample 16; GuruTrack 16 vs prior sample 15 and previous close 17. CNN original and 5 aligned sessions unverified. Plan conditional QQQM review; VOO watch reentry; confirmation hold pending further recovery and Friday weekly. No sizing. GitHub latest Nov20 stale, reference Nov19 late; prior workflow save/deploy skipped, latest run list unavailable. Provider daily close not exchange-certified, corporate action guard not confirmed; 11/20 VOO provider discrepancy 635.54 vs GitHub 635.125. No continuous detection.",
-  "last_checked_at_utc": "2026-11-26T17:34:25Z",
-  "last_check_slot_et": "2026-11-26T12:30:00-05:00",
+  "last_checked_at_utc": "2026-11-26T20:34:26Z",
+  "last_check_slot_et": "2026-11-26T15:30:00-05:00",
   "notification_decision": "skip_holiday",
   "last_daily_reference_session_date": "2026-11-24",
-  "last_inspection_utc": "2026-11-26T17:34:25Z",
+  "last_inspection_utc": "2026-11-26T20:34:26Z",
   "last_inspection_kind": "holiday_no_market_report",
   "last_inspection_data_status": "Nov25 EOD unchanged; no Nov26 regular session; preopen and intraday recovery unverified",
   "last_external_intraday": {
