@@ -1,32 +1,25 @@
 {
   "schema_version": 1,
   "market": "US",
-  "last_valid_snapshot_generated_utc": "2026-11-20T21:26:38.664655+00:00",
-  "last_reference_session": "2026-11-20",
+  "last_valid_snapshot_generated_utc": "2026-11-25T22:40:52.200847+00:00",
+  "last_reference_session": "2026-11-25",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 608.4500122070312,
-    "QQQM": 251.22999572753906,
-    "VOO": 635.125
+    "QQQ": 633.9299926757812,
+    "QQQM": 261.04998779296875,
+    "VOO": 658.8699951171875
   },
   "last_active_conditions": [
-    "QQQ:daily:-2",
-    "QQQ:daily:-3",
-    "QQQ:daily:-5",
     "QQQ:high252:-10",
     "QQQ:high252:-15",
     "QQQM:below:first",
     "QQQM:below:second",
     "QQQM:below:third",
-    "VOO:daily:-2",
-    "VOO:daily:-3",
-    "VOO:high252:-10",
     "VOO:below:first",
-    "VOO:below:second",
-    "VOO:below:third"
+    "VOO:below:second"
   ],
-  "current_judgment": "Nov25 provider daily closes QQQ 633.93 (-0.65%), QQQM 261.05 (-0.66%), VOO 658.87 (-0.28%); QQQ/QQQM close above Nov24 lows but below old ATR-buffer thresholds 635.84/261.81. VOO closes above old 658.08 buffer. QQQ intraday low 607.74 near old 252d -20% threshold 607.728 (not crossed at displayed precision; provisional); VOO low 639.26 below third band and approximate -10%, close above. Both intraday -3% thresholds reached, not -5%. RSP +0.83%, SOX -0.65%, VIX 28.32 provider display 16:14:46 (another source 28.19, exact official close unverified), VXN 38.53 16:15 YCharts. Official daily 10y nominal 4.85 and real 2.73, both -6 bp. FGScore 15 (components 16:20) vs prior sample 16; GuruTrack 16 vs prior sample 15 and previous close 17. CNN original and 5 aligned sessions unverified. Plan conditional QQQM review; VOO watch reentry; confirmation hold pending further recovery and Friday weekly. No sizing. GitHub latest Nov20 stale, reference Nov19 late; prior workflow save/deploy skipped, latest run list unavailable. Provider daily close not exchange-certified, corporate action guard not confirmed; 11/20 VOO provider discrepancy 635.54 vs GitHub 635.125. No continuous detection.",
-  "next_conditions": "Nov27 10:30 ET (Nov28 00:30 KST): QQQ 635.84/631.15/616.21 and 607.74/606.23, QQQM 261.81/259.90 and 250.27/249.64, VOO 658.08/655/645/639.26. Provisional next-day QQQ -2/-3/-5 thresholds 621.25/614.91/602.23; VOO 645.69/639.10/625.93; verify fresh preopen and corporate actions. Nov26 closed. Nov27 13:00 ET early close; 13:30 ET review daily/weekly if all Nov27 closes available, else 14:30 independent provider; no duplicate.",
+  "current_judgment": "Nov26 holiday: no new trading evaluation. Nov25 previously reviewed external provider daily closes now corroborated to cents by delayed GitHub end_of_day snapshot generated Nov25 17:40:52 ET; provider close, not exchange-certified. No new crossings, late reference initialization; preopen fixed reference not verified. Prior plan conditional review QQQM, VOO watch reentry; confirmation hold. QQQ provisional weekly EMA100 616.5635, RSI14 39.98, not completed until Nov27. No sizing or orders.",
+  "next_conditions": "Nov27 10:30 ET (Nov28 00:30 KST): QQQ 631.15 + updated Nov25 ATR/4 = 636.53, watch 616.21 and 607.74; QQQM 259.90 + updated ATR/4 = 262.09, lows 250.27/249.64; VOO 655 + updated ATR/4 = 658.52, watch 645/639.26. Prior report buffers 635.84/261.81/658.08 retained historically only. Provisional Nov27 daily -2/-3/-5 QQQ 621.25/614.91/602.23, VOO 645.69/639.10/625.93; verify fresh preopen reference and corporate actions, not new crossings on baseline change. Nov27 13:00 ET early close; 13:30 check all three dated closes and completed week, else 14:30 fallback. No duplicate.",
   "last_report_prepared_utc": "2026-11-25T22:31:05Z",
   "last_report_kind": "2026-11-25_EOD_EXTERNAL_PROVIDER_CLOSE_STALE_COLLECTOR",
   "last_report_condition_ids": [
@@ -612,88 +605,40 @@
       }
     },
     "DATA_QUALITY": {
-      "observed_at_utc": "2026-11-13T20:33:20Z",
-      "nominal_check_et": "2026-11-13 15:30 EST",
-      "mode": "regular_session",
-      "source_generated_et": "2026-11-13T15:23:50.728273-05:00",
+      "checked_at_utc": "2026-11-26T15:34:06Z",
+      "github_snapshot_date": "2026-11-25",
+      "generated_utc": "2026-11-25T22:40:52.200847+00:00",
+      "snapshot_sha": "2c47f64a17eb4790f0c1d3406880e603cfba8e85",
+      "mode": "end_of_day",
+      "reference_date": "2026-11-24",
+      "reference_fixed_before_open": false,
+      "corporate_action_guard_provider_only": {
+        "QQQ": {
+          "complete": true,
+          "dividends": 0,
+          "splits": 0,
+          "limitation": "Only provider-reported corporate actions are checked"
+        },
+        "QQQM": {
+          "complete": true,
+          "dividends": 0,
+          "splits": 0,
+          "limitation": "Only provider-reported corporate actions are checked"
+        },
+        "VOO": {
+          "complete": true,
+          "dividends": 0,
+          "splits": 0,
+          "limitation": "Only provider-reported corporate actions are checked"
+        }
+      },
+      "comparison_kind": "late_reference_initialization_not_a_new_price_event",
+      "previous_collector_status": "Nov20 stale prior to late Nov25 EOD",
+      "workflow_run_list": "not checked during holiday reconciliation",
+      "regular_session_recovery": "not yet verified",
+      "holiday": true,
       "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
-      "latest_blob_sha": "c6eaf2df4247607c62f023b436bf4484431a594a",
-      "reference_last_close_session": "2026-11-12",
-      "reference_initialized_after_open": false,
-      "age_generated_minutes_at_assessment": 9.49,
-      "age_price_bar_minutes_at_assessment": {
-        "QQQ": 13.33,
-        "QQQM": 13.33,
-        "VOO": 13.33
-      },
-      "verified_regular_session": true,
-      "price_bar_may_be_incomplete_at_collection": true,
-      "collector_comparison_kind": "sampled_change",
-      "new_crossings": [],
-      "recovered_conditions": [],
-      "recovery_confirmed_15min": false,
-      "collector_jobs": "not individually verified in this run; valid latest.json advanced",
-      "last_seen_prices": {
-        "QQQ": 679.61,
-        "QQQM": 279.895,
-        "VOO": 692.58
-      },
-      "delivery_status": "unverified",
-      "verified_price_fresh": true,
-      "refresh_condition": "Nov13 17:30 EST end_of_day + confirmed weekly indicators; not off-schedule detector",
-      "last_nov18_no_runs": {
-        "as_of_et": "2026-11-18 11:30 EST",
-        "latest_run_id": 44196121510,
-        "latest_run_started_utc": "2026-11-17T23:04:54Z",
-        "latest_run_data_saved": false,
-        "latest_run_deploy": false,
-        "observed_nov18_runs": 0,
-        "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/actions",
-        "verified_at_utc": "2026-11-18T16:31:04.478Z",
-        "refresh_condition": "next scheduled GitHub collector run and new valid Nov18 regular_session data"
-      },
-      "latest_check_2026_11_20_1230": {
-        "observed_at_utc": "2026-11-20T17:30:43.997Z",
-        "nominal_check_et": "2026-11-20 12:30 EST",
-        "data_mode": "end_of_day",
-        "data_session": "2026-11-19",
-        "source_generated_utc": "2026-11-19T21:44:08.994029+00:00",
-        "source_blob_sha": "5e8e44844d0da832824f19d2982dc49398a92e07",
-        "config_revision": "2026-10-19.1",
-        "eligible_as_regular_session": false,
-        "verified_new_price_signal": false,
-        "reason": "Nov19 end_of_day source, not Nov20 regular_session; generated >75 min prior, no Nov20 5m bar <45 min",
-        "latest_confirmed_actions_run_id": 44661465422,
-        "latest_actions_run_created_utc": "2026-11-20T02:31:57Z",
-        "last_actions_collect_conclusion": "success",
-        "last_actions_save_deploy": "skipped",
-        "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
-        "refresh_condition": "new Nov20 regular_session GitHub snapshot, later Nov20 EOD, or change in Actions"
-      },
-      "latest_check_2026_11_20_1530": {
-        "checked_at_utc": "2026-11-20T20:25:49Z",
-        "scheduled_slot_et": "15:30",
-        "actual_observation_et": "15:25:49",
-        "main_latest_sha": "5e8e44844d0da832824f19d2982dc49398a92e07",
-        "config_sha": "2ddd12e00dd55f8d7e12d0e8ab88d676cdf63560",
-        "latest_generated_utc": "2026-11-19T21:44:08.994029+00:00",
-        "mode": "end_of_day",
-        "market_date": "2026-11-19",
-        "price_5m_dates": "none for Nov20",
-        "current_session_data_verified": false,
-        "latest_ET_delay": "approximately 22h42m",
-        "github_last_run_id": 44661465422,
-        "github_last_run_started_utc": "2026-11-20T02:31:57Z",
-        "github_last_run_collect": "success",
-        "github_last_run_save": "skipped",
-        "github_last_run_deploy": "skipped",
-        "last_successfully_saved_et": "2026-11-19 16:44 EST",
-        "source_urls": [
-          "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
-          "https://github.com/ljh091717-cloud/market-etf-monitor/actions/runs/44661465422"
-        ],
-        "refresh_condition": "Nov20 verified regular_session or provider end_of_day data update"
-      }
+      "refresh_condition": "Next actual trading session preopen/regular session or new provider EOD snapshot"
     },
     "FOMC_2026_OCT": {
       "meeting_dates_et": "2026-10-27/2026-10-28",
@@ -3406,24 +3351,150 @@
       "checked_at_utc": "2026-11-25T22:31:05Z",
       "refresh_condition": "next daily publication or new market snapshot",
       "limitations": "RSP proxy, VIX provider discrepancy, direct breadth and same elapsed time volume unavailable"
+    },
+    "US_NOV25_EOD_COLLECTOR_RECONCILED": {
+      "value": {
+        "QQQ": {
+          "daily": {
+            "as_of_session": "2026-11-25",
+            "last_close": 633.9299926757812,
+            "sma_50": 707.0196569824219,
+            "sma_200": 682.5439315795899,
+            "atr_14": 21.539288350060126,
+            "highest_close_252": 759.6599731445312,
+            "highest_close_252_date": "2026-10-06",
+            "adjustment": "Adj Close factor applied to OHLC, normalized to last completed raw Close",
+            "source": "Yahoo Finance via yfinance; daily observations may be revised"
+          },
+          "weekly": {
+            "last_completed_week": {
+              "week_date": "2026-11-16",
+              "ema_20": 693.8341,
+              "ema_50": 669.2447,
+              "ema_100": 616.2126,
+              "ema_200": 533.7218,
+              "rsi_14": 34.099,
+              "sample_weeks": 1446
+            },
+            "current_week_provisional": {
+              "ema_20": 688.1289,
+              "ema_50": 667.8598,
+              "ema_100": 616.5635,
+              "ema_200": 534.7189,
+              "rsi_14": 39.98,
+              "sample_weeks": 1447
+            },
+            "provisional_price_to_ema_gap_pct": {
+              "ema_20_gap_pct": -7.876272501302994,
+              "ema_50_gap_pct": -5.080378744793245,
+              "ema_100_gap_pct": 2.8166592209531105,
+              "ema_200_gap_pct": 18.553878061123562
+            },
+            "week_closed_in_this_snapshot": false
+          }
+        },
+        "QQQM": {
+          "daily": {
+            "as_of_session": "2026-11-25",
+            "last_close": 261.04998779296875,
+            "sma_50": 291.1419192504883,
+            "sma_200": 281.0233516693115,
+            "atr_14": 8.749335052520953,
+            "highest_close_252": 312.760009765625,
+            "highest_close_252_date": "2026-10-06",
+            "adjustment": "Adj Close factor applied to OHLC, normalized to last completed raw Close",
+            "source": "Yahoo Finance via yfinance; daily observations may be revised"
+          },
+          "weekly": {
+            "last_completed_week": {
+              "week_date": "2026-11-16",
+              "ema_20": 285.7601,
+              "ema_50": 275.5792,
+              "ema_100": 253.8071,
+              "ema_200": 220.2811,
+              "rsi_14": 34.28,
+              "sample_weeks": 319
+            },
+            "current_week_provisional": {
+              "ema_20": 283.4068,
+              "ema_50": 275.0094,
+              "ema_100": 253.9505,
+              "ema_200": 220.6867,
+              "rsi_14": 39.841,
+              "sample_weeks": 320
+            },
+            "provisional_price_to_ema_gap_pct": {
+              "ema_20_gap_pct": -7.888594136425531,
+              "ema_50_gap_pct": -5.075976387363945,
+              "ema_100_gap_pct": 2.7956187497046647,
+              "ema_200_gap_pct": 18.289859693841425
+            },
+            "week_closed_in_this_snapshot": false
+          }
+        },
+        "VOO": {
+          "daily": {
+            "as_of_session": "2026-11-25",
+            "last_close": 658.8699951171875,
+            "sma_50": 696.657099609375,
+            "sma_200": 671.622301940918,
+            "atr_14": 14.073126727030552,
+            "highest_close_252": 716.2000122070312,
+            "highest_close_252_date": "2026-10-06",
+            "adjustment": "Adj Close factor applied to OHLC, normalized to last completed raw Close",
+            "source": "Yahoo Finance via yfinance; daily observations may be revised"
+          },
+          "weekly": {
+            "last_completed_week": {
+              "week_date": "2026-11-16",
+              "ema_20": 687.5336,
+              "ema_50": 664.8219,
+              "ema_100": 621.6609,
+              "ema_200": 553.1051,
+              "rsi_14": 35.254,
+              "sample_weeks": 846
+            },
+            "current_week_provisional": {
+              "ema_20": 684.8037,
+              "ema_50": 664.5885,
+              "ema_100": 622.3977,
+              "ema_200": 554.1575,
+              "rsi_14": 43.335,
+              "sample_weeks": 847
+            },
+            "provisional_price_to_ema_gap_pct": {
+              "ema_20_gap_pct": -3.7870275646601392,
+              "ema_50_gap_pct": -0.8604579951071112,
+              "ema_100_gap_pct": 5.85996624299665,
+              "ema_200_gap_pct": 18.895800402807406
+            },
+            "week_closed_in_this_snapshot": false
+          }
+        }
+      },
+      "source_url": "https://github.com/ljh091717-cloud/market-etf-monitor/blob/main/market_monitor_starter/docs/data/latest.json",
+      "observed_at_utc": "2026-11-26T15:34:06Z",
+      "as_of_session": "2026-11-25",
+      "generated_utc": "2026-11-25T22:40:52.200847+00:00",
+      "refresh_condition": "Next valid Nov27 trading snapshot; weekly provisional until Nov27 close"
+    },
+    "NYSE_NASDAQ_2026_THANKSGIVING": {
+      "value": "Nov26 closed; Nov27 13:00 ET early close",
+      "source_urls": [
+        "https://www.nyse.com/trade/hours-calendars",
+        "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule"
+      ],
+      "observed_at_utc": "2026-11-26T15:34:06Z",
+      "refresh_condition": "Official holiday or emergency closure change"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
   "last_evaluation_utc": "2026-11-25T22:31:05Z",
   "last_check_prepared_utc": "2026-11-25T22:31:05Z",
-  "last_check_kind": "2026-11-25_EOD_EXTERNAL_PROVIDER_CLOSE_STALE_COLLECTOR",
-  "last_check_condition_ids": [
-    "QQQ:external_daily_close_above_ema100_atr_buffer",
-    "QQQ:external_daily_close_above_Nov24_low",
-    "QQQM:external_daily_close_above_Nov24_low",
-    "VOO:external_daily_close_above_third_atr_buffer",
-    "QQQ:external_intraday_low:-3",
-    "VOO:external_intraday_low:-3",
-    "VOO:external_approx_intraday_high252:-10",
-    "QQQM:external_below:third"
-  ],
-  "last_notification_decision": "report_prepared",
-  "last_price_source": "Last valid GitHub Nov20; Nov25 external provider daily closes stored separately",
+  "last_check_kind": "holiday_no_market_report",
+  "last_check_condition_ids": [],
+  "last_notification_decision": "skip_holiday",
+  "last_price_source": "GitHub delayed Nov25 EOD Yahoo Finance via yfinance (provider daily close subject to revision), corroborates already reviewed external provider closes",
   "last_external_end_of_day": {
     "session": "2026-11-25",
     "mode": "external_provider_daily_close",
@@ -3485,20 +3556,46 @@
       }
     },
     "exchange_certified": false,
-    "github_confirmed": false,
-    "limitations": "Provider daily close subject to revision; prior Oct6 252d high references approximate; no fresh pre-open or corporate action guard."
+    "github_confirmed": true,
+    "limitations": "Provider daily close subject to revision; prior Oct6 252d high references approximate; no fresh pre-open or corporate action guard.",
+    "github_confirmation_generated_utc": "2026-11-25T22:40:52.200847+00:00",
+    "github_confirmation_snapshot_sha": "2c47f64a17eb4790f0c1d3406880e603cfba8e85"
   },
   "last_data_quality_observation": {
-    "checked_at_utc": "2026-11-25T22:31:05Z",
-    "github_snapshot_date": "2026-11-20",
-    "reference_date": "2026-11-19",
-    "workflow_run_id": 45547368715,
-    "save": "skipped",
-    "deploy": "skipped",
-    "new_run_list": "unavailable",
-    "external_daily_close_date": "2026-11-25"
+    "checked_at_utc": "2026-11-26T15:34:06Z",
+    "github_snapshot_date": "2026-11-25",
+    "generated_utc": "2026-11-25T22:40:52.200847+00:00",
+    "snapshot_sha": "2c47f64a17eb4790f0c1d3406880e603cfba8e85",
+    "mode": "end_of_day",
+    "reference_date": "2026-11-24",
+    "reference_fixed_before_open": false,
+    "corporate_action_guard_provider_only": {
+      "QQQ": {
+        "complete": true,
+        "dividends": 0,
+        "splits": 0,
+        "limitation": "Only provider-reported corporate actions are checked"
+      },
+      "QQQM": {
+        "complete": true,
+        "dividends": 0,
+        "splits": 0,
+        "limitation": "Only provider-reported corporate actions are checked"
+      },
+      "VOO": {
+        "complete": true,
+        "dividends": 0,
+        "splits": 0,
+        "limitation": "Only provider-reported corporate actions are checked"
+      }
+    },
+    "comparison_kind": "late_reference_initialization_not_a_new_price_event",
+    "previous_collector_status": "Nov20 stale prior to late Nov25 EOD",
+    "workflow_run_list": "not checked during holiday reconciliation",
+    "regular_session_recovery": "not yet verified",
+    "holiday": true
   },
-  "last_check_report_decision": "report_prepared",
+  "last_check_report_decision": "skip_holiday",
   "last_assessment_nominal_et": "2026-11-25T17:30:00-05:00",
   "last_assessment_prepared_utc": "2026-11-25T22:31:05Z",
   "last_assessment_kind": "2026-11-25_EOD_EXTERNAL_PROVIDER_CLOSE_STALE_COLLECTOR",
@@ -3512,10 +3609,10 @@
     "VOO:external_approx_intraday_high252:-10",
     "QQQM:external_below:third"
   ],
-  "last_check_report_decision_reason": "Nov25 provider daily closes QQQ 633.93 (-0.65%), QQQM 261.05 (-0.66%), VOO 658.87 (-0.28%); QQQ/QQQM close above Nov24 lows but below old ATR-buffer thresholds 635.84/261.81. VOO closes above old 658.08 buffer. QQQ intraday low 607.74 near old 252d -20% threshold 607.728 (not crossed at displayed precision; provisional); VOO low 639.26 below third band and approximate -10%, close above. Both intraday -3% thresholds reached, not -5%. RSP +0.83%, SOX -0.65%, VIX 28.32 provider display 16:14:46 (another source 28.19, exact official close unverified), VXN 38.53 16:15 YCharts. Official daily 10y nominal 4.85 and real 2.73, both -6 bp. FGScore 15 (components 16:20) vs prior sample 16; GuruTrack 16 vs prior sample 15 and previous close 17. CNN original and 5 aligned sessions unverified. Plan conditional QQQM review; VOO watch reentry; confirmation hold pending further recovery and Friday weekly. No sizing. GitHub latest Nov20 stale, reference Nov19 late; prior workflow save/deploy skipped, latest run list unavailable. Provider daily close not exchange-certified, corporate action guard not confirmed; 11/20 VOO provider discrepancy 635.54 vs GitHub 635.125. No continuous detection.",
-  "last_check_attempt_utc": "2026-11-25T22:31:05Z",
+  "last_check_report_decision_reason": "NYSE and Nasdaq official Thanksgiving closure; prior day EOD already reported; late snapshot is not new price signal",
+  "last_check_attempt_utc": "2026-11-26T15:34:06Z",
   "last_check_nominal_et": "2026-11-25T17:30:00-05:00",
-  "last_check_data_status": "external_daily_close_valid_date_GitHub_stale",
+  "last_check_data_status": "holiday_no_regular_session_prior_eod_reconciled",
   "last_evaluation_prepared_utc": "2026-11-25T22:31:05Z",
   "last_evaluation_kind": "2026-11-25_EOD_EXTERNAL_PROVIDER_CLOSE_STALE_COLLECTOR",
   "last_evaluation_condition_ids": [
@@ -3528,7 +3625,7 @@
     "VOO:external_approx_intraday_high252:-10",
     "QQQM:external_below:third"
   ],
-  "last_check_completed_utc": "2026-11-25T22:31:05Z",
+  "last_check_completed_utc": "2026-11-26T15:34:06Z",
   "last_assessment_snapshot_generated_utc": "2026-11-20T21:26:38.664655+00:00",
   "last_stale_snapshot_observed": {
     "latest_generated_utc": "2026-11-20T21:26:38.664655+00:00",
@@ -3538,23 +3635,23 @@
     "note": "GitHub latest ffa844b39cebafc2e817675ef09ad8722a3fb380 Nov20 16:26 EST end_of_day stale; Nov19 reference fixed after open, not usable today; current corporate-action guard unverified. Run 45547368715 save/deploy skipped rechecked; current run list inaccessible. External timestamped quotes not 5-minute bars. NYSE/Nasdaq official holiday calendar rechecked."
   },
   "last_end_of_day_data_quality": {
-    "checked_at_utc": "2026-11-25T22:31:05Z",
-    "generated_utc": "2026-11-20T21:26:38.664655+00:00",
+    "checked_at_utc": "2026-11-26T15:34:06Z",
+    "generated_utc": "2026-11-25T22:40:52.200847+00:00",
     "mode": "end_of_day",
-    "market_session": "2026-11-20",
-    "provider_daily_close_as_of": "2026-11-25",
+    "market_session": "2026-11-25",
     "close_session_date_by_symbol": {
       "QQQ": "2026-11-25",
       "QQQM": "2026-11-25",
       "VOO": "2026-11-25"
     },
-    "reference_session": "2026-11-24 external; GitHub daily_reference Nov19",
+    "reference_session": "2026-11-24",
     "reference_fixed_before_open": false,
-    "snapshot_sha": "ffa844b39cebafc2e817675ef09ad8722a3fb380",
+    "snapshot_sha": "2c47f64a17eb4790f0c1d3406880e603cfba8e85",
     "provider_exchange_certified": false,
-    "github_valid_for_current_session": false
+    "github_valid_for_previous_completed_session": true,
+    "weekly_completed": false
   },
-  "last_data_update_verified_at_this_check": false,
+  "last_data_update_verified_at_this_check": true,
   "last_check_report_prepared_utc": "2026-11-25T22:31:05Z",
   "last_check_report_kind": "2026-11-25_EOD_EXTERNAL_PROVIDER_CLOSE_STALE_COLLECTOR",
   "last_check_report_condition_ids": [
@@ -3568,13 +3665,13 @@
     "QQQM:external_below:third"
   ],
   "last_check_summary": "Nov25 provider daily closes QQQ 633.93 (-0.65%), QQQM 261.05 (-0.66%), VOO 658.87 (-0.28%); QQQ/QQQM close above Nov24 lows but below old ATR-buffer thresholds 635.84/261.81. VOO closes above old 658.08 buffer. QQQ intraday low 607.74 near old 252d -20% threshold 607.728 (not crossed at displayed precision; provisional); VOO low 639.26 below third band and approximate -10%, close above. Both intraday -3% thresholds reached, not -5%. RSP +0.83%, SOX -0.65%, VIX 28.32 provider display 16:14:46 (another source 28.19, exact official close unverified), VXN 38.53 16:15 YCharts. Official daily 10y nominal 4.85 and real 2.73, both -6 bp. FGScore 15 (components 16:20) vs prior sample 16; GuruTrack 16 vs prior sample 15 and previous close 17. CNN original and 5 aligned sessions unverified. Plan conditional QQQM review; VOO watch reentry; confirmation hold pending further recovery and Friday weekly. No sizing. GitHub latest Nov20 stale, reference Nov19 late; prior workflow save/deploy skipped, latest run list unavailable. Provider daily close not exchange-certified, corporate action guard not confirmed; 11/20 VOO provider discrepancy 635.54 vs GitHub 635.125. No continuous detection.",
-  "last_checked_at_utc": "2026-11-25T22:31:05Z",
+  "last_checked_at_utc": "2026-11-26T15:34:06Z",
   "last_check_slot_et": "2026-11-25T17:30:00-05:00",
-  "notification_decision": "report_prepared",
-  "last_daily_reference_session_date": "2026-11-19",
-  "last_inspection_utc": "2026-11-25T22:31:05Z",
-  "last_inspection_kind": "2026-11-25_EOD_EXTERNAL_PROVIDER_CLOSE_STALE_COLLECTOR",
-  "last_inspection_data_status": "external_daily_close_valid_date_GitHub_stale",
+  "notification_decision": "skip_holiday",
+  "last_daily_reference_session_date": "2026-11-24",
+  "last_inspection_utc": "2026-11-26T15:34:06Z",
+  "last_inspection_kind": "holiday_reconciliation_prior_eod_no_new_market_signal",
+  "last_inspection_data_status": "Nov25 EOD snapshot recovered; intraday and preopen recovery unverified",
   "last_external_intraday": {
     "observed_market_date": "2026-11-25",
     "quote_provider": "StockAnalysis",
@@ -3683,7 +3780,7 @@
     "qqqm_still_below_third_band": true,
     "note": "Nov25 14:30: QQQ 631.99 14:20, QQQM 260.43 14:14, VOO 658.22 14:19; lows unchanged 607.74/250.27/639.26. QQQ/QQQM sampled above Nov24 lows 631.15/259.90, but below old ATR buffer recovery 635.84/261.81. VOO sample above 655+old ATR buffer 3.08. SOX -1.36% 14:07 display, VIX 27.49 +4.29% 13:53 display, RSP +0.95% 14:20. CNN secondary FGScore and GuruTrack both 15, prior samples 11 and 9; GuruTrack prior close 17, week ago 30; FGScore components timestamp 13:34; original/exact score timestamp/aligned five sessions unverified. Material price and sentiment recovery samples, no continuous hold or closing confirmation; plan conditional review QQQM, VOO reentry watch, confirmation hold, no sizing. GitHub snapshot remains Nov20 16:26 end_of_day; prior workflow 45547368715 save/deploy skipped rechecked; fresh run list inaccessible."
   },
-  "next_check_condition": "Nov27 10:30 ET (Nov28 00:30 KST): QQQ 635.84/631.15/616.21 and 607.74/606.23, QQQM 261.81/259.90 and 250.27/249.64, VOO 658.08/655/645/639.26. Provisional next-day QQQ -2/-3/-5 thresholds 621.25/614.91/602.23; VOO 645.69/639.10/625.93; verify fresh preopen and corporate actions. Nov26 closed. Nov27 13:00 ET early close; 13:30 ET review daily/weekly if all Nov27 closes available, else 14:30 independent provider; no duplicate.",
+  "next_check_condition": "Nov27 10:30 ET (Nov28 00:30 KST): QQQ 631.15 + updated Nov25 ATR/4 = 636.53, watch 616.21 and 607.74; QQQM 259.90 + updated ATR/4 = 262.09, lows 250.27/249.64; VOO 655 + updated ATR/4 = 658.52, watch 645/639.26. Prior report buffers 635.84/261.81/658.08 retained historically only. Provisional Nov27 daily -2/-3/-5 QQQ 621.25/614.91/602.23, VOO 645.69/639.10/625.93; verify fresh preopen reference and corporate actions, not new crossings on baseline change. Nov27 13:00 ET early close; 13:30 check all three dated closes and completed week, else 14:30 fallback. No duplicate.",
   "delivery_status": "unverified",
   "last_assessment_report_decision": "report_prepared",
   "last_external_review_session": "2026-11-25",
