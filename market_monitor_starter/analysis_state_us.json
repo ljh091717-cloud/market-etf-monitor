@@ -4004,5 +4004,14 @@
     },
     "reason": "All three StockAnalysis overview pages show Nov27 13:00 ET close quotes; QQQM Yahoo daily row confirms 268.05, VOO Motley Fool 13:00 quote confirms 669.79 but daily row not verified, QQQ historical row 650.72 conflicts with 650.99 close quote and shows generic 16:00 time. GitHub still Nov25 EOD, no verified current weekly indicators. Calendar week completed; price recovery supported, full daily set and technical indicators not verified. Do not overwrite last valid collector snapshot or mark full EOD review completed. No repeated analysis later today.",
     "delivery_status": "unverified"
+  },
+  "last_scope_skip": {
+    "observed_at_utc": "2026-11-27T20:27:31Z",
+    "nominal_et": "2026-11-27T15:30:00-05:00",
+    "reason": "Outside eligible early-close reporting slots; Nov27 14:30 ET final external review already prepared, partial verification only. No duplicate analysis, no changes to confirmed close date, prices, judgment or report record.",
+    "config_revision": "2026-10-19.1",
+    "collector_generated_utc": "2026-11-25T22:40:52.200847+00:00",
+    "notification_decision": "skip",
+    "delivery_status": "unverified"
   }
 }
