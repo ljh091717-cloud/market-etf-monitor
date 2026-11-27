@@ -5,9 +5,9 @@
   "last_reference_session": "2026-11-25",
   "last_config_revision": "2026-10-19.1",
   "last_price_by_symbol": {
-    "QQQ": 633.9299926757812,
-    "QQQM": 261.04998779296875,
-    "VOO": 658.8699951171875
+    "QQQ": 646.24,
+    "QQQM": 266.5,
+    "VOO": 667.38
   },
   "last_active_conditions": [
     "QQQ:high252:-10",
@@ -19,7 +19,7 @@
     "VOO:below:second"
   ],
   "current_judgment": "External quotes only: QQQM conditional plan review remains; VOO watch reentry; confirmation approach observe further daily/weekly close before adding. QQQ and QQQM sampled recovery above updated buffers, not confirmed continuous/close. No sizing or orders.",
-  "next_conditions": "Nov27 12:30 ET / Nov28 02:30 KST: QQQ 636.53, QQQM 262.09, VOO 658.52 recovery samples; loss weakens recovery; Nov25 lows 607.74/250.27/639.26 invalidate broader recovery. QQQM below 280; VOO reentry 655; 13:00 ET early close, 13:30 verify same-day closes and weekly else 14:30 fallback, no duplicate.",
+  "next_conditions": "Nov27 13:00 ET early close; 13:30 ET / Nov28 03:30 KST validate all three Nov27 provider daily closes and completed weekly data, else 14:30 ET / 04:30 KST fallback; no duplicate. Recovery levels QQQ 636.53, QQQM 262.09, VOO 658.52; Nov25 lows 607.74/250.27/639.26 invalidate broader recovery. QQQM below 280; VOO reentry 655.",
   "last_report_prepared_utc": "2026-11-27T15:34:47Z",
   "last_report_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_SAMPLE_STALE_COLLECTOR",
   "last_report_condition_ids": [
@@ -3595,12 +3595,56 @@
       ],
       "observed_at_utc": "2026-11-27T16:32:26Z",
       "refresh_condition": "Next quote; official yields on publication; direct breadth and matched volume unavailable"
+    },
+    "CNN_NOV27_1230_SECONDARY": {
+      "value": {
+        "fgscore": 25,
+        "gurutrack": 15
+      },
+      "fgscore_date": "2026-11-27 UTC",
+      "fgscore_factor_timestamp_et": "2026-11-27 11:51 EST",
+      "gurutrack_date": "2026-11-26 daily",
+      "original_verified": false,
+      "previous_trading_day_comparison": "unverified; FGScore +1 vs prior sample, not official prior session",
+      "recent_five_sessions": "unverified",
+      "source_urls": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment",
+        "https://www.cnn.com/markets/fear-and-greed"
+      ],
+      "observed_at_utc": "2026-11-27T17:25:51Z",
+      "refresh_condition": "New comparable verified reading; no double count with VIX"
+    },
+    "US_NOV27_1230_RISK": {
+      "value": {
+        "RSP_pct": 1.14,
+        "SOX_pct": 3.49,
+        "VIX": 24.87,
+        "VXN_last_daily": 38.53,
+        "nominal10y_last_official": 4.85,
+        "real10y_last_official": 2.73
+      },
+      "market_timestamps": {
+        "RSP": "11:57 ET",
+        "SOX": "11:58:15 provider display",
+        "VIX": "12:13:46 provider display",
+        "VXN": "Nov25 daily",
+        "official_yields": "Nov25 daily"
+      },
+      "source_urls": [
+        "https://stockanalysis.com/etf/rsp/",
+        "https://www.investing.com/indices/phlx-semiconductor",
+        "https://www.investing.com/indices/volatility-s-p-500",
+        "https://www.investing.com/indices/cboe-nasdaq-100-voltility"
+      ],
+      "observed_at_utc": "2026-11-27T17:25:51Z",
+      "refresh_condition": "Next quote or new official daily release; no matched volume; breadth proxy only"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-27T16:32:26Z",
-  "last_check_prepared_utc": "2026-11-27T16:32:26Z",
-  "last_check_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_CONTINUED_NO_NEW_CONDITION",
+  "last_evaluation_utc": "2026-11-27T17:25:51Z",
+  "last_check_prepared_utc": "2026-11-27T17:25:51Z",
+  "last_check_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_CONTINUED_NO_NEW_CONFIRMED_CONDITION",
   "last_check_condition_ids": [
     "QQQ:external_sample_above_Nov24_low_updated_buffer",
     "QQQM:external_sample_above_Nov24_low_updated_buffer",
@@ -3608,7 +3652,7 @@
     "QQQM:external_below:third"
   ],
   "last_notification_decision": "no_update",
-  "last_price_source": "External StockAnalysis same-day last prices; GitHub EOD Nov25 still only valid collector snapshot",
+  "last_price_source": "External StockAnalysis intraday last prices; collector still Nov25 EOD",
   "last_external_end_of_day": {
     "session": "2026-11-25",
     "mode": "external_provider_daily_close",
@@ -3676,14 +3720,14 @@
     "github_confirmation_snapshot_sha": "2c47f64a17eb4790f0c1d3406880e603cfba8e85"
   },
   "last_data_quality_observation": {
-    "checked_at_utc": "2026-11-27T16:32:26Z",
+    "checked_at_utc": "2026-11-27T17:25:51Z",
     "github_snapshot_date": "2026-11-25",
     "generated_utc": "2026-11-25T22:40:52.200847+00:00",
     "snapshot_sha": "2c47f64a17eb4790f0c1d3406880e603cfba8e85",
     "mode": "end_of_day",
     "reference_date": "2026-11-24",
     "reference_fixed_before_open": false,
-    "comparison_kind": "External quotes compared with prior external samples; no new condition",
+    "comparison_kind": "External timestamped quote comparison only; no new confirmed condition",
     "regular_session_recovery": "not verified",
     "latest_run_id": 45935913329,
     "latest_run_started_utc": "2026-11-27T03:44:29Z",
@@ -3691,31 +3735,31 @@
     "save": "skipped",
     "deploy": "skipped",
     "corporate_action_guard_today": "unverified",
-    "latest_run_status_this_check": "unverified; actions page unavailable; prior job info retained as historical"
+    "latest_run_status_this_check": "Actions listing unavailable; earlier run status historical only"
   },
   "last_check_report_decision": "no_update",
-  "last_assessment_nominal_et": "2026-11-27T11:30:00-05:00",
-  "last_assessment_prepared_utc": "2026-11-27T16:32:26Z",
-  "last_assessment_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_CONTINUED_NO_NEW_CONDITION",
+  "last_assessment_nominal_et": "2026-11-27T12:30:00-05:00",
+  "last_assessment_prepared_utc": "2026-11-27T17:25:51Z",
+  "last_assessment_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_CONTINUED_NO_NEW_CONFIRMED_CONDITION",
   "last_assessment_condition_ids": [
     "QQQ:external_sample_above_Nov24_low_updated_buffer",
     "QQQM:external_sample_above_Nov24_low_updated_buffer",
     "VOO:external_sample_above_third_buffer",
     "QQQM:external_below:third"
   ],
-  "last_check_report_decision_reason": "No new threshold or judgment changes; sampled recovery remains, collector issue unchanged; CNN proxy remains extreme fear.",
-  "last_check_attempt_utc": "2026-11-27T16:32:26Z",
-  "last_check_nominal_et": "2026-11-27T11:30:00-05:00",
+  "last_check_report_decision_reason": "Recovery remains sampled; QQQ approximate 15% drawdown level regained but not buffered/verified; FGScore 25 proxy crosses band without CNN verification or judgment change; collector stale unchanged.",
+  "last_check_attempt_utc": "2026-11-27T17:25:51Z",
+  "last_check_nominal_et": "2026-11-27T12:30:00-05:00",
   "last_check_data_status": "stale_collector_external_quotes_only",
-  "last_evaluation_prepared_utc": "2026-11-27T16:32:26Z",
-  "last_evaluation_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_CONTINUED_NO_NEW_CONDITION",
+  "last_evaluation_prepared_utc": "2026-11-27T17:25:51Z",
+  "last_evaluation_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_CONTINUED_NO_NEW_CONFIRMED_CONDITION",
   "last_evaluation_condition_ids": [
     "QQQ:external_sample_above_Nov24_low_updated_buffer",
     "QQQM:external_sample_above_Nov24_low_updated_buffer",
     "VOO:external_sample_above_third_buffer",
     "QQQM:external_below:third"
   ],
-  "last_check_completed_utc": "2026-11-27T16:32:26Z",
+  "last_check_completed_utc": "2026-11-27T17:25:51Z",
   "last_assessment_snapshot_generated_utc": "2026-11-25T22:40:52.200847+00:00",
   "last_stale_snapshot_observed": {
     "latest_generated_utc": "2026-11-25T22:40:52.200847+00:00",
@@ -3750,15 +3794,69 @@
     "VOO:external_sample_above_third_buffer",
     "QQQM:external_below:third"
   ],
-  "last_check_summary": "11:30 ET QQQ 645.07 +1.76%, QQQM 265.65 +1.76%, VOO 666.02 +1.09%; no new thresholds. RSP +0.86%, SOX +2.88%, VIX 25.42 (10:49), FGScore 24 (10:47 factors), GuruTrack 15 prior date; CNN original unverified. Collector stale. Prior judgment unchanged; no report prepared.",
-  "last_checked_at_utc": "2026-11-27T16:32:26Z",
-  "last_check_slot_et": "2026-11-27T11:30:00-05:00",
+  "last_check_summary": "12:30 ET slot: QQQ 646.24 +1.94%, QQQM 266.50 +2.09%, VOO 667.38 +1.29% (11:56–12:04 ET). RSP +1.14%, SOX +3.49%, VIX 24.87; FGScore 25 (11:51 factor timestamp), GuruTrack 15 dated Nov26; original inaccessible. No judgment change.",
+  "last_checked_at_utc": "2026-11-27T17:25:51Z",
+  "last_check_slot_et": "2026-11-27T12:30:00-05:00",
   "notification_decision": "no_update",
   "last_daily_reference_session_date": "2026-11-24",
-  "last_inspection_utc": "2026-11-27T16:32:26Z",
-  "last_inspection_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_CONTINUED_NO_NEW_CONDITION",
+  "last_inspection_utc": "2026-11-27T17:25:51Z",
+  "last_inspection_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_CONTINUED_NO_NEW_CONFIRMED_CONDITION",
   "last_inspection_data_status": "stale_collector_external_quotes_only",
   "last_external_intraday": {
+    "observed_market_date": "2026-11-27",
+    "quote_provider": "StockAnalysis",
+    "quote_type": "timestamped intraday last prices not 5min bars",
+    "quotes": {
+      "QQQ": {
+        "price": 646.24,
+        "previous_close": 633.93,
+        "low": 636.72,
+        "high": 647.05,
+        "open": 645.72,
+        "volume": 23358987,
+        "at_et": "2026-11-27T12:00:00-05:00",
+        "age_minutes_at_nominal_slot": 30,
+        "pct": 1.9418547789188167,
+        "high252_reference": 759.659973,
+        "approx_drawdown_pct": -14.930360560144983,
+        "source_url": "https://stockanalysis.com/etf/qqq/"
+      },
+      "QQQM": {
+        "price": 266.5,
+        "previous_close": 261.05,
+        "low": 262.22,
+        "high": 266.5,
+        "open": 265.91,
+        "volume": 2613292,
+        "at_et": "2026-11-27T11:56:00-05:00",
+        "age_minutes_at_nominal_slot": 34,
+        "pct": 2.0877226584945285,
+        "high252_reference": 312.76001,
+        "approx_drawdown_pct": -14.790896700636381,
+        "source_url": "https://stockanalysis.com/etf/qqqm/"
+      },
+      "VOO": {
+        "price": 667.38,
+        "previous_close": 658.87,
+        "low": 661.53,
+        "high": 668.34,
+        "open": 667.3,
+        "volume": 3592488,
+        "at_et": "2026-11-27T12:04:00-05:00",
+        "age_minutes_at_nominal_slot": 26,
+        "pct": 1.2916053242673087,
+        "high252_reference": 716.200012,
+        "approx_drawdown_pct": -6.816533256355218,
+        "source_url": "https://stockanalysis.com/etf/voo/"
+      }
+    },
+    "quotes_not_same_instant": true,
+    "validated_as_same_day": true,
+    "confirmed_github_data": false,
+    "external_reference_session": "2026-11-25",
+    "note": "All samples above prior recovery levels. Approximate QQQ 15% drawdown threshold regained without ATR recovery buffer or fresh reference. No confirmed rearm. No matched elapsed volume."
+  },
+  "last_external_intraday_previous": {
     "observed_market_date": "2026-11-27",
     "quote_provider": "StockAnalysis",
     "quote_type": "timestamped intraday last prices not 5min bars",
@@ -3812,61 +3910,7 @@
     "external_reference_session": "2026-11-25",
     "note": "Recovery conditions remain sampled above buffers; no new condition, no verified continuous hold. Current fixed reference and corporate action guard unavailable."
   },
-  "last_external_intraday_previous": {
-    "observed_market_date": "2026-11-27",
-    "quote_provider": "StockAnalysis",
-    "quote_type": "timestamped intraday last prices not 5min bars",
-    "quotes": {
-      "QQQ": {
-        "price": 641.49,
-        "previous_close": 633.93,
-        "low": 636.72,
-        "high": 645.89,
-        "open": 645.72,
-        "volume": 13096734,
-        "at_et": "2026-11-27T10:26:00-05:00",
-        "age_minutes_at_nominal_slot": 4,
-        "pct": 1.1925606928209875,
-        "high252_reference": 759.659973,
-        "approx_drawdown_pct": -15.555640312774521,
-        "source_url": "https://stockanalysis.com/etf/qqq/"
-      },
-      "QQQM": {
-        "price": 264.22,
-        "previous_close": 261.05,
-        "low": 262.22,
-        "high": 265.93,
-        "open": 265.91,
-        "volume": 1822917,
-        "at_et": "2026-11-27T10:26:00-05:00",
-        "age_minutes_at_nominal_slot": 4,
-        "pct": 1.2143267573261785,
-        "high252_reference": 312.76001,
-        "approx_drawdown_pct": -15.519890154754757,
-        "source_url": "https://stockanalysis.com/etf/qqqm/"
-      },
-      "VOO": {
-        "price": 664.55,
-        "previous_close": 658.87,
-        "low": 661.73,
-        "high": 667.39,
-        "open": 667.3,
-        "volume": 1987342,
-        "at_et": "2026-11-27T10:19:00-05:00",
-        "age_minutes_at_nominal_slot": 11,
-        "pct": 0.8620820495697012,
-        "high252_reference": 716.200012,
-        "approx_drawdown_pct": -7.211674271795465,
-        "source_url": "https://stockanalysis.com/etf/voo/"
-      }
-    },
-    "quotes_not_same_instant": true,
-    "validated_as_same_day": true,
-    "confirmed_github_data": false,
-    "external_reference_session": "2026-11-25",
-    "note": "All samples above updated recovery levels; session lows also above levels as displayed, continuous 15-minute hold not verified. No new downside event. Preopen fixed reference and current corporate action guard unavailable."
-  },
-  "next_check_condition": "Nov27 12:30 ET / Nov28 02:30 KST: QQQ 636.53, QQQM 262.09, VOO 658.52 recovery samples; loss weakens recovery; Nov25 lows 607.74/250.27/639.26 invalidate broader recovery. QQQM below 280; VOO reentry 655; 13:00 ET early close, 13:30 verify same-day closes and weekly else 14:30 fallback, no duplicate.",
+  "next_check_condition": "Nov27 13:00 ET early close; 13:30 ET / Nov28 03:30 KST validate all three Nov27 provider daily closes and completed weekly data, else 14:30 ET / 04:30 KST fallback; no duplicate. Recovery levels QQQ 636.53, QQQM 262.09, VOO 658.52; Nov25 lows 607.74/250.27/639.26 invalidate broader recovery. QQQM below 280; VOO reentry 655.",
   "delivery_status": "unverified",
   "last_assessment_report_decision": "no_update",
   "last_external_review_session": "2026-11-27",
