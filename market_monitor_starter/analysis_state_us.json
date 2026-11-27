@@ -4006,9 +4006,9 @@
     "delivery_status": "unverified"
   },
   "last_scope_skip": {
-    "observed_at_utc": "2026-11-27T20:27:31Z",
-    "nominal_et": "2026-11-27T15:30:00-05:00",
-    "reason": "Outside eligible early-close reporting slots; Nov27 14:30 ET final external review already prepared, partial verification only. No duplicate analysis, no changes to confirmed close date, prices, judgment or report record.",
+    "observed_at_utc": "2026-11-27T22:30:55Z",
+    "nominal_et": "2026-11-27T17:30:00-05:00",
+    "reason": "Outside eligible early-close reporting slots; Nov27 14:30 ET final external review already prepared, partial verification only. No duplicate analysis, no changes to confirmed close date, prices, judgment or report record. NYSE early close 13:00 ET confirmed.",
     "config_revision": "2026-10-19.1",
     "collector_generated_utc": "2026-11-25T22:40:52.200847+00:00",
     "notification_decision": "skip",
