@@ -18,18 +18,14 @@
     "VOO:below:first",
     "VOO:below:second"
   ],
-  "current_judgment": "Nov26 holiday: no new trading evaluation. Nov25 previously reviewed external provider daily closes now corroborated to cents by delayed GitHub end_of_day snapshot generated Nov25 17:40:52 ET; provider close, not exchange-certified. No new crossings, late reference initialization; preopen fixed reference not verified. Prior plan conditional review QQQM, VOO watch reentry; confirmation hold. QQQ provisional weekly EMA100 616.5635, RSI14 39.98, not completed until Nov27. No sizing or orders.",
-  "next_conditions": "Nov27 10:30 ET (Nov28 00:30 KST): QQQ 631.15 + updated Nov25 ATR/4 = 636.53, watch 616.21 and 607.74; QQQM 259.90 + updated ATR/4 = 262.09, lows 250.27/249.64; VOO 655 + updated ATR/4 = 658.52, watch 645/639.26. Prior report buffers 635.84/261.81/658.08 retained historically only. Provisional Nov27 daily -2/-3/-5 QQQ 621.25/614.91/602.23, VOO 645.69/639.10/625.93; verify fresh preopen reference and corporate actions, not new crossings on baseline change. Nov27 13:00 ET early close; 13:30 check all three dated closes and completed week, else 14:30 fallback. No duplicate.",
-  "last_report_prepared_utc": "2026-11-25T22:31:05Z",
-  "last_report_kind": "2026-11-25_EOD_EXTERNAL_PROVIDER_CLOSE_STALE_COLLECTOR",
+  "current_judgment": "External quotes only: QQQM conditional plan review remains; VOO watch reentry; confirmation approach observe further daily/weekly close before adding. QQQ and QQQM sampled recovery above updated buffers, not confirmed continuous/close. No sizing or orders.",
+  "next_conditions": "Nov27 11:30 ET / Nov28 01:30 KST: watch QQQ 636.53, QQQM 262.09, VOO 658.52, today lows 636.72/262.22/661.73. Loss of buffer weakens recovery; Nov25 lows 607.74/250.27/639.26 invalidate broader recovery. QQQM below 280, VOO reentry 655. 13:00 ET early close; 13:30 validate same-day closes and completed weekly else 14:30 fallback, no duplicates.",
+  "last_report_prepared_utc": "2026-11-27T15:34:47Z",
+  "last_report_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_SAMPLE_STALE_COLLECTOR",
   "last_report_condition_ids": [
-    "QQQ:external_daily_close_above_ema100_atr_buffer",
-    "QQQ:external_daily_close_above_Nov24_low",
-    "QQQM:external_daily_close_above_Nov24_low",
-    "VOO:external_daily_close_above_third_atr_buffer",
-    "QQQ:external_intraday_low:-3",
-    "VOO:external_intraday_low:-3",
-    "VOO:external_approx_intraday_high252:-10",
+    "QQQ:external_sample_above_Nov24_low_updated_buffer",
+    "QQQM:external_sample_above_Nov24_low_updated_buffer",
+    "VOO:external_sample_above_third_buffer",
     "QQQM:external_below:third"
   ],
   "last_end_of_day_review_session": "2026-11-25",
@@ -3486,15 +3482,90 @@
       ],
       "observed_at_utc": "2026-11-26T15:34:06Z",
       "refresh_condition": "Official holiday or emergency closure change"
+    },
+    "CNN_NOV27_1030_SECONDARY": {
+      "value": {
+        "fgscore": 23,
+        "gurutrack": 15
+      },
+      "fgscore_date": "2026-11-27 UTC",
+      "fgscore_factor_timestamp_et": "2026-11-27 09:47 EST",
+      "gurutrack_date": "2026-11-26 daily",
+      "original_verified": false,
+      "previous_trading_day_comparison": "unverified; previous observed Nov25 15/16, FGScore today previous daily reading also 23 dated Nov27, GuruTrack Nov26 prev close 15; inconsistent timestamps",
+      "recent_five_sessions": "unverified",
+      "source_urls": [
+        "https://fgscore.com/en/markets/sp500",
+        "https://gurutrack.ai/en/sentiment",
+        "https://www.cnn.com/markets/fear-and-greed"
+      ],
+      "observed_at_utc": "2026-11-27T15:34:47Z",
+      "refresh_condition": "New original or comparable verified reading; no double count with VIX"
+    },
+    "US_NOV27_1030_RISK": {
+      "value": {
+        "RSP_pct": 0.77,
+        "SOX_pct": 2.02,
+        "VIX": 26.67,
+        "VIX_pct": -0.49,
+        "VXN_last_daily": 38.53,
+        "nominal10y_AP": 4.89,
+        "nominal10y_last_official": 4.85,
+        "real10y_last_official": 2.73
+      },
+      "market_timestamps": {
+        "RSP": "10:26 ET",
+        "SOX": "10:25:38 provider display",
+        "VIX": "10:16:16 provider display",
+        "VXN": "Nov25 daily",
+        "nominal10y_AP": "Nov27 AP morning report; quote time unverified",
+        "official_yields": "Nov25 daily"
+      },
+      "source_urls": [
+        "https://stockanalysis.com/etf/rsp/",
+        "https://www.investing.com/indices/phlx-semiconductor",
+        "https://www.investing.com/indices/volatility-s-p-500",
+        "https://ca.investing.com/indices/cboe-nasdaq-100-voltility-historical-data",
+        "https://apnews.com/article/c7ef10c1dbc5fa09668bd4fe0729c613"
+      ],
+      "observed_at_utc": "2026-11-27T15:34:47Z",
+      "refresh_condition": "Next quote; official yields only after new daily release; VIX prior close discrepancy across providers not resolved; breadth proxy only; matched volume unavailable"
+    },
+    "US_NOV27_TRADE": {
+      "value": {
+        "goods_deficit_usd_b": 149.5,
+        "change_pct": 10.7,
+        "forecast_usd_b": 133
+      },
+      "observed_date": "2026-11-27",
+      "source_urls": [
+        "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/",
+        "https://www.census.gov/economic-indicators/calendar"
+      ],
+      "observed_at_utc": "2026-11-27T15:34:47Z",
+      "refresh_condition": "Official revised print or new release; Reuters cites Census; original print not independently verified"
+    },
+    "US_NOV27_FORWARD_EVENTS": {
+      "value": "Nov30 Dallas Fed manufacturing, Dec1 ISM manufacturing and JOLTS calendar (secondary; issuer IR Marvell Dec1 from prior verified cache)",
+      "source_urls": [
+        "https://mysttrades.com/economic-calendar"
+      ],
+      "observed_at_utc": "2026-11-27T15:34:47Z",
+      "refresh_condition": "Official calendar revision or actual releases; confirm dates with primary sources"
     }
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
-  "last_evaluation_utc": "2026-11-25T22:31:05Z",
-  "last_check_prepared_utc": "2026-11-25T22:31:05Z",
-  "last_check_kind": "holiday_no_market_report",
-  "last_check_condition_ids": [],
-  "last_notification_decision": "skip_holiday",
-  "last_price_source": "GitHub delayed Nov25 EOD Yahoo Finance via yfinance (provider daily close subject to revision), corroborates already reviewed external provider closes",
+  "last_evaluation_utc": "2026-11-27T15:34:47Z",
+  "last_check_prepared_utc": "2026-11-27T15:34:47Z",
+  "last_check_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_SAMPLE_STALE_COLLECTOR",
+  "last_check_condition_ids": [
+    "QQQ:external_sample_above_Nov24_low_updated_buffer",
+    "QQQM:external_sample_above_Nov24_low_updated_buffer",
+    "VOO:external_sample_above_third_buffer",
+    "QQQM:external_below:third"
+  ],
+  "last_notification_decision": "report_prepared",
+  "last_price_source": "External StockAnalysis same-day last prices; GitHub EOD Nov25 still only valid collector snapshot",
   "last_external_end_of_day": {
     "session": "2026-11-25",
     "mode": "external_provider_daily_close",
@@ -3562,77 +3633,52 @@
     "github_confirmation_snapshot_sha": "2c47f64a17eb4790f0c1d3406880e603cfba8e85"
   },
   "last_data_quality_observation": {
-    "checked_at_utc": "2026-11-26T15:34:06Z",
+    "checked_at_utc": "2026-11-27T15:34:47Z",
     "github_snapshot_date": "2026-11-25",
     "generated_utc": "2026-11-25T22:40:52.200847+00:00",
     "snapshot_sha": "2c47f64a17eb4790f0c1d3406880e603cfba8e85",
     "mode": "end_of_day",
     "reference_date": "2026-11-24",
     "reference_fixed_before_open": false,
-    "corporate_action_guard_provider_only": {
-      "QQQ": {
-        "complete": true,
-        "dividends": 0,
-        "splits": 0,
-        "limitation": "Only provider-reported corporate actions are checked"
-      },
-      "QQQM": {
-        "complete": true,
-        "dividends": 0,
-        "splits": 0,
-        "limitation": "Only provider-reported corporate actions are checked"
-      },
-      "VOO": {
-        "complete": true,
-        "dividends": 0,
-        "splits": 0,
-        "limitation": "Only provider-reported corporate actions are checked"
-      }
-    },
-    "comparison_kind": "late_reference_initialization_not_a_new_price_event",
-    "previous_collector_status": "Nov20 stale prior to late Nov25 EOD",
-    "workflow_run_list": "not checked during holiday reconciliation",
-    "regular_session_recovery": "not yet verified",
-    "holiday": true
+    "comparison_kind": "external sample vs previously recorded recovery levels; no new collector event",
+    "regular_session_recovery": "not verified",
+    "latest_run_id": 45935913329,
+    "latest_run_started_utc": "2026-11-27T03:44:29Z",
+    "latest_run_conclusion": "success",
+    "save": "skipped",
+    "deploy": "skipped",
+    "corporate_action_guard_today": "unverified"
   },
-  "last_check_report_decision": "skip_holiday",
-  "last_assessment_nominal_et": "2026-11-25T17:30:00-05:00",
-  "last_assessment_prepared_utc": "2026-11-25T22:31:05Z",
-  "last_assessment_kind": "2026-11-25_EOD_EXTERNAL_PROVIDER_CLOSE_STALE_COLLECTOR",
+  "last_check_report_decision": "report_prepared",
+  "last_assessment_nominal_et": "2026-11-27T10:30:00-05:00",
+  "last_assessment_prepared_utc": "2026-11-27T15:34:47Z",
+  "last_assessment_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_SAMPLE_STALE_COLLECTOR",
   "last_assessment_condition_ids": [
-    "QQQ:external_daily_close_above_ema100_atr_buffer",
-    "QQQ:external_daily_close_above_Nov24_low",
-    "QQQM:external_daily_close_above_Nov24_low",
-    "VOO:external_daily_close_above_third_atr_buffer",
-    "QQQ:external_intraday_low:-3",
-    "VOO:external_intraday_low:-3",
-    "VOO:external_approx_intraday_high252:-10",
+    "QQQ:external_sample_above_Nov24_low_updated_buffer",
+    "QQQM:external_sample_above_Nov24_low_updated_buffer",
+    "VOO:external_sample_above_third_buffer",
     "QQQM:external_below:third"
   ],
-  "last_check_report_decision_reason": "NYSE and Nasdaq official calendars confirm Nov26 holiday and Nov27 13:00 ET early close. Nov25 EOD snapshot SHA 2c47f64a17eb4790f0c1d3406880e603cfba8e85 and config revision 2026-10-19.1 unchanged. No new price event or report prepared.",
-  "last_check_attempt_utc": "2026-11-26T22:30:31Z",
-  "last_check_nominal_et": "2026-11-26T17:30:00-05:00",
-  "last_check_data_status": "holiday_no_regular_session_prior_eod_unchanged",
-  "last_evaluation_prepared_utc": "2026-11-25T22:31:05Z",
-  "last_evaluation_kind": "2026-11-25_EOD_EXTERNAL_PROVIDER_CLOSE_STALE_COLLECTOR",
+  "last_check_report_decision_reason": "New sampled recovery above prior updated buffers and continued missing regular-session collection",
+  "last_check_attempt_utc": "2026-11-27T15:34:47Z",
+  "last_check_nominal_et": "2026-11-27T10:30:00-05:00",
+  "last_check_data_status": "stale_collector_external_quotes_only",
+  "last_evaluation_prepared_utc": "2026-11-27T15:34:47Z",
+  "last_evaluation_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_SAMPLE_STALE_COLLECTOR",
   "last_evaluation_condition_ids": [
-    "QQQ:external_daily_close_above_ema100_atr_buffer",
-    "QQQ:external_daily_close_above_Nov24_low",
-    "QQQM:external_daily_close_above_Nov24_low",
-    "VOO:external_daily_close_above_third_atr_buffer",
-    "QQQ:external_intraday_low:-3",
-    "VOO:external_intraday_low:-3",
-    "VOO:external_approx_intraday_high252:-10",
+    "QQQ:external_sample_above_Nov24_low_updated_buffer",
+    "QQQM:external_sample_above_Nov24_low_updated_buffer",
+    "VOO:external_sample_above_third_buffer",
     "QQQM:external_below:third"
   ],
-  "last_check_completed_utc": "2026-11-26T22:30:31Z",
+  "last_check_completed_utc": "2026-11-27T15:34:47Z",
   "last_assessment_snapshot_generated_utc": "2026-11-20T21:26:38.664655+00:00",
   "last_stale_snapshot_observed": {
-    "latest_generated_utc": "2026-11-20T21:26:38.664655+00:00",
+    "latest_generated_utc": "2026-11-25T22:40:52.200847+00:00",
     "latest_mode": "end_of_day",
-    "requested_session": "2026-11-25",
-    "snapshot_sha": "ffa844b39cebafc2e817675ef09ad8722a3fb380",
-    "note": "GitHub latest ffa844b39cebafc2e817675ef09ad8722a3fb380 Nov20 16:26 EST end_of_day stale; Nov19 reference fixed after open, not usable today; current corporate-action guard unverified. Run 45547368715 save/deploy skipped rechecked; current run list inaccessible. External timestamped quotes not 5-minute bars. NYSE/Nasdaq official holiday calendar rechecked."
+    "requested_session": "2026-11-27",
+    "snapshot_sha": "2c47f64a17eb4790f0c1d3406880e603cfba8e85",
+    "note": "Latest run 45935913329 Nov26 22:44 ET, save/deploy skipped; no today fixed reference or collector bars."
   },
   "last_end_of_day_data_quality": {
     "checked_at_utc": "2026-11-26T15:34:06Z",
@@ -3652,27 +3698,77 @@
     "weekly_completed": false
   },
   "last_data_update_verified_at_this_check": false,
-  "last_check_report_prepared_utc": "2026-11-25T22:31:05Z",
-  "last_check_report_kind": "2026-11-25_EOD_EXTERNAL_PROVIDER_CLOSE_STALE_COLLECTOR",
+  "last_check_report_prepared_utc": "2026-11-27T15:34:47Z",
+  "last_check_report_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_SAMPLE_STALE_COLLECTOR",
   "last_check_report_condition_ids": [
-    "QQQ:external_daily_close_above_ema100_atr_buffer",
-    "QQQ:external_daily_close_above_Nov24_low",
-    "QQQM:external_daily_close_above_Nov24_low",
-    "VOO:external_daily_close_above_third_atr_buffer",
-    "QQQ:external_intraday_low:-3",
-    "VOO:external_intraday_low:-3",
-    "VOO:external_approx_intraday_high252:-10",
+    "QQQ:external_sample_above_Nov24_low_updated_buffer",
+    "QQQM:external_sample_above_Nov24_low_updated_buffer",
+    "VOO:external_sample_above_third_buffer",
     "QQQM:external_below:third"
   ],
-  "last_check_summary": "Nov25 provider daily closes QQQ 633.93 (-0.65%), QQQM 261.05 (-0.66%), VOO 658.87 (-0.28%); QQQ/QQQM close above Nov24 lows but below old ATR-buffer thresholds 635.84/261.81. VOO closes above old 658.08 buffer. QQQ intraday low 607.74 near old 252d -20% threshold 607.728 (not crossed at displayed precision; provisional); VOO low 639.26 below third band and approximate -10%, close above. Both intraday -3% thresholds reached, not -5%. RSP +0.83%, SOX -0.65%, VIX 28.32 provider display 16:14:46 (another source 28.19, exact official close unverified), VXN 38.53 16:15 YCharts. Official daily 10y nominal 4.85 and real 2.73, both -6 bp. FGScore 15 (components 16:20) vs prior sample 16; GuruTrack 16 vs prior sample 15 and previous close 17. CNN original and 5 aligned sessions unverified. Plan conditional QQQM review; VOO watch reentry; confirmation hold pending further recovery and Friday weekly. No sizing. GitHub latest Nov20 stale, reference Nov19 late; prior workflow save/deploy skipped, latest run list unavailable. Provider daily close not exchange-certified, corporate action guard not confirmed; 11/20 VOO provider discrepancy 635.54 vs GitHub 635.125. No continuous detection.",
-  "last_checked_at_utc": "2026-11-26T22:30:31Z",
-  "last_check_slot_et": "2026-11-26T17:30:00-05:00",
-  "notification_decision": "skip_holiday",
+  "last_check_summary": "Nov27 10:30 ET QQQ 641.49 +1.19%, QQQM 264.22 +1.21%, VOO 664.55 +0.86%. FGScore 23 vs GuruTrack prior-date 15, original unverified. RSP +0.77%, SOX +2.02%, VIX 26.67; yields AP 4.89 nominal vs prior official 4.85; real prior 2.73. External recovery samples only; no continuous hold or confirmed close. No new downside; plan conditional QQQM review, confirmation wait close. Collector stale Nov25, latest run save/deploy skipped.",
+  "last_checked_at_utc": "2026-11-27T15:34:47Z",
+  "last_check_slot_et": "2026-11-27T10:30:00-05:00",
+  "notification_decision": "report_prepared",
   "last_daily_reference_session_date": "2026-11-24",
-  "last_inspection_utc": "2026-11-26T20:34:26Z",
-  "last_inspection_kind": "holiday_no_market_report",
-  "last_inspection_data_status": "Nov25 EOD unchanged; no Nov26 regular session; preopen and intraday recovery unverified",
+  "last_inspection_utc": "2026-11-27T15:34:47Z",
+  "last_inspection_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_SAMPLE_STALE_COLLECTOR",
+  "last_inspection_data_status": "stale_collector_external_quotes_only",
   "last_external_intraday": {
+    "observed_market_date": "2026-11-27",
+    "quote_provider": "StockAnalysis",
+    "quote_type": "timestamped intraday last prices not 5min bars",
+    "quotes": {
+      "QQQ": {
+        "price": 641.49,
+        "previous_close": 633.93,
+        "low": 636.72,
+        "high": 645.89,
+        "open": 645.72,
+        "volume": 13096734,
+        "at_et": "2026-11-27T10:26:00-05:00",
+        "age_minutes_at_nominal_slot": 4,
+        "pct": 1.1925606928209875,
+        "high252_reference": 759.659973,
+        "approx_drawdown_pct": -15.555640312774521,
+        "source_url": "https://stockanalysis.com/etf/qqq/"
+      },
+      "QQQM": {
+        "price": 264.22,
+        "previous_close": 261.05,
+        "low": 262.22,
+        "high": 265.93,
+        "open": 265.91,
+        "volume": 1822917,
+        "at_et": "2026-11-27T10:26:00-05:00",
+        "age_minutes_at_nominal_slot": 4,
+        "pct": 1.2143267573261785,
+        "high252_reference": 312.76001,
+        "approx_drawdown_pct": -15.519890154754757,
+        "source_url": "https://stockanalysis.com/etf/qqqm/"
+      },
+      "VOO": {
+        "price": 664.55,
+        "previous_close": 658.87,
+        "low": 661.73,
+        "high": 667.39,
+        "open": 667.3,
+        "volume": 1987342,
+        "at_et": "2026-11-27T10:19:00-05:00",
+        "age_minutes_at_nominal_slot": 11,
+        "pct": 0.8620820495697012,
+        "high252_reference": 716.200012,
+        "approx_drawdown_pct": -7.211674271795465,
+        "source_url": "https://stockanalysis.com/etf/voo/"
+      }
+    },
+    "quotes_not_same_instant": true,
+    "validated_as_same_day": true,
+    "confirmed_github_data": false,
+    "external_reference_session": "2026-11-25",
+    "note": "All samples above updated recovery levels; session lows also above levels as displayed, continuous 15-minute hold not verified. No new downside event. Preopen fixed reference and current corporate action guard unavailable."
+  },
+  "last_external_intraday_previous": {
     "observed_market_date": "2026-11-25",
     "quote_provider": "StockAnalysis",
     "quote_type": "timestamped_intraday_last_prices_not_5min_bars_or_daily_close",
@@ -3726,72 +3822,14 @@
     "qqqm_still_below_third_band": true,
     "note": "Nov25 15:30: QQQ 631.85 (-0.98%) 15:12, QQQM 260.30 (-0.94%) 15:14, VOO 658.07 (-0.40%) 15:19; lows unchanged. QQQ/QQQM remain above Nov24 lows but below old recovery buffers 635.84/261.81; VOO 0.01 below rounded old buffer 658.08, no material change. RSP +0.84% 15:19; SOX -1.61% display 15:10; VIX 28.01 +6.26% display 15:20. FGScore 16 vs 15, components 14:33; GuruTrack 15 unchanged, prior close 17, week ago 30. CNN original/exact headline timestamp/five aligned sessions unverified. No new severe downside or confirmed recovery; conditional plan review QQQM, VOO reentry watch, confirmation hold; no sizing. Prior daily yields 4.91/2.79, VXN new value unavailable, matched volume and direct breadth unavailable."
   },
-  "last_external_intraday_previous": {
-    "observed_market_date": "2026-11-25",
-    "quote_provider": "StockAnalysis",
-    "quote_type": "timestamped_intraday_last_prices_not_5min_bars_or_daily_close",
-    "quotes": {
-      "QQQ": {
-        "price": 631.99,
-        "previous_close": 638.1,
-        "low": 607.74,
-        "pct": -0.9575301676853165,
-        "low_pct": -4.757874941231788,
-        "at_et": "2026-11-25T14:20:00-05:00",
-        "age_minutes": 10,
-        "high252_reference": 759.6599731445312,
-        "approx_drawdown_pct": -16.806199833861857,
-        "approx_low_drawdown_pct": -19.998417517731614,
-        "source_url": "https://stockanalysis.com/etf/qqq/"
-      },
-      "QQQM": {
-        "price": 260.43,
-        "previous_close": 262.78,
-        "low": 250.27,
-        "pct": -0.8942841920998479,
-        "low_pct": -4.760636273689,
-        "at_et": "2026-11-25T14:14:00-05:00",
-        "age_minutes": 16,
-        "high252_reference": 312.760009765625,
-        "approx_drawdown_pct": -16.731681842841695,
-        "approx_low_drawdown_pct": -19.980178991698306,
-        "source_url": "https://stockanalysis.com/etf/qqqm/"
-      },
-      "VOO": {
-        "price": 658.22,
-        "previous_close": 660.71,
-        "low": 639.26,
-        "pct": -0.3768673094095787,
-        "low_pct": -3.2465075449138125,
-        "at_et": "2026-11-25T14:19:00-05:00",
-        "age_minutes": 11,
-        "high252_reference": 716.2000122070312,
-        "approx_drawdown_pct": -8.095505615583676,
-        "approx_low_drawdown_pct": -10.742810792467605,
-        "source_url": "https://stockanalysis.com/etf/voo/"
-      }
-    },
-    "quotes_not_same_instant": true,
-    "validated_as_same_day": true,
-    "confirmed_github_data": false,
-    "external_reference_session": "2026-11-24",
-    "still_above_last_confirmed_qqq_weekly_ema100": true,
-    "still_above_voo_third_band": true,
-    "qqqm_still_below_third_band": true,
-    "note": "Nov25 14:30: QQQ 631.99 14:20, QQQM 260.43 14:14, VOO 658.22 14:19; lows unchanged 607.74/250.27/639.26. QQQ/QQQM sampled above Nov24 lows 631.15/259.90, but below old ATR buffer recovery 635.84/261.81. VOO sample above 655+old ATR buffer 3.08. SOX -1.36% 14:07 display, VIX 27.49 +4.29% 13:53 display, RSP +0.95% 14:20. CNN secondary FGScore and GuruTrack both 15, prior samples 11 and 9; GuruTrack prior close 17, week ago 30; FGScore components timestamp 13:34; original/exact score timestamp/aligned five sessions unverified. Material price and sentiment recovery samples, no continuous hold or closing confirmation; plan conditional review QQQM, VOO reentry watch, confirmation hold, no sizing. GitHub snapshot remains Nov20 16:26 end_of_day; prior workflow 45547368715 save/deploy skipped rechecked; fresh run list inaccessible."
-  },
-  "next_check_condition": "Nov27 10:30 ET (Nov28 00:30 KST): QQQ 631.15 + updated Nov25 ATR/4 = 636.53, watch 616.21 and 607.74; QQQM 259.90 + updated ATR/4 = 262.09, lows 250.27/249.64; VOO 655 + updated ATR/4 = 658.52, watch 645/639.26. Prior report buffers 635.84/261.81/658.08 retained historically only. Provisional Nov27 daily -2/-3/-5 QQQ 621.25/614.91/602.23, VOO 645.69/639.10/625.93; verify fresh preopen reference and corporate actions, not new crossings on baseline change. Nov27 13:00 ET early close; 13:30 check all three dated closes and completed week, else 14:30 fallback. No duplicate.",
+  "next_check_condition": "Nov27 11:30 ET / Nov28 01:30 KST: watch QQQ 636.53, QQQM 262.09, VOO 658.52, today lows 636.72/262.22/661.73. Loss of buffer weakens recovery; Nov25 lows 607.74/250.27/639.26 invalidate broader recovery. QQQM below 280, VOO reentry 655. 13:00 ET early close; 13:30 validate same-day closes and completed weekly else 14:30 fallback, no duplicates.",
   "delivery_status": "unverified",
   "last_assessment_report_decision": "report_prepared",
-  "last_external_review_session": "2026-11-25",
+  "last_external_review_session": "2026-11-27",
   "last_external_active_conditions": [
-    "QQQ:external_daily_close_above_ema100_atr_buffer",
-    "QQQ:external_daily_close_above_Nov24_low",
-    "QQQM:external_daily_close_above_Nov24_low",
-    "VOO:external_daily_close_above_third_atr_buffer",
-    "QQQ:external_intraday_low:-3",
-    "VOO:external_intraday_low:-3",
-    "VOO:external_approx_intraday_high252:-10",
+    "QQQ:external_sample_above_Nov24_low_updated_buffer",
+    "QQQM:external_sample_above_Nov24_low_updated_buffer",
+    "VOO:external_sample_above_third_buffer",
     "QQQM:external_below:third"
   ]
 }
