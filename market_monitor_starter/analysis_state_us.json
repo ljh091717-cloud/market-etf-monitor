@@ -3643,8 +3643,8 @@
   },
   "privacy": "Only public market facts, source timestamps and generic monitoring judgments; never portfolio holdings, balances, credentials, or personal information",
   "last_evaluation_utc": "2026-11-27T17:25:51Z",
-  "last_check_prepared_utc": "2026-11-27T17:25:51Z",
-  "last_check_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_CONTINUED_NO_NEW_CONFIRMED_CONDITION",
+  "last_check_prepared_utc": "2026-11-27T18:25:46Z",
+  "last_check_kind": "2026-11-27_EARLY_CLOSE_VALIDATION_DEFERRED",
   "last_check_condition_ids": [
     "QQQ:external_sample_above_Nov24_low_updated_buffer",
     "QQQM:external_sample_above_Nov24_low_updated_buffer",
@@ -3720,14 +3720,14 @@
     "github_confirmation_snapshot_sha": "2c47f64a17eb4790f0c1d3406880e603cfba8e85"
   },
   "last_data_quality_observation": {
-    "checked_at_utc": "2026-11-27T17:25:51Z",
+    "checked_at_utc": "2026-11-27T18:25:46Z",
     "github_snapshot_date": "2026-11-25",
     "generated_utc": "2026-11-25T22:40:52.200847+00:00",
     "snapshot_sha": "2c47f64a17eb4790f0c1d3406880e603cfba8e85",
     "mode": "end_of_day",
     "reference_date": "2026-11-24",
     "reference_fixed_before_open": false,
-    "comparison_kind": "External timestamped quote comparison only; no new confirmed condition",
+    "comparison_kind": "Early close verification deferred, no valid current daily Close set",
     "regular_session_recovery": "not verified",
     "latest_run_id": 45935913329,
     "latest_run_started_utc": "2026-11-27T03:44:29Z",
@@ -3735,7 +3735,7 @@
     "save": "skipped",
     "deploy": "skipped",
     "corporate_action_guard_today": "unverified",
-    "latest_run_status_this_check": "Actions listing unavailable; earlier run status historical only"
+    "latest_run_status_this_check": "Not freshly verified; previous job details historical only"
   },
   "last_check_report_decision": "no_update",
   "last_assessment_nominal_et": "2026-11-27T12:30:00-05:00",
@@ -3747,10 +3747,10 @@
     "VOO:external_sample_above_third_buffer",
     "QQQM:external_below:third"
   ],
-  "last_check_report_decision_reason": "Recovery remains sampled; QQQ approximate 15% drawdown level regained but not buffered/verified; FGScore 25 proxy crosses band without CNN verification or judgment change; collector stale unchanged.",
-  "last_check_attempt_utc": "2026-11-27T17:25:51Z",
-  "last_check_nominal_et": "2026-11-27T12:30:00-05:00",
-  "last_check_data_status": "stale_collector_external_quotes_only",
+  "last_check_report_decision_reason": "Nov27 early close confirmed by official NYSE/Nasdaq calendar. Collector still Nov25 17:40:52 ET EOD, no Nov27 daily close or completed week. StockAnalysis history rows were intraday (QQQ 10:11, QQQM 09:52, VOO 11:44 ET); overview QQQ/VOO show 16:00 ET timestamp inconsistent with actual 13:00 close and check time, QQQM 12:57 ET market open. No verified same-session daily closing set. Do not use as closing prices. Defer to 14:30 ET / Nov28 04:30 KST per policy; preserve valid prior observations, prior report and Nov25 completed review. No judgment change inferred from missing data.",
+  "last_check_attempt_utc": "2026-11-27T18:25:46Z",
+  "last_check_nominal_et": "2026-11-27T13:30:00-05:00",
+  "last_check_data_status": "early_close_daily_data_unverified_deferred",
   "last_evaluation_prepared_utc": "2026-11-27T17:25:51Z",
   "last_evaluation_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_CONTINUED_NO_NEW_CONFIRMED_CONDITION",
   "last_evaluation_condition_ids": [
@@ -3759,14 +3759,14 @@
     "VOO:external_sample_above_third_buffer",
     "QQQM:external_below:third"
   ],
-  "last_check_completed_utc": "2026-11-27T17:25:51Z",
+  "last_check_completed_utc": "2026-11-27T18:25:46Z",
   "last_assessment_snapshot_generated_utc": "2026-11-25T22:40:52.200847+00:00",
   "last_stale_snapshot_observed": {
     "latest_generated_utc": "2026-11-25T22:40:52.200847+00:00",
     "latest_mode": "end_of_day",
     "requested_session": "2026-11-27",
     "snapshot_sha": "2c47f64a17eb4790f0c1d3406880e603cfba8e85",
-    "note": "No new snapshot; latest job list not verified this check."
+    "note": "Nov27 early close confirmed by official NYSE/Nasdaq calendar. Collector still Nov25 17:40:52 ET EOD, no Nov27 daily close or completed week. StockAnalysis history rows were intraday (QQQ 10:11, QQQM 09:52, VOO 11:44 ET); overview QQQ/VOO show 16:00 ET timestamp inconsistent with actual 13:00 close and check time, QQQM 12:57 ET market open. No verified same-session daily closing set. Do not use as closing prices. Defer to 14:30 ET / Nov28 04:30 KST per policy; preserve valid prior observations, prior report and Nov25 completed review. No judgment change inferred from missing data."
   },
   "last_end_of_day_data_quality": {
     "checked_at_utc": "2026-11-26T15:34:06Z",
@@ -3794,14 +3794,14 @@
     "VOO:external_sample_above_third_buffer",
     "QQQM:external_below:third"
   ],
-  "last_check_summary": "12:30 ET slot: QQQ 646.24 +1.94%, QQQM 266.50 +2.09%, VOO 667.38 +1.29% (11:56–12:04 ET). RSP +1.14%, SOX +3.49%, VIX 24.87; FGScore 25 (11:51 factor timestamp), GuruTrack 15 dated Nov26; original inaccessible. No judgment change.",
-  "last_checked_at_utc": "2026-11-27T17:25:51Z",
-  "last_check_slot_et": "2026-11-27T12:30:00-05:00",
+  "last_check_summary": "Nov27 early close confirmed by official NYSE/Nasdaq calendar. Collector still Nov25 17:40:52 ET EOD, no Nov27 daily close or completed week. StockAnalysis history rows were intraday (QQQ 10:11, QQQM 09:52, VOO 11:44 ET); overview QQQ/VOO show 16:00 ET timestamp inconsistent with actual 13:00 close and check time, QQQM 12:57 ET market open. No verified same-session daily closing set. Do not use as closing prices. Defer to 14:30 ET / Nov28 04:30 KST per policy; preserve valid prior observations, prior report and Nov25 completed review. No judgment change inferred from missing data.",
+  "last_checked_at_utc": "2026-11-27T18:25:46Z",
+  "last_check_slot_et": "2026-11-27T13:30:00-05:00",
   "notification_decision": "no_update",
   "last_daily_reference_session_date": "2026-11-24",
-  "last_inspection_utc": "2026-11-27T17:25:51Z",
-  "last_inspection_kind": "2026-11-27_INTRADAY_EXTERNAL_RECOVERY_CONTINUED_NO_NEW_CONFIRMED_CONDITION",
-  "last_inspection_data_status": "stale_collector_external_quotes_only",
+  "last_inspection_utc": "2026-11-27T18:25:46Z",
+  "last_inspection_kind": "2026-11-27_EARLY_CLOSE_VALIDATION_DEFERRED",
+  "last_inspection_data_status": "early_close_daily_data_unverified_deferred",
   "last_external_intraday": {
     "observed_market_date": "2026-11-27",
     "quote_provider": "StockAnalysis",
@@ -3910,7 +3910,7 @@
     "external_reference_session": "2026-11-25",
     "note": "Recovery conditions remain sampled above buffers; no new condition, no verified continuous hold. Current fixed reference and corporate action guard unavailable."
   },
-  "next_check_condition": "Nov27 13:00 ET early close; 13:30 ET / Nov28 03:30 KST validate all three Nov27 provider daily closes and completed weekly data, else 14:30 ET / 04:30 KST fallback; no duplicate. Recovery levels QQQ 636.53, QQQM 262.09, VOO 658.52; Nov25 lows 607.74/250.27/639.26 invalidate broader recovery. QQQM below 280; VOO reentry 655.",
+  "next_check_condition": "Nov27 14:30 ET / Nov28 04:30 KST: verify Nov27 daily Close for QQQ/QQQM/VOO, official 13:00 ET early close and completed week, independently source daily closes if collector stale. No duplicate close report. QQQ 636.53, QQQM 262.09, VOO 658.52 recovery observations; Nov25 lows 607.74/250.27/639.26 invalidate broader recovery. No preliminary close used.",
   "delivery_status": "unverified",
   "last_assessment_report_decision": "no_update",
   "last_external_review_session": "2026-11-27",
@@ -3919,5 +3919,21 @@
     "QQQM:external_sample_above_Nov24_low_updated_buffer",
     "VOO:external_sample_above_third_buffer",
     "QQQM:external_below:third"
-  ]
+  ],
+  "pending_early_close_review": {
+    "session": "2026-11-27",
+    "checked_at_utc": "2026-11-27T18:25:46Z",
+    "actual_close_et": "2026-11-27T13:00:00-05:00",
+    "next_check_et": "2026-11-27T14:30:00-05:00",
+    "daily_close_verified": false,
+    "weekly_indicators_verified": false,
+    "reason": "Nov27 early close confirmed by official NYSE/Nasdaq calendar. Collector still Nov25 17:40:52 ET EOD, no Nov27 daily close or completed week. StockAnalysis history rows were intraday (QQQ 10:11, QQQM 09:52, VOO 11:44 ET); overview QQQ/VOO show 16:00 ET timestamp inconsistent with actual 13:00 close and check time, QQQM 12:57 ET market open. No verified same-session daily closing set. Do not use as closing prices. Defer to 14:30 ET / Nov28 04:30 KST per policy; preserve valid prior observations, prior report and Nov25 completed review. No judgment change inferred from missing data.",
+    "source_urls": [
+      "https://www.nyse.com/trade/hours-calendars",
+      "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+      "https://stockanalysis.com/etf/qqq/history/",
+      "https://stockanalysis.com/etf/qqqm/history/",
+      "https://stockanalysis.com/etf/voo/history/"
+    ]
+  }
 }
